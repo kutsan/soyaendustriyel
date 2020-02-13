@@ -13,5 +13,8 @@
 		"test": ""
 	},
 	"dependencies": {},
-	"devDependencies": {}
+	"devDependencies": {
+		"@kutsan/config": "~0.1.0",
+		"prettier": "~1.19.1"
+	}
 }
