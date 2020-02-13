@@ -1,0 +1,17 @@
+{
+	"private": true,
+	"name": "soyaendustriyel",
+	"version": "0.0.0",
+	"description": "",
+	"license": "",
+	"homepage": "https://soyaendustriyel.com",
+	"keywords": [],
+	"author": "Kutsan Kaplan <me@kutsankaplan.com> (https://kutsankaplan.com)",
+	"contributors": [],
+	"scripts": {
+		"start": "",
+		"test": ""
+	},
+	"dependencies": {},
+	"devDependencies": {}
+}
