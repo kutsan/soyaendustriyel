@@ -9,13 +9,16 @@
 	"author": "Kutsan Kaplan <me@kutsankaplan.com> (https://kutsankaplan.com)",
 	"contributors": [],
 	"scripts": {
+		"prestart": "npm run test",
 		"start": "[[ $NODE_ENV == 'production' ]] && npm run build || webpack-dev-server --disable-host-check --hot --open",
+		"prebuild": "npm run format",
 		"build": "webpack --progress",
-		"test": "",
+		"test": "npm run test:lint && npm run test:spec",
+		"test:lint": "eslint 'src/**/*.{js,jsx}'",
+		"test:spec": "echo TODO",
 		"format": "prettier --write \"src/**/*.{js,jsx}\""
 	},
 	"dependencies": {
-		"core-js": "~3.6.4",
 		"react": "~16.12.0",
 		"react-dom": "~16.12.0"
 	},
