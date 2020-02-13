@@ -9,12 +9,27 @@
 	"author": "Kutsan Kaplan <me@kutsankaplan.com> (https://kutsankaplan.com)",
 	"contributors": [],
 	"scripts": {
-		"start": "",
-		"test": ""
+		"start": "[[ $NODE_ENV == 'production' ]] && npm run build || webpack-dev-server --disable-host-check --hot --open",
+		"build": "webpack --progress",
+		"test": "",
+		"format": "prettier --write \"src/**/*.{js,jsx}\""
 	},
-	"dependencies": {},
+	"dependencies": {
+		"core-js": "~3.6.4",
+		"react": "~16.12.0",
+		"react-dom": "~16.12.0"
+	},
 	"devDependencies": {
+		"@babel/core": "~7.8.4",
+		"@babel/preset-env": "~7.8.4",
+		"@babel/preset-react": "~7.8.3",
 		"@kutsan/config": "~0.2.0",
-		"prettier": "~1.19.1"
+		"babel-loader": "~8.0.6",
+		"html-webpack-plugin": "~3.2.0",
+		"mini-css-extract-plugin": "~0.9.0",
+		"prettier": "~1.19.1",
+		"webpack": "~4.41.6",
+		"webpack-cli": "~3.3.11",
+		"webpack-dev-server": "~3.10.3"
 	}
 }
