@@ -2,12 +2,12 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 // Screens
-import Home from './screens/Home'
-import About from './screens/About'
+import Home from './routes/Home'
+import About from './routes/About'
 
-// Components
-import Header from './components/Header.jsx'
-import Footer from './components/Footer.jsx'
+// Layouts
+import Layout from './layouts/default'
+import PropTypes from 'prop-types'
 
 // Styles
 import './style.css'
@@ -15,18 +15,30 @@ import './style.css'
 const App = () => {
 	return (
 		<>
-			<Header />
-
 			<main>
 				<Switch>
-					<Route exact path='/' component={Home} />
-					<Route path='/about' component={About} />
+					<RouteWrapper exact path='/' component={Home} layout={Layout} />
+					<RouteWrapper path='/about' component={About} layout={Layout} />
 				</Switch>
 			</main>
-
-			<Footer />
 		</>
 	)
+}
+
+const RouteWrapper = ({ component: Component, layout: Layout, ...rest }) => (
+	<Route
+		{...rest}
+		render={(props) => (
+			<Layout {...props}>
+				<Component {...props} />
+			</Layout>
+		)}
+	/>
+)
+
+RouteWrapper.propTypes = {
+	component: PropTypes.func.isRequired,
+	layout: PropTypes.func.isRequired
 }
 
 export default App
