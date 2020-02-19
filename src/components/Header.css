@@ -23,8 +23,8 @@
     padding: 0 2rem;
 }
 
-.logo {
-    width: 5rem;
+.logo svg {
+    width: 7rem;
 }
 
 .search-group {
