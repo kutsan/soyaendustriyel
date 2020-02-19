@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 // Components
-import Header from '../components/Header'
+import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 
 // Styles

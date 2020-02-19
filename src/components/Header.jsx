@@ -1,18 +1,16 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import './index.css'
+import SvgLogo from '../assets/images/logo.svg'
+
+import './Header.css'
 
 export default class Header extends Component {
 	render() {
 		return (
 			<header className='header'>
 				<div className='header-left'>
-					<img
-						className='logo'
-						src='https://www.freelogodesign.org/Content/img/logo-samples/sailors.png'
-						alt='Soya Endüstriyel ve Tüketim San. Tic. Ltd. Şti'
-					/>
+					<i className='logo' dangerouslySetInnerHTML={{ __html: SvgLogo }} />
 				</div>
 				<div className='header-center'>
 					<div className='search-group'>
