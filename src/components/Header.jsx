@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 
 import SvgLogo from '../assets/images/logo.svg'
 
@@ -12,7 +11,8 @@ export default class Header extends Component {
 				<div className='header-left'>
 					<i className='logo' dangerouslySetInnerHTML={{ __html: SvgLogo }} />
 				</div>
-				<div className='header-center'>
+				<div className="header-center"></div>
+				<div className='header-right'>
 					<div className='search-group'>
 						<input
 							type='text'
@@ -24,10 +24,6 @@ export default class Header extends Component {
 						</button>
 					</div>
 				</div>
-				<nav className='header-right'>
-					<Link to='/'>Home </Link>
-					<Link to='/about'>About </Link>
-				</nav>
 			</header>
 		)
 	}

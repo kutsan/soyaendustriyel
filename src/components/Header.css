@@ -1,14 +1,13 @@
 .header {
     display: flex;
     align-items: center;
-    box-shadow: 0 1px 8px 0px rgba(0,0,0,0.16);
-    height: 80%;
     background-color: #fefefe;
+    flex-wrap: wrap;
 }
 
 .header-left {
     flex-shrink: 0;
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
 }
 
 .header-center {
@@ -20,11 +19,12 @@
 
 .header-right {
     flex-shrink: 0;
-    padding: 0 2rem;
+    padding: 0.5rem 2rem;
+    width: 40%;
 }
 
 .logo svg {
-    width: 7rem;
+    width: 14rem;
 }
 
 .search-group {
@@ -41,7 +41,7 @@
     padding: 0.5rem 1rem;
     flex-grow: 1;
     font-size: 0.8rem;
-    min-width: 18rem;
+    width: 100%;
 }
 
 .search-input:focus {
@@ -65,4 +65,14 @@
 
 .search-button:hover {
     background-color: #111;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header-right {
+        width: 85%;
+    }
 }
