@@ -71,10 +71,11 @@ label.toggle div span:nth-child(2) {
     /* Mobile Navbar */
     nav {
         height: 0;
+        z-index: -1;
     }
 
     nav ul {
-        transform: translateX(-100%);
+        transform: translateY(-100%);
         flex-direction: column;
         transition-property: transform, visibility;
         transition-duration: 0.3s;
@@ -103,7 +104,7 @@ label.toggle div span:nth-child(2) {
     #toggle:checked ~ nav ul {
         visibility: visible;
         display: flex;
-        transform: translateX(0);
+        transform: translateY(0);
         align-items: flex-start;
     }
 
