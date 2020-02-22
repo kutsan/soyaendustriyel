@@ -4,8 +4,9 @@
     height: 100%;
 }
 
-.default-layout-header {
-    height: 7rem;
+.default-layout-header {}
+
+.default-layout-header--fixed {
     position: fixed;
     left: 0;
     top: 0;
@@ -15,10 +16,19 @@
 
 .default-layout-content {
     flex-grow: 1;
-    margin-top: 7rem;
     background-color: 
+}
+
+.default-layout-content--fixed {
+    margin-top: 15rem;
 }
 
 .default-layout-footer {
     flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .default-layout-header--fixed {
+        /* bottom: 15rem; */
+    }
 }
