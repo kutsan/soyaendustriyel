@@ -17,9 +17,9 @@ export default class Layout extends Component {
 					<Header />
 					<Navbar />
 				</div>
-				
+
 				<div className='default-layout-content default-layout-content--fixed'>
-					{ this.props.children }
+					{this.props.children}
 				</div>
 				<div className='default-layout-footer'>
 					<Footer />
