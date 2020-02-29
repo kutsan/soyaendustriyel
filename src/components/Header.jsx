@@ -11,7 +11,7 @@ export default class Header extends Component {
 				<div className='header-left'>
 					<i className='logo' dangerouslySetInnerHTML={{ __html: SvgLogo }} />
 				</div>
-				<div className="header-center"></div>
+				<div className='header-center'></div>
 				<div className='header-right'>
 					<div className='search-group'>
 						<input

@@ -4,36 +4,36 @@ import './Navbar.css'
 
 export default class Navbar extends Component {
 	constructor(props) {
-		super(props);
+		super(props)
 
 		this.items = [
 			{
 				label: 'Home',
-				to: '/',
+				to: '/'
 			},
 			{
 				label: 'About',
-				to: '/',
+				to: '/'
 			},
 			{
 				label: 'Contact us',
-				to: '/',
+				to: '/'
 			},
 			{
 				label: 'About',
-				to: '/',
+				to: '/'
 			},
 			{
 				label: 'Home',
-				to: '/',
+				to: '/'
 			},
 			{
 				label: 'About',
-				to: '/',
+				to: '/'
 			},
 			{
 				label: 'Contact us',
-				to: '/',
+				to: '/'
 			}
 		]
 	}
@@ -41,21 +41,17 @@ export default class Navbar extends Component {
 	render() {
 		return (
 			<>
-				<input id="toggle" type="checkbox" hidden />
+				<input id='toggle' type='checkbox' hidden />
 				<nav>
 					<ul>
-						{
-							this.items.map((x, i) => (
-								<li key={i}>
-									<Link to={x.to}>
-										{ x.label }
-									</Link>
-								</li>
-							))
-						}
+						{this.items.map((x, i) => (
+							<li key={i}>
+								<Link to={x.to}>{x.label}</Link>
+							</li>
+						))}
 					</ul>
 				</nav>
-				<label htmlFor="toggle" className="toggle">
+				<label htmlFor='toggle' className='toggle'>
 					<div>
 						<span></span>
 						<span></span>
