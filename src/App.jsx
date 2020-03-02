@@ -5,40 +5,30 @@ import { Route, Switch } from 'react-router-dom'
 import Home from './routes/Home'
 import About from './routes/About'
 
-// Layouts
-import Layout from './layouts/default'
-import PropTypes from 'prop-types'
+// Components
+import Header from './components/Header.jsx'
+import NavChan from './components/NavChan.jsx'
+import Footer from './components/Footer.jsx'
 
 // Styles
 import './style.css'
 
 const App = () => {
 	return (
-		<>
+		<div className='layout'>
+			<Header />
+			<NavChan />
+
 			<main>
 				<Switch>
-					<RouteWrapper exact path='/' component={Home} layout={Layout} />
-					<RouteWrapper path='/about' component={About} layout={Layout} />
+					<Route exact path='/' component={Home} />
+					<Route path='/about' component={About} />
 				</Switch>
 			</main>
-		</>
+
+			<Footer />
+		</div>
 	)
-}
-
-const RouteWrapper = ({ component: Component, layout: Layout, ...rest }) => (
-	<Route
-		{...rest}
-		render={(props) => (
-			<Layout {...props}>
-				<Component {...props} />
-			</Layout>
-		)}
-	/>
-)
-
-RouteWrapper.propTypes = {
-	component: PropTypes.func.isRequired,
-	layout: PropTypes.func.isRequired
 }
 
 export default App
