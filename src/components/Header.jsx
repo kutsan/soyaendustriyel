@@ -9,8 +9,8 @@ export default class Header extends Component {
 		return (
 			<header className='header'>
 				<i className='logo' dangerouslySetInnerHTML={{ __html: SvgLogo }} />
-				<h1 className="rotated-pill">Web</h1>
-				<h1 className="rotated-pill">Katalog</h1>
+				<h1 className='rotated-pill'>Web</h1>
+				<h1 className='rotated-pill'>Katalog</h1>
 				<div className='search-group'>
 					<input
 						type='text'
