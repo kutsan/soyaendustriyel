@@ -1,26 +1,7 @@
 .header {
     display: flex;
-    align-items: center;
+		align-items: center;
     background-color: #fefefe;
-    flex-wrap: wrap;
-}
-
-.header-left {
-    flex-shrink: 0;
-    padding: 0.5rem 2rem;
-}
-
-.header-center {
-    flex-grow: 1;
-    padding: 0 2rem;
-    display: flex;
-    justify-content: center;
-}
-
-.header-right {
-    flex-shrink: 0;
-    padding: 0.5rem 2rem;
-    width: 40%;
 }
 
 .logo svg {
@@ -28,19 +9,24 @@
 }
 
 .search-group {
-    display: flex;
+		display: flex;
+		min-width: 40%;
+		margin-left: auto;
+		margin-right: 2rem;
 }
 
 .search-input {
-    border: 3px solid #333;
-    border-right: 0;
+		border: 3px solid #555;
+		border-right: 0;
+		border-top-left-radius: 8px;
+		border-bottom-left-radius: 8px;
     opacity: 0.5;
     transition: opacity 0.3s ease;
     background-color: #fefefe;
-    color: #0a0a0a;
-    padding: 0.5rem 1rem;
+    color: #444;
+    padding: 0.8rem 1.3rem;
     flex-grow: 1;
-    font-size: 0.8rem;
+    font-size: .9rem;
     width: 100%;
 }
 
@@ -50,13 +36,18 @@
 }
 
 .search-button {
-    flex-shrink: 0;
-    padding: 0.5rem 2rem;
-    background-color: #333;
-    border: 0;
-    color: white;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
+		font-size: .9rem;
+		font-weight: 500;
+		font-family: 'Roboto', sans-serif;
+		flex-shrink: 0;
+		padding: 0.5rem 2rem;
+		background-color: #555;
+		border: 0;
+		color: white;
+		transition: background-color 0.3s ease;
+		cursor: pointer;
+		border-top-right-radius: 8px;
+		border-bottom-right-radius: 8px;
 }
 
 .search-button:focus {
@@ -64,15 +55,30 @@
 }
 
 .search-button:hover {
-    background-color: #111;
+    background-color: #444;
+}
+
+/* Some staff to fill header */
+.rotated-pill {
+		color: white;
+		background: #4cbe66;
+		text-transform: uppercase;
+		border-radius: 8px;
+		padding: 8px;
+		transform: rotate3d(1, 1, 1, -22deg);
 }
 
 @media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-    }
+	.logo {
+		display: none;
+	}
 
-    .header-right {
-        width: 85%;
-    }
+	.rotated-pill {
+		display: none;
+	}
+
+	.search-group {
+		width: 100%;
+		margin: 1rem;
+	}
 }

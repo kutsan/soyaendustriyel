@@ -2,6 +2,7 @@ body {
 	background-color: #fafafa;
 	color: black;
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 html,
@@ -9,4 +10,8 @@ body,
 #root,
 #root > main {
 	height: 100%
+}
+
+* {
+	box-sizing: border-box;
 }
