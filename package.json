@@ -19,7 +19,9 @@
 		"test": "jest --verbose",
 		"test:watch": "jest --watch --verbose",
 		"test:coverage": "jest --watch --coverage",
-		"format": "prettier --write \"src/**/*.{js,jsx,css}\""
+		"format": "npm run format:csscomb && npm run format:prettier",
+		"format:prettier": "prettier --write \"src/**/*.{js,jsx,css}\"",
+		"format:csscomb": "csscomb --verbose \"src/\""
 	},
 	"dependencies": {
 		"react": "~16.12.0",
@@ -35,6 +37,7 @@
 		"babel-eslint": "~10.0.3",
 		"babel-loader": "~8.0.6",
 		"css-loader": "~3.4.2",
+		"csscomb": "~4.3.0",
 		"cssnano": "~4.1.10",
 		"eslint": "~6.8.0",
 		"eslint-plugin-react": "~7.18.3",
