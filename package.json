@@ -11,7 +11,7 @@
 	"scripts": {
 		"prestart": "npm run lint && npm run test && npm run format",
 		"prebuild": "npm run prestart",
-		"start": "[[ $NODE_ENV == 'production' ]] && npm run build || NODE_ENV=development webpack-dev-server --disable-host-check --hot --open",
+		"start": "[[ $NODE_ENV == 'production' ]] && npm run build || NODE_ENV=development webpack-dev-server --disable-host-check --hot --open --host 0.0.0.0",
 		"build": "webpack --progress",
 		"deploy": "echo 'TODO: Write the deploy script.'",
 		"lint": "npm run lint:script",

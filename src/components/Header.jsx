@@ -8,7 +8,15 @@ export default class Header extends Component {
 	render() {
 		return (
 			<header className='header'>
-				<i className='logo' dangerouslySetInnerHTML={{ __html: SvgLogo }} />
+				<div className='mobile-top-header'>
+					<label className='menu-button'>
+						<input type='check' hidden />
+						<span />
+						<span />
+						<span />
+					</label>
+					<i className='logo' dangerouslySetInnerHTML={{ __html: SvgLogo }} />
+				</div>
 				<h1 className='rotated-pill'>Web</h1>
 				<h1 className='rotated-pill'>Katalog</h1>
 				<div className='search-group'>

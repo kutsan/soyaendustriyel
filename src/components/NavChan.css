@@ -15,7 +15,6 @@ nav ul li a {
 
 nav ul li a,
 nav ul li a:focus,
-nav ul li a:active,
 nav ul li a:visited {
     color: inherit;
 }
@@ -27,7 +26,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	background-color: #f7f7f7;
-	border-top: 8px solid #4bbb61;
+	border-top: 3px solid #4bbb61;
 	box-shadow: 0 3px 11px 0 rgba(0,0,0,0.16);
 }
 
@@ -80,3 +79,26 @@ nav .navchan-menu .navchan-menu-item .navchan-menu-item-submenu .navchan-menu-it
 	color: #4bbb61;
 }
 
+@media (max-width: 768px) {
+	nav {
+		justify-content: flex-start;
+		position: relative;
+	}
+	nav .navchan-menu {
+		display: none;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	nav .navchan-menu .active {
+		display: block;
+	}
+
+	nav .navchan-menu .navchan-menu-item {
+		border-bottom: 1px solid #eee;
+	}
+	nav .navchan-menu .navchan-menu-item .navchan-menu-item-submenu {
+		position: relative;
+		border: 0;
+	}
+}
