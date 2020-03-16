@@ -11,7 +11,8 @@ import NavChan from './components/NavChan.jsx'
 import Footer from './components/Footer.jsx'
 
 // Styles
-import './style.css'
+import './App.css'
+import 'reset.css'
 
 const App = () => {
 	return (
