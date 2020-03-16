@@ -19,7 +19,7 @@
 		"test": "jest --verbose",
 		"test:watch": "jest --watch --verbose",
 		"test:coverage": "jest --watch --coverage",
-		"format": "prettier --write \"src/**/*.{js,jsx}\""
+		"format": "prettier --write \"src/**/*.{js,jsx,css}\""
 	},
 	"dependencies": {
 		"react": "~16.12.0",

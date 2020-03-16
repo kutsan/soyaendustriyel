@@ -1,0 +1,97 @@
+{
+	"items": [
+		{
+			"name": "Kağıt Ürünleri",
+			"to": "/",
+			"items": [
+				{ "name": "Tuvalet Kağıtları", "to": "/" },
+				{ "name": "Kağıt Havluları", "to": "/" },
+				{ "name": "Peçeteler", "to": "/" },
+				{ "name": "Dispenserlar", "to": "/" },
+				{ "name": "Diğer Ürünler", "to": "/" }
+			]
+		},
+		{
+			"name": "Gıda",
+			"to": "/",
+			"items": [
+				{ "name": "Çaylar", "to": "/" },
+				{ "name": "Şekerler", "to": "/" },
+				{ "name": "Kahveler", "to": "/" },
+				{ "name": "Nescafe", "to": "/" },
+				{ "name": "Kullan-at Ürünler", "to": "/" },
+				{ "name": "Züccaciye Ürünler", "to": "/" },
+				{ "name": "Mutfak Ürünleri", "to": "/" },
+				{ "name": "Diğer Ürünler", "to": "/" }
+			]
+		},
+		{
+			"name": "Deterjan",
+			"to": "/",
+			"items": [
+				{ "name": "Yüzey Temizlik Ürünleri", "to": "/" },
+				{ "name": "Sabunlar", "to": "/" },
+				{ "name": "Bulaşık Deterjanları", "to": "/" },
+				{ "name": "Çamaşır Deterjanları", "to": "/" },
+				{ "name": "Çamaşır Suları", "to": "/" },
+				{ "name": "Kir ve Leke Sökücüler", "to": "/" },
+				{ "name": "Oda Kokuları", "to": "/" },
+				{ "name": "Koku Gidericiler", "to": "/" },
+				{ "name": "Diğer Ürünler", "to": "/" },
+				{ "name": "Mutfak ve Tezgah Temizliği", "to": "/" },
+				{ "name": "Diğer Ürünler", "to": "/" }
+			]
+		},
+		{
+			"name": "Temizlik Gereçleri",
+			"to": "/",
+			"items": [
+				{ "name": "Gerecler Yüzey Temizlik Ürünleri", "to": "/" },
+				{ "name": "Gerecler Sabunlar", "to": "/" },
+				{ "name": "Gerecler Bulaşık Deterjanları", "to": "/" },
+				{ "name": "Gerecler Çamaşır Deterjanları", "to": "/" },
+				{ "name": "Gerecler Çamaşır Suları", "to": "/" },
+				{ "name": "Gerecler Kir ve Leke Sökücüler", "to": "/" },
+				{ "name": "Gerecler Oda Kokuları", "to": "/" },
+				{ "name": "Gerecler Koku Gidericiler", "to": "/" },
+				{ "name": "Gerecler Diğer Ürünler", "to": "/" },
+				{ "name": "Gerecler Mutfak ve Tezgah Temizliği", "to": "/" },
+				{ "name": "Gerecler Diğer Ürünler", "to": "/" }
+			]
+		},
+		{
+			"name": "Temizlik Ekipmanları",
+			"to": "/",
+			"items": [
+				{ "name": "Temizlik Yüzey Temizlik Ürünleri", "to": "/" },
+				{ "name": "Temizlik Sabunlar", "to": "/" },
+				{ "name": "Temizlik Bulaşık Deterjanları", "to": "/" },
+				{ "name": "Temizlik Çamaşır Deterjanları", "to": "/" },
+				{ "name": "Temizlik Çamaşır Suları", "to": "/" },
+				{ "name": "Temizlik Kir ve Leke Sökücüler", "to": "/" },
+				{ "name": "Temizlik Oda Kokuları", "to": "/" },
+				{ "name": "Temizlik Koku Gidericiler", "to": "/" },
+				{ "name": "Temizlik Diğer Ürünler", "to": "/" },
+				{ "name": "Temizlik Mutfak ve Tezgah Temizliği", "to": "/" },
+				{ "name": "Temizlik Diğer Ürünler", "to": "/" }
+			]
+		},
+		{
+			"name": "Ambalaj Ürünleri",
+			"to": "/",
+			"items": [
+				{ "name": "Ambalaj Yüzey Temizlik Ürünleri", "to": "/" },
+				{ "name": "Ambalaj Sabunlar", "to": "/" },
+				{ "name": "Ambalaj Bulaşık Deterjanları", "to": "/" },
+				{ "name": "Ambalaj Çamaşır Deterjanları", "to": "/" },
+				{ "name": "Ambalaj Çamaşır Suları", "to": "/" },
+				{ "name": "Ambalaj Kir ve Leke Sökücüler", "to": "/" },
+				{ "name": "Ambalaj Oda Kokuları", "to": "/" },
+				{ "name": "Ambalaj Koku Gidericiler", "to": "/" },
+				{ "name": "Ambalaj Diğer Ürünler", "to": "/" },
+				{ "name": "Ambalaj Mutfak ve Tezgah Temizliği", "to": "/" },
+				{ "name": "Ambalaj Diğer Ürünler", "to": "/" }
+			]
+		}
+	]
+}
