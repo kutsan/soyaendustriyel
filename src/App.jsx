@@ -1,24 +1,24 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
-// Screens
+// Routes
 import Home from './routes/Home'
 import About from './routes/About'
 
 // Components
-import Header from './components/Header.jsx'
-import NavChan from './components/NavChan.jsx'
-import Footer from './components/Footer.jsx'
+import Header from './components/Header/Header.jsx'
+import Navbar from './components/Navbar/Navbar.jsx'
+import Footer from './components/Footer/Footer.jsx'
 
 // Styles
 import './App.css'
-import 'reset.css'
+import './reset.css'
 
 const App = () => {
 	return (
-		<div className='layout'>
+		<>
 			<Header />
-			<NavChan />
+			<Navbar />
 
 			<main>
 				<Switch>
@@ -28,7 +28,7 @@ const App = () => {
 			</main>
 
 			<Footer />
-		</div>
+		</>
 	)
 }
 

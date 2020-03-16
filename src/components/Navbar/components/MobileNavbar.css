@@ -1,0 +1,28 @@
+.mobile-top-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.menu-button {
+	display: none;
+}
+
+.menu-button span {
+	width: 1rem;
+	height: 0.2rem;
+}
+
+.menu-button input {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.mobile-top-header {
+		width: 100%;
+	}
+
+	.menu-button {
+		display: block;
+	}
+}

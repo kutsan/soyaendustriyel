@@ -1,0 +1,10 @@
+.logo svg {
+	width: 14rem;
+	margin: 0.4rem 0;
+}
+
+@media (max-width: 768px) {
+	.logo svg {
+		width: 7rem;
+	}
+}

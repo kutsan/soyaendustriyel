@@ -1,0 +1,18 @@
+.headline {
+	padding: 8px;
+
+	transform: rotate3d(1, 1, 1, -22deg);
+	text-transform: uppercase;
+
+	color: white;
+	background: #4cbe66;
+
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+@media (max-width: 768px) {
+	.headline {
+		display: none;
+	}
+}
