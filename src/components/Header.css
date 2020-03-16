@@ -63,14 +63,46 @@
 		color: white;
 		background: #4cbe66;
 		text-transform: uppercase;
-		border-radius: 8px;
 		padding: 8px;
 		transform: rotate3d(1, 1, 1, -22deg);
 }
 
+.mobile-top-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-button {
+	display: none;
+}
+
+.menu-button span {
+	height: 0.2rem;
+	width: 1rem;
+}
+
+.menu-button input {
+	display: none;
+}
+
 @media (max-width: 768px) {
-	.logo {
-		display: none;
+	header {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.mobile-top-header {
+		width: 100%;
+	}
+
+	.menu-button {
+		display:  block;
+	}
+
+	.logo svg {
+		width: 7rem;
 	}
 
 	.rotated-pill {
@@ -79,6 +111,7 @@
 
 	.search-group {
 		width: 100%;
-		margin: 1rem;
+		margin: 0;
+		padding: 1rem;
 	}
 }
