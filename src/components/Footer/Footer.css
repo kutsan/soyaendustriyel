@@ -9,14 +9,15 @@ footer {
 
 .brands {
 	display: flex;
+	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
+
 	max-width: 70rem;
 	margin: auto;
 }
 
 .brands__item {
-	margin: 1rem;
 	max-height: 3rem;
+	margin: 1rem;
 }
