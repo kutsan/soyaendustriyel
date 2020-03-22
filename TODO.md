@@ -8,3 +8,4 @@
 * Don't host images in the server. Use CDN for images and drop file-loader.
 * Decide which colors to use, make CSS variables and edit all CSS colors accordingly
 * Touching search bar should select all text on mobile.
+* Fix max-width problem
