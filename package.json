@@ -20,7 +20,7 @@
 		"test:watch": "jest --watch --verbose",
 		"test:coverage": "jest --watch --coverage",
 		"format": "npm run format:csscomb && npm run format:prettier",
-		"format:prettier": "prettier --write \"src/**/*.{js,jsx,css}\"",
+		"format:prettier": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
 		"format:csscomb": "csscomb --verbose \"src/\""
 	},
 	"dependencies": {
