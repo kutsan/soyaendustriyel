@@ -6,18 +6,3 @@ footer {
 	color: #f1f1f1;
 	background-color: #95a5a6;
 }
-
-.brands {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
-
-	max-width: 70rem;
-	margin: auto;
-}
-
-.brands__item {
-	max-height: 3rem;
-	margin: 1rem;
-}
