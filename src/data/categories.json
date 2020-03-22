@@ -2,16 +2,16 @@
 	"categories": [
 		{ "id": "kagit", "name": "Kağıt Ürünleri" },
 		{ "id": "tuvalet-kagidi", "parents": ["kagit"], "name": "Tuvalet Kağıtları" },
-		{ "id": "kagit-havlu", "parents": ["kagit"], "name": "Kağıt Havluları"  },
+		{ "id": "kagit-havlu", "parents": ["kagit"], "name": "Kağıt Havluları" },
 		{ "id": "pecete", "parents": ["kagit"], "name": "Peçeteler" },
-		{ "id": "dispenser" , "parents": ["kagit"], "name": "Dispenserlar" },
+		{ "id": "dispenser", "parents": ["kagit"], "name": "Dispenserlar" },
 		{ "id": "gida", "name": "Gıda" },
 		{ "id": "cay", "parents": ["gida"], "name": "Çaylar" },
 		{ "id": "seker", "parents": ["gida"], "name": "Şekerler" },
 		{ "id": "kahve", "parents": ["gida"], "name": "Kahveler" },
 		{ "id": "nescafe", "parents": ["gida"], "name": "Nescafe" },
 		{ "id": "kullan-at", "parents": ["gida"], "name": "Kullan-at Ürünler" },
-		{ "id": "zuccaciye" , "parents": ["gida"], "name": "Züccaciye Ürünler" },
+		{ "id": "zuccaciye", "parents": ["gida"], "name": "Züccaciye Ürünler" },
 		{ "id": "mutfak", "parents": ["gida"], "name": "Mutfak Ürünleri" },
 		{ "id": "deterjan", "name": "Deterjan" },
 		{ "id": "yuzey-temizlik", "parents": ["deterjan"], "name": "Yüzey Temizlik Ürünleri" },
@@ -22,7 +22,11 @@
 		{ "id": "kir-ve-leke-sokucu", "parents": ["deterjan"], "name": "Kir ve Leke Sökücüler" },
 		{ "id": "oda-kokusu", "parents": ["deterjan"], "name": "Oda Kokuları" },
 		{ "id": "koku-giderici", "parents": ["deterjan"], "name": "Koku Gidericiler" },
-		{ "id": "mutfak-ve-tezgah-temizligi", "parents": ["deterjan"], "name": "Mutfak ve Tezgah Temizliği" },
+		{
+			"id": "mutfak-ve-tezgah-temizligi",
+			"parents": ["deterjan"],
+			"name": "Mutfak ve Tezgah Temizliği"
+		},
 		{ "id": "temizlik-gereci", "name": "Temizlik Gereçleri" },
 		{ "id": "temizlik-ekipmani", "name": "Temizlik Ekipmanları" },
 		{ "id": "ambalaj", "name": "Ambalaj Ürünleri" }

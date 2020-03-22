@@ -2,9 +2,25 @@
 	"products": [
 		{ "id": "nescafe-gold-200g", "categories": ["kahve"], "name": "Nescafe Gold 200g" },
 		{ "id": "coffee-mate-500g", "categories": ["kahve"], "name": "Coffee Mate 500g" },
-		{ "id": "jacobs-monarch-espresso-500g", "categories": ["kahve"], "name": "Jacobs Monarch Espresso 500g" },
-		{ "id": "papia-tuvalet-kagidi-72li-3katli", "categories": ["tuvalet-kagidi"], "name": "Papia Tuvalet Kagidi 72'li 3 Katli" },
-		{ "id": "caykur-rize-turist-cayi-1000g", "categories": ["cay"], "name": "Caykur Rize Turist Cayi 1000g" },
-		{ "id": "caykur-altinbas-cayi-500gr", "categories": ["cay"], "name": "Caykur Altinbas Cayi 500g" }
+		{
+			"id": "jacobs-monarch-espresso-500g",
+			"categories": ["kahve"],
+			"name": "Jacobs Monarch Espresso 500g"
+		},
+		{
+			"id": "papia-tuvalet-kagidi-72li-3katli",
+			"categories": ["tuvalet-kagidi"],
+			"name": "Papia Tuvalet Kagidi 72'li 3 Katli"
+		},
+		{
+			"id": "caykur-rize-turist-cayi-1000g",
+			"categories": ["cay"],
+			"name": "Caykur Rize Turist Cayi 1000g"
+		},
+		{
+			"id": "caykur-altinbas-cayi-500gr",
+			"categories": ["cay"],
+			"name": "Caykur Altinbas Cayi 500g"
+		}
 	]
 }
