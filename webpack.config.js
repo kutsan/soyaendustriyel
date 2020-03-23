@@ -1,3 +1,5 @@
+/* eslint indent: "off", no-mixed-spaces-and-tabs: "off" */
+
 const webpack = require('webpack')
 const path = require('path')
 
@@ -18,7 +20,7 @@ module.exports = {
 	output: {
 		filename: '[name].bundle.js',
 		path: path.join(__dirname, '/build'),
-		publicPath: '/',
+		publicPath: '/'
 	},
 
 	resolve: {
