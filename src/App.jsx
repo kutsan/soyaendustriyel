@@ -2,9 +2,9 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 // Routes
-import Home from './routes/Home'
-import About from './routes/About'
-import Products from './routes/Products'
+import Home from './routes/Home/Home.jsx'
+import About from './routes/About/About.jsx'
+import Products from './routes/Products/Products.jsx'
 
 // Components
 import Header from './components/Header/Header.jsx'
