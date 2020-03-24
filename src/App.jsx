@@ -16,6 +16,9 @@ import NotFound from './components/NotFound/NotFound.jsx'
 import './App.css'
 import './reset.css'
 
+// Data
+import { categories } from './data/categories.json'
+
 const App = () => {
 	return (
 		<>
@@ -26,7 +29,10 @@ const App = () => {
 				<Switch>
 					<Route exact path='/' component={Home} />
 					<Route path='/about' component={About} />
-					<Route path='/products/:category' component={Products} />
+					<Route
+						path={categories.map((cur) => `/products/${cur.id}`)}
+						component={Products}
+					/>
 					<Route component={NotFound} />
 				</Switch>
 			</main>
