@@ -16,8 +16,9 @@ import NotFound from './components/NotFound/NotFound.jsx'
 import './App.css'
 import './reset.css'
 
-// Data
-import { categories } from './data/categories.json'
+// Utils
+import validatedRoute from './utils/routes/validated-route.jsx'
+import validatorProducts from './utils/routes/validator-products.js'
 
 const App = () => {
 	return (
@@ -28,10 +29,11 @@ const App = () => {
 			<main>
 				<Switch>
 					<Route exact path='/' component={Home} />
-					<Route path='/about' component={About} />
+					<Route exact path='/about' component={About} />
 					<Route
-						path={categories.map((cur) => `/products/${cur.id}`)}
-						component={Products}
+						exact
+						path={['/products/:category/:subcategory', '/products/:category']}
+						component={validatedRoute(validatorProducts)(Products)}
 					/>
 					<Route component={NotFound} />
 				</Switch>
