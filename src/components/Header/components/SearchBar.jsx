@@ -6,7 +6,7 @@ const SearchBar = () => {
 	return (
 		<div className='search-group'>
 			<input
-				type='text'
+				type='search'
 				className='search-input'
 				placeholder='Ürün, kategori, marka veya ürün kodu ile ara...'
 			/>
