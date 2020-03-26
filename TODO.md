@@ -8,3 +8,5 @@
 * Decide which colors to use, make CSS variables and edit all CSS colors accordingly
 * Touching search bar should select all text on mobile.
 * Fix max-width problem
+* Setup firebase
+* Check context and other things: https://github.com/AmruthPillai/Reactive-Resume/blob/master/.eslintrc
