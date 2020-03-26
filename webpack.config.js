@@ -5,6 +5,7 @@ const path = require('path')
 
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 
 const nodeEnv = process.env.NODE_ENV || 'development'
 const isProd = nodeEnv === 'production'
@@ -102,6 +103,7 @@ module.exports = {
 						quoteCharacter: '"'
 				  }
 				: false
-		})
+		}),
+		new CopyPlugin([{ from: 'src/assets/favicons/' }])
 	]
 }
