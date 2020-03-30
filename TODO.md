@@ -11,3 +11,4 @@
 * Check context and other things: https://github.com/AmruthPillai/Reactive-Resume/blob/master/.eslintrc
 * Add stylelint.
 * Make footer fluid with SVG of https://ascen.com/.
+* Remove CSS reset
