@@ -2,7 +2,6 @@ import React from 'react'
 
 // Components
 import Logo from './components/Logo.jsx'
-import Headline from './components/Headline.jsx'
 import SearchBar from './components/SearchBar.jsx'
 
 // Styles
@@ -12,7 +11,6 @@ const Header = () => {
 	return (
 		<header>
 			<Logo />
-			<Headline />
 			<SearchBar />
 		</header>
 	)
