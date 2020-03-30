@@ -12,3 +12,7 @@
 * Add stylelint.
 * Make footer fluid with SVG of https://ascen.com/.
 * Remove CSS reset
+* white-space: nowrap; for navbar items
+* SVGs needs their own folder?
+* Minimize SVGs
+* Touching logo on mobile toggles mobile navbar.
