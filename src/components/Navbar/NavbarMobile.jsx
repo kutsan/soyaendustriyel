@@ -41,7 +41,6 @@ class NavbarMobile extends React.Component {
 	}
 
 	toggleExpand(category) {
-		console.log(category)
 		if (this.isExpanded(category)) {
 			this.setState({
 				expandedCategories: this.state.expandedCategories.filter((x) => x !== category.id)
@@ -73,8 +72,6 @@ class NavbarMobile extends React.Component {
 		}, 0)
 
 		const itemsMaxHeight = 52 * (subCategories.length + subCountOfExpandedSubs)
-
-		console.log(item.id, itemsMaxHeight, expandedSubs)
 
 		return (
 			<div
