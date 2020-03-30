@@ -1,12 +1,13 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import './SearchBar.css'
 
 import SearchIcon from './SearchIcon.svg'
 
-const SearchBar = () => {
+const SearchBar = ({ hidden = false }) => {
 	return (
-		<div className='search'>
+		<div className={hidden ? 'search search--hidden' : 'search'}>
 			<input
 				type='search'
 				className='search__input'
@@ -19,6 +20,10 @@ const SearchBar = () => {
 			></button>
 		</div>
 	)
+}
+
+SearchBar.propTypes = {
+	hidden: PropTypes.bool
 }
 
 export default SearchBar

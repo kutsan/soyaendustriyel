@@ -29,6 +29,8 @@
 		},
 		{ "id": "temizlik-gereci", "name": "Temizlik Gereçleri" },
 		{ "id": "temizlik-ekipmani", "name": "Temizlik Ekipmanları" },
-		{ "id": "ambalaj", "name": "Ambalaj Ürünleri" }
+		{ "id": "ambalaj", "name": "Ambalaj Ürünleri" },
+		{ "id": "kare-pecete", "parent": "pecete", "name": "Kare pecete" },
+		{ "id": "dispenser-pecete", "parent": "pecete", "name": "Dispenser pecete" }
 	]
 }

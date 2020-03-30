@@ -5,6 +5,6 @@
 
 @media (max-width: 768px) {
 	.logo svg {
-		width: 7rem;
+		margin-top: 2rem;
 	}
 }

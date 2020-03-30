@@ -4,10 +4,20 @@
 	flex-grow: 1;
 
 	max-width: 30rem;
-	margin: 0 6rem 0 6rem;
+	margin: 0 6rem;
 
 	border-radius: 38.16px;
 	background: #f1f1f1;
+}
+
+@media (max-width: 768px) {
+	.search {
+		width: 90%;
+	}
+
+	.search--hidden {
+		display: none;
+	}
 }
 
 .search__input {

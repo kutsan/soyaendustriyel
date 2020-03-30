@@ -1,34 +1,38 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// Components
-import MobileNavbar from './components/MobileNavbar.jsx'
+import NavbarMobile from './NavbarMobile.jsx'
 
 // Styles
 import './Navbar.css'
 
 // Data
-import { items } from './navbar-data.json'
+import { categories } from '../../data/categories.json'
+
+const getSubCategories = (category) => {
+	return categories.filter((x) => x.parent === category.id)
+}
+
+const mainCategories = categories.filter((x) => !x.parent)
 
 const Navbar = () => {
 	return (
 		<nav>
-			<MobileNavbar />
-
-			<ul className='navbar-menu'>
-				{items.map((x, i) => (
-					<li key={i} className='navbar-menu-item'>
-						<Link to={x.to}>{x.name}</Link>
-						<ul className='navbar-menu-item-submenu'>
-							{x.items.map((y, j) => (
-								<li key={`${i}-${j}`} className='navbar-menu-item-submenu-item'>
-									<Link to={y.to}>{y.name}</Link>
-								</li>
+			<NavbarMobile />
+			<div className='navbar-menu'>
+				{mainCategories.map((x) => (
+					<div key={x.id} className='navbar-menu--item'>
+						<Link to={`/products/${x.id}`}>{x.name}</Link>
+						<div className='navbar-menu--submenu'>
+							{getSubCategories(x).map((y) => (
+								<div key={y.id} className='navbar-menu--item'>
+									<Link to={`/products/${x.id}/${y.id}`}>{y.name}</Link>
+								</div>
 							))}
-						</ul>
-					</li>
+						</div>
+					</div>
 				))}
-			</ul>
+			</div>
 		</nav>
 	)
 }

@@ -1,0 +1,42 @@
+.menu-button {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+
+	border: 0;
+	background-color: transparent;
+}
+
+.menu-button:focus {
+	outline: none;
+}
+
+.menu-button span {
+	display: block;
+
+	width: 24px;
+	height: 3px;
+	margin-top: 5px;
+
+	transition: transform 300ms;
+
+	background-color: #333;
+}
+
+.menu-open--close span:first-child {
+	transform: rotate(45deg) translate(6px, 6px);
+}
+
+.menu-open--close span:nth-child(2) {
+	display: none;
+}
+
+.menu-open--close span:last-child {
+	transform: rotate(-45deg);
+}
+
+@media (min-width: 769px) {
+	.menu-button {
+		display: none;
+	}
+}
