@@ -1,13 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import emitter from '../../utils/emitter'
+import emitter from '../../../utils/emitter'
 
 // Styles
 import './NavbarMobile.css'
 
 // Data
-import { categories } from '../../data/categories.json'
+import { categories } from '../../../data/categories.json'
+
 class NavbarMobile extends React.Component {
 	constructor(props) {
 		super(props)
