@@ -48,6 +48,7 @@
 
 .email__address {
 	border-bottom: 1px solid transparent;
+	letter-spacing: 0.02rem;
 
 	font-weight: 600;
 }

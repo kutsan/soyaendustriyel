@@ -9,7 +9,7 @@ const Communication = () => {
 	return (
 		<div className='communication'>
 			<a href='tel:+902362335054' className='phone'>
-				<div className='phone__icon' dangerouslySetInnerHTML={{ __html: PhoneIcon }} />
+				<i className='phone__icon' dangerouslySetInnerHTML={{ __html: PhoneIcon }} />
 				<div className='phone__number'>+90 236 233 50 54</div>
 			</a>
 			<a href='mailto:info@soyaendustriyel.com' className='email'>
