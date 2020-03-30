@@ -1,0 +1,73 @@
+.phone {
+	display: flex;
+	align-items: center;
+
+	text-decoration: none;
+
+	color: inherit;
+}
+
+.phone:hover,
+.phone:active,
+.phone:visited {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+.phone:hover .phone__number {
+	border-bottom: 1px solid black;
+}
+
+.email {
+	display: flex;
+	align-items: center;
+
+	text-decoration: none;
+
+	color: inherit;
+}
+
+.email:hover,
+.email:active,
+.email:visited {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+.email:hover .email__address {
+	border-bottom: 1px solid black;
+}
+
+.phone__number {
+	border-bottom: 1px solid transparent;
+
+	font-weight: 600;
+}
+
+.email__address {
+	border-bottom: 1px solid transparent;
+
+	font-weight: 600;
+}
+
+.phone__icon {
+	line-height: 0;
+}
+
+.email__icon {
+	line-height: 0;
+}
+
+.phone__icon svg {
+	width: 1.125rem;
+	height: 1.125rem;
+	margin: 0.3125rem 0.6rem;
+}
+
+.email__icon svg {
+	width: 1.125rem;
+	height: 1.125rem;
+	margin: 0.3125rem 0.6rem;
+}
