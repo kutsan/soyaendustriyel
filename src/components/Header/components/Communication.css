@@ -1,3 +1,9 @@
+@media (max-width: 768px) {
+	.communication {
+		display: none;
+	}
+}
+
 .phone {
 	display: flex;
 	align-items: center;
@@ -47,8 +53,9 @@
 }
 
 .email__address {
-	border-bottom: 1px solid transparent;
 	letter-spacing: 0.02rem;
+
+	border-bottom: 1px solid transparent;
 
 	font-weight: 600;
 }

@@ -21,16 +21,22 @@
 	flex-wrap: wrap;
 	justify-content: center;
 
-	margin: auto;
+	margin-top: 0.5rem;
 }
 
 .brands__item {
+	max-width: calc(16.6% - 2rem);
 	max-height: 2.5rem;
 	margin: 1rem;
 }
 
 @media (max-width: 768px) {
 	.brands__item {
+		max-width: calc(33% - 2rem);
 		max-height: 2rem;
+	}
+
+	.brands-container {
+		margin: 2rem 0;
 	}
 }

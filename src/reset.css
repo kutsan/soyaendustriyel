@@ -81,3 +81,14 @@ td:not([align]),
 th:not([align]) {
 	text-align: left;
 }
+
+a,
+a:active,
+a:visited,
+a:focus,
+a:hover {
+	text-decoration: none;
+	/* color: black; */
+
+	outline: none;
+}
