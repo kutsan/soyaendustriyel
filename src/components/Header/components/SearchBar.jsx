@@ -2,17 +2,21 @@ import React from 'react'
 
 import './SearchBar.css'
 
+import SearchIcon from './SearchIcon.svg'
+
 const SearchBar = () => {
 	return (
-		<div className='search-group'>
+		<div className='search'>
 			<input
 				type='search'
-				className='search-input'
+				className='search__input'
 				placeholder='Ürün, kategori, marka veya ürün kodu ile ara...'
 			/>
-			<button type='button' className='search-button'>
-				ARA
-			</button>
+			<button
+				type='button'
+				className='search__button'
+				dangerouslySetInnerHTML={{ __html: SearchIcon }}
+			></button>
 		</div>
 	)
 }
