@@ -1,25 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Redirect } from 'react-router'
+
+import NotFound from '../../components/NotFound/NotFound.jsx'
 
 const ValidatedRoute = (validator) => {
 	return function(ComposedComponent) {
-		class ValidatedComponent extends React.Component {
-			constructor(props) {
-				super(props)
-
-				this.state = {
-					isValid: true
-				}
+		const ValidatedComponent = (props) => {
+			if (!validator(props.match.params)) {
+				return <NotFound {...props} />
 			}
 
-			render() {
-				if (!validator(this.props.match.params)) {
-					return <Redirect to='/not-found' />
-				}
-
-				return <ComposedComponent {...this.props} />
-			}
+			return <ComposedComponent {...props} />
 		}
 
 		ValidatedComponent.propTypes = {
