@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import emitter from '../../utils/emitter.js'
 
 // Components
@@ -10,47 +10,24 @@ import MenuButton from './components/MenuButton.jsx'
 // Styles
 import './Header.css'
 
-class Header extends React.Component {
-	constructor(props) {
-		super(props)
+const Header = () => {
+	const [menuOpen, setMenuOpen] = useState(false)
 
-		this.state = {
-			menuOpen: false
-		}
+	useEffect(() => {
+		const toggle = () => setMenuOpen(!menuOpen)
+		emitter.on('ui-toggle-menu', toggle)
 
-		this.toggle = this.toggle.bind(this)
-	}
+		return () => emitter.off('ui-toggle-menu', toggle)
+	}, [menuOpen])
 
-	componentDidMount() {
-		emitter.on('ui-toggle-menu', this.toggle)
-	}
-
-	componentWillUnmount() {
-		emitter.off('ui-toggle-menu', this.toggle)
-	}
-
-	toggle() {
-		this.setState({
-			menuOpen: !this.state.menuOpen
-		})
-	}
-
-	emitToggle() {
-		emitter.emit('ui-toggle-menu')
-	}
-
-	render() {
-		const { menuOpen } = this.state
-
-		return (
-			<header>
-				<MenuButton open={menuOpen} onClick={this.emitToggle} />
-				<Logo />
-				<SearchBar hidden={menuOpen} />
-				<Communication />
-			</header>
-		)
-	}
+	return (
+		<header>
+			<MenuButton open={menuOpen} onClick={() => emitter.emit('ui-toggle-menu')} />
+			<Logo />
+			<SearchBar hidden={menuOpen} />
+			<Communication />
+		</header>
+	)
 }
 
 export default Header
