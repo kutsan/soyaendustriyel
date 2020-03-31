@@ -30,9 +30,13 @@ module.exports = {
 	},
 
 	devServer: {
+		hot: true,
+		open: true,
+		host: '0.0.0.0',
 		contentBase: path.join(__dirname, 'build'),
 		stats: 'errors-only',
-		historyApiFallback: true
+		historyApiFallback: true,
+		clientLogLevel: 'silent'
 	},
 
 	mode: isProd ? 'production' : 'development',
