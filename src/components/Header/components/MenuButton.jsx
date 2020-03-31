@@ -5,10 +5,13 @@ import './MenuButton.css'
 
 const MenuButton = ({ onClick, open }) => {
 	return (
-		<button onClick={onClick} className={open ? 'menu-button menu-open--close' : 'menu-button'}>
-			<span />
-			<span />
-			<span />
+		<button
+			onClick={onClick}
+			className={open ? 'menu-button menu-button--close' : 'menu-button'}
+		>
+			<span></span>
+			<span></span>
+			<span></span>
 		</button>
 	)
 }
