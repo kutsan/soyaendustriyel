@@ -14,7 +14,7 @@ const Header = () => {
 	const [menuOpen, setMenuOpen] = useState(false)
 
 	useEffect(() => {
-		const toggle = () => setMenuOpen(!menuOpen)
+		const toggle = () => setMenuOpen((prev) => !prev)
 		emitter.on('ui-toggle-menu', toggle)
 
 		return () => emitter.off('ui-toggle-menu', toggle)
