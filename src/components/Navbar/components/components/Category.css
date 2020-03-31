@@ -1,0 +1,30 @@
+.navbar-mobile__category {
+	color: #333;
+
+	font-weight: 500;
+}
+
+.navbar-mobile__category-children {
+	overflow: hidden;
+
+	max-height: 0;
+	padding: 0 0 0 1.5rem;
+
+	transition: max-height 0.1s;
+}
+
+.navbar-mobile__category--expanded {
+	background-color: #f7f7f7;
+}
+
+.navbar-mobile__category--sub {
+	color: #555;
+
+	font-weight: 400;
+}
+
+.navbar-mobile__category--lowermost {
+	color: #267d34;
+
+	font-weight: 400;
+}
