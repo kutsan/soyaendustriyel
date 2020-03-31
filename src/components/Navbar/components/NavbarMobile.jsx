@@ -1,132 +1,93 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 
 import emitter from '../../../utils/emitter'
 
 // Styles
 import './NavbarMobile.css'
 
-// Data
-import { categories } from '../../../data/categories.json'
+import Category from './components/Category.jsx'
 
-class NavbarMobile extends React.Component {
-	constructor(props) {
-		super(props)
+const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder }) => {
+	const [menuOpen, setMenuOpen] = useState(false)
+	const [expanded, setExpanded] = useState([])
 
-		this.state = {
-			isMenuOpen: false,
-			mainMenuItems: categories.filter((x) => !x.parent),
-			expandedCategories: []
+	useEffect(() => {
+		const toggle = () => setMenuOpen((prev) => !prev)
+		emitter.on('ui-toggle-menu', toggle)
+
+		return () => emitter.off('ui-toggle-menu', toggle)
+	}, [menuOpen])
+
+	const isExpanded = (category) => expanded.indexOf(category.id) > -1
+
+	const onClickLink = () => emitter.emit('ui-toggle-menu')
+	const onClickToggle = (category) => {
+		if (isExpanded(category)) {
+			setExpanded(expanded.filter((x) => x !== category.id))
+		} else {
+			setExpanded([category.id, ...expanded])
 		}
-
-		this.toggleMenu = this.toggleMenu.bind(this)
-		this.renderMenuItem = this.renderMenuItem.bind(this)
 	}
 
-	componentDidMount() {
-		emitter.on('ui-toggle-menu', this.toggleMenu)
+	const calcMaxHeight = (category) => {
+		const subCountOfExpandedSubs = getCategoriesUnder(category)
+			.filter(isExpanded)
+			.reduce((acc, cur) => {
+				return acc + getCategoriesUnder(cur).length
+			}, 0)
+
+		return getCategoriesUnder(category).length + subCountOfExpandedSubs
 	}
 
-	componentWillUnmount() {
-		emitter.off('ui-toggle-menu', this.toggleMenu)
-	}
-
-	toggleMenu() {
-		this.setState({
-			isMenuOpen: !this.state.isMenuOpen
-		})
-	}
-
-	getSubCategories(category) {
-		return categories.filter((x) => x.parent === category.id)
-	}
-
-	toggleExpand(category) {
-		if (this.isExpanded(category)) {
-			this.setState({
-				expandedCategories: this.state.expandedCategories.filter((x) => x !== category.id)
-			})
-			return
-		}
-
-		this.setState({
-			expandedCategories: [category.id, ...this.state.expandedCategories]
-		})
-	}
-
-	isExpanded(category) {
-		return this.state.expandedCategories.indexOf(category.id) > -1
-	}
-
-	renderMenuItem(item, path) {
-		const isExpanded = this.isExpanded(item)
-
-		const subCategories = this.getSubCategories(item)
-		const to = path ? `/products/${path}/${item.id}` : `/products/${item.id}`
-		const childPath = path ? `${path}/${item.id}` : item.id
-
-		const expandedSubs = subCategories.filter(
-			(x) => this.state.expandedCategories.indexOf(x.id) > -1
-		)
-		const subCountOfExpandedSubs = expandedSubs.reduce((a, b) => {
-			return a + this.getSubCategories(b).length
-		}, 0)
-
-		const itemsMaxHeight = 52 * (subCategories.length + subCountOfExpandedSubs)
-
-		return (
-			<div
-				key={item.id}
-				className={
-					isExpanded
-						? 'navbar-mobile__menu-item navbar-mobile__menu-item--expanded'
-						: 'navbar-mobile__menu-item'
-				}
-			>
-				<div className='navbar-mobile__menu-item-head'>
-					<Link
-						to={to}
-						onClick={() => emitter.emit('ui-toggle-menu')}
-						className={
-							isExpanded
-								? 'navbar-mobile__menu-item-link navbar-mobile__menu-item-link--expanded'
-								: 'navbar-mobile__menu-item-link'
-						}
-					>
-						{item.name}
-					</Link>
-
-					{!!subCategories.length && (
-						<button
-							onClick={() => this.toggleExpand(item)}
-							key={item.id}
-							className={
-								isExpanded
-									? 'navbar-mobile__menu-item-button navbar-mobile__menu-item-button--expanded'
-									: 'navbar-mobile__menu-item-button'
-							}
-						>
-							<span />
-						</button>
-					)}
-				</div>
-
-				<div
-					className='navbar-mobile__menu-items'
-					style={isExpanded ? { maxHeight: itemsMaxHeight } : {}}
+	return (
+		<div className={`navbar-mobile ${menuOpen ? 'navbar-mobile--open' : ''}`}>
+			{getTopCategories().map((top) => (
+				<Category
+					key={top.id}
+					modifier='top'
+					expanded={isExpanded(top)}
+					to={`/products/${top.id}`}
+					onClickToggle={() => onClickToggle(top)}
+					onClickLink={onClickLink}
+					hasCategoriesUnder={hasCategoriesUnder(top)}
+					maxHeight={calcMaxHeight(top)}
+					item={top}
 				>
-					{subCategories.map((e) => this.renderMenuItem(e, childPath))}
-				</div>
-			</div>
-		)
-	}
+					{getCategoriesUnder(top).map((sub) => (
+						<Category
+							key={sub.id}
+							modifier='sub'
+							expanded={isExpanded(sub)}
+							to={`/products/${top.id}/${sub.id}`}
+							onClickToggle={() => onClickToggle(sub)}
+							onClickLink={onClickLink}
+							hasCategoriesUnder={hasCategoriesUnder(sub)}
+							maxHeight={calcMaxHeight(sub)}
+							item={sub}
+						>
+							{getCategoriesUnder(sub).map((lowermost) => (
+								<Category
+									key={lowermost.id}
+									modifier='lowermost'
+									to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
+									onClickLink={onClickLink}
+									hasCategoriesUnder={false}
+									item={lowermost}
+								/>
+							))}
+						</Category>
+					))}
+				</Category>
+			))}
+		</div>
+	)
+}
 
-	render() {
-		const { isMenuOpen, mainMenuItems } = this.state
-		const navbarClass = `navbar-mobile ${isMenuOpen ? 'navbar-mobile--open' : ''}`
-
-		return <div className={navbarClass}>{mainMenuItems.map((e) => this.renderMenuItem(e))}</div>
-	}
+NavbarMobile.propTypes = {
+	getTopCategories: PropTypes.func.isRequired,
+	getCategoriesUnder: PropTypes.func.isRequired,
+	hasCategoriesUnder: PropTypes.func.isRequired
 }
 
 export default NavbarMobile
