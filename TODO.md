@@ -16,3 +16,8 @@
 * SVGs needs their own folder?
 * Minimize SVGs
 * Touching logo on mobile toggles mobile navbar.
+* That X is weird.
+* Navbar render based on inner width.
+* only screen @media
+* Enchanct Navbar category CSS
+* lighthouse errors
