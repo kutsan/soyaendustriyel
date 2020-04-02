@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 import './NotFound.css'
 
-import NotFoundIcon from './NotFound.svg'
+import NotFoundIcon from '@/assets/icons/404.svg'
 
 const NotFound = () => {
 	return (
 		<div className='notfound'>
-			<i className='notfound__icon' dangerouslySetInnerHTML={{ __html: NotFoundIcon }} />
+			<NotFoundIcon className='notfound__icon' />
 			<div className='notfound__info'>Aradığınız sayfayı bulamadık.</div>
 			<div className='notfound__more-info'>
 				Sayfa kaldırılmış veya değiştirilmiş olabilir.

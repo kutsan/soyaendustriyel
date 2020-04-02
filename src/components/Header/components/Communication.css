@@ -61,20 +61,12 @@
 }
 
 .phone__icon {
-	line-height: 0;
-}
-
-.email__icon {
-	line-height: 0;
-}
-
-.phone__icon svg {
 	width: 1.125rem;
 	height: 1.125rem;
 	margin: 0.3125rem 0.6rem;
 }
 
-.email__icon svg {
+.email__icon {
 	width: 1.125rem;
 	height: 1.125rem;
 	margin: 0.3125rem 0.6rem;
