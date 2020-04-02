@@ -1,6 +1,5 @@
 /* eslint indent: "off", no-mixed-spaces-and-tabs: "off" */
 
-const webpack = require('webpack')
 const path = require('path')
 
 const HTMLWebpackPlugin = require('html-webpack-plugin')
