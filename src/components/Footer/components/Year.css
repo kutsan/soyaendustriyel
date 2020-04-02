@@ -1,0 +1,14 @@
+.footer-year {
+	display: flex;
+	justify-content: center;
+	font-size: 1.125rem;
+}
+
+.footer-year__year {
+	margin-right: 0.2rem;
+}
+
+.footer__leaf-icon {
+	width: 1.3125rem;
+	height: 1.3125rem;
+}

@@ -1,0 +1,8 @@
+.footer-touch {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-touch__title {
+	flex: 0 0 100%;
+}
