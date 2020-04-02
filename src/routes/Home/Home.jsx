@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Brands from '../../components/Brands/Brands.jsx'
+import Brands from '@/components/Brands/Brands.jsx'
 
 const Home = () => {
 	return (

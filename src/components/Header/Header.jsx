@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import emitter from '../../utils/emitter.js'
+import emitter from '@/utils/emitter.js'
 
 // Components
 import Logo from './components/Logo.jsx'

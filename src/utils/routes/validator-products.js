@@ -1,4 +1,4 @@
-import { categories as dataCategories } from '../../data/categories.json'
+import { categories as dataCategories } from '@/data/categories.json'
 
 /**
  * Validator function intended to be used alongside `validatedRoute()` function

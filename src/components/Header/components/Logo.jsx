@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import LogoIcon from '@/assets/icons/logo.svg'
 import './Logo.css'
 
-import emitter from '../../../utils/emitter'
+import emitter from '@/utils/emitter'
 
 const Logo = () => {
 	return (

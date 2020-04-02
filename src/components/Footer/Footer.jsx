@@ -2,7 +2,7 @@ import React from 'react'
 
 import './Footer.css'
 
-import LeafIcon from '../../assets/icons/leaf.svg'
+import LeafIcon from '@/assets/icons/leaf.svg'
 
 const Footer = () => {
 	return (

@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 // Components
-import ProductCard from '../../components/ProductCard/ProductCard.jsx'
+import ProductCard from '@/components/ProductCard/ProductCard.jsx'
 
 // Style
 import './Products.css'
 
 // Data
-import { products } from './../../data/products.json'
+import { products } from '@/data/products.json'
 
 const Products = ({ match }) => {
 	return (
