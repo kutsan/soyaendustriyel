@@ -1,18 +1,12 @@
 footer {
 	padding: 4rem;
 
-	text-align: center;
-
 	color: #f1f1f1;
 	background-color: #26384a;
 }
 
-.footer-year {
+.footer-responsive-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-}
-
-.footer__leaf-icon {
-	width: 1.1rem;
-	height: 1.1rem;
 }

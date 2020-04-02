@@ -1,5 +1,8 @@
 header {
 	display: flex;
+
+	padding-top: 1.5rem;
+
 	align-items: center;
 	justify-content: center;
 
