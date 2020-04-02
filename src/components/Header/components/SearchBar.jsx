@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import './SearchBar.css'
 
-import SearchIcon from './SearchIcon.svg'
+import SearchIcon from '@/assets/icons/search.svg'
 
 const SearchBar = ({ hidden = false }) => {
 	return (
@@ -13,11 +13,9 @@ const SearchBar = ({ hidden = false }) => {
 				className='search__input'
 				placeholder='Ürün, kategori, marka veya ürün kodu ile ara...'
 			/>
-			<button
-				type='button'
-				className='search__button'
-				dangerouslySetInnerHTML={{ __html: SearchIcon }}
-			></button>
+			<button type='button' className='search__button'>
+				<SearchIcon className='search__button-icon' />
+			</button>
 		</div>
 	)
 }

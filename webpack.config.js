@@ -20,13 +20,16 @@ module.exports = {
 
 	output: {
 		filename: '[name].bundle.js',
-		path: path.join(__dirname, '/build'),
+		path: path.join(__dirname, '/build/'),
 		publicPath: '/'
 	},
 
 	resolve: {
 		extensions: ['.js', '.jsx'],
-		modules: ['node_modules']
+		modules: ['node_modules'],
+		alias: {
+			'@': path.join(__dirname, '/src/')
+		}
 	},
 
 	devServer: {
@@ -78,15 +81,11 @@ module.exports = {
 			},
 			{
 				test: /\.svg$/,
-				loader: 'svg-inline-loader'
+				loader: '@svgr/webpack'
 			},
 			{
 				test: /\.png/,
-				use: [
-					{
-						loader: 'file-loader'
-					}
-				]
+				loader: 'file-loader'
 			}
 		]
 	},

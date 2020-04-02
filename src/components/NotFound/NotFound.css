@@ -9,14 +9,14 @@
 	text-align: center;
 }
 
-.notfound__icon > svg {
+.notfound__icon {
 	width: auto;
 	height: 15rem;
 	margin: 1rem;
 }
 
 @media (max-width: 768px) {
-	.notfound__icon > svg {
+	.notfound__icon {
 		height: 10rem;
 	}
 }

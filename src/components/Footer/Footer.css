@@ -4,5 +4,15 @@ footer {
 	text-align: center;
 
 	color: #f1f1f1;
-	background-color: #34495e;
+	background-color: #26384a;
+}
+
+.footer-year {
+	display: flex;
+	justify-content: center;
+}
+
+.footer__leaf-icon {
+	width: 1.1rem;
+	height: 1.1rem;
 }
