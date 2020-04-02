@@ -2,12 +2,12 @@ import React from 'react'
 
 import './Brands.css'
 
-import ImgPG from '../../assets/brands/pg.png'
-import ImgDogus from '../../assets/brands/dogus-cay.png'
-import ImgNestle from '../../assets/brands/nestle.png'
-import ImgCaykur from '../../assets/brands/caykur.png'
-import ImgVileda from '../../assets/brands/vileda.png'
-import ImgFocus from '../../assets/brands/focus.png'
+import ImgPG from '@/assets/brands/pg.png'
+import ImgDogus from '@/assets/brands/dogus-cay.png'
+import ImgNestle from '@/assets/brands/nestle.png'
+import ImgCaykur from '@/assets/brands/caykur.png'
+import ImgVileda from '@/assets/brands/vileda.png'
+import ImgFocus from '@/assets/brands/focus.png'
 
 const Brands = () => {
 	return (

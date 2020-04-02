@@ -3,7 +3,7 @@ import React from 'react'
 import NavbarMobile from './components/NavbarMobile.jsx'
 import NavbarWeb from './components/NavbarWeb.jsx'
 
-import { categories } from '../../data/categories.json'
+import { categories } from '@/data/categories.json'
 
 const Navbar = () => {
 	const getCategoriesUnder = (category) => categories.filter((x) => x.parent === category.id)
