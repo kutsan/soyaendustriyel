@@ -25,10 +25,11 @@ nav {
 	display: flex;
 	justify-content: center;
 
-	font-size: 1.05rem;
 	padding-bottom: 0.5rem;
 
 	color: #1c1c1c;
+
+	font-size: 1.05rem;
 }
 
 .navbar-menu--item {
@@ -36,6 +37,7 @@ nav {
 
 	padding: 0.8rem 1.1rem 0.3rem;
 
+	cursor: pointer;
 	letter-spacing: 0.02rem;
 	text-transform: uppercase;
 
@@ -65,10 +67,8 @@ nav {
 
 	color: #505050;
 	border: 0;
-	border-top: 0;
-	border-radius: 8px 8px 8px 8px;
-	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	background-color: #fefefe;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 .navbar-menu--item:hover .navbar-menu--submenu {

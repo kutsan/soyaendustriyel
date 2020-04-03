@@ -9,4 +9,15 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+
+	max-width: 1000px;
+	margin: auto;
+}
+
+.footer__title {
+	padding: 0.5rem 1.5rem;
+}
+
+.footer__subtitle {
+	margin-bottom: 0.5rem;
 }
