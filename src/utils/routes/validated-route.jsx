@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import NotFound from '@/components/NotFound/NotFound.jsx'
+import NotFound from '@/routes/NotFound/NotFound.jsx'
 
 const ValidatedRoute = (validator) => {
 	return function(ComposedComponent) {

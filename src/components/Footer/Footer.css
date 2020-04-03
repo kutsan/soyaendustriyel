@@ -1,23 +1,35 @@
 footer {
-	padding: 4rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	padding: 4rem 0;
 
 	color: #f1f1f1;
 	background-color: #26384a;
 }
 
-.footer-responsive-container {
+.footer-content {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 
-	max-width: 1000px;
-	margin: auto;
+	width: 100%;
+	max-width: 65rem;
 }
 
 .footer__title {
 	padding: 0.5rem 1.5rem;
+
+	font-size: 0.9375rem;
+	font-weight: 700;
 }
 
 .footer__subtitle {
 	margin-bottom: 0.5rem;
+
+	color: #4adba7;
+
+	font-size: 0.875rem;
+	font-weight: 700;
 }

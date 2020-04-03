@@ -8,14 +8,19 @@
 	}
 }
 
-.footer-about__company-container {
+.footer-about__context {
 	padding: 0.5rem 1.5rem;
+}
+
+.footer-about__company-name {
+	max-width: 25rem;
+	margin-bottom: 0.5rem;
+
+	color: #4adba7;
+
+	font-weight: 700;
 }
 
 .footer-about__company-desc {
 	max-width: 25rem;
-}
-
-.footer-about__company-name {
-	margin-bottom: 0.5rem;
 }
