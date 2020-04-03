@@ -21,3 +21,4 @@
 * only screen @media
 * Enchanct Navbar category CSS
 * lighthouse errors
+* Remove unused CSS classes in navbar
