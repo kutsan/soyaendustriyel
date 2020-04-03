@@ -3,18 +3,18 @@ import React from 'react'
 import './Footer.css'
 
 import About from './components/About.jsx'
-import Touch from './components/Touch.jsx'
-import Year from './components/Year.jsx'
+import Contact from './components/Contact.jsx'
+import Copyright from './components/Copyright.jsx'
 
 const Footer = () => {
 	return (
 		<footer>
-			<div className='footer-responsive-container'>
+			<div className='footer-content'>
 				<About />
-				<Touch />
+				<Contact />
 			</div>
 
-			<Year />
+			<Copyright />
 		</footer>
 	)
 }

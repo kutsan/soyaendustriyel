@@ -1,17 +1,17 @@
-.footer-year {
+.footer-copyright {
 	display: flex;
 	justify-content: center;
 
-	font-size: 1.125rem;
-
 	margin-top: 3rem;
+
+	font-size: 1.125rem;
 }
 
-.footer-year__year {
+.footer-copyright__year {
 	margin-right: 0.2rem;
 }
 
-.footer__leaf-icon {
+.footer-copyright__leaf-icon {
 	width: 1.3125rem;
 	height: 1.3125rem;
 }

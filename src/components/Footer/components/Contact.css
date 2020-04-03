@@ -1,0 +1,86 @@
+.footer-contact {
+	width: 50%;
+}
+
+@media only screen and (max-width: 768px) {
+	.footer-contact {
+		width: 100%;
+	}
+}
+
+.footer-contact__context {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-contact__address-context {
+	padding: 0.5rem 1.5rem;
+}
+
+.footer-contact__communication-context {
+	padding: 0.5rem 1.5rem;
+}
+
+.footer-contact__mailing-address {
+	margin-bottom: 1rem;
+}
+
+.footer-adress__map-button {
+	display: flex;
+	align-items: center;
+
+	padding: 0.5rem 1rem;
+
+	cursor: pointer;
+	transition: opacity 100ms;
+
+	opacity: 0.8;
+	border: 0;
+	border-radius: 38px;
+	outline: none;
+	background-color: #4adba7;
+}
+
+.footer-adress__map-button:hover {
+	opacity: 1;
+}
+
+.footer-adress__map-button-icon {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.footer-adress__map-button-innertext {
+	margin-left: 0.5rem;
+
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+
+.footer-contact__phone {
+	margin-bottom: 1rem;
+}
+
+.footer-contact__email-address,
+.footer-contact__phone-number {
+	text-decoration: none;
+
+	color: inherit;
+	border-bottom: 1px solid transparent;
+}
+
+.footer-contact__email-address:hover,
+.footer-contact__email-address:active,
+.footer-contact__email-address:visited,
+.footer-contact__phone-number:hover,
+.footer-contact__phone-number:active,
+.footer-contact__phone-number:visited {
+	text-decoration: none;
+
+	color: inherit;
+}
+
+.footer-contact__email-address:hover,
+.footer-contact__phone-number:hover {
+	border-bottom: 1px solid #4adba7;
+}
