@@ -9,7 +9,7 @@ import Year from './components/Year.jsx'
 const Footer = () => {
 	return (
 		<footer>
-			<div className="footer-responsive-container">
+			<div className='footer-responsive-container'>
 				<About />
 				<Touch />
 			</div>
