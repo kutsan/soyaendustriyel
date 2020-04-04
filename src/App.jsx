@@ -10,10 +10,12 @@ import './App.css'
 import Home from './routes/Home/Home.jsx'
 import About from './routes/About/About.jsx'
 import Products from './routes/Products/Products.jsx'
+import NavbarMobile from './routes/NavbarMobile/NavbarMobile.jsx'
 import NotFound from './routes/NotFound/NotFound.jsx'
 
 // Layouts
 import LayoutDefault from './layouts/default.jsx'
+import LayoutFullscreen from './layouts/fullscreen.jsx'
 
 // Utils
 import validatedRoute from './utils/routes/validated-route.jsx'
@@ -29,6 +31,13 @@ const App = () => {
 				path={['/products/:category/:subcategory', '/products/:category']}
 				component={validatedRoute(validatorProducts)(Products)}
 			/>
+			<RouteWrapper
+				layout={LayoutFullscreen}
+				exact
+				path='/navbar-mobile'
+				component={NavbarMobile}
+			/>
+
 			<RouteWrapper component={NotFound} />
 		</Switch>
 	)
