@@ -8,7 +8,6 @@ import './App.css'
 
 // Routes
 import Home from './routes/Home/Home.jsx'
-import About from './routes/About/About.jsx'
 import Products from './routes/Products/Products.jsx'
 import NavbarMobile from './routes/NavbarMobile/NavbarMobile.jsx'
 import NotFound from './routes/NotFound/NotFound.jsx'
@@ -25,7 +24,6 @@ const App = () => {
 	return (
 		<Switch>
 			<RouteWrapper exact path='/' component={Home} />
-			<RouteWrapper exact path='/about' component={About} />
 			<RouteWrapper
 				exact
 				path={['/products/:category/:subcategory', '/products/:category']}
