@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
 
 // Styles
-import './reset.css'
 import './App.css'
 
 // Routes
