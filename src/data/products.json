@@ -1,62 +1,67 @@
 {
 	"products": [
 		{
-			"id": "nescafe-gold-200g",
-			"categories": ["kahve"],
-			"name": "Nescafe Gold 200g",
-			"desc": "Sade kahve keyfi",
-			"code": 4575644
-		},
-		{
-			"id": "coffee-mate-500g",
-			"categories": ["kahve"],
-			"name": "Coffee Mate 500g",
-			"desc": "Kahve kreması",
-			"code": 4575645
-		},
-		{
-			"id": "jacobs-monarch-espresso-500g",
-			"categories": ["kahve"],
-			"name": "Jacobs Monarch Espresso 500g",
-			"desc": "Filtre kahve",
-			"code": 4575646
-		},
-		{
-			"id": "papia-tuvalet-kagidi-72li-3katli",
-			"categories": ["tuvalet-kagidi"],
-			"name": "Papia Tuvalet Kagidi 72'li 3 Katli",
-			"desc": "3 katli tuvalet kagidi",
-			"code": 4575645
-		},
-		{
-			"id": "caykur-rize-turist-cayi-1000g",
-			"categories": ["cay"],
-			"name": "Caykur Rize Turist Cayi 1000g",
-			"desc": "Ekonomik cay",
-			"code": 4575645
-		},
-		{
-			"id": "caykur-altinbas-cayi-500gr",
-			"categories": ["cay"],
-			"name": "Caykur Altinbas Cayi 500g",
-			"desc": "En iyi cay",
-			"code": 4575645
-		},
-		{
-			"id": "focus-optimum-kare-pecete-100-adet-22.50x26.50",
-			"categories": "kare-pecete",
+			"id": "focus-optimum-kare-pecete-100-adet-22-50-26-50",
 			"category": "kare-pecete",
 			"name": "Focus Optimum Kare Peçete 100 adet 22.50x26.50",
 			"brand": "Focus",
 			"code": 5053498,
 			"desc": [
-				{ "header": "Kat", "text": "Tek katlı" },
-				{ "header": "Yaprak genişliği", "text": "22.50cm" },
-				{ "header": "Yaprak yüksekliği", "text": "26.50cm" },
-				{ "header": "Paket içeriği", "text": "100 adet" },
-				{ "header": "Koli içi paket", "text": "32 paket" },
-				{ "header": "Net koli ağırlığı", "text": "3.1kg" }
+				{ "key": "Kat", "value": "Tek katlı" },
+				{ "key": "Yaprak genişliği", "value": "22.50cm" },
+				{ "key": "Yaprak yüksekliği", "value": "26.50cm" },
+				{ "key": "Paket içeriği", "value": "100 adet" },
+				{ "key": "Koli içi paket", "value": "32 paket" },
+				{ "key": "Net koli ağırlığı", "value": "3.1kg" }
 			]
+		},
+		{
+			"id": "nescafe-gold-200g",
+			"category": "kahve",
+			"name": "Nescafe Gold 200g",
+			"brand": "Nescafe",
+			"code": 4575644,
+			"desc": "Sade kahve"
+		},
+		{
+			"id": "coffee-mate-500g",
+			"category": "kahve",
+			"name": "Coffee Mate 500g",
+			"brand": "Nestle",
+			"code": 4575645,
+			"desc": "Kahvenizi yumasatir"
+		},
+		{
+			"id": "jacobs-monarch-espresso-500g",
+			"category": "kahve",
+			"name": "Jacobs Monarch Espresso 500g",
+			"brand": "Jacobs",
+			"code": 4575646,
+			"desc": "Filtre kahve"
+		},
+		{
+			"id": "papia-tuvalet-kagidi-72li-3katli",
+			"category": "tuvalet-kagidi",
+			"name": "Papia Tuvalet Kagidi 72'li 3 Katli",
+			"brand": "Papia",
+			"code": 4575645,
+			"desc": "3 katli tuvalet kagidi"
+		},
+		{
+			"id": "caykur-rize-turist-cayi-1000g",
+			"category": "cay",
+			"name": "Çaykur Rize Turist Çayi 1000g",
+			"brand": "Çaykur",
+			"code": 4575645,
+			"desc": "Ekonomik cay"
+		},
+		{
+			"id": "caykur-altinbas-cayi-500gr",
+			"category": "cay",
+			"name": "Çaykur Altinbas Cayi 500g",
+			"brand": "Çaykur",
+			"code": 4575645,
+			"desc": "En iyi cay"
 		}
 	]
 }
