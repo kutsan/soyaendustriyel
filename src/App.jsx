@@ -9,6 +9,7 @@ import './App.css'
 // Routes
 import Home from './routes/Home/Home.jsx'
 import Products from './routes/Products/Products.jsx'
+import Product from './routes/Product/Product.jsx'
 import NavbarMobile from './routes/NavbarMobile/NavbarMobile.jsx'
 import NotFound from './routes/NotFound/NotFound.jsx'
 
@@ -19,6 +20,7 @@ import LayoutFullscreen from './layouts/fullscreen.jsx'
 // Utils
 import validatedRoute from './utils/routes/validated-route.jsx'
 import validatorProducts from './utils/routes/validator-products.js'
+import validatorProduct from './utils/routes/validator-product.js'
 
 const App = () => {
 	return (
@@ -28,6 +30,11 @@ const App = () => {
 				exact
 				path={['/products/:category/:subcategory', '/products/:category']}
 				component={validatedRoute(validatorProducts)(Products)}
+			/>
+			<RouteWrapper
+				exact
+				path='/product/:id'
+				component={validatedRoute(validatorProduct)(Product)}
 			/>
 			<RouteWrapper
 				layout={LayoutFullscreen}
