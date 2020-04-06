@@ -90,7 +90,7 @@
 }
 
 .navbar-menu__item-link--lowermost:hover {
-	color: #222;
+	color: #222222;
 }
 
 @media (max-width: 768px) {
