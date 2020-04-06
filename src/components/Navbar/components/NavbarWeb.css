@@ -13,6 +13,7 @@
 
 .navbar-menu__item {
 	padding: 0.8rem 1.1rem 0.3rem;
+
 	cursor: pointer;
 }
 
@@ -28,11 +29,13 @@
 }
 
 .navbar-menu__item-link--top {
+	letter-spacing: 0.02rem;
 	text-transform: uppercase;
+
 	border-bottom: 2px solid transparent;
+
 	font-size: 0.9em;
 	font-weight: 500;
-	letter-spacing: 0.02rem;
 }
 
 .navbar-menu__item:hover > .navbar-menu__item-link {
@@ -62,12 +65,14 @@
 
 .navbar-menu__item--sub {
 	padding: 1rem 2rem;
+
 	color: #319741;
 }
 
 .navbar-menu__item-link--sub {
-	font-weight: 700;
 	transition: color 200ms;
+
+	font-weight: 700;
 }
 
 .navbar-menu__item-link--sub:hover {
@@ -75,8 +80,9 @@
 }
 
 .navbar-menu__lowermostmenu {
-	color: #505050;
 	margin-top: 0.8rem;
+
+	color: #505050;
 }
 
 .navbar-menu__item--lowermost {
@@ -85,7 +91,9 @@
 
 .navbar-menu__item-link--lowermost {
 	display: block;
+
 	margin-top: 0.5rem;
+
 	transition: color 200ms;
 }
 

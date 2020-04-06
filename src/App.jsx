@@ -34,11 +34,7 @@ const App = () => {
 				path='/product/:id'
 				component={validatedRoute(validatorProduct)(Product)}
 			/>
-			<RouteWrapper
-				exact
-				path='/navbar-mobile'
-				component={NavbarMobile}
-			/>
+			<RouteWrapper exact path='/navbar-mobile' component={NavbarMobile} />
 
 			<RouteWrapper component={NotFound} />
 		</Switch>
