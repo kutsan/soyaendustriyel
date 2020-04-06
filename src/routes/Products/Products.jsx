@@ -10,15 +10,19 @@ import './Products.css'
 
 // Data
 import { products } from '@/data/products.json'
+import { categories } from '@/data/categories.json'
 
 const Products = ({ match }) => {
+	let title = categories.find((e) => e.id === (match.params.subcategory || match.params.category))
+		.name
+
 	return (
 		<>
 			<Breadcrumb />
 
-			<div className='products-header'>{match.url}</div>
+			<div className='products-title'>{title}</div>
 
-			<div className='products-container'>
+			<div className='products'>
 				{products.map((cur) => {
 					return <ProductCard key={cur.id} product={cur} />
 				})}
