@@ -40,14 +40,12 @@
 
 	cursor: pointer;
 	white-space: nowrap;
-	text-decoration: none;
 
 	color: #ffffff;
 	border-width: 0px 0px 3px;
 	border-style: solid;
 	border-color: #326e99;
 	border-radius: 6px;
-	outline: none;
 	background-color: #3f8abf;
 	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
 
@@ -55,9 +53,14 @@
 	font-weight: 700;
 }
 
+.notfound__go-home-page,
 .notfound__go-home-page:hover,
+.notfound__go-home-page:visited,
 .notfound__go-home-page:focus,
 .notfound__go-home-page:active {
+	text-decoration: none;
+
 	border-color: #326e99;
+	outline: none;
 	background-color: #397cac;
 }

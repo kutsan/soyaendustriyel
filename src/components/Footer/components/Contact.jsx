@@ -32,11 +32,10 @@ const Address = () => {
 				href='https://www.google.com/maps/place//data=!4m2!3m1!1s0x14b99cc71003d931:0xde300e72410d5fbe?source=g.page.default'
 				target='_blank'
 				rel='noopener noreferrer'
+				className='footer-adress__map-button'
 			>
-				<button className='footer-adress__map-button'>
-					<GoogleMapsIcon className='footer-adress__map-button-icon' />{' '}
-					<span className='footer-adress__map-button-innertext'>Haritalarda Göster</span>
-				</button>
+				<GoogleMapsIcon className='footer-adress__map-button-icon' />{' '}
+				<span className='footer-adress__map-button-innertext'>Haritalarda Göster</span>
 			</a>
 		</div>
 	)

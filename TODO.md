@@ -9,7 +9,6 @@
 * Lazy load images and show spinners.
 * Check context and other things: https://github.com/AmruthPillai/Reactive-Resume/blob/master/.eslintrc
 * Add stylelint.
-* Remove CSS reset
 * white-space: nowrap; for navbar items
 * only screen @media
 * Enchanct Navbar category CSS
