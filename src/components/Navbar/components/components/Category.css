@@ -1,5 +1,5 @@
 .navbar-mobile__category {
-	color: #333;
+	color: #333333;
 
 	font-weight: 500;
 }
@@ -18,7 +18,7 @@
 }
 
 .navbar-mobile__category--sub {
-	color: #555;
+	color: #555555;
 
 	font-weight: 400;
 }

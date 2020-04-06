@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './Navbar.css'
+
 import NavbarMobile from './components/NavbarMobile.jsx'
 import NavbarWeb from './components/NavbarWeb.jsx'
 

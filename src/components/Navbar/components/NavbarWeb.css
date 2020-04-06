@@ -1,24 +1,3 @@
-nav a {
-	text-decoration: none;
-}
-
-nav a,
-nav a:focus,
-nav a:active,
-nav a:visited {
-	color: inherit;
-}
-
-nav {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-
-	padding-top: 1rem;
-
-	background-color: #fefefe;
-}
-
 .navbar-menu {
 	position: relative;
 

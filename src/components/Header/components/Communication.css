@@ -13,16 +13,22 @@
 	color: inherit;
 }
 
+.phone__number {
+	border-bottom: 1px solid transparent;
+
+	font-weight: 600;
+}
+
+.phone:hover .phone__number {
+	border-bottom: 1px solid black;
+}
+
 .phone:hover,
 .phone:active,
 .phone:visited {
 	text-decoration: none;
 
 	color: inherit;
-}
-
-.phone:hover .phone__number {
-	border-bottom: 1px solid black;
 }
 
 .email {
@@ -42,22 +48,16 @@
 	color: inherit;
 }
 
-.email:hover .email__address {
-	border-bottom: 1px solid black;
-}
-
-.phone__number {
-	border-bottom: 1px solid transparent;
-
-	font-weight: 600;
-}
-
 .email__address {
 	letter-spacing: 0.02rem;
 
 	border-bottom: 1px solid transparent;
 
 	font-weight: 600;
+}
+
+.email:hover .email__address {
+	border-bottom: 1px solid black;
 }
 
 .phone__icon {
