@@ -14,7 +14,6 @@ import NotFound from './routes/NotFound/NotFound.jsx'
 
 // Layouts
 import LayoutDefault from './layouts/default.jsx'
-import LayoutFullscreen from './layouts/fullscreen.jsx'
 
 // Utils
 import validatedRoute from './utils/routes/validated-route.jsx'
@@ -36,7 +35,6 @@ const App = () => {
 				component={validatedRoute(validatorProduct)(Product)}
 			/>
 			<RouteWrapper
-				layout={LayoutFullscreen}
 				exact
 				path='/navbar-mobile'
 				component={NavbarMobile}
