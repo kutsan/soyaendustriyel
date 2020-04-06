@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom'
 import './NavbarWeb.css'
 
 const NavbarLink = ({ to, name, modifier }) => (
-	<Link to={to} className={`navbar-menu__item-link ${
-		modifier ? `navbar-menu__item-link--${modifier}` : ''
-	}`}>
+	<Link
+		to={to}
+		className={`navbar-menu__item-link ${
+			modifier ? `navbar-menu__item-link--${modifier}` : ''
+		}`}
+	>
 		{name}
 	</Link>
 )
@@ -23,16 +26,27 @@ const NavbarWeb = ({ getTopCategories, getCategoriesUnder }) => {
 		<div className='navbar-menu'>
 			{getTopCategories().map((x) => (
 				<div key={x.id} className='navbar-menu__item'>
-					<NavbarLink to={`/products/${x.id}`} name={x.name} modifier="top" />
+					<NavbarLink to={`/products/${x.id}`} name={x.name} modifier='top' />
 
 					<div className='navbar-menu__submenu'>
 						{getCategoriesUnder(x).map((y) => (
 							<div key={y.id} className='navbar-menu__item navbar-menu__item--sub'>
-								<NavbarLink to={`/products/${x.id}/${y.id}`} name={y.name} modifier="sub" />
+								<NavbarLink
+									to={`/products/${x.id}/${y.id}`}
+									name={y.name}
+									modifier='sub'
+								/>
 								<div className='navbar-menu__lowermostmenu'>
 									{getCategoriesUnder(y).map((z) => (
-										<div key={z.id} className='navbar-menu__item navbar-menu__item--lowermost'>
-											<NavbarLink to={`/products/${x.id}/${y.id}/${z.id}`} name={z.name} modifier="lowermost" />
+										<div
+											key={z.id}
+											className='navbar-menu__item navbar-menu__item--lowermost'
+										>
+											<NavbarLink
+												to={`/products/${x.id}/${y.id}/${z.id}`}
+												name={z.name}
+												modifier='lowermost'
+											/>
 										</div>
 									))}
 								</div>
