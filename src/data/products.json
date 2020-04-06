@@ -41,6 +41,22 @@
 			"name": "Caykur Altinbas Cayi 500g",
 			"desc": "En iyi cay",
 			"code": 4575645
+		},
+		{
+			"id": "focus-optimum-kare-pecete-100-adet-22.50x26.50",
+			"categories": "kare-pecete",
+			"category": "kare-pecete",
+			"name": "Focus Optimum Kare Peçete 100 adet 22.50x26.50",
+			"brand": "Focus",
+			"code": 5053498,
+			"desc": [
+				{ "header": "Kat", "text": "Tek katlı" },
+				{ "header": "Yaprak genişliği", "text": "22.50cm" },
+				{ "header": "Yaprak yüksekliği", "text": "26.50cm" },
+				{ "header": "Paket içeriği", "text": "100 adet" },
+				{ "header": "Koli içi paket", "text": "32 paket" },
+				{ "header": "Net koli ağırlığı", "text": "3.1kg" }
+			]
 		}
 	]
 }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 // Components
 import ProductCard from '@/components/ProductCard/ProductCard.jsx'
+import Breadcrumb from '@/components/Breadcrumb/Breadcrumb.jsx'
 
 // Style
 import './Products.css'
@@ -13,6 +14,8 @@ import { products } from '@/data/products.json'
 const Products = ({ match }) => {
 	return (
 		<>
+			<Breadcrumb />
+
 			<div className='products-header'>{match.url}</div>
 
 			<div className='products-container'>

@@ -14,7 +14,6 @@ const ProductCard = ({ product }) => {
 			</div>
 			<div className='product-card__code'>{product.code}</div>
 			<div className='product-card__name'>{product.name}</div>
-			<div className='product-card__desc'>{product.desc}</div>
 		</div>
 	)
 }
