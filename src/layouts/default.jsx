@@ -1,3 +1,5 @@
+/* eslint react-hooks/exhaustive-deps: 'off' */
+
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom'
