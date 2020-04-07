@@ -15,7 +15,7 @@
 	margin: 1rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.notfound__icon {
 		height: 10rem;
 	}

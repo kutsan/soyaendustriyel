@@ -49,14 +49,14 @@
 	font-weight: 500;
 }
 
-@media only screen and (min-width: 400px) {
+@media screen and (min-width: 400px) {
 	.product__picture {
 		width: 300px;
 		height: 300px;
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 	.product {
 		flex-wrap: initial;
 	}

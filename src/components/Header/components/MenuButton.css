@@ -36,7 +36,7 @@
 	transform: rotate3d(0, 0, 5, -45deg) translate(0.2125rem, -0.2rem);
 }
 
-@media (min-width: 769px) {
+@media screen and (min-width: 769px) {
 	.menu-button {
 		display: none;
 	}

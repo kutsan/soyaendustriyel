@@ -30,7 +30,7 @@
 	margin: 1rem;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.brands__item {
 		max-width: calc(33% - 2rem);
 		max-height: 2rem;

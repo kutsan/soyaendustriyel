@@ -2,7 +2,7 @@
 	width: 50%;
 }
 
-@media only screen and (max-width: 920px) {
+@media screen and (max-width: 920px) {
 	.footer-contact {
 		width: auto;
 		margin-top: 1.5rem;
@@ -24,7 +24,7 @@
 	padding: 0.5rem 1.5rem;
 }
 
-@media only screen and (max-width: 460px) {
+@media screen and (max-width: 460px) {
 	.footer-contact__communication-context,
 	.footer-contact__address-context {
 		width: auto;
@@ -65,7 +65,7 @@
 	opacity: 1;
 }
 
-@media only screen and (max-width: 920px) {
+@media screen and (max-width: 920px) {
 	.footer-adress__map-button {
 		margin-bottom: 0.5rem;
 	}
