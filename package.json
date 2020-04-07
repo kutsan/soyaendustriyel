@@ -73,14 +73,11 @@
 	},
 	"lint-staged": {
 		"*.{js,jsx}": [
-			"eslint --cache",
+			"eslint",
 			"prettier --write"
 		],
 		"*.css": [
 			"stylelint",
-			"prettier --write"
-		],
-		"src/**/*.{js,css}": [
 			"csscomb --tty-mode --",
 			"prettier --write"
 		]
