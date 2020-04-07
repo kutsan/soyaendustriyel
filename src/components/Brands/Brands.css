@@ -1,12 +1,12 @@
 .brands-container {
-	margin: 2rem;
+	margin: 32px;
 }
 
 .brands-header {
-	padding-bottom: 0.5rem;
+	padding-bottom: 8px;
 
 	text-align: center;
-	letter-spacing: 0.1rem;
+	letter-spacing: 1.6px;
 
 	color: #333333;
 	border-bottom: 2px solid #e6e6e6;
@@ -21,22 +21,22 @@
 	flex-wrap: wrap;
 	justify-content: center;
 
-	margin-top: 0.5rem;
+	margin-top: 8px;
 }
 
 .brands__item {
-	max-width: calc(16.6% - 2rem);
-	max-height: 2.5rem;
-	margin: 1rem;
+	max-width: calc(16.6% - 32px);
+	max-height: 40px;
+	margin: 16px;
 }
 
 @media screen and (max-width: 768px) {
 	.brands__item {
-		max-width: calc(33% - 2rem);
-		max-height: 2rem;
+		max-width: calc(33% - 32px);
+		max-height: 32px;
 	}
 
 	.brands-container {
-		margin: 2rem 0;
+		margin: 32px 0;
 	}
 }

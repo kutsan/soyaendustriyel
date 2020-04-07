@@ -3,8 +3,8 @@
 	align-items: center;
 	flex-grow: 1;
 
-	max-width: 30rem;
-	margin: 0 5rem;
+	max-width: 480px;
+	margin: 0 80px;
 
 	border-radius: 38.16px;
 	background: #f1f1f1;
@@ -22,7 +22,7 @@
 
 .search__input {
 	width: 100%;
-	padding: 1rem 1.5rem;
+	padding: 16px 24px;
 
 	transition-duration: 200ms;
 	transition-property: padding, opacity;
@@ -42,16 +42,16 @@
 }
 
 .search__input:focus {
-	padding-left: 2rem;
+	padding-left: 32px;
 
 	opacity: 1;
 	outline: none;
 }
 
 .search__button {
-	width: 2.625rem;
-	height: 2.625rem;
-	margin-right: 0.3rem;
+	width: 42px;
+	height: 42px;
+	margin-right: 4.8px;
 	padding: 0;
 
 	transition: opacity 100ms;
@@ -72,6 +72,6 @@
 }
 
 .search__button-icon {
-	width: 2.625rem;
-	height: 2.625rem;
+	width: 42px;
+	height: 42px;
 }

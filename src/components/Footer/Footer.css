@@ -3,7 +3,7 @@ footer {
 	align-items: center;
 	flex-direction: column;
 
-	padding: 4rem 0;
+	padding: 64px 0;
 
 	color: #f1f1f1;
 	background-color: #26384a;
@@ -15,7 +15,7 @@ footer {
 	justify-content: center;
 
 	width: 100%;
-	max-width: 65rem;
+	max-width: 1040px;
 }
 
 @media screen and (max-width: 920px) {
@@ -27,14 +27,14 @@ footer {
 }
 
 .footer__title {
-	padding: 0.5rem 1.5rem;
+	padding: 8px 24px;
 
 	font-size: 0.9375rem;
 	font-weight: 700;
 }
 
 .footer__subtitle {
-	margin-bottom: 0.5rem;
+	margin-bottom: 8px;
 
 	color: #4adba7;
 
