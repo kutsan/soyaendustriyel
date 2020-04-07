@@ -9,7 +9,6 @@ const Category = ({
 	modifier,
 	item,
 	to,
-	onClickLink,
 	onClickToggle,
 	expanded,
 	hasCategoriesUnder,
@@ -26,7 +25,6 @@ const Category = ({
 				modifier={modifier}
 				item={item}
 				to={to}
-				onClickLink={onClickLink}
 				onClickToggle={onClickToggle}
 				expanded={expanded}
 				hasCategoriesUnder={hasCategoriesUnder}
@@ -48,7 +46,6 @@ Category.propTypes = {
 	modifier: PropTypes.string.isRequired,
 	item: PropTypes.object.isRequired,
 	to: PropTypes.string.isRequired,
-	onClickLink: PropTypes.func.isRequired,
 	hasCategoriesUnder: PropTypes.bool.isRequired,
 	expanded: PropTypes.bool,
 	onClickToggle: PropTypes.func,

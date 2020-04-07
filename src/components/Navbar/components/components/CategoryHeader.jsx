@@ -4,22 +4,13 @@ import PropTypes from 'prop-types'
 
 import './CategoryHeader.css'
 
-const CategoryHeader = ({
-	modifier,
-	item,
-	to,
-	onClickLink,
-	onClickToggle,
-	expanded,
-	hasCategoriesUnder
-}) => {
+const CategoryHeader = ({ modifier, item, to, onClickToggle, expanded, hasCategoriesUnder }) => {
 	return (
 		<div
 			className={`navbar-mobile__category-header navbar-mobile__category-header--${modifier}`}
 		>
 			<Link
 				to={to}
-				onClick={onClickLink}
 				className={`navbar-mobile__category-link navbar-mobile__category-link--${modifier} ${
 					expanded ? 'navbar-mobile__category-link--expanded' : ''
 				}`}
@@ -47,7 +38,6 @@ CategoryHeader.propTypes = {
 	hasCategoriesUnder: PropTypes.bool.isRequired,
 	item: PropTypes.object.isRequired,
 	to: PropTypes.string.isRequired,
-	onClickLink: PropTypes.func.isRequired,
 	expanded: PropTypes.bool,
 	onClickToggle: PropTypes.func
 }

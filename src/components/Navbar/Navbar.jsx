@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import './Navbar.css'
 
@@ -7,7 +8,7 @@ import NavbarWeb from './components/NavbarWeb.jsx'
 
 import { categories } from '@/data/categories.json'
 
-const Navbar = () => {
+const Navbar = ({ menuOpen }) => {
 	const getCategoriesUnder = (category) => categories.filter((x) => x.parent === category.id)
 	const getTopCategories = () => categories.filter((x) => !x.parent)
 	const hasCategoriesUnder = (category) =>
@@ -19,6 +20,7 @@ const Navbar = () => {
 				getCategoriesUnder={getCategoriesUnder}
 				getTopCategories={getTopCategories}
 				hasCategoriesUnder={hasCategoriesUnder}
+				menuOpen={menuOpen}
 			/>
 			<NavbarWeb
 				getCategoriesUnder={getCategoriesUnder}
@@ -26,6 +28,10 @@ const Navbar = () => {
 			/>
 		</nav>
 	)
+}
+
+Navbar.propTypes = {
+	menuOpen: PropTypes.bool
 }
 
 export default Navbar

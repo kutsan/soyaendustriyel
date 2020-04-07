@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import emitter from '@/utils/emitter.js'
+import React from 'react'
+import PropTypes from 'prop-types'
 
 // Components
 import Logo from './components/Logo.jsx'
@@ -10,24 +10,20 @@ import MenuButton from './components/MenuButton.jsx'
 // Styles
 import './Header.css'
 
-const Header = () => {
-	const [menuOpen, setMenuOpen] = useState(false)
-
-	useEffect(() => {
-		const toggle = () => setMenuOpen((prev) => !prev)
-		emitter.on('ui-toggle-menu', toggle)
-
-		return () => emitter.off('ui-toggle-menu', toggle)
-	}, [menuOpen])
-
+const Header = ({ menuOpen, toggleMenu }) => {
 	return (
 		<header>
-			<MenuButton open={menuOpen} onClick={() => emitter.emit('ui-toggle-menu')} />
+			<MenuButton open={menuOpen} onClick={toggleMenu} />
 			<Logo />
 			<SearchBar hidden={menuOpen} />
 			<Communication />
 		</header>
 	)
+}
+
+Header.propTypes = {
+	menuOpen: PropTypes.bool,
+	toggleMenu: PropTypes.func
 }
 
 export default Header
