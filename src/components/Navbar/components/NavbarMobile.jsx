@@ -1,27 +1,16 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-
-import emitter from '@/utils/emitter'
 
 // Styles
 import './NavbarMobile.css'
 
 import Category from './components/Category.jsx'
 
-const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder }) => {
-	const [menuOpen, setMenuOpen] = useState(false)
+const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder, menuOpen }) => {
 	const [expanded, setExpanded] = useState([])
-
-	useEffect(() => {
-		const toggle = () => setMenuOpen((prev) => !prev)
-		emitter.on('ui-toggle-menu', toggle)
-
-		return () => emitter.off('ui-toggle-menu', toggle)
-	}, [menuOpen])
 
 	const isExpanded = (category) => expanded.indexOf(category.id) > -1
 
-	const onClickLink = () => emitter.emit('ui-toggle-menu')
 	const onClickToggle = (category) => {
 		if (isExpanded(category)) {
 			setExpanded(expanded.filter((x) => x !== category.id))
@@ -49,7 +38,6 @@ const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder
 					expanded={isExpanded(top)}
 					to={`/products/${top.id}`}
 					onClickToggle={() => onClickToggle(top)}
-					onClickLink={onClickLink}
 					hasCategoriesUnder={hasCategoriesUnder(top)}
 					maxHeight={calcMaxHeight(top)}
 					item={top}
@@ -61,7 +49,6 @@ const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder
 							expanded={isExpanded(sub)}
 							to={`/products/${top.id}/${sub.id}`}
 							onClickToggle={() => onClickToggle(sub)}
-							onClickLink={onClickLink}
 							hasCategoriesUnder={hasCategoriesUnder(sub)}
 							maxHeight={calcMaxHeight(sub)}
 							item={sub}
@@ -71,7 +58,6 @@ const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder
 									key={lowermost.id}
 									modifier='lowermost'
 									to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
-									onClickLink={onClickLink}
 									hasCategoriesUnder={false}
 									item={lowermost}
 								/>
@@ -87,7 +73,8 @@ const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder
 NavbarMobile.propTypes = {
 	getTopCategories: PropTypes.func.isRequired,
 	getCategoriesUnder: PropTypes.func.isRequired,
-	hasCategoriesUnder: PropTypes.func.isRequired
+	hasCategoriesUnder: PropTypes.func.isRequired,
+	menuOpen: PropTypes.bool
 }
 
 export default NavbarMobile
