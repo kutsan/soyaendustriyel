@@ -18,7 +18,7 @@ footer {
 	max-width: 65rem;
 }
 
-@media only screen and (max-width: 920px) {
+@media screen and (max-width: 920px) {
 	.footer-content {
 		display: block;
 
