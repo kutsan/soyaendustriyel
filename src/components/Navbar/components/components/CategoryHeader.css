@@ -5,7 +5,7 @@
 }
 
 .navbar-mobile__category-toggle {
-	padding: 1rem 2rem;
+	padding: 16px 32px;
 
 	color: inherit;
 	border: 0;
@@ -19,8 +19,8 @@
 .navbar-mobile__category-toggle span {
 	display: block;
 
-	width: 0.5rem;
-	height: 0.5rem;
+	width: 8px;
+	height: 8px;
 
 	transition: transform 0.2s;
 	transform: rotate(45deg);
@@ -40,7 +40,7 @@
 .navbar-mobile__category-link:hover {
 	flex-grow: 1;
 
-	margin: 1rem;
+	margin: 16px;
 
 	text-transform: uppercase;
 

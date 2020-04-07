@@ -22,7 +22,7 @@
 .product__title {
 	margin-top: 50px;
 
-	font-size: 25px;
+	font-size: 1.5625rem;
 	font-weight: 300;
 }
 
@@ -31,7 +31,7 @@
 
 	color: #097a51;
 
-	font-size: 20px;
+	font-size: 1.25rem;
 	font-weight: 500;
 }
 
@@ -68,6 +68,6 @@
 	.product__title {
 		margin-top: 0;
 
-		font-size: 30px;
+		font-size: 1.875rem;
 	}
 }

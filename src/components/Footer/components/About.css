@@ -9,12 +9,12 @@
 }
 
 .footer-about__context {
-	padding: 0.5rem 1.5rem;
+	padding: 8px 24px;
 }
 
 .footer-about__company-name {
-	max-width: 25rem;
-	margin-bottom: 0.5rem;
+	max-width: 400px;
+	margin-bottom: 16;
 
 	color: #4adba7;
 
@@ -22,11 +22,11 @@
 }
 
 .footer-about__company-desc {
-	max-width: 25rem;
+	max-width: 400px;
 }
 
 @media screen and (max-width: 920px) {
 	.footer-about__company-desc {
-		max-width: 35rem;
+		max-width: 560px;
 	}
 }

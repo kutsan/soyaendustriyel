@@ -1,11 +1,11 @@
 .logo {
-	width: 15.5rem;
-	height: 5.5625rem;
-	margin: 0.4rem 0;
+	width: 248px;
+	height: 90px;
+	margin: 6.4px 0;
 }
 
 @media screen and (max-width: 768px) {
 	.logo {
-		margin-top: 0.5rem;
+		margin-top: 8px;
 	}
 }
