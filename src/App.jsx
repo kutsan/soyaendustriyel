@@ -9,7 +9,6 @@ import './App.css'
 import Home from './routes/Home/Home.jsx'
 import Products from './routes/Products/Products.jsx'
 import Product from './routes/Product/Product.jsx'
-import NavbarMobile from './routes/NavbarMobile/NavbarMobile.jsx'
 import NotFound from './routes/NotFound/NotFound.jsx'
 
 // Layouts
@@ -34,7 +33,6 @@ const App = () => {
 				path='/product/:id'
 				component={validatedRoute(validatorProduct)(Product)}
 			/>
-			<RouteWrapper exact path='/navbar-mobile' component={NavbarMobile} />
 
 			<RouteWrapper component={NotFound} />
 		</Switch>
