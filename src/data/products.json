@@ -16,41 +16,41 @@
 			]
 		},
 		{
-			"id": "nescafe-gold-200g",
+			"id": "nescafe-gold-kahve-200gr",
 			"category": "kahve",
-			"name": "Nescafe Gold 200g",
+			"name": "Nescafe Gold Kahve 200GR",
 			"brand": "Nescafe",
 			"code": 4575644,
 			"desc": "Sade kahve"
 		},
 		{
-			"id": "coffee-mate-500g",
+			"id": "coffee-mate-500gr",
 			"category": "kahve",
-			"name": "Coffee Mate 500g",
+			"name": "Nestle Coffee Mate Kahve Kreması 500GR",
 			"brand": "Nestle",
 			"code": 4575645,
 			"desc": "Kahvenizi yumasatir"
 		},
 		{
-			"id": "jacobs-monarch-espresso-500g",
+			"id": "jacobs-monarch-filtre-kahve-500gr",
 			"category": "kahve",
-			"name": "Jacobs Monarch Espresso 500g",
+			"name": "Jacobs Monarch Filtre Kahve 500GR",
 			"brand": "Jacobs",
 			"code": 4575646,
 			"desc": "Filtre kahve"
 		},
 		{
-			"id": "papia-tuvalet-kagidi-72li-3katli",
+			"id": "papia-tuvalet-kagidi-3-katli-32-li-paket",
 			"category": "tuvalet-kagidi",
-			"name": "Papia Tuvalet Kagidi 72'li 3 Katli",
+			"name": "Papia Tuvalet Kağıdı 3 Katlı 32'li Paket",
 			"brand": "Papia",
 			"code": 4575645,
 			"desc": "3 katli tuvalet kagidi"
 		},
 		{
-			"id": "caykur-rize-turist-cayi-1000g",
+			"id": "caykur-rize-turist-cayi-1000gr",
 			"category": "cay",
-			"name": "Çaykur Rize Turist Çayi 1000g",
+			"name": "Çaykur Rize Turist Çayı 1000GR",
 			"brand": "Çaykur",
 			"code": 4575645,
 			"desc": "Ekonomik cay"
@@ -58,7 +58,7 @@
 		{
 			"id": "caykur-altinbas-cayi-500gr",
 			"category": "cay",
-			"name": "Çaykur Altinbas Cayi 500g",
+			"name": "Çaykur Altınbaş Çayı 500GR",
 			"brand": "Çaykur",
 			"code": 4575645,
 			"desc": "En iyi cay"
