@@ -31,7 +31,13 @@ body {
 main {
 	max-width: 1024px;
 	margin: auto;
-	padding: 64px 32px 96px 32px;
+	padding: 40px 40px 150px 40px;
+}
+
+@media screen and (max-width: 768px) {
+	main {
+		padding: 24px 24px 100px 24px;
+	}
 }
 
 a {
