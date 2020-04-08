@@ -25,7 +25,11 @@ const App = () => {
 			<RouteWrapper exact path='/' component={Home} />
 			<RouteWrapper
 				exact
-				path={['/products/:category/:subcategory', '/products/:category']}
+				path={[
+					'/products/:category/:subcategory/:lowermostcategory',
+					'/products/:category/:subcategory',
+					'/products/:category'
+				]}
 				component={validatedRoute(validatorProducts)(Products)}
 			/>
 			<RouteWrapper

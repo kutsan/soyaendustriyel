@@ -8,26 +8,30 @@ import { categories as dataCategories } from '@/data/categories.json'
  * @param {object} path - Path to be validated.
  * @param {string} path.category
  * @param {string} path.subcategory
+ * @param {string} path.lowermostcategory
  * @return {boolean} Return path validation state, whether true or false.
  * @example
  *     <Route component={validatedRoute(validatorProducts)(Products)} />
  **/
-const validatorProducts = ({ category, subcategory }) => {
-	// /products/:category/
-	if (category && !subcategory) {
+const validatorProducts = ({ category, subcategory, lowermostcategory }) => {
+	if (category && !subcategory && !lowermostcategory) {
 		return dataCategories.find((e) => {
 			return e.id === category && !e.parent
 		})
 			? true
 			: false
+	} else if (category && subcategory && !lowermostcategory) {
+		return dataCategories.find((e) => {
+			return e.id === subcategory && e.parent === category
+		})
+			? true
+			: false
+	} else if (category && subcategory && lowermostcategory) {
+		return dataCategories.find((e) => e.id === subcategory && e.parent === category) &&
+			dataCategories.find((e) => e.id === lowermostcategory && e.parent === subcategory)
+			? true
+			: false
 	}
-
-	// /products/:category/:subcategory
-	return dataCategories.find((e) => {
-		return e.id === subcategory && e.parent === category
-	})
-		? true
-		: false
 }
 
 export default validatorProducts

@@ -14,7 +14,9 @@ import { categories } from '@/data/categories.json'
 
 const Products = ({ match }) => {
 	let category = categories.find(
-		(e) => e.id === (match.params.subcategory || match.params.category)
+		(e) =>
+			e.id ===
+			(match.params.lowermostcategory || match.params.subcategory || match.params.category)
 	)
 
 	return (
