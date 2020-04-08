@@ -1,7 +1,6 @@
 .product-card {
-	width: 200px;
-	height: 295px;
-	margin: 10px;
+	width: calc(50% - 10px);
+	margin: 5px;
 
 	cursor: pointer;
 	transition-duration: 0.2s;
@@ -29,14 +28,13 @@
 }
 
 .product-card__picture-container {
-	width: 200px;
-	height: 200px;
 	padding: 30px;
 }
 
 .product-card__picture {
 	width: 100%;
 	height: 100%;
+	padding-bottom: 100%;
 
 	background-image: url('https://cdn2.avansas.com/urun/74255/tchibo-profesional-special-fltr-khv-250g-detail-1.jpg');
 	background-size: cover;
@@ -52,8 +50,28 @@
 }
 
 .product-card__name {
+	margin-bottom: 15px;
 	padding: 0 15px;
 
 	font-size: 1rem;
 	font-weight: 500;
+}
+
+@media screen and (min-width: 435px) {
+	.product-card {
+		width: calc(50% - 20px);
+		margin: 10px;
+	}
+}
+
+@media screen and (min-width: 550px) {
+	.product-card {
+		width: calc(33.3% - 20px);
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.product-card {
+		width: calc(25% - 20px);
+	}
 }
