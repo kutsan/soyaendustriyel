@@ -13,14 +13,15 @@ import { products } from '@/data/products.json'
 import { categories } from '@/data/categories.json'
 
 const Products = ({ match }) => {
-	let title = categories.find((e) => e.id === (match.params.subcategory || match.params.category))
-		.name
+	let category = categories.find(
+		(e) => e.id === (match.params.subcategory || match.params.category)
+	)
 
 	return (
 		<>
-			<Breadcrumb />
+			<Breadcrumb buildFrom={category} />
 
-			<div className='products-title'>{title}</div>
+			<div className='products-title'>{category.name}</div>
 
 			<div className='products'>
 				{products.map((cur) => {

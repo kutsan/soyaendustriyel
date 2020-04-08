@@ -11,7 +11,7 @@ const Product = ({ match }) => {
 
 	return (
 		<>
-			<Breadcrumb />
+			<Breadcrumb buildFrom={data} />
 
 			<div className='product'>
 				<div className='product__picture'></div>
