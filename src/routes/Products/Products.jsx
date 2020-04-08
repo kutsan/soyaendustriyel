@@ -19,6 +19,13 @@ const Products = ({ match }) => {
 			(match.params.lowermostcategory || match.params.subcategory || match.params.category)
 	)
 
+	const getCategoriesUnder = (category) => categories.filter((e) => e.parent === category.id)
+	let categoriesUnder = []
+	categoriesUnder.push(...getCategoriesUnder(category))
+	categoriesUnder.forEach((e) => categoriesUnder.push(...getCategoriesUnder(e)))
+	categoriesUnder = categoriesUnder.map((e) => e.id)
+	categoriesUnder.unshift(category.id)
+
 	return (
 		<>
 			<Breadcrumb buildFrom={category} />
@@ -26,9 +33,11 @@ const Products = ({ match }) => {
 			<div className='products-title'>{category.name}</div>
 
 			<div className='products'>
-				{products.map((cur) => {
-					return <ProductCard key={cur.id} product={cur} />
-				})}
+				{products
+					.filter((e) => categoriesUnder.indexOf(e.category) > -1)
+					.map((cur) => {
+						return <ProductCard key={cur.id} product={cur} />
+					})}
 			</div>
 		</>
 	)

@@ -1,5 +1,7 @@
 .products-title {
-	font-size: 2rem;
+	margin-bottom: 20px;
+
+	font-size: 2.5rem;
 	font-weight: 300;
 }
 
@@ -7,4 +9,14 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-start;
+
+	margin-right: -5px;
+	margin-left: -5px;
+}
+
+@media screen and (min-width: 435px) {
+	.products {
+		margin-right: -10px;
+		margin-left: -10px;
+	}
 }
