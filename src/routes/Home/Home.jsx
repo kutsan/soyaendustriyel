@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './Home.css'
+
 import ProductCard from '@/components/ProductCard/ProductCard.jsx'
 import Brands from '@/components/Brands/Brands.jsx'
 
@@ -17,7 +19,7 @@ const Home = () => {
 
 	return (
 		<>
-			<div className='products'>
+			<div className='home-products'>
 				{shuffle(products)
 					.slice(0, 8)
 					.map((cur) => {

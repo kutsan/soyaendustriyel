@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
+
+import storage from '@/utils/firebase/storage.js'
 
 import './Product.css'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb.jsx'
@@ -9,12 +11,38 @@ import { products } from '@/data/products.json'
 const Product = ({ match }) => {
 	const data = products.find((e) => e.id === match.params.id)
 
+	const [img, setImg] = useState(null)
+	const [loading, setLoading] = useState(false)
+
+	useEffect(() => {
+		setLoading(true)
+
+		storage
+			.child(`${data.id}.jpg`)
+			.getDownloadURL()
+			.then((url) => {
+				setLoading(false)
+				setImg(url)
+			})
+			.catch(() => {
+				setLoading(false)
+			})
+	}, [])
+
 	return (
 		<>
 			<Breadcrumb buildFrom={data} />
 
 			<div className='product'>
-				<div className='product__picture'></div>
+				<div className='product__picture-container'>
+					<div
+						style={{ backgroundImage: `url('${img}')` }}
+						className={`product__picture ${
+							loading ? 'product__picture--loading' : ''
+						} ${!loading && !img ? 'product__picture--no-image' : ''}`}
+					></div>
+				</div>
+
 				<div className='product__context'>
 					<div className='product__title'>{data.name}</div>
 
