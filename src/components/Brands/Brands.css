@@ -1,5 +1,5 @@
 .brands-container {
-	margin: 32px;
+	margin-top: 96px;
 }
 
 .brands-header {
@@ -20,8 +20,6 @@
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-
-	margin-top: 8px;
 }
 
 .brands__item {
@@ -34,9 +32,5 @@
 	.brands__item {
 		max-width: calc(33% - 32px);
 		max-height: 32px;
-	}
-
-	.brands-container {
-		margin: 32px 0;
 	}
 }
