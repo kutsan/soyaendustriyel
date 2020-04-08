@@ -46,13 +46,12 @@ const buildBreadcrumb = (data) => {
 	const buildSteps = (catId) => {
 		if (!catId) return false
 
-		const parent = getParent(catId)
-
 		steps.unshift({
 			to: getURL(catId),
 			name: getCategoryName(catId)
 		})
 
+		const parent = getParent(catId)
 		parent && buildSteps(parent)
 	}
 
