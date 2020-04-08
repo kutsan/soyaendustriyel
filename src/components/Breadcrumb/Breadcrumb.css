@@ -32,6 +32,12 @@
 	display: none;
 }
 
+.breadcrumb__step-current {
+	padding: 3px 5px;
+
+	border: 1px solid transparent;
+}
+
 .breadcrumb__step-link {
 	padding: 3px 5px;
 
