@@ -11,6 +11,7 @@ import Navbar from '@/components/Navbar/Navbar.jsx'
 
 const LayoutDefault = ({ children, history }) => {
 	const [menuOpen, setMenuOpen] = useState(false)
+
 	useEffect(() => {
 		const unlisten = history.listen(() => {
 			setMenuOpen(false)
