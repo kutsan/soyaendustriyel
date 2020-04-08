@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom'
 
 import './Breadcrumb.css'
 
-const Breadcrumb = ({ steps }) => {
+import { categories } from '@/data/categories.json'
+
+const Breadcrumb = ({ buildFrom }) => {
 	return (
 		<div className='breadcrumb'>
-			{steps.map((e, index) => (
+			{buildBreadcrumb(buildFrom).map((e, index) => (
 				<div key={index} className='breadcrumb__step'>
 					{e.to ? (
 						<Link className='breadcrumb__step-link' to={e.to}>
@@ -23,7 +25,43 @@ const Breadcrumb = ({ steps }) => {
 }
 
 Breadcrumb.propTypes = {
-	steps: PropTypes.array.isRequired
+	buildFrom: PropTypes.object.isRequired
 }
 
 export default Breadcrumb
+
+const buildBreadcrumb = (data) => {
+	const getCategoryName = (catId) => categories.find((e) => e.id === catId).name
+	const getParent = (catId) => categories.find((e) => e.id === catId).parent || false
+	const getURL = (catId) =>
+		getParent(catId) ? `${getURL(getParent(catId))}/${catId}` : `/products/${catId}`
+
+	const steps = []
+
+	steps.unshift({
+		to: false,
+		name: data.name
+	})
+
+	const buildSteps = (catId) => {
+		if (!catId) return false
+
+		const parent = getParent(catId)
+
+		steps.unshift({
+			to: getURL(catId),
+			name: getCategoryName(catId)
+		})
+
+		parent && buildSteps(parent)
+	}
+
+	buildSteps(data.category || data.parent)
+
+	steps.unshift({
+		to: '/',
+		name: 'Ana Sayfa'
+	})
+
+	return steps
+}
