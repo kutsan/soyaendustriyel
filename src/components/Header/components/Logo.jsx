@@ -6,7 +6,7 @@ import './Logo.css'
 
 const Logo = () => {
 	return (
-		<Link to='/'>
+		<Link to='/' aria-label='Ana Sayfa'>
 			<LogoIcon className='logo' />
 		</Link>
 	)
