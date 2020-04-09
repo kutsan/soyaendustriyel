@@ -18,7 +18,7 @@
 		"prestart": "npm run lint && npm run test && npm run format",
 		"prebuild": "npm run prestart",
 		"start": "[[ $NODE_ENV == 'production' ]] && npm run build || NODE_ENV=development webpack-dev-server",
-		"build": "NODE_ENV=production webpack --progress",
+		"build": "rm -rf build/ && NODE_ENV=production webpack --progress",
 		"deploy": "echo 'TODO: Write the deploy script.'",
 		"lint": "npm run lint:eslint && npm run lint:stylelint",
 		"lint:eslint": "eslint 'src/**/*.{js,jsx}'",
