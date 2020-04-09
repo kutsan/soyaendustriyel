@@ -11,25 +11,33 @@ const ProductCard = ({ product }) => {
 	const [loading, setLoading] = useState(false)
 
 	useEffect(() => {
+		let ignore = false
+
 		setLoading(true)
 
 		storage
 			.child(`${product.id}.jpg`)
 			.getDownloadURL()
 			.then((url) => {
-				setLoading(false)
-				setImg(url)
+				if (!ignore) {
+					setLoading(false)
+					setImg(url)
+				}
 			})
-			.catch(() => {
-				setLoading(false)
+			.catch((err) => {
+				if (!ignore) console.error(err)
 			})
-	}, [])
+
+		return () => {
+			ignore = true
+		}
+	}, [product.id])
 
 	return (
 		<Link className='product-card' to={`/product/${product.id}`}>
 			<div className='product-card__picture-container'>
 				<div
-					style={{ backgroundImage: `url(${img})` }}
+					style={img && { backgroundImage: `url(${img})` }}
 					className={`product-card__picture ${
 						loading ? 'product-card__picture--loading' : ''
 					} ${!loading && !img ? 'product-card__picture--no-image' : ''}`}
