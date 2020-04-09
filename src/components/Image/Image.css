@@ -1,0 +1,53 @@
+.image-container {
+	position: relative;
+
+	width: 100%;
+	padding: 20px;
+
+	background-color: #ffffff;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	padding-bottom: 100%;
+
+	background-position: center;
+	background-size: cover;
+}
+
+.image--no-image {
+	background-color: #f1f1f1;
+}
+
+.image--loading::before {
+	position: absolute;
+	top: calc(50% - 70px / 2);
+	left: calc(50% - 70px / 2);
+
+	display: inline-block;
+
+	width: 70px;
+	height: 70px;
+
+	content: '';
+	animation: loading 1.2s infinite linear;
+
+	border-top: 4px solid #ffffff;
+	border-right: 4px solid #ffffff;
+	border-bottom: 4px solid #777777;
+	border-left: 4px solid #777777;
+	border-radius: 50%;
+}
+
+@keyframes loading {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.image-container {
+		padding: 30px;
+	}
+}

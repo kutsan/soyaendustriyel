@@ -1,41 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
-import storage from '@/utils/firebase/storage.js'
-
 import './Product.css'
+
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb.jsx'
+import Image from '@/components/Image/Image.jsx'
 
 import { products } from '@/data/products.json'
 
 const Product = ({ match }) => {
 	const data = products.find((e) => e.id === match.params.id)
-
-	const [img, setImg] = useState(null)
-	const [loading, setLoading] = useState(false)
-
-	useEffect(() => {
-		let ignore = false
-
-		setLoading(true)
-
-		storage
-			.child(`${data.id}.jpg`)
-			.getDownloadURL()
-			.then((url) => {
-				if (!ignore) {
-					setLoading(false)
-					setImg(url)
-				}
-			})
-			.catch((err) => {
-				if (!ignore) console.error(err)
-			})
-
-		return () => {
-			ignore = true
-		}
-	}, [data.id])
 
 	return (
 		<>
@@ -43,12 +17,7 @@ const Product = ({ match }) => {
 
 			<div className='product'>
 				<div className='product__picture-container'>
-					<div
-						style={img && { backgroundImage: `url('${img}')` }}
-						className={`product__picture ${
-							loading ? 'product__picture--loading' : ''
-						} ${!loading && !img ? 'product__picture--no-image' : ''}`}
-					></div>
+					<Image name={`${data.id}.jpg`} />
 				</div>
 
 				<div className='product__context'>
