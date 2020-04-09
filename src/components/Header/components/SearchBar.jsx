@@ -12,8 +12,9 @@ const SearchBar = ({ hidden = false }) => {
 				type='search'
 				className='search__input'
 				placeholder='Ürün, kategori, marka veya ürün kodu ile ara...'
+				aria-label='Search text'
 			/>
-			<button type='button' className='search__button'>
+			<button type='button' className='search__button' aria-label='Search'>
 				<SearchIcon className='search__button-icon' />
 			</button>
 		</div>
