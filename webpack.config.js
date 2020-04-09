@@ -18,7 +18,7 @@ module.exports = {
 	devtool: isProd ? false : 'eval-source-map',
 
 	output: {
-		filename: '[name].bundle.js',
+		filename: '[name].bundle.[hash].js',
 		path: path.join(__dirname, '/build/'),
 		publicPath: '/'
 	},
@@ -90,7 +90,7 @@ module.exports = {
 	},
 
 	plugins: [
-		new MiniCssExtractPlugin({ filename: 'styles.bundle.css' }),
+		new MiniCssExtractPlugin({ filename: 'styles.bundle.[contenthash].css' }),
 		new HTMLWebpackPlugin({
 			template: 'src/index.html',
 			filename: 'index.html',
@@ -106,6 +106,6 @@ module.exports = {
 				  }
 				: false
 		}),
-		new CopyPlugin([{ from: 'src/assets/favicons/' }])
+		new CopyPlugin([{ from: 'src/public/assets/' }, { from: 'src/public/config' }])
 	]
 }
