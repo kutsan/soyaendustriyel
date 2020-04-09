@@ -3,7 +3,7 @@ import React from 'react'
 import './Home.css'
 
 import ProductCard from '@/components/ProductCard/ProductCard.jsx'
-import Brands from '@/components/Brands/Brands.jsx'
+// import Brands from '@/components/Brands/Brands.jsx'
 
 import { products } from '@/data/products.json'
 
@@ -27,7 +27,7 @@ const Home = () => {
 					})}
 			</div>
 
-			<Brands />
+			{/* <Brands /> */}
 		</>
 	)
 }
