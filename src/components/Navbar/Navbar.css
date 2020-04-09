@@ -10,6 +10,8 @@ nav a:visited {
 }
 
 nav {
+	position: relative;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
