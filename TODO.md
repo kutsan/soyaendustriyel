@@ -14,3 +14,9 @@
 * Enchanct Navbar category CSS
 * lighthouse errors
 * Remove unused CSS classes in navbar
+* make logo svg
+* Lazy load off-screen images.
+* CSP and webpack nonce
+* Use consistent variable names for data
+* ProductCard height problem
+* Bring Brands back
