@@ -4,15 +4,13 @@
 	display: flex;
 	justify-content: center;
 
-	padding-bottom: 8px;
-
 	color: white;
 
 	font-size: 1.05rem;
 }
 
 .navbar-menu__item {
-	padding: 12.8px 17.6px 4.8px;
+	padding: 12.8px 17.6px;
 
 	cursor: pointer;
 }
