@@ -15,19 +15,27 @@ const Product = ({ match }) => {
 	const [loading, setLoading] = useState(false)
 
 	useEffect(() => {
+		let ignore = false
+
 		setLoading(true)
 
 		storage
 			.child(`${data.id}.jpg`)
 			.getDownloadURL()
 			.then((url) => {
-				setLoading(false)
-				setImg(url)
+				if (!ignore) {
+					setLoading(false)
+					setImg(url)
+				}
 			})
-			.catch(() => {
-				setLoading(false)
+			.catch((err) => {
+				if (!ignore) console.error(err)
 			})
-	}, [])
+
+		return () => {
+			ignore = true
+		}
+	}, [data.id])
 
 	return (
 		<>
@@ -36,7 +44,7 @@ const Product = ({ match }) => {
 			<div className='product'>
 				<div className='product__picture-container'>
 					<div
-						style={{ backgroundImage: `url('${img}')` }}
+						style={img && { backgroundImage: `url('${img}')` }}
 						className={`product__picture ${
 							loading ? 'product__picture--loading' : ''
 						} ${!loading && !img ? 'product__picture--no-image' : ''}`}
