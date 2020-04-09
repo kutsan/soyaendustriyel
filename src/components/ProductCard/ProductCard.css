@@ -30,7 +30,7 @@
 .product-card__picture-container {
 	position: relative;
 
-	padding: 30px;
+	padding: 20px;
 }
 
 .product-card__picture {
@@ -52,6 +52,7 @@
 }
 
 .product-card__name {
+	min-height: 3.5rem;
 	margin-bottom: 15px;
 	padding: 0 15px;
 
@@ -105,5 +106,9 @@
 @media screen and (min-width: 769px) {
 	.product-card {
 		width: calc(25% - 20px);
+	}
+
+	.product-card__picture-container {
+		padding: 30px;
 	}
 }
