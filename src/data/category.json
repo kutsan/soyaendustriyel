@@ -1,5 +1,5 @@
 {
-	"categories": [
+	"category": [
 		{ "id": "kagit", "name": "Kağıt Ürünleri" },
 		{ "id": "tuvalet-kagidi", "parent": "kagit", "name": "Tuvalet Kağıtları" },
 		{ "id": "kagit-havlu", "parent": "kagit", "name": "Kağıt Havluları" },
