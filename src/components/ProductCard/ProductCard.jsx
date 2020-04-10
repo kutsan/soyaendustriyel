@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import Image from '@/components/Image/Image.jsx'
 
 import './ProductCard.css'
+
+import Image from '@/components/Image/Image.jsx'
 
 const ProductCard = ({ product }) => {
 	return (

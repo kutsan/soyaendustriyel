@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
-import storage from '@/utils/firebase/storage.js'
 
 import './Image.css'
+
+import storage from '@/utils/firebase/storage.js'
 
 const Image = ({ name }) => {
 	const [image, setImage] = useState(null)
