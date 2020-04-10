@@ -5,6 +5,7 @@ const path = require('path')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 
 const nodeEnv = process.env.NODE_ENV || 'development'
 const isProd = nodeEnv === 'production'
@@ -12,7 +13,7 @@ const isProd = nodeEnv === 'production'
 module.exports = {
 	entry: {
 		client: path.join(__dirname, '/src/client.jsx'),
-		vendor: ['react']
+		vendor: ['react', 'react-dom', 'react-router-dom', 'firebase']
 	},
 
 	devtool: isProd ? false : 'eval-source-map',
@@ -44,7 +45,18 @@ module.exports = {
 	mode: isProd ? 'production' : 'development',
 
 	optimization: {
-		minimize: isProd ? true : false
+		minimizer: isProd
+			? [
+					new TerserPlugin({
+						terserOptions: {
+							output: {
+								comments: false
+							}
+						},
+						extractComments: false
+					})
+			  ]
+			: []
 	},
 
 	module: {
