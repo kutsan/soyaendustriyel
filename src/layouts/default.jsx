@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router-dom'
 
-// Components
 import Header from '@/components/Header/Header.jsx'
 import Footer from '@/components/Footer/Footer.jsx'
 import Navbar from '@/components/Navbar/Navbar.jsx'

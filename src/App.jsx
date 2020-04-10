@@ -2,19 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Route, Switch } from 'react-router-dom'
 
-// Styles
 import './App.css'
 
-// Routes
 import Home from './routes/Home/Home.jsx'
 import Products from './routes/Products/Products.jsx'
 import Product from './routes/Product/Product.jsx'
 import NotFound from './routes/NotFound/NotFound.jsx'
 
-// Layouts
 import LayoutDefault from './layouts/default.jsx'
 
-// Utils
 import validatedRoute from './utils/routes/validated-route.jsx'
 import validatorProducts from './utils/routes/validator-products.js'
 import validatorProduct from './utils/routes/validator-product.js'
