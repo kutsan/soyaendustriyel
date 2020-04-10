@@ -20,3 +20,10 @@
 * Use consistent variable names for data
 * ProductCard height problem
 * Bring Brands back
+* https://firebase.google.com/docs/hosting/full-config#specify_files_to_deploy
+* Design navbar
+* Write API for data.
+* Write tests.
+* Load Image once.
+* Sub categories menu for Products route
+* Change json file names
