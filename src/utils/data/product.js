@@ -19,7 +19,7 @@ const getRef = (id) => {
  **/
 const getRandom = (count, category = null) => {
 	const shuffle = (arr) => {
-		const a = [...arr]
+		const a = Array.from(arr)
 
 		if (count > arr.length) {
 			count = arr.length
