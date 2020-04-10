@@ -6,38 +6,38 @@ import './Product.css'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb.jsx'
 import Image from '@/components/Image/Image.jsx'
 
-import { products } from '@/data/products.json'
+import data from '@/utils/data/index.js'
 
 const Product = ({ match }) => {
-	const data = products.find((e) => e.id === match.params.id)
+	const productRef = data.product.getRef(match.params.id)
 
 	return (
 		<>
-			<Breadcrumb buildFrom={data} />
+			<Breadcrumb buildFrom={productRef} />
 
 			<div className='product'>
 				<div className='product__picture-container'>
-					<Image name={`${data.id}.jpg`} />
+					<Image name={`${productRef.id}.jpg`} />
 				</div>
 
 				<div className='product__context'>
-					<div className='product__title'>{data.name}</div>
+					<div className='product__title'>{productRef.name}</div>
 
-					<div className='product__brand'>{data.brand}</div>
+					<div className='product__brand'>{productRef.brand}</div>
 
 					<div className='product__code'>
 						<span className='product__desc-key'>Ürün kodu: </span>
-						<span className='product__desc-value'>{data.code}</span>
+						<span className='product__desc-value'>{productRef.code}</span>
 					</div>
 
-					{data.desc && (
+					{productRef.desc && (
 						<div className='product__desc'>
-							{typeof data.desc === 'string' ? (
+							{typeof productRef.desc === 'string' ? (
 								<div className='product__desc-item'>
-									<span className='product__desc-value'>{data.desc}</span>
+									<span className='product__desc-value'>{productRef.desc}</span>
 								</div>
 							) : (
-								data.desc.map((e) => (
+								productRef.desc.map((e) => (
 									<div key={e.key} className='product__desc-item'>
 										{e.key && (
 											<span className='product__desc-key'>{e.key}: </span>

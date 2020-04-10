@@ -1,40 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// Components
+import './Products.css'
+
 import ProductCard from '@/components/ProductCard/ProductCard.jsx'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb.jsx'
 
-// Style
-import './Products.css'
-
-// Data
-import { products } from '@/data/products.json'
-import { categories } from '@/data/categories.json'
+import data from '@/utils/data/index.js'
 
 const Products = ({ match }) => {
-	let category = categories.find(
-		(e) =>
-			e.id ===
-			(match.params.lowermostcategory || match.params.subcategory || match.params.category)
+	let currentCategory = data.category.getRef(
+		match.params.lowermostcategory || match.params.subcategory || match.params.category
 	)
 
-	const getCategoriesUnder = (category) => categories.filter((e) => e.parent === category.id)
-	let categoriesUnder = []
-	categoriesUnder.push(...getCategoriesUnder(category))
-	categoriesUnder.forEach((e) => categoriesUnder.push(...getCategoriesUnder(e)))
-	categoriesUnder = categoriesUnder.map((e) => e.id)
-	categoriesUnder.unshift(category.id)
+	let allSubs = data.category.getAllSubs(currentCategory.id).map((e) => e.id)
+	allSubs.unshift(currentCategory.id)
 
 	return (
 		<>
-			<Breadcrumb buildFrom={category} />
+			<Breadcrumb buildFrom={currentCategory} />
 
-			<div className='products-title'>{category.name}</div>
+			<div className='products-title'>{currentCategory.name}</div>
 
 			<div className='products'>
-				{products
-					.filter((e) => categoriesUnder.indexOf(e.category) > -1)
+				{data.product
+					.filter((e) => allSubs.indexOf(e.category) > -1)
 					.map((cur) => {
 						return <ProductCard key={cur.id} product={cur} />
 					})}
