@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 
 import './NavbarWeb.css'
 
+import data from '@/utils/data/index.js'
+
 const NavbarLink = ({ to, name, modifier }) => (
 	<Link
 		to={to}
@@ -21,30 +23,30 @@ NavbarLink.propTypes = {
 	modifier: PropTypes.string
 }
 
-const NavbarWeb = ({ getTopCategories, getCategoriesUnder }) => {
+const NavbarWeb = () => {
 	return (
 		<div className='navbar-menu'>
-			{getTopCategories().map((x) => (
-				<div key={x.id} className='navbar-menu__item'>
-					<NavbarLink to={`/products/${x.id}`} name={x.name} modifier='top' />
+			{data.category.getTops().map((top) => (
+				<div key={top.id} className='navbar-menu__item'>
+					<NavbarLink to={`/products/${top.id}`} name={top.name} modifier='top' />
 
 					<div className='navbar-menu__submenu'>
-						{getCategoriesUnder(x).map((y) => (
-							<div key={y.id} className='navbar-menu__item navbar-menu__item--sub'>
+						{data.category.getSubs(top.id).map((sub) => (
+							<div key={sub.id} className='navbar-menu__item navbar-menu__item--sub'>
 								<NavbarLink
-									to={`/products/${x.id}/${y.id}`}
-									name={y.name}
+									to={`/products/${top.id}/${sub.id}`}
+									name={sub.name}
 									modifier='sub'
 								/>
 								<div className='navbar-menu__lowermostmenu'>
-									{getCategoriesUnder(y).map((z) => (
+									{data.category.getSubs(sub.id).map((lowermost) => (
 										<div
-											key={z.id}
+											key={lowermost.id}
 											className='navbar-menu__item navbar-menu__item--lowermost'
 										>
 											<NavbarLink
-												to={`/products/${x.id}/${y.id}/${z.id}`}
-												name={z.name}
+												to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
+												name={lowermost.name}
 												modifier='lowermost'
 											/>
 										</div>
@@ -57,11 +59,6 @@ const NavbarWeb = ({ getTopCategories, getCategoriesUnder }) => {
 			))}
 		</div>
 	)
-}
-
-NavbarWeb.propTypes = {
-	getTopCategories: PropTypes.func,
-	getCategoriesUnder: PropTypes.func
 }
 
 export default NavbarWeb

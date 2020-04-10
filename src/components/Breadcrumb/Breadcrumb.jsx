@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 import './Breadcrumb.css'
 
-import { categories } from '@/data/categories.json'
+import data from '@/utils/data/index.js'
 
 const Breadcrumb = ({ buildFrom }) => {
 	return (
@@ -30,32 +30,33 @@ Breadcrumb.propTypes = {
 
 export default Breadcrumb
 
-const buildBreadcrumb = (data) => {
-	const getCategoryName = (catId) => categories.find((e) => e.id === catId).name
-	const getParent = (catId) => categories.find((e) => e.id === catId).parent || false
-	const getURL = (catId) =>
-		getParent(catId) ? `${getURL(getParent(catId))}/${catId}` : `/products/${catId}`
+const buildBreadcrumb = (buildFrom) => {
+	const getURL = (catID) => {
+		const parent = data.category.getKey(catID, 'parent')
+
+		return parent ? `${getURL(parent)}/${catID}` : `/products/${catID}`
+	}
 
 	const steps = []
 
 	steps.unshift({
 		to: false,
-		name: data.name
+		name: buildFrom.name
 	})
 
-	const buildSteps = (catId) => {
-		if (!catId) return false
+	const buildSteps = (catID) => {
+		if (!catID) return false
 
 		steps.unshift({
-			to: getURL(catId),
-			name: getCategoryName(catId)
+			to: getURL(catID),
+			name: data.category.getKey(catID, 'name')
 		})
 
-		const parent = getParent(catId)
+		const parent = data.category.getKey(catID, 'parent')
 		parent && buildSteps(parent)
 	}
 
-	buildSteps(data.category || data.parent)
+	buildSteps(buildFrom.category || buildFrom.parent)
 
 	steps.unshift({
 		to: '/',

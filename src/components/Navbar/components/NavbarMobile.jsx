@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-// Styles
 import './NavbarMobile.css'
 
 import Category from './components/Category.jsx'
 
-const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder, menuOpen }) => {
+import data from '@/utils/data/index.js'
+
+const NavbarMobile = ({ menuOpen }) => {
 	const [expanded, setExpanded] = useState([])
 
 	const isExpanded = (category) => expanded.indexOf(category.id) > -1
@@ -19,41 +20,42 @@ const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder
 		}
 	}
 
-	const calcMaxHeight = (category) => {
-		const subCountOfExpandedSubs = getCategoriesUnder(category)
+	const calcMaxHeight = (catID) => {
+		const subCountOfExpandedSubs = data.category
+			.getSubs(catID)
 			.filter(isExpanded)
 			.reduce((acc, cur) => {
-				return acc + getCategoriesUnder(cur).length
+				return acc + data.category.getSubs(cur.id).length
 			}, 0)
 
-		return getCategoriesUnder(category).length + subCountOfExpandedSubs
+		return data.category.getSubs(catID).length + subCountOfExpandedSubs
 	}
 
 	return (
 		<div className={`navbar-mobile ${menuOpen ? 'navbar-mobile--open' : ''}`}>
-			{getTopCategories().map((top) => (
+			{data.category.getTops().map((top) => (
 				<Category
 					key={top.id}
 					modifier='top'
 					expanded={isExpanded(top)}
 					to={`/products/${top.id}`}
 					onClickToggle={() => onClickToggle(top)}
-					hasCategoriesUnder={hasCategoriesUnder(top)}
-					maxHeight={calcMaxHeight(top)}
+					hasCategoriesUnder={data.category.hasSubs(top.id)}
+					maxHeight={calcMaxHeight(top.id)}
 					item={top}
 				>
-					{getCategoriesUnder(top).map((sub) => (
+					{data.category.getSubs(top.id).map((sub) => (
 						<Category
 							key={sub.id}
 							modifier='sub'
 							expanded={isExpanded(sub)}
 							to={`/products/${top.id}/${sub.id}`}
 							onClickToggle={() => onClickToggle(sub)}
-							hasCategoriesUnder={hasCategoriesUnder(sub)}
-							maxHeight={calcMaxHeight(sub)}
+							hasCategoriesUnder={data.category.hasSubs(sub.id)}
+							maxHeight={calcMaxHeight(sub.id)}
 							item={sub}
 						>
-							{getCategoriesUnder(sub).map((lowermost) => (
+							{data.category.getSubs(sub.id).map((lowermost) => (
 								<Category
 									key={lowermost.id}
 									modifier='lowermost'
@@ -71,9 +73,6 @@ const NavbarMobile = ({ getTopCategories, getCategoriesUnder, hasCategoriesUnder
 }
 
 NavbarMobile.propTypes = {
-	getTopCategories: PropTypes.func.isRequired,
-	getCategoriesUnder: PropTypes.func.isRequired,
-	hasCategoriesUnder: PropTypes.func.isRequired,
 	menuOpen: PropTypes.bool
 }
 
