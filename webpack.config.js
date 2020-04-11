@@ -6,6 +6,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
+const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 
 const nodeEnv = process.env.NODE_ENV || 'development'
 const isProd = nodeEnv === 'production'
@@ -13,7 +14,7 @@ const isProd = nodeEnv === 'production'
 module.exports = {
 	entry: {
 		client: path.join(__dirname, '/src/client.jsx'),
-		vendor: ['react', 'react-dom', 'react-router-dom', 'firebase']
+		vendor: ['react', 'react-dom']
 	},
 
 	devtool: isProd ? false : 'eval-source-map',
@@ -56,7 +57,10 @@ module.exports = {
 						extractComments: false
 					})
 			  ]
-			: []
+			: [],
+		splitChunks: {
+			chunks: 'all'
+		}
 	},
 
 	module: {
@@ -102,7 +106,6 @@ module.exports = {
 	},
 
 	plugins: [
-		new MiniCssExtractPlugin({ filename: 'styles.bundle.[contenthash].css' }),
 		new HTMLWebpackPlugin({
 			template: 'src/index.html',
 			filename: 'index.html',
@@ -118,6 +121,8 @@ module.exports = {
 				  }
 				: false
 		}),
+		new ScriptExtHtmlWebpackPlugin({ defaultAttribute: 'async' }),
+		new MiniCssExtractPlugin({ filename: 'styles.bundle.[contenthash].css' }),
 		new CopyPlugin([{ from: 'src/public/assets/' }, { from: 'src/public/config' }])
 	]
 }
