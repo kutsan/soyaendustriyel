@@ -4,6 +4,8 @@ import { Route, Switch } from 'react-router-dom'
 
 import './App.css'
 
+import { ImageProvider } from './context/ImageContext'
+
 import Home from './routes/Home/Home.jsx'
 import Products from './routes/Products/Products.jsx'
 import Product from './routes/Product/Product.jsx'
@@ -17,25 +19,27 @@ import validatorProduct from './utils/routes/validator-product.js'
 
 const App = () => {
 	return (
-		<Switch>
-			<RouteWrapper exact path='/' component={Home} />
-			<RouteWrapper
-				exact
-				path={[
-					'/products/:category/:subcategory/:lowermostcategory',
-					'/products/:category/:subcategory',
-					'/products/:category'
-				]}
-				component={validatedRoute(validatorProducts)(Products)}
-			/>
-			<RouteWrapper
-				exact
-				path='/product/:id'
-				component={validatedRoute(validatorProduct)(Product)}
-			/>
+		<ImageProvider>
+			<Switch>
+				<RouteWrapper exact path='/' component={Home} />
+				<RouteWrapper
+					exact
+					path={[
+						'/products/:category/:subcategory/:lowermostcategory',
+						'/products/:category/:subcategory',
+						'/products/:category'
+					]}
+					component={validatedRoute(validatorProducts)(Products)}
+				/>
+				<RouteWrapper
+					exact
+					path='/product/:id'
+					component={validatedRoute(validatorProduct)(Product)}
+				/>
 
-			<RouteWrapper component={NotFound} />
-		</Switch>
+				<RouteWrapper component={NotFound} />
+			</Switch>
+		</ImageProvider>
 	)
 }
 

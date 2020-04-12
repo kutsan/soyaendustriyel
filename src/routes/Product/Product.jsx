@@ -17,7 +17,7 @@ const Product = ({ match }) => {
 
 			<div className='product'>
 				<div className='product__picture-container'>
-					<Image name={`${productRef.id}.jpg`} />
+					<Image id={productRef.id} />
 				</div>
 
 				<div className='product__context'>
