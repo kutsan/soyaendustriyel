@@ -1,24 +1,39 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import PropTypes from 'prop-types'
 
 import './Image.css'
 
+import ImageContext from '@/context/ImageContext.js'
+
 import storage from '@/utils/firebase/storage.js'
 
-const Image = ({ name }) => {
+const Image = ({ id }) => {
 	const [image, setImage] = useState(null)
 	const [loading, setLoading] = useState(false)
+
+	const { getStoredImageURL, storeImageURL } = useContext(ImageContext)
 
 	useEffect(() => {
 		let ignore = false
 
+		const url = getStoredImageURL(id)
+
+		if (url && !ignore) {
+			setImage(url)
+
+			return () => {
+				ignore = true
+			}
+		}
+
 		setLoading(true)
 
 		storage
-			.child(name)
+			.child(`${id}.jpg`)
 			.getDownloadURL()
 			.then((url) => {
 				if (!ignore) {
+					storeImageURL({ id, url })
 					setImage(url)
 				}
 			})
@@ -36,7 +51,7 @@ const Image = ({ name }) => {
 		return () => {
 			ignore = true
 		}
-	}, [name])
+	}, [id])
 
 	return (
 		<div className='image-container'>
@@ -51,7 +66,7 @@ const Image = ({ name }) => {
 }
 
 Image.propTypes = {
-	name: PropTypes.string
+	id: PropTypes.string
 }
 
 export default Image
