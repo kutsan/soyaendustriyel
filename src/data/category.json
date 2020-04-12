@@ -1,6 +1,6 @@
 {
 	"category": [
-		{ "id": "kagit", "name": "Kağıt Ürünleri" },
+		{ "id": "kagit", "name": "Kağıt" },
 		{ "id": "tuvalet-kagidi", "parent": "kagit", "name": "Tuvalet Kağıtları" },
 		{ "id": "kagit-havlu", "parent": "kagit", "name": "Kağıt Havluları" },
 		{ "id": "pecete", "parent": "kagit", "name": "Peçeteler" },
@@ -27,9 +27,9 @@
 			"parent": "deterjan",
 			"name": "Mutfak ve Tezgah Temizliği"
 		},
-		{ "id": "temizlik-gereci", "name": "Temizlik Gereçleri" },
-		{ "id": "temizlik-ekipmani", "name": "Temizlik Ekipmanları" },
-		{ "id": "ambalaj", "name": "Ambalaj Ürünleri" },
+		{ "id": "temizlik", "name": "Temizlik" },
+		{ "id": "ambalaj", "name": "Ambalaj" },
+		{ "id": "plastik", "name": "Plastik" },
 		{ "id": "kare-pecete", "parent": "pecete", "name": "Kare pecete" },
 		{ "id": "dispenser-pecete", "parent": "pecete", "name": "Dispenser pecete" }
 	]
