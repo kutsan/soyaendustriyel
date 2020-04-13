@@ -1,30 +1,22 @@
 module.exports = {
 	root: true,
 
-	env: {
-		node: true,
-		es6: true,
-		browser: true,
-		jest: true
+	parser: 'babel-eslint',
+	parserOptions: {
+		sourceType: 'module'
 	},
 
 	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
 
+	env: {
+		node: true,
+		browser: true,
+		jest: true
+	},
+
 	plugins: ['react', 'react-hooks'],
 	settings: {
 		react: { version: 'detect' }
-	},
-
-	parser: 'babel-eslint',
-	parserOptions: {
-		ecmaVersion: 7,
-		ecmaFeatures: {
-			impliedStrict: true,
-			experimentalObjectRestSpread: true,
-			jsx: true
-		},
-		sourceType: 'module',
-		allowImportExportEverywhere: false
 	},
 
 	rules: {
