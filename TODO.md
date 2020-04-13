@@ -1,29 +1,26 @@
 # TODO
 
-* Use https://webpack.js.org/loaders/extract-loader/
-* Server-side rendering.
-* Don't host images in the server. Use CDN for images and drop file-loader.
-* Decide which colors to use, make CSS variables and edit all CSS colors accordingly
-* Fix max-width problem
-* Setup Firebase Storage?
-* Lazy load images and show spinners.
-* Check context and other things: https://github.com/AmruthPillai/Reactive-Resume/blob/master/.eslintrc
-* Add stylelint.
-* white-space: nowrap; for navbar items
-* only screen @media
-* Enchanct Navbar category CSS
-* lighthouse errors
-* Remove unused CSS classes in navbar
-* make logo svg
-* Lazy load off-screen images.
-* CSP and webpack nonce
-* Use consistent variable names for data
-* ProductCard height problem
-* Bring Brands back
-* https://firebase.google.com/docs/hosting/full-config#specify_files_to_deploy
-* Design navbar
-* Write API for data.
-* Write tests.
-* Load Image once.
-* Sub categories menu for Products route
-* Change json file names
+* Decide which colors to use, make CSS variables and edit all CSS colors accordingly.
+* Make Header responsive.
+* Remove unused CSS classes in Navbar.
+* Review all CSS in project.
+* Improve Logo, make it SVG completely. Zoom it a little bit.
+* Lazy load off-screen images. Make them only start their data fetching once
+  they are seen in viewport. See IntersectionObserver.
+* Add pagination to Products route. Add next and previous page buttons.
+* Make all images 240x240 and JPG with quality 50%.
+* Setup CSP with Webpack nonce.
+* Bring Brands back.
+* Design NavbarWeb.
+* Write unit tests.
+* Write tests for data validation.
+* Implement SearchBar.
+* Add similar products component in Product route.
+* Add filter for brands in Products route.
+* Add 'Bayiliklerimiz' to Home.
+* Add 'Neden Soya Endustriyel?' to Home.
+* Add 'Gun icinde hizli ve elden teslimat' to Home.
+* Add sub-categories component next to the products.
+* Write data for current products.
+* Add carousel with at least 2 images.
+* Read: https://overreacted.io/a-complete-guide-to-useeffect
