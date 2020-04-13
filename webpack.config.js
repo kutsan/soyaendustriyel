@@ -97,10 +97,6 @@ module.exports = {
 			{
 				test: /\.svg$/,
 				loader: '@svgr/webpack'
-			},
-			{
-				test: /\.png/,
-				loader: 'file-loader'
 			}
 		]
 	},
