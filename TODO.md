@@ -24,3 +24,4 @@
 * Write data for current products.
 * Add carousel with at least 2 images.
 * Read: https://overreacted.io/a-complete-guide-to-useeffect
+* Make all breakpoints mobile-first.
