@@ -26,25 +26,37 @@ const Product = ({ match }) => {
 					<div className='product__brand'>{productRef.brand}</div>
 
 					<div className='product__code'>
-						<span className='product__desc-key'>Ürün kodu: </span>
-						<span className='product__desc-value'>{productRef.code}</span>
+						<span className='product__code-key'>Ürün kodu: </span>
+						<span>{productRef.code}</span>
 					</div>
 
 					{productRef.desc && (
 						<div className='product__desc'>
-							{typeof productRef.desc === 'string' ? (
-								<div className='product__desc-item'>
-									<span className='product__desc-value'>{productRef.desc}</span>
+							{productRef.desc.text && <div>{productRef.desc.text}</div>}
+
+							{productRef.desc.list && (
+								<div className='product__desc-list'>
+									{productRef.desc.list.map((e, index) => (
+										<div className='product__desc-list-item' key={index}>
+											{e}
+										</div>
+									))}
 								</div>
-							) : (
-								productRef.desc.map((e) => (
-									<div key={e.key} className='product__desc-item'>
-										{e.key && (
-											<span className='product__desc-key'>{e.key}: </span>
-										)}
-										<span className='product__desc-value'>{e.value}</span>
-									</div>
-								))
+							)}
+
+							{productRef.desc.table && (
+								<table className='product__desc-table'>
+									<tbody>
+										{productRef.desc.table.map((e, index) => (
+											<tr className='product__desc-table-row' key={index}>
+												<td className='product__desc-table-key'>{e.key}</td>
+												<td className='product__desc-table-value'>
+													{e.value}
+												</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
 							)}
 						</div>
 					)}
