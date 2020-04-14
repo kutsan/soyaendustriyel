@@ -1,6 +1,4 @@
 .navbar-menu {
-	position: relative;
-
 	display: flex;
 	justify-content: center;
 
@@ -47,8 +45,8 @@
 	left: 0;
 
 	display: none;
-	align-items: flex-start;
 	flex-wrap: wrap;
+	justify-content: center;
 
 	width: 100%;
 	padding: 16px 32px;
