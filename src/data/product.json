@@ -1,67 +1,90 @@
 {
 	"product": [
 		{
-			"id": "focus-optimum-kare-pecete-100-adet-22-50-26-50",
+			"id": "focus-optimum-pecete-100-adet",
 			"category": "kare-pecete",
-			"name": "Focus Optimum Kare Peçete 100 adet 22.50x26.50",
+			"name": "Focus Optimum Peçete 100 adet",
 			"brand": "Focus",
 			"code": 5053498,
-			"desc": [
-				{ "key": "Kat", "value": "Tek katlı" },
-				{ "key": "Yaprak genişliği", "value": "22.50cm" },
-				{ "key": "Yaprak yüksekliği", "value": "26.50cm" },
-				{ "key": "Paket içeriği", "value": "100 adet" },
-				{ "key": "Koli içi paket", "value": "32 paket" },
-				{ "key": "Net koli ağırlığı", "value": "3.1kg" }
-			]
+			"desc": {
+				"text": "Her türlü restaurant, cafe, büfe gibi işletmeler için standart tek katlı kare peçete.",
+				"table": [
+					{ "key": "Kat", "value": "Tek katlı" },
+					{ "key": "Yaprak genişliği", "value": "22.50cm" },
+					{ "key": "Yaprak yüksekliği", "value": "26.50cm" },
+					{ "key": "Paket içeriği", "value": "100 adet" },
+					{ "key": "Koli içi paket", "value": "32 paket" },
+					{ "key": "Net koli ağırlığı", "value": "3.1kg" }
+				]
+			}
 		},
 		{
 			"id": "nescafe-gold-kahve-200gr",
-			"category": "kahve",
+			"category": "hazir-kahveler",
 			"name": "Nescafe Gold Kahve 200GR",
 			"brand": "Nescafe",
-			"code": 4575644,
-			"desc": "Sade kahve"
+			"code": 1090501,
+			"desc": {
+				"text": "Çözünebilir sade kahve.",
+				"list": [
+					"Nescafe Gold ile premium kahve deneyimi",
+					"Yumuşak içim, ideal yoğunlukta kahve tadı ve zengin aroma",
+					"Özenle seçilmiş, yüksek kalite Arabica ve Robusta çekirdeklerinin Türkiye’ye özel harmanı"
+				]
+			}
 		},
 		{
 			"id": "coffee-mate-500gr",
-			"category": "kahve",
+			"category": "kahve-kremasi",
 			"name": "Nestle Coffee Mate Kahve Kreması 500GR",
 			"brand": "Nestle",
-			"code": 4575645,
-			"desc": "Kahvenizi yumasatir"
+			"code": 1090502,
+			"desc": {
+				"text": "Kahvesini yumuşak tercih edenler için kahve beyazlatıcı, kahve kreması."
+			}
 		},
 		{
 			"id": "jacobs-monarch-filtre-kahve-500gr",
-			"category": "kahve",
+			"category": "filtre-kahve",
 			"name": "Jacobs Monarch Filtre Kahve 500GR",
 			"brand": "Jacobs",
-			"code": 4575646,
-			"desc": "Filtre kahve"
+			"code": 1090503,
+			"desc": {
+				"list": [
+					"Özel vakumlu paket.",
+					"Hem filtre kahve makinesinde, hem de french press aracığılıyla kullanıma uygundur."
+				]
+			}
 		},
 		{
 			"id": "papia-tuvalet-kagidi-3-katli-32-li-paket",
-			"category": "tuvalet-kagidi",
+			"category": "ev-tipi-tuvalet-kagidi",
 			"name": "Papia Tuvalet Kağıdı 3 Katlı 32'li Paket",
 			"brand": "Papia",
-			"code": 4575645,
-			"desc": "3 katli tuvalet kagidi"
+			"code": 1090504,
+			"desc": {
+				"text": "Yapay beyazlatıcılar kullanılmadan %100 saf selülozdan üretilen Papia Tuvalet Kağıdı, 3 katlı dolgun ve emici yapısı ile sizin ve sevdiklerinizin güvenli tercihi."
+			}
 		},
 		{
 			"id": "caykur-rize-turist-cayi-1000gr",
-			"category": "cay",
+			"category": "dokme-caylar",
 			"name": "Çaykur Rize Turist Çayı 1000GR",
 			"brand": "Çaykur",
-			"code": 4575645,
-			"desc": "Ekonomik cay"
+			"code": 1090505,
+			"desc": {
+				"text": "Yurdun dört bir yanında girmediği ev, katılmadığı dost sohbeti yoktur! Ona boşuna \"Gerçek Sarı\" denmez. Herkes ona hayrandır. Köklü geçmişi, nesilden nesile aktarılan nefis aroması ile Rize Turist ailemizin çayıdır."
+			}
 		},
 		{
 			"id": "caykur-altinbas-cayi-500gr",
-			"category": "cay",
+			"category": "dokme-caylar",
 			"name": "Çaykur Altınbaş Çayı 500GR",
 			"brand": "Çaykur",
-			"code": 4575645,
-			"desc": "En iyi cay"
+			"code": 1090506,
+			"desc": {
+				"text": "Tepesindeki tomurcuk ve hemen altındaki ufacık, taptaze iki yapraktır Altınbaş'ı altınbaş yapan. Çay gurmeleri Altınbaş'ı hemen tanırlar! Altınbaşlı ve kıvrımlı çay oranının en çok kullanıldığı çaydır. Damakta ayrı bir tat bırakan Altınbaş, burukluğu ile hakiki çay lezzetini sunar. Kokusu ve tadıyla, aroma seviyesi en yüksek olan Altınbaş'ın az miktarı ile çok dem sağlanır. Dost sohbetleriniz ve keyifli toplantılarınız için Altınbaş birebirdir."
+			}
 		}
 	]
 }
