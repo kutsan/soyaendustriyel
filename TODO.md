@@ -25,5 +25,7 @@
 * Read: https://overreacted.io/a-complete-guide-to-useeffect
 * Make all breakpoints mobile-first.
 * Drop Firebase Storage and its API utils.
-* Use local storage for images.
 * Use webp format with jpg fallback for images.
+* Fix animation glitch in NavbarMobile max-height transition.
+* Use picture element.
+* Highlight current selected route in NavbarMobile.
