@@ -4,7 +4,6 @@
 * Make Header responsive.
 * Remove unused CSS classes in Navbar.
 * Review all CSS in project.
-* Improve Logo, make it SVG completely. Zoom it a little bit.
 * Lazy load off-screen images. Make them only start their data fetching once
   they are seen in viewport. See IntersectionObserver.
 * Add pagination to Products route. Add next and previous page buttons.
@@ -25,3 +24,6 @@
 * Add carousel with at least 2 images.
 * Read: https://overreacted.io/a-complete-guide-to-useeffect
 * Make all breakpoints mobile-first.
+* Cache-Control
+* CloudFront
+* webp
