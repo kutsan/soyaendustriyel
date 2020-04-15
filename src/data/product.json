@@ -85,6 +85,86 @@
 			"desc": {
 				"text": "Tepesindeki tomurcuk ve hemen altındaki ufacık, taptaze iki yapraktır Altınbaş'ı altınbaş yapan. Çay gurmeleri Altınbaş'ı hemen tanırlar! Altınbaşlı ve kıvrımlı çay oranının en çok kullanıldığı çaydır. Damakta ayrı bir tat bırakan Altınbaş, burukluğu ile hakiki çay lezzetini sunar. Kokusu ve tadıyla, aroma seviyesi en yüksek olan Altınbaş'ın az miktarı ile çok dem sağlanır. Dost sohbetleriniz ve keyifli toplantılarınız için Altınbaş birebirdir."
 			}
+		},
+		{
+			"id": "pg-flash-no-8-hijyenik-cok-amacli-yuzey-temizleyici-750ml",
+			"category": "yuzey-temizleme",
+			"name": "P&G Flash Hijyenik Çok Amaçlı Yüzey Temizleyici No: 8 750ML",
+			"brand": "P&G",
+			"code": 1090507,
+			"desc": {
+				"text": "Cam ve aynalar dahil, yer, duvar, tezgah ve tüm yüzeylerde tam temizlk sağlayan Flash No: 8 etkili formülüyle en ağır ve yerleşmiş kirleri söküp atar. Aynı zamanda çamaşır suyu katkılı formülü sayesinde yüzey dezenfektanı olarak kullanabilirsiniz."
+			}
+		},
+		{
+			"id": "desodor-d57-kuvvetli-yuzey-temizleyici-sari-su-750ml",
+			"category": "yuzey-temizleme",
+			"name": "Desodor D57 Kuvvetli Yüzey Temizleyici (Sarı Su) 750ML",
+			"brand": "Desodor",
+			"code": 1090508,
+			"desc": {
+				"text": "Çok amaçlı yüzey temizleyici kullanım alanları: Deri veya suni deri yüzeyler, koltuklar, sandalyeler, kumaş koltuk, hali, kilim ve tekstil yüzeyler, alüminyum, plastik yüzeyler, pencereler ve kapılar, bilgisayar, yazıcı ve fotokopi makinası kasaları, ocak, dolap, mutfak bankosu, aspiratörler, armatür, emaye ve seramik yüzeyler, derz araları, paslanmaz krom çelik ve boyalı yüzeyler, plastik sandalye ve masalar, klima kasaları ve filtrelerı, şezlonglar, panjürler, şömine camı ve bacaları, bisiklet, motosikletler, araç motorları, torpidolar, jantlar, kaportaya yapışmış ziftler."
+			}
+		},
+		{
+			"id": "domestos-camasir-suyu-810gr",
+			"category": "camasir-sulari",
+			"name": "Domestos Çamaşır Suyu 810GR",
+			"brand": "Domestos",
+			"code": 1090509,
+			"desc": {
+				"list": [
+					"Uzun süreli koruma ve maksimum hijyen sağlar.",
+					"Yoğun kıvamlı çamaşır suyu temizler, hijyen sağlar.",
+					"Mikropları öldürür ve kireci önler.",
+					"Yoğun kıvamlı formülü ile sifonu çektikten sonra bile yüzeye tutunarak etkisini devam ettirir."
+				]
+			}
+		},
+		{
+			"id": "fairy-bulasik-deterjani-675ml",
+			"category": "elde-bulasik-deterjani",
+			"name": "Fairy Sıvı Bulaşık Deterjanı 675ML",
+			"brand": "Fairy",
+			"code": 1090510,
+			"desc": {
+				"list": [
+					"Bir şişe Fairy sıradan bulaşık deterjanlarına göre 2 kat fazla bulaşık yıkar.",
+					"Konsantre formülü zorlu yağları anında çözerek mükemmel temizlik sağlar.",
+					"Her damlada ultra uzun süren köpük."
+				]
+			}
+		},
+		{
+			"id": "fairy-bulasik-deterjani-5lt",
+			"category": "elde-bulasik-deterjani",
+			"name": "Fairy Sıvı Bulaşık Deterjanı 5LT",
+			"brand": "Fairy",
+			"code": 1090511,
+			"desc": {
+				"list": [
+					"Bir şişe Fairy sıradan bulaşık deterjanlarına göre 2 kat fazla bulaşık yıkar.",
+					"Konsantre formülü zorlu yağları anında çözerek mükemmel temizlik sağlar.",
+					"Her damlada ultra uzun süren köpük."
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-z-kat-200-lu",
+			"category": "z-katli-havlu",
+			"name": "Focus Optimum Z Katlı Havlu 200'lü",
+			"brand": "Focus",
+			"code": 5050407,
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "20cm" },
+					{ "key": "Yaprak yüksekliği", "value": "24cm" },
+					{ "key": "Paket içeriği", "value": "200 adet" },
+					{ "key": "Koli içi paket", "value": "12 paket" },
+					{ "key": "Net koli ağırlığı", "value": "4.3kg" }
+				]
+			}
 		}
 	]
 }

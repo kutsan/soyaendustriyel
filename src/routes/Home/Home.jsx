@@ -11,7 +11,7 @@ const Home = () => {
 	return (
 		<>
 			<div className='home-products'>
-				{data.product.getRandom(8).map((cur) => {
+				{data.product.getRandom(80).map((cur) => {
 					return <ProductCard key={cur.id} product={cur} />
 				})}
 			</div>
