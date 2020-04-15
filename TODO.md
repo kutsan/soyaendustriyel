@@ -24,6 +24,6 @@
 * Add carousel with at least 2 images.
 * Read: https://overreacted.io/a-complete-guide-to-useeffect
 * Make all breakpoints mobile-first.
-* Cache-Control
-* CloudFront
-* webp
+* Drop Firebase Storage and its API utils.
+* Use local storage for images.
+* Use webp format with jpg fallback for images.
