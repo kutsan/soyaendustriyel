@@ -32,3 +32,4 @@
 * Fix animation glitch in NavbarMobile max-height transition.
 * Use picture element.
 * Highlight current selected route in NavbarMobile.
+* Update to React Router 6. See when it's ready: https://github.com/ReactTraining/react-router/blob/master/docs/advanced-guides/migrating-5-to-6.md
