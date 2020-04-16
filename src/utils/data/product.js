@@ -15,9 +15,10 @@ const getRef = (id) => {
  *
  * @param {number} count - Product count
  * @param [string] category - Optional category to be used to filter
+ * @param [string] exclude - Optionally exclude given id from returning products.
  * @return {Object[]} Array of random products
  **/
-const getRandom = (count, category = null) => {
+const getRandom = (count, category = null, exclude = null) => {
 	const shuffle = (arr) => {
 		const a = Array.from(arr)
 
@@ -35,7 +36,7 @@ const getRandom = (count, category = null) => {
 	}
 
 	return category
-		? shuffle(dataProduct.filter((e) => e.category === category))
+		? shuffle(dataProduct.filter((e) => e.category === category && e.id !== exclude))
 		: shuffle(dataProduct)
 }
 
