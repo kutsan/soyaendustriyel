@@ -17,7 +17,6 @@
 * Write unit tests.
 * Write tests for data validation.
 * Implement SearchBar.
-* Add similar products component in Product route.
 * Add filter for brands in Products route.
 * Add 'Bayiliklerimiz' to Home.
 * Add 'Neden Soya Endustriyel?' to Home.
@@ -33,3 +32,4 @@
 * Use picture element.
 * Highlight current selected route in NavbarMobile.
 * Update to React Router 6. See when it's ready: https://github.com/ReactTraining/react-router/blob/master/docs/advanced-guides/migrating-5-to-6.md
+* Fix LT to L.
