@@ -41,8 +41,11 @@
 	margin-bottom: 20px;
 	padding: 0 15px;
 
+	hyphens: auto;
+
 	font-size: 1rem;
 	font-weight: 500;
+	line-height: 22px;
 }
 
 @media screen and (min-width: 435px) {
