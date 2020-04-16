@@ -5,6 +5,7 @@ import './Product.css'
 
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb.jsx'
 import Image from '@/components/Image/Image.jsx'
+import SimilarProducts from './components/SimilarProducts.jsx'
 
 import data from '@/utils/data/index.js'
 
@@ -62,6 +63,8 @@ const Product = ({ match }) => {
 					)}
 				</div>
 			</div>
+
+			<SimilarProducts category={productRef.category} exclude={productRef.id} />
 		</>
 	)
 }
