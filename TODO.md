@@ -5,7 +5,10 @@
 * Remove unused CSS classes in Navbar.
 * Review all CSS in project.
 * Lazy load off-screen images. Make them only start their data fetching once
-  they are seen in viewport. See IntersectionObserver.
+  they are seen in viewport.
+  @see https://github.com/twobin/react-lazyload
+  @see https://github.com/twobin/react-lazyload/blob/master/examples/pages/fadein.js
+  @see IntersectionObserver.
 * Add pagination to Products route. Add next and previous page buttons.
 * Make all images 240x240 and JPG with quality 50%.
 * Setup CSP with Webpack nonce.
