@@ -9,6 +9,7 @@ import { ImageProvider } from './context/ImageContext'
 import Home from './routes/Home/Home.jsx'
 import Products from './routes/Products/Products.jsx'
 import Product from './routes/Product/Product.jsx'
+import Search from './routes/Search/Search.jsx'
 import NotFound from './routes/NotFound/NotFound.jsx'
 
 import LayoutDefault from './layouts/default.jsx'
@@ -36,6 +37,7 @@ const App = () => {
 					path='/product/:id'
 					component={validatedRoute(validatorProduct)(Product)}
 				/>
+				<RouteWrapper exact path='/search' component={Search} />
 
 				<RouteWrapper component={NotFound} />
 			</Switch>

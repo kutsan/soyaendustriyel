@@ -47,4 +47,15 @@ const filter = (cb) => {
 	return dataProduct.filter(cb)
 }
 
-export default { getRef, getRandom, filter }
+const search = (query) => {
+	const regex = new RegExp(query, 'gi')
+
+	return dataProduct.filter(
+		(e) =>
+			(e.name && e.name.match(regex)) ||
+			(e.brand && e.brand.match(regex)) ||
+			(e.code && String(e.code).match(regex))
+	)
+}
+
+export default { getRef, getRandom, filter, search }
