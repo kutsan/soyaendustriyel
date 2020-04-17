@@ -4,6 +4,8 @@ import { lazyload } from 'react-lazyload'
 
 import './Image.css'
 
+import data from '@/utils/data/index.js'
+
 // HELP
 // @see https://github.com/Canner/react-loading-image/blob/master/src/index.js
 
@@ -21,7 +23,11 @@ const Image = ({ id }) => {
 			<div className='image-wrapper'>
 				<picture>
 					<source srcSet={`/${id}.webp`} type='image/webp' />
-					<img className={`image`} src={`/${id}.jpg`} />
+					<img
+						alt={data.product.getRef(id).name}
+						className={`image`}
+						src={`/${id}.jpg`}
+					/>
 				</picture>
 			</div>
 		</div>
