@@ -7,12 +7,8 @@ import ProductCard from '@/components/ProductCard/ProductCard.jsx'
 
 import data from '@/utils/data/index.js'
 
-const useQuery = () => {
-	return new URLSearchParams(useLocation().search)
-}
-
 const Search = () => {
-	const params = useQuery()
+	const params = new URLSearchParams(useLocation().search)
 	const query = params.get('query') || ''
 
 	return (
