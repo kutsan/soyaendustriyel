@@ -47,6 +47,12 @@ const filter = (cb) => {
 	return dataProduct.filter(cb)
 }
 
+/**
+ * Search product in names, brands or codes.
+ *
+ * @param {string} query - Search query.
+ * @return {Object[]} Array of products in search result.
+ **/
 const search = (query) => {
 	const regex = new RegExp(query, 'gi')
 
