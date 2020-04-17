@@ -1,66 +1,26 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
+import { lazyload } from 'react-lazyload'
 
 import './Image.css'
 
-import ImageContext from '@/context/ImageContext.js'
+// HELP
+// @see https://github.com/Canner/react-loading-image/blob/master/src/index.js
 
-import storage from '@/utils/firebase/storage.js'
+const Placeholder = () => (
+	<div className='image-container'>
+		<div className='image-wrapper'>
+			<div className='image'></div>
+		</div>
+	</div>
+)
 
 const Image = ({ id }) => {
-	const [image, setImage] = useState(null)
-	const [loading, setLoading] = useState(false)
-
-	const { getStoredImageURL, storeImageURL } = useContext(ImageContext)
-
-	useEffect(() => {
-		let ignore = false
-
-		const url = getStoredImageURL(id)
-
-		if (url && !ignore) {
-			setImage(url)
-
-			return () => {
-				ignore = true
-			}
-		}
-
-		setLoading(true)
-
-		storage
-			.child(`${id}.jpg`)
-			.getDownloadURL()
-			.then((url) => {
-				if (!ignore) {
-					storeImageURL({ id, url })
-					setImage(url)
-				}
-			})
-			.catch((err) => {
-				if (!ignore) {
-					console.error(err)
-				}
-			})
-			.finally(() => {
-				if (!ignore) {
-					setLoading(false)
-				}
-			})
-
-		return () => {
-			ignore = true
-		}
-	}, [id])
-
 	return (
 		<div className='image-container'>
-			<div
-				style={image && { backgroundImage: `url(${image})` }}
-				className={`image ${loading ? 'image--loading' : ''} ${
-					!loading && !image ? 'image--no-image' : ''
-				}`}
-			></div>
+			<div className='image-wrapper'>
+				<img className={`image`} src={`/${id}.jpg`} />
+			</div>
 		</div>
 	)
 }
@@ -69,4 +29,8 @@ Image.propTypes = {
 	id: PropTypes.string
 }
 
-export default Image
+export default lazyload({
+	once: true,
+	offset: -200,
+	placeholder: <Placeholder />
+})(Image)
