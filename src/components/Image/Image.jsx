@@ -19,7 +19,10 @@ const Image = ({ id }) => {
 	return (
 		<div className='image-container'>
 			<div className='image-wrapper'>
-				<img className={`image`} src={`/${id}.jpg`} />
+				<picture>
+					<source srcSet={`/${id}.webp`} type='image/webp' />
+					<img className={`image`} src={`/${id}.jpg`} />
+				</picture>
 			</div>
 		</div>
 	)
