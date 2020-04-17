@@ -10,7 +10,6 @@
   @see https://github.com/twobin/react-lazyload/blob/master/examples/pages/fadein.js
   @see IntersectionObserver.
 * Add pagination to Products route. Add next and previous page buttons.
-* Make all images 240x240 and JPG with quality 50%.
 * Setup CSP with Webpack nonce.
 * Bring Brands back.
 * Design NavbarWeb.
