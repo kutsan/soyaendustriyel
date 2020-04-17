@@ -119,6 +119,10 @@ module.exports = {
 		}),
 		new ScriptExtHtmlWebpackPlugin({ defaultAttribute: 'async' }),
 		new MiniCssExtractPlugin({ filename: 'styles.bundle.[contenthash].css' }),
-		new CopyPlugin([{ from: 'src/public/assets/' }, { from: 'src/public/config' }])
+		new CopyPlugin([
+			{ from: 'src/public/assets/' },
+			{ from: 'src/public/config/' },
+			{ from: 'src/public/images/' }
+		])
 	]
 }
