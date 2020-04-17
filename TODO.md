@@ -33,3 +33,8 @@
 * Update to React Router 6. See when it's ready: https://github.com/ReactTraining/react-router/blob/master/docs/advanced-guides/migrating-5-to-6.md
 * Test and support IE11.
 * Add <picture> polyfill.
+* ProductCard itself should be lazy loaded.
+* Make SVGs external maybe?
+* Do not even try to load NavbarMobile on web and vice versa.
+* Maybe even lazy load NavbarMobile items.
+* All images is in their poor quality.
