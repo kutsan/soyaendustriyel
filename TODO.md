@@ -21,21 +21,15 @@
 * Add 'Neden Soya Endustriyel?' to Home.
 * Add 'Gun icinde hizli ve elden teslimat' to Home.
 * Add sub-categories component next to the products.
-* Write data for current products.
 * Add carousel with at least 2 images.
 * Read: https://overreacted.io/a-complete-guide-to-useeffect
 * Make all breakpoints mobile-first.
-* Drop Firebase Storage and its API utils.
-* Use webp format with jpg fallback for images.
-* Fix animation glitch in NavbarMobile max-height transition.
-* Use picture element.
-* Highlight current selected route in NavbarMobile.
 * Update to React Router 6. See when it's ready: https://github.com/ReactTraining/react-router/blob/master/docs/advanced-guides/migrating-5-to-6.md
 * Test and support IE11.
 * Add <picture> polyfill.
-* ProductCard itself should be lazy loaded.
 * Make SVGs external maybe?
 * Do not even try to load NavbarMobile on web and vice versa.
+* Resolution dependent CSS layouts.
 * Maybe even lazy load NavbarMobile items.
 * All images is in their poor quality.
 * Implement Critical CSS.
