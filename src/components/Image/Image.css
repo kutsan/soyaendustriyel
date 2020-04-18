@@ -1,6 +1,4 @@
 .image-container {
-	padding: 20px;
-
 	background-color: #ffffff;
 }
 
@@ -52,12 +50,6 @@
 @keyframes loading {
 	to {
 		transform: rotate(360deg);
-	}
-}
-
-@media screen and (min-width: 600px) {
-	.image-container {
-		padding: 30px;
 	}
 }
 

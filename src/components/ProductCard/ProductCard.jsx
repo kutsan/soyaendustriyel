@@ -9,7 +9,9 @@ import Image from '@/components/Image/Image.jsx'
 const ProductCard = ({ product }) => {
 	return (
 		<Link className='product-card' to={`/product/${product.id}`}>
-			<Image id={product.id} />
+			<div className='product-card__image-container'>
+				<Image id={product.id} />
+			</div>
 			<div className='product-card__code'>{product.code}</div>
 			<div className='product-card__name'>{product.name}</div>
 		</Link>

@@ -54,14 +54,42 @@ const filter = (cb) => {
  * @return {Object[]} Array of products in search result.
  **/
 const search = (query) => {
+	if (!query) return []
 	const regex = new RegExp(query, 'gi')
 
-	return dataProduct.filter(
-		(e) =>
-			(e.name && e.name.match(regex)) ||
-			(e.brand && e.brand.match(regex)) ||
-			(e.code && String(e.code).match(regex))
-	)
+	const items = []
+
+	const addMatch = (attr, item, match) => {
+		const index = item[attr].indexOf(match)
+		items.push({
+			...item,
+			match: {
+				attribute: attr,
+				index: index,
+				value: match
+			}
+		})
+	}
+
+	for (let e of dataProduct) {
+		const matches = {
+			name: e.name && e.name.match(regex),
+			brand: e.brand && e.brand.match(regex),
+			code: e.code && e.code.match(regex)
+		}
+
+		if (matches.name) {
+			addMatch('name', e, matches.name[0])
+		} else if (matches.brand) {
+			addMatch('brand', e, matches.brand[0])
+		} else if (matches.code) {
+			addMatch('code', e, matches.code[0])
+		}
+
+		if (items.length > 4) break
+	}
+
+	return items
 }
 
 export default { getRef, getRandom, filter, search }
