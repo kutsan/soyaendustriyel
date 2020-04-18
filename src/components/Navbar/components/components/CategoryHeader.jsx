@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 import './CategoryHeader.css'
@@ -9,14 +9,16 @@ const CategoryHeader = ({ modifier, item, to, onClickToggle, expanded, hasCatego
 		<div
 			className={`navbar-mobile__category-header navbar-mobile__category-header--${modifier}`}
 		>
-			<Link
+			<NavLink
 				to={to}
+				isActive={(_, location) => location.pathname === to}
+				activeClassName='navbar-mobile__category-link--active'
 				className={`navbar-mobile__category-link navbar-mobile__category-link--${modifier} ${
 					expanded ? 'navbar-mobile__category-link--expanded' : ''
 				}`}
 			>
 				{item.name}
-			</Link>
+			</NavLink>
 
 			{hasCategoriesUnder && (
 				<button

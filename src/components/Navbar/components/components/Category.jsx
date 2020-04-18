@@ -12,8 +12,7 @@ const Category = ({
 	onClickToggle,
 	expanded,
 	hasCategoriesUnder,
-	children,
-	maxHeight
+	children
 }) => {
 	return (
 		<div
@@ -30,10 +29,9 @@ const Category = ({
 				hasCategoriesUnder={hasCategoriesUnder}
 			/>
 
-			{hasCategoriesUnder && (
+			{hasCategoriesUnder && expanded && (
 				<div
 					className={`navbar-mobile__category-children navbar-mobile__category-children--${modifier}`}
-					style={expanded ? { maxHeight: `calc(3.5rem * ${maxHeight})` } : {}}
 				>
 					{children}
 				</div>
@@ -49,7 +47,6 @@ Category.propTypes = {
 	hasCategoriesUnder: PropTypes.bool.isRequired,
 	expanded: PropTypes.bool,
 	onClickToggle: PropTypes.func,
-	maxHeight: PropTypes.number,
 	children: PropTypes.node
 }
 
