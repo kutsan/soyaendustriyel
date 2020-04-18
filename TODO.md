@@ -38,3 +38,5 @@
 * Do not even try to load NavbarMobile on web and vice versa.
 * Maybe even lazy load NavbarMobile items.
 * All images is in their poor quality.
+* Implement Critical CSS.
+* Remove ImageContext.js
