@@ -17,7 +17,7 @@ const Product = ({ match }) => {
 			<Breadcrumb buildFrom={productRef} />
 
 			<div className='product'>
-				<div className='product__picture-container'>
+				<div className='product__image-container'>
 					<Image id={productRef.id} />
 				</div>
 

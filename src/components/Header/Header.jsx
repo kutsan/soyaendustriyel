@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import './Header.css'
 
 import Logo from './components/Logo.jsx'
-import SearchBar from './components/SearchBar.jsx'
+import SearchBar from '@/components/SearchBar/SearchBar.jsx'
 import Communication from './components/Communication.jsx'
 import MenuButton from './components/MenuButton.jsx'
 

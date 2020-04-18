@@ -1,7 +1,7 @@
 .logo {
 	width: 230px;
 	height: auto;
-	margin: 10px 0 30px 0;
+	margin: 5px 0;
 }
 
 @media screen and (min-width: 769px) {
