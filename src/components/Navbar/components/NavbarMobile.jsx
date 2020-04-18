@@ -20,17 +20,6 @@ const NavbarMobile = ({ menuOpen }) => {
 		}
 	}
 
-	const calcMaxHeight = (catID) => {
-		const subCountOfExpandedSubs = data.category
-			.getSubs(catID)
-			.filter(isExpanded)
-			.reduce((acc, cur) => {
-				return acc + data.category.getSubs(cur.id).length
-			}, 0)
-
-		return data.category.getSubs(catID).length + subCountOfExpandedSubs
-	}
-
 	return (
 		<div className={`navbar-mobile ${menuOpen ? 'navbar-mobile--open' : ''}`}>
 			{data.category.getTops().map((top) => (
@@ -41,7 +30,6 @@ const NavbarMobile = ({ menuOpen }) => {
 					to={`/products/${top.id}`}
 					onClickToggle={() => onClickToggle(top)}
 					hasCategoriesUnder={data.category.hasSubs(top.id)}
-					maxHeight={calcMaxHeight(top.id)}
 					item={top}
 				>
 					{data.category.getSubs(top.id).map((sub) => (
@@ -52,7 +40,6 @@ const NavbarMobile = ({ menuOpen }) => {
 							to={`/products/${top.id}/${sub.id}`}
 							onClickToggle={() => onClickToggle(sub)}
 							hasCategoriesUnder={data.category.hasSubs(sub.id)}
-							maxHeight={calcMaxHeight(sub.id)}
 							item={sub}
 						>
 							{data.category.getSubs(sub.id).map((lowermost) => (

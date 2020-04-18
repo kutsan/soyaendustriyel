@@ -33,22 +33,38 @@
 	transform: rotate(135deg);
 }
 
+.navbar-mobile__category-link {
+	flex-grow: 1;
+
+	margin: 4px;
+	padding: 12px 20px;
+
+	text-transform: uppercase;
+
+	font-weight: inherit;
+}
+
 .navbar-mobile__category-link,
 .navbar-mobile__category-link:active,
 .navbar-mobile__category-link:visited,
 .navbar-mobile__category-link:focus,
 .navbar-mobile__category-link:hover {
-	flex-grow: 1;
-
-	margin: 16px;
-
-	text-transform: uppercase;
-
 	color: inherit;
+}
 
-	font-weight: inherit;
+.navbar-mobile__category-link--active {
+	border: 1px solid #027551;
+	border-radius: 40px;
 }
 
 .navbar-mobile__category-link--expanded {
 	font-weight: 500;
+}
+
+.navbar-mobile__category-link--top {
+	margin-left: 9px;
+}
+
+.navbar-mobile__category-link--lowermost {
+	margin-right: 24px;
 }
