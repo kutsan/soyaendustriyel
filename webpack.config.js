@@ -34,6 +34,9 @@ module.exports = {
 	},
 
 	devServer: {
+		headers: {
+			'Cache-Control': 'max-age=300'
+		},
 		hot: true,
 		open: true,
 		host: '0.0.0.0',
