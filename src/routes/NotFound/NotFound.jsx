@@ -9,6 +9,7 @@ const NotFound = () => {
 	return (
 		<div className='notfound'>
 			<NotFoundIcon className='notfound__icon' />
+
 			<div className='notfound__info'>Aradığınız sayfayı bulamadık.</div>
 			<div className='notfound__more-info'>
 				Sayfa kaldırılmış veya değiştirilmiş olabilir.
