@@ -28,22 +28,22 @@
 
 .image-spinner {
 	position: absolute;
-	top: calc(50% - 70px / 2);
-	left: calc(50% - 70px / 2);
+	top: calc(50% - 45% / 2);
+	left: calc(50% - 45% / 2);
 
 	display: inline-block;
 
-	width: 70px;
-	height: 70px;
+	width: 45%;
+	height: 45%;
 
 	content: '';
 
 	animation: loading 1.2s infinite linear;
 
-	border-top: 4px solid #ffffff;
-	border-right: 4px solid #ffffff;
-	border-bottom: 4px solid #777777;
-	border-left: 4px solid #777777;
+	border-top: 0.25em solid #ffffff;
+	border-right: 0.25em solid #ffffff;
+	border-bottom: 0.25em solid #777777;
+	border-left: 0.25em solid #777777;
 	border-radius: 50%;
 }
 
