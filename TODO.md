@@ -33,4 +33,5 @@
 * Maybe even lazy load NavbarMobile items.
 * All images is in their poor quality.
 * Implement Critical CSS.
+* Use smaller images in SearchBar.
 * Remove ImageContext.js
