@@ -7,13 +7,13 @@ import './SearchResultItem.css'
 import Image from '@/components/Image/Image.jsx'
 
 const SearchResultItem = ({ item, onClick }) => {
-	const { attribute, index, value } = item.match
+	const { attr, index, value } = item.match
 
 	const match = (
 		<>
-			<span>{item[attribute].substring(0, index)}</span>
+			<span>{item[attr].substring(0, index)}</span>
 			<span className='search-result-item__highlight'>{value}</span>
-			<span>{item[attribute].substring(index + value.length)}</span>
+			<span>{item[attr].substring(index + value.length)}</span>
 		</>
 	)
 
@@ -24,13 +24,13 @@ const SearchResultItem = ({ item, onClick }) => {
 			</div>
 			<div>
 				<div className='search-result-item__name'>
-					{attribute === 'name' ? match : item.name}
+					{attr === 'name' ? match : item.name}
 				</div>
 				<div className='search-result-item__brand'>
-					{attribute === 'brand' ? match : item.brand}
+					{attr === 'brand' ? match : item.brand}
 				</div>
 				<div className='search-result-item__code'>
-					{attribute === 'code' ? match : item.code}
+					{attr === 'code' ? match : item.code}
 				</div>
 			</div>
 		</Link>

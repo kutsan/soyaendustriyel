@@ -64,7 +64,7 @@ const search = (query) => {
 		items.push({
 			...item,
 			match: {
-				attribute: attr,
+				attr,
 				index: index,
 				value: match
 			}
