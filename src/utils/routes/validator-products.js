@@ -5,15 +5,18 @@ import data from '@/utils/data/index.js'
  * and react-router's <Route /> component.  Checks whether or not given `path` is
  * valid URL to go.
  *
- * @param {Object} path - Path to be validated
- * @param {string} path.category
- * @param {string} path.subcategory
- * @param {string} path.lowermostcategory
+ * @param {string} props.match.params.category
+ * @param {string} props.match.params.subcategory
+ * @param {string} props.match.params.lowermostcategory
  * @return {boolean} Return path validation state, whether true or false.
  * @example
  *     <Route component={validatedRoute(validatorProducts)(Products)} />
  **/
-const validatorProducts = ({ category, subcategory, lowermostcategory }) => {
+const validatorProducts = ({
+	match: {
+		params: { category, subcategory, lowermostcategory }
+	}
+}) => {
 	if (category && !subcategory && !lowermostcategory) {
 		const topRef = data.category.getRef(category)
 

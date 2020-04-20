@@ -5,15 +5,14 @@ import data from '@/utils/data/index.js'
  * and react-router's <Route /> component.  Checks whether or not given `path` is
  * valid URL to go.
  *
- * @param {Object} path - Path to be validated
- * @param {string} path.id
+ * @param {string} props.match.params.id - Product ID.
  * @return {boolean} Return path validation state, whether true or false.
  * @example
  *     <Route component={validatedRoute(validatorProduct)(Products)} />
  **/
-const validatorProduct = ({ id }) => {
+const validatorProduct = (props) => {
 	// /products/:id
-	return data.product.getRef(id)
+	return data.product.getRef(props.match.params.id)
 }
 
 export default validatorProduct
