@@ -9,7 +9,7 @@ const Logo = () => {
 	return (
 		<NavLink
 			activeStyle={{ pointerEvents: 'none' }}
-			isActive={(_, location) => location.pathname === '/'}
+			isActive={(match, location) => location.pathname === '/'}
 			to='/'
 			aria-label='Ana Sayfa'
 		>
