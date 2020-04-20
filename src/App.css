@@ -43,12 +43,46 @@ main {
 	padding: 24px 10px 100px 10px;
 }
 
+a {
+	-webkit-tap-highlight-color: transparent;
+}
+
 @media screen and (min-width: 768px) {
 	main {
 		padding: 40px 40px 150px 40px;
 	}
 }
 
-a {
-	-webkit-tap-highlight-color: transparent;
+.no-javascript-warning {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	max-width: 600px;
+	min-height: 200px;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 10px;
+
+	border: 20px solid #c0392b;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.no-javascript-warning__title {
+	margin: 30px 20px 10px 20px;
+
+	color: #e74c3c;
+
+	font-size: 30px;
+	font-weight: 500;
+}
+
+.no-javascript-warning__text {
+	margin: 10px 20px 30px 20px;
+
+	hyphens: auto;
+
+	color: #1c1c1c;
+
+	font-size: 20px;
 }
