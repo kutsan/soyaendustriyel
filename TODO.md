@@ -34,3 +34,5 @@
 * Remove ImageContext.js
 * Force load images in SearchBar.
 * Disable SearchBar link with cursor style if there is no query in input element.
+* SearchBar needs to be inside Header folder.
+* Change all map parameters to consistent ones like `cur`.
