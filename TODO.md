@@ -12,10 +12,9 @@
 * Add pagination to Products route. Add next and previous page buttons.
 * Setup CSP with Webpack nonce.
 * Bring Brands back.
-* Design NavbarWeb.
+* Implement NavbarDesktop design.
 * Write unit tests.
 * Write tests for data validation.
-* Implement SearchBar.
 * Add filter for brands in Products route.
 * Add 'Bayiliklerimiz' to Home.
 * Add 'Neden Soya Endustriyel?' to Home.
@@ -30,8 +29,8 @@
 * Make SVGs external maybe?
 * Do not even try to load NavbarMobile on web and vice versa.
 * Resolution dependent CSS layouts.
-* Maybe even lazy load NavbarMobile items.
-* All images is in their poor quality.
 * Implement Critical CSS.
 * Use smaller images in SearchBar.
 * Remove ImageContext.js
+* Force load images in SearchBar.
+* Disable SearchBar link with cursor style if there is no query in input element.
