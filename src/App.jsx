@@ -17,6 +17,7 @@ import LayoutDefault from './layouts/default.jsx'
 import validatedRoute from './utils/routes/validated-route.jsx'
 import validatorProducts from './utils/routes/validator-products.js'
 import validatorProduct from './utils/routes/validator-product.js'
+import validatorSearch from './utils/routes/validator-search.js'
 
 const App = () => {
 	return (
@@ -37,7 +38,11 @@ const App = () => {
 					path='/product/:id'
 					component={validatedRoute(validatorProduct)(Product)}
 				/>
-				<RouteWrapper exact path='/search' component={Search} />
+				<RouteWrapper
+					exact
+					path='/search'
+					component={validatedRoute(validatorSearch)(Search)}
+				/>
 
 				<RouteWrapper component={NotFound} />
 			</Switch>
