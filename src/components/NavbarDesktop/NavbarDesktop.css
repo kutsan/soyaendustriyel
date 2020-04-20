@@ -1,7 +1,13 @@
 .navbar-desktop-container {
 	position: relative;
 
-	background-color: #387b67;
+	background:
+		linear-gradient(
+			54deg,
+			rgba(44, 142, 111, 1) 0%,
+			rgba(15, 122, 89, 1) 35%,
+			rgb(25, 133, 155) 100%
+		);
 }
 
 .navbar-menu {
