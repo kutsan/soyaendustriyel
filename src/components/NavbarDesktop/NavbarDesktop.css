@@ -1,3 +1,9 @@
+.navbar-desktop-container {
+	position: relative;
+
+	background-color: #387b67;
+}
+
 .navbar-menu {
 	display: flex;
 	justify-content: center;
@@ -99,13 +105,13 @@
 }
 
 @media screen and (max-width: 768px) {
-	nav {
+	.navbar-desktop-container {
 		display: block;
 
 		background-color: #fefefe;
 	}
 
-	nav .navbar-menu {
+	.navbar-mobile-container .navbar-menu {
 		display: none;
 	}
 }

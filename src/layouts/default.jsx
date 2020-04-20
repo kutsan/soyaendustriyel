@@ -6,7 +6,8 @@ import { withRouter } from 'react-router-dom'
 
 import Header from '@/components/Header/Header.jsx'
 import Footer from '@/components/Footer/Footer.jsx'
-import Navbar from '@/components/Navbar/Navbar.jsx'
+import NavbarDesktop from '@/components/NavbarDesktop/NavbarDesktop.jsx'
+import NavbarMobile from '@/components/NavbarMobile/NavbarMobile.jsx'
 
 const LayoutDefault = ({ children, history }) => {
 	const [menuOpen, setMenuOpen] = useState(false)
@@ -24,7 +25,10 @@ const LayoutDefault = ({ children, history }) => {
 	return (
 		<>
 			<Header menuOpen={menuOpen} toggleMenu={() => setMenuOpen((cur) => !cur)} />
-			<Navbar menuOpen={menuOpen} toggleMenu={() => setMenuOpen((cur) => !cur)} />
+
+			<nav>
+				{window.innerWidth > 768 ? <NavbarDesktop /> : <NavbarMobile menuOpen={menuOpen} />}
+			</nav>
 
 			<main>{children}</main>
 
