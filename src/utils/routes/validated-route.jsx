@@ -6,7 +6,7 @@ import NotFound from '@/routes/NotFound/NotFound.jsx'
 const ValidatedRoute = (validator) => {
 	return function (ComposedComponent) {
 		const ValidatedComponent = (props) => {
-			if (!validator(props.match.params)) {
+			if (!validator(props)) {
 				return <NotFound {...props} />
 			}
 
