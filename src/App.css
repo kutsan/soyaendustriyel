@@ -1,11 +1,5 @@
-* {
-	box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-	box-sizing: inherit;
+::selection {
+	background: rgba(82, 191, 157, 0.5);
 }
 
 html {
@@ -14,6 +8,12 @@ html {
 	padding: 0;
 
 	font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
 body {
