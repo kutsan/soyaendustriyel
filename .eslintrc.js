@@ -25,6 +25,7 @@ module.exports = {
 		quotes: ['off', 'single'],
 		semi: ['off', 'always'],
 		'no-console': 0,
-		'react/display-name': 0
+		'react/display-name': 0,
+		'react/prop-types': 1
 	}
 }
