@@ -23,7 +23,7 @@
 		"lint": "npm run lint:eslint && npm run lint:stylelint",
 		"lint:eslint": "eslint 'src/**/*.{js,jsx}'",
 		"lint:stylelint": "stylelint 'src/**/*.css'",
-		"test": "jest",
+		"test": "echo TODO: jest",
 		"test:watch": "jest --watch --verbose",
 		"test:coverage": "jest --watch --coverage",
 		"format": "npm run format:stylelint && npm run format:prettier",
