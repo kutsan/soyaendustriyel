@@ -1,0 +1,37 @@
+.footer-attribution {
+	margin-top: 25px;
+
+	font-size: 0.875rem;
+
+	font-weight: 500;
+}
+
+.footer-attribution__link {
+	padding: 6px 8px;
+
+	transition-duration: 100ms;
+	transition-property: background-color, opacity, color;
+
+	text-decoration: none;
+	letter-spacing: 0.9px;
+
+	opacity: 0.8;
+
+	color: var(--color-green-200);
+	border-radius: 20px;
+	background-color: var(--color-blue-300);
+}
+
+.footer-attribution__link:first-child {
+	margin-right: 7px;
+}
+
+.footer-attribution__link:hover {
+	opacity: 1;
+	color: var(--color-black-100);
+	background-color: var(--color-green-100);
+}
+
+.footer-attribution__link:active {
+	opacity: 0.7;
+}
