@@ -5,6 +5,7 @@ import './Footer.css'
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 import Copyright from './components/Copyright.jsx'
+import Attribution from './components/Attribution.jsx'
 
 const Footer = () => {
 	return (
@@ -15,6 +16,7 @@ const Footer = () => {
 			</div>
 
 			<Copyright />
+			<Attribution />
 		</footer>
 	)
 }
