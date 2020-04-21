@@ -73,8 +73,8 @@
 	-webkit-appearance: none;
 }
 
-.search__input:placeholder {
-	color: #bbbbbb;
+.search__input::placeholder {
+	color: #636363;
 }
 
 .search__input:focus {
