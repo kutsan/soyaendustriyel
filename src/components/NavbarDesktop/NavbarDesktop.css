@@ -75,7 +75,7 @@
 .navbar-menu__item--sub {
 	padding: 16px 32px;
 
-	color: #319741;
+	color: #2c8e6f;
 }
 
 .navbar-menu__item-link--sub {
@@ -85,13 +85,13 @@
 }
 
 .navbar-menu__item-link--sub:hover {
-	color: #287f31;
+	color: #0f7a59;
 }
 
 .navbar-menu__lowermostmenu {
 	margin-top: 12.8px;
 
-	color: #505050;
+	color: #393939;
 }
 
 .navbar-menu__item--lowermost {
@@ -107,7 +107,7 @@
 }
 
 .navbar-menu__item-link--lowermost:hover {
-	color: #222222;
+	color: #000000;
 }
 
 @media screen and (max-width: 768px) {

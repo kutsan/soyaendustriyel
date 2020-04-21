@@ -1,5 +1,47 @@
+:root {
+	/* black */
+	--color-black-100: #000000;
+	--color-black-200: #1c1c1c;
+
+	/* white */
+	--color-white-100: #ffffff;
+	--color-white-200: #fefefe;
+	--color-white-300: #fafafa;
+	--color-white-400: #f7f7f7;
+	--color-white-500: #f1f1f1;
+	--color-white-600: #e6e6e6;
+
+	/* green */
+	--color-green-100: #52bf9d;
+	--color-green-200: #4adba7;
+	--color-green-300: #2c8e6f;
+	--color-green-400: #0f7a59;
+	--color-green-500: #027551;
+	--color-green-100-rgb: 82, 191, 157;
+
+	/* gray */
+	--color-gray-100: #868686;
+	--color-gray-200: #636363;
+	--color-gray-300: #555555;
+	--color-gray-400: #393939;
+	--color-gray-500: #333333;
+
+	/* blue */
+	--color-blue-100: #19859b;
+	--color-blue-200: #3f8abf;
+	--color-blue-300: #326e99;
+	--color-blue-400: #26384a;
+
+	/* red */
+	--color-red-100: #e74c3c;
+	--color-red-200: #c0392b;
+
+	/* orange */
+	--color-orange-100: #c48024;
+}
+
 ::selection {
-	background: rgba(82, 191, 157, 0.5);
+	background: rgba(var(--color-green-100-rgb), 0.5);
 }
 
 html {
@@ -20,8 +62,8 @@ body {
 	margin: 0;
 	padding: 0;
 
-	color: black;
-	background-color: #fafafa;
+	color: var(--color-black-100);
+	background-color: var(--color-white-300);
 
 	font-family:
 		-apple-system,
@@ -64,14 +106,14 @@ a {
 	margin-top: 100px;
 	padding: 10px;
 
-	border: 20px solid #c0392b;
+	border: 20px solid var(--color-red-200);
 	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .no-javascript-warning__title {
 	margin: 30px 20px 10px 20px;
 
-	color: #e74c3c;
+	color: var(--color-red-100);
 
 	font-size: 30px;
 	font-weight: 500;
@@ -82,7 +124,7 @@ a {
 
 	hyphens: auto;
 
-	color: #1c1c1c;
+	color: var(--color-black-200);
 
 	font-size: 20px;
 }

@@ -15,8 +15,8 @@ const NotFound = () => {
 				Sayfa kaldırılmış veya değiştirilmiş olabilir.
 			</div>
 
-			<Link to='/'>
-				<button className='notfound__go-home-page'>ANA SAYFAYA GİT</button>
+			<Link to='/' className='notfound__go-home-page'>
+				ANA SAYFAYA GİT
 			</Link>
 		</div>
 	)

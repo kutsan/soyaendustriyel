@@ -30,7 +30,7 @@
 }
 
 .notfound__more-info {
-	color: #4c4c4c;
+	color: #333333;
 
 	font-size: 1rem;
 }
@@ -39,8 +39,12 @@
 	margin: 32px;
 	padding: 16px 32px;
 
-	cursor: pointer;
+	transition: opacity 100ms;
 	white-space: nowrap;
+
+	text-decoration: none;
+
+	opacity: 1;
 
 	color: #ffffff;
 	border-width: 0 0 3px;
@@ -54,14 +58,10 @@
 	font-weight: 700;
 }
 
-.notfound__go-home-page,
-.notfound__go-home-page:hover,
-.notfound__go-home-page:visited,
-.notfound__go-home-page:focus,
-.notfound__go-home-page:active {
-	text-decoration: none;
+.notfound__go-home-page:hover {
+	opacity: 0.9;
+}
 
-	border-color: #326e99;
-	outline: none;
-	background-color: #397cac;
+.notfound__go-home-page:active {
+	opacity: 0.7;
 }

@@ -13,7 +13,7 @@
 	height: 100%;
 	padding: 30px;
 
-	border: 1px solid #e1e1e1;
+	border: 1px solid #e6e6e6;
 	background-color: white;
 
 	font-size: 16px;
@@ -35,7 +35,7 @@
 .product__brand {
 	margin-top: 14px;
 
-	color: #097a51;
+	color: #027551;
 
 	font-size: 1.25rem;
 	font-weight: 500;
