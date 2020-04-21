@@ -4,11 +4,6 @@
 * Make Header responsive.
 * Remove unused CSS classes in Navbar.
 * Review all CSS in project.
-* Lazy load off-screen images. Make them only start their data fetching once
-  they are seen in viewport.
-  @see https://github.com/twobin/react-lazyload
-  @see https://github.com/twobin/react-lazyload/blob/master/examples/pages/fadein.js
-  @see IntersectionObserver.
 * Add pagination to Products route. Add next and previous page buttons.
 * Setup CSP with Webpack nonce.
 * Bring Brands back.
@@ -34,5 +29,4 @@
 * Remove ImageContext.js
 * Force load images in SearchBar.
 * Disable SearchBar link with cursor style if there is no query in input element.
-* SearchBar needs to be inside Header folder.
 * Change all map parameters to consistent ones like `cur`.
