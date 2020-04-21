@@ -5,7 +5,7 @@ header {
 
 	padding: 24px 0 20px 0;
 
-	background-color: #fefefe;
+	background-color: var(--color-white-200);
 }
 
 @media screen and (max-width: 768px) {

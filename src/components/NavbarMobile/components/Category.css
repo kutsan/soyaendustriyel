@@ -1,5 +1,5 @@
 .navbar-mobile__category {
-	color: #333333;
+	color: var(--color-gray-500);
 
 	font-weight: 500;
 }
@@ -11,17 +11,17 @@
 }
 
 .navbar-mobile__category--expanded {
-	background-color: #f7f7f7;
+	background-color: var(--color-white-400);
 }
 
 .navbar-mobile__category--sub {
-	color: #555555;
+	color: var(--color-gray-300);
 
 	font-weight: 400;
 }
 
 .navbar-mobile__category--lowermost {
-	color: #027551;
+	color: var(--color-green-500);
 
 	font-weight: 400;
 }

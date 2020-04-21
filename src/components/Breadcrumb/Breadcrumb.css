@@ -46,8 +46,8 @@
 	transition-property: background-color, color;
 	text-decoration: none;
 
-	color: #636363;
-	border: 1px solid #868686;
+	color: var(--color-gray-200);
+	border: 1px solid var(--color-gray-100);
 	border-radius: 3px;
 }
 
@@ -55,7 +55,7 @@
 .breadcrumb__step-link:hover,
 .breadcrumb__step-link:focus,
 .breadcrumb__step-link:visited {
-	color: #636363;
+	color: var(--color-gray-200);
 }
 
 .breadcrumb__step-link:active {
@@ -64,8 +64,8 @@
 
 .breadcrumb__step-link:focus,
 .breadcrumb__step-link:hover {
-	color: white;
-	background-color: #393939;
+	color: var(--color-white-100);
+	background-color: var(--color-gray-400);
 }
 
 @media screen and (min-width: 768px) {

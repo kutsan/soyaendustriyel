@@ -21,7 +21,7 @@
 	transition-duration: 200ms;
 	transition-property: transform, opacity;
 
-	background-color: #333333;
+	background-color: var(--color-gray-500);
 }
 
 .menu-button--close span:nth-child(2) {

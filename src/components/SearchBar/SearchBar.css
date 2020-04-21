@@ -19,11 +19,11 @@
 	transition: background-color 300ms;
 
 	border-radius: 26px;
-	background: #f1f1f1;
+	background: var(--color-white-500);
 }
 
 .search-wrapper--active {
-	background: #ffffff;
+	background: var(--color-white-100);
 	box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.16);
 }
 
@@ -74,7 +74,7 @@
 }
 
 .search__input::placeholder {
-	color: #636363;
+	color: var(--color-gray-200);
 }
 
 .search__input:focus {

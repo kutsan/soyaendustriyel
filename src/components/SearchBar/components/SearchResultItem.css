@@ -18,7 +18,7 @@
 
 .search-result-item:hover,
 .search-result-item:active {
-	background-color: #f1f1f1;
+	background-color: var(--color-white-500);
 }
 
 .search-result-item:last-child {
@@ -35,8 +35,8 @@
 	margin-right: 15px;
 	padding: 5px;
 
-	border: 1px solid #f1f1f1;
-	background-color: white;
+	border: 1px solid var(--color-white-500);
+	background-color: var(--color-white-100);
 
 	font-size: 8px;
 }
@@ -44,7 +44,7 @@
 .search-result-item__brand {
 	margin-top: 3px;
 
-	color: #027551;
+	color: var(--color-green-500);
 
 	font-size: 0.95rem;
 }
@@ -52,7 +52,7 @@
 .search-result-item__code {
 	margin-top: 3px;
 
-	color: #636363;
+	color: var(--color-gray-200);
 
 	font-size: 0.8rem;
 }
