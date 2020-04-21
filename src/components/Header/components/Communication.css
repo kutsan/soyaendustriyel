@@ -57,7 +57,7 @@
 }
 
 .email:hover .email__address {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid var(--color-black-100);
 }
 
 .phone__icon {

@@ -30,7 +30,7 @@
 }
 
 .notfound__more-info {
-	color: #333333;
+	color: var(--color-gray-500);
 
 	font-size: 1rem;
 }
@@ -46,12 +46,12 @@
 
 	opacity: 1;
 
-	color: #ffffff;
+	color: var(--color-white-100);
 	border-width: 0 0 3px;
 	border-style: solid;
-	border-color: #326e99;
+	border-color: var(--color-blue-300);
 	border-radius: 6px;
-	background-color: #3f8abf;
+	background-color: var(--color-blue-200);
 	box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
 
 	font-size: 1.2rem;

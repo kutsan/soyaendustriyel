@@ -1,5 +1,5 @@
 .image-container {
-	background-color: #ffffff;
+	background-color: var(--color-white-100);
 }
 
 .image-wrapper {
@@ -40,10 +40,10 @@
 
 	animation: loading 1.2s infinite linear;
 
-	border-top: 0.25em solid #ffffff;
-	border-right: 0.25em solid #ffffff;
-	border-bottom: 0.25em solid #636363;
-	border-left: 0.25em solid #636363;
+	border-top: 0.25em solid var(--color-white-100);
+	border-right: 0.25em solid var(--color-white-100);
+	border-bottom: 0.25em solid var(--color-gray-200);
+	border-left: 0.25em solid var(--color-gray-200);
 	border-radius: 50%;
 }
 

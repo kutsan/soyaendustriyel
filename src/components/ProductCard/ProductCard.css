@@ -8,9 +8,9 @@
 	text-decoration: none;
 
 	color: initial;
-	border: 1px solid #e6e6e6;
+	border: 1px solid var(--color-white-600);
 	border-radius: 3px;
-	background-color: white;
+	background-color: var(--color-white-100);
 }
 
 .product-card:hover {
@@ -37,7 +37,7 @@
 	margin-bottom: 5px;
 	padding: 0 15px;
 
-	color: #027551;
+	color: var(--color-green-500);
 
 	font-size: 0.8rem;
 }

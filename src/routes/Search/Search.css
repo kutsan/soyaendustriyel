@@ -1,5 +1,5 @@
 .search-title {
-	color: #555555;
+	color: var(--color-gray-300);
 
 	font-size: 1.2rem;
 }
