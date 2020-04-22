@@ -4,7 +4,7 @@ import { Route, Switch, withRouter } from 'react-router-dom'
 
 import './App.css'
 
-import { ImageProvider } from './context/ImageContext'
+import { ViewportProvider } from './context/ViewportContext.js'
 
 import Home from './routes/Home/Home.jsx'
 import Products from './routes/Products/Products.jsx'
@@ -32,7 +32,7 @@ const App = ({ history }) => {
 	}, [history])
 
 	return (
-		<ImageProvider>
+		<ViewportProvider>
 			<Switch>
 				<RouteWrapper exact path='/' component={Home} />
 				<RouteWrapper
@@ -57,7 +57,7 @@ const App = ({ history }) => {
 
 				<RouteWrapper component={NotFound} />
 			</Switch>
-		</ImageProvider>
+		</ViewportProvider>
 	)
 }
 
