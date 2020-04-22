@@ -7,8 +7,13 @@ import Footer from '@/components/Footer/Footer.jsx'
 import NavbarDesktop from '@/components/NavbarDesktop/NavbarDesktop.jsx'
 import NavbarMobile from '@/components/NavbarMobile/NavbarMobile.jsx'
 
+import useViewport from '@/hooks/use-viewport.js'
+
 const LayoutDefault = ({ children, history }) => {
 	const [menuOpen, setMenuOpen] = useState(false)
+
+	const { width } = useViewport()
+	const breakpoint = 768
 
 	useEffect(() => {
 		const unlisten = history.listen(() => {
@@ -18,14 +23,14 @@ const LayoutDefault = ({ children, history }) => {
 		return () => {
 			unlisten()
 		}
-	}, [])
+	}, [history])
 
 	return (
 		<>
 			<Header menuOpen={menuOpen} toggleMenu={() => setMenuOpen((cur) => !cur)} />
 
 			<nav>
-				{window.innerWidth > 768 ? <NavbarDesktop /> : <NavbarMobile menuOpen={menuOpen} />}
+				{width > breakpoint ? <NavbarDesktop /> : <NavbarMobile menuOpen={menuOpen} />}
 			</nav>
 
 			<main>{children}</main>
