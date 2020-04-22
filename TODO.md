@@ -26,7 +26,7 @@
 * Resolution dependent CSS layouts.
 * Implement Critical CSS.
 * Use smaller images in SearchBar.
-* Remove ImageContext.js
+* Use AppContext to history.listen default layout.
 * Force load images in SearchBar.
 * Disable SearchBar link with cursor style if there is no query in input element.
 * Change all map parameters to consistent ones like `cur`.
