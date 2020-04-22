@@ -33,6 +33,8 @@ module.exports = {
 		}
 	},
 
+	stats: 'minimal',
+
 	devServer: {
 		headers: {
 			'Cache-Control': 'max-age=300'
