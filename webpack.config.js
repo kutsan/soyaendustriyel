@@ -2,25 +2,21 @@
 
 const path = require('path')
 
+const prod = process.env.NODE_ENV === 'production'
+
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 
-const nodeEnv = process.env.NODE_ENV || 'development'
-const isProd = nodeEnv === 'production'
-
 module.exports = {
-	entry: {
-		client: path.join(__dirname, '/src/client.jsx'),
-		vendor: ['react', 'react-dom']
-	},
+	entry: path.join(__dirname, '/src/client.jsx'),
 
-	devtool: isProd ? false : 'eval-source-map',
+	devtool: prod ? false : 'eval-source-map',
 
 	output: {
-		filename: '[name].bundle.[hash].js',
+		filename: '[name].[hash].js',
 		path: path.join(__dirname, '/build/'),
 		publicPath: '/'
 	},
@@ -48,10 +44,10 @@ module.exports = {
 		clientLogLevel: 'silent'
 	},
 
-	mode: isProd ? 'production' : 'development',
+	mode: prod ? 'production' : 'development',
 
 	optimization: {
-		minimizer: isProd
+		minimizer: prod
 			? [
 					new TerserPlugin({
 						terserOptions: {
@@ -63,6 +59,7 @@ module.exports = {
 					})
 			  ]
 			: [],
+
 		splitChunks: {
 			chunks: 'all'
 		}
@@ -77,7 +74,7 @@ module.exports = {
 			},
 			{
 				test: /\.css$/,
-				use: isProd
+				use: prod
 					? [
 							{ loader: MiniCssExtractPlugin.loader },
 							{ loader: 'css-loader' },
@@ -111,7 +108,7 @@ module.exports = {
 			template: 'src/index.html',
 			filename: 'index.html',
 			inject: 'body',
-			minify: isProd
+			minify: prod
 				? {
 						collapseWhitespace: true,
 						collapseBooleanAttributes: true,
@@ -123,7 +120,7 @@ module.exports = {
 				: false
 		}),
 		new ScriptExtHtmlWebpackPlugin({ defaultAttribute: 'async' }),
-		new MiniCssExtractPlugin({ filename: 'styles.bundle.[contenthash].css' }),
+		new MiniCssExtractPlugin({ filename: 'styles.[contenthash].css' }),
 		new CopyPlugin([
 			{ from: 'src/public/assets/' },
 			{ from: 'src/public/config/' },
