@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
-import { Route, Switch } from 'react-router-dom'
+import { Route, Switch, withRouter } from 'react-router-dom'
 
 import './App.css'
 
@@ -19,7 +19,18 @@ import validatorProducts from './utils/routes/validator-products.js'
 import validatorProduct from './utils/routes/validator-product.js'
 import validatorSearch from './utils/routes/validator-search.js'
 
-const App = () => {
+const App = ({ history }) => {
+	useEffect(() => {
+		// Scroll to top for every route navigation.
+		const unlisten = history.listen(() => {
+			window.scrollTo(0, 0)
+		})
+
+		return () => {
+			unlisten()
+		}
+	}, [history])
+
 	return (
 		<ImageProvider>
 			<Switch>
@@ -50,6 +61,10 @@ const App = () => {
 	)
 }
 
+App.propTypes = {
+	history: PropTypes.object
+}
+
 const RouteWrapper = ({ component: Component, layout: Layout = LayoutDefault, ...rest }) => (
 	<Route
 		{...rest}
@@ -66,4 +81,4 @@ RouteWrapper.propTypes = {
 	layout: PropTypes.func
 }
 
-export default App
+export default withRouter(App)
