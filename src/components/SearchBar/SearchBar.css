@@ -107,6 +107,17 @@
 	opacity: 1;
 }
 
+.search__button:active {
+	opacity: 0.5;
+}
+
+.search__button--disabled,
+.search__button--disabled:hover {
+	cursor: not-allowed;
+
+	opacity: 0.8;
+}
+
 .search__button-icon {
 	width: 42px;
 	height: 42px;
