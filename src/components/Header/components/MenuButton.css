@@ -3,6 +3,8 @@
 	top: 16px;
 	left: 16px;
 
+	cursor: pointer;
+
 	border: 0;
 	background-color: transparent;
 }
