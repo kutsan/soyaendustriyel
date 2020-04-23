@@ -32,3 +32,4 @@
 * Change all map parameters to consistent ones like `cur`.
 * Register service worker and make it progressive web app.
 * Lift the curse of CSS custom properties.
+* Generate PWA logo icons again.
