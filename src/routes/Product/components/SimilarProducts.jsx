@@ -19,8 +19,8 @@ const SimilarProducts = ({ category, exclude = null }) => {
 			<div className='similar-products__title'>Benzer Ürünler</div>
 
 			<div className='similar-products__container'>
-				{similars.map((e, index) => (
-					<ProductCard key={index} product={e} />
+				{similars.map((cur, index) => (
+					<ProductCard key={index} product={cur} />
 				))}
 			</div>
 		</div>

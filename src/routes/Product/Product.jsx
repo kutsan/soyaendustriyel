@@ -37,9 +37,9 @@ const Product = ({ match }) => {
 
 							{productRef.desc.list && (
 								<div className='product__desc-list'>
-									{productRef.desc.list.map((e, index) => (
+									{productRef.desc.list.map((cur, index) => (
 										<div className='product__desc-list-item' key={index}>
-											{e}
+											{cur}
 										</div>
 									))}
 								</div>
@@ -48,11 +48,13 @@ const Product = ({ match }) => {
 							{productRef.desc.table && (
 								<table className='product__desc-table'>
 									<tbody>
-										{productRef.desc.table.map((e, index) => (
+										{productRef.desc.table.map((cur, index) => (
 											<tr className='product__desc-table-row' key={index}>
-												<td className='product__desc-table-key'>{e.key}</td>
+												<td className='product__desc-table-key'>
+													{cur.key}
+												</td>
 												<td className='product__desc-table-value'>
-													{e.value}
+													{cur.value}
 												</td>
 											</tr>
 										))}

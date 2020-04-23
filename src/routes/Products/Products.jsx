@@ -13,7 +13,7 @@ const Products = ({ match }) => {
 		match.params.lowermostcategory || match.params.subcategory || match.params.category
 	)
 
-	let allSubs = data.category.getAllSubs(currentCategory.id).map((e) => e.id)
+	let allSubs = data.category.getAllSubs(currentCategory.id).map((cur) => cur.id)
 	allSubs.unshift(currentCategory.id)
 
 	return (
