@@ -17,6 +17,12 @@ function render(Component) {
 
 render(App)
 
+if ('serviceWorker' in navigator) {
+	window.addEventListener('load', () => {
+		navigator.serviceWorker.register('/sw.js')
+	})
+}
+
 if (module.hot) {
 	module.hot.accept('./App.jsx', () => render(App))
 }
