@@ -74,14 +74,20 @@ const SearchBar = ({ hidden = false }) => {
 						placeholder='Ürün, kategori, marka veya ürün kodu ile ara...'
 						aria-label='Search text'
 					/>
-					<Link
-						to={{ pathname: '/search', search: `?query=${value}` }}
-						onClick={clearSearch}
-						className='search__button'
-						aria-label='Search'
-					>
-						<SearchIcon className='search__button-icon' />
-					</Link>
+					{!value ? (
+						<div className='search__button search__button--disabled'>
+							<SearchIcon className='search__button-icon' />
+						</div>
+					) : (
+						<Link
+							to={{ pathname: '/search', search: `?query=${value}` }}
+							onClick={clearSearch}
+							className='search__button'
+							aria-label='Search'
+						>
+							<SearchIcon className='search__button-icon' />
+						</Link>
+					)}
 				</div>
 				<div
 					onMouseDown={(e) => e.preventDefault()}
