@@ -17,9 +17,9 @@
 
 	opacity: 0.8;
 
-	color: var(--color-green-200);
+	color: var(--color-white-200);
 	border-radius: 20px;
-	background-color: var(--color-blue-300);
+	background-color: var(--color-blue-400);
 }
 
 .footer-attribution__link:first-child {
