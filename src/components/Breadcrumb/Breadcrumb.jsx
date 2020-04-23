@@ -9,14 +9,14 @@ import data from '@/utils/data/index.js'
 const Breadcrumb = ({ buildFrom }) => {
 	return (
 		<div className='breadcrumb'>
-			{buildBreadcrumb(buildFrom).map((e, index) => (
+			{buildBreadcrumb(buildFrom).map((cur, index) => (
 				<div key={index} className='breadcrumb__step'>
-					{e.to ? (
-						<Link className='breadcrumb__step-link' to={e.to}>
-							{e.name}
+					{cur.to ? (
+						<Link className='breadcrumb__step-link' to={cur.to}>
+							{cur.name}
 						</Link>
 					) : (
-						<span className='breadcrumb__step-current'>{e.name}</span>
+						<span className='breadcrumb__step-current'>{cur.name}</span>
 					)}
 				</div>
 			))}

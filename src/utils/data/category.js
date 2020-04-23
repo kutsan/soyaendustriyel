@@ -63,8 +63,8 @@ const getAllSubs = (id) => {
 	const subs = getSubs(id)
 
 	if (!getKey(id, 'parent')) {
-		subs.forEach((e) => {
-			subs.push(...getSubs(e.id))
+		subs.forEach((cur) => {
+			subs.push(...getSubs(cur.id))
 		})
 	}
 

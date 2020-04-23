@@ -89,8 +89,12 @@ const SearchBar = ({ hidden = false }) => {
 						active && results.length ? 'search-context--active' : ''
 					}`}
 				>
-					{results.map((e) => (
-						<SearchResultItem key={`result-${e.id}`} item={e} onClick={clearSearch} />
+					{results.map((cur) => (
+						<SearchResultItem
+							key={`result-${cur.id}`}
+							item={cur}
+							onClick={clearSearch}
+						/>
 					))}
 				</div>
 			</div>
