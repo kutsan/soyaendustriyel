@@ -9,6 +9,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
 	entry: path.join(__dirname, '/src/client.jsx'),
@@ -125,6 +126,11 @@ module.exports = {
 			{ from: 'src/public/assets/' },
 			{ from: 'src/public/config/' },
 			{ from: 'src/public/images/' }
-		])
+		]),
+		new WorkboxPlugin.GenerateSW({
+			clientsClaim: true,
+			skipWaiting: true,
+			swDest: 'sw.js'
+		})
 	]
 }
