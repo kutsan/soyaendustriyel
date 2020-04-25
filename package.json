@@ -1,34 +1,34 @@
 {
-	"private": true,
 	"name": "soyaendustriyel",
 	"version": "0.0.0",
+	"private": true,
 	"description": "Website of Soya Endüstriyel",
-	"license": "GPL-3.0",
-	"homepage": "https://soyaendustriyel.com",
 	"keywords": [],
+	"homepage": "https://soyaendustriyel.com",
+	"bugs": {
+		"url": "https://github.com/kutsan/soyaendustriyel/issues"
+	},
+	"repository": "github:kutsan/soyaendustriyel.git",
+	"license": "GPL-3.0",
 	"author": "Kutsan Kaplan <me@kutsankaplan.com> (https://kutsankaplan.com)",
 	"contributors": [
 		"Reyhan Unal <rreyhanunal@gmail.com>"
 	],
-	"repository": "github:kutsan/soyaendustriyel.git",
-	"bugs": {
-		"url": "https://github.com/kutsan/soyaendustriyel/issues"
-	},
 	"scripts": {
-		"prestart": "npm run lint && npm run test && npm run format",
 		"prebuild": "npm run prestart",
-		"start": "NODE_ENV=development webpack-dev-server",
 		"build": "rm -rf build/ && NODE_ENV=production webpack --progress",
 		"deploy": "echo 'TODO: Write the deploy script.'",
+		"format": "npm run format:stylelint && npm run format:prettier",
+		"format:prettier": "prettier --loglevel='silent' --write 'src/**/*.{js,jsx,json}'",
+		"format:stylelint": "stylelint --fix 'src/**/*.css'",
 		"lint": "npm run lint:eslint && npm run lint:stylelint",
 		"lint:eslint": "eslint 'src/**/*.{js,jsx}'",
 		"lint:stylelint": "stylelint 'src/**/*.css'",
+		"prestart": "npm run lint && npm run test && npm run format",
+		"start": "NODE_ENV=development webpack-dev-server",
 		"test": "echo TODO: jest",
-		"test:watch": "jest --watch --verbose",
 		"test:coverage": "jest --watch --coverage",
-		"format": "npm run format:stylelint && npm run format:prettier",
-		"format:prettier": "prettier --loglevel='silent' --write 'src/**/*.{js,jsx,json}'",
-		"format:stylelint": "stylelint --fix 'src/**/*.css'"
+		"test:watch": "jest --watch --verbose"
 	},
 	"dependencies": {
 		"react": "~16.13.1",
