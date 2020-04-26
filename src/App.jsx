@@ -5,6 +5,7 @@ import { Route, Switch, withRouter } from 'react-router-dom'
 import './App.css'
 
 import { ViewportProvider } from './context/ViewportContext.js'
+import { AppProvider } from './context/AppContext.js'
 
 import Home from './routes/Home/Home.jsx'
 import Products from './routes/Products/Products.jsx'
@@ -32,32 +33,34 @@ const App = ({ history }) => {
 	}, [history])
 
 	return (
-		<ViewportProvider>
-			<Switch>
-				<RouteWrapper exact path='/' component={Home} />
-				<RouteWrapper
-					exact
-					path={[
-						'/products/:category/:subcategory/:lowermostcategory',
-						'/products/:category/:subcategory',
-						'/products/:category'
-					]}
-					component={validatedRoute(validatorProducts)(Products)}
-				/>
-				<RouteWrapper
-					exact
-					path='/product/:id'
-					component={validatedRoute(validatorProduct)(Product)}
-				/>
-				<RouteWrapper
-					exact
-					path='/search'
-					component={validatedRoute(validatorSearch)(Search)}
-				/>
+		<AppProvider>
+			<ViewportProvider>
+				<Switch>
+					<RouteWrapper exact path='/' component={Home} />
+					<RouteWrapper
+						exact
+						path={[
+							'/products/:category/:subcategory/:lowermostcategory',
+							'/products/:category/:subcategory',
+							'/products/:category'
+						]}
+						component={validatedRoute(validatorProducts)(Products)}
+					/>
+					<RouteWrapper
+						exact
+						path='/product/:id'
+						component={validatedRoute(validatorProduct)(Product)}
+					/>
+					<RouteWrapper
+						exact
+						path='/search'
+						component={validatedRoute(validatorSearch)(Search)}
+					/>
 
-				<RouteWrapper component={NotFound} />
-			</Switch>
-		</ViewportProvider>
+					<RouteWrapper component={NotFound} />
+				</Switch>
+			</ViewportProvider>
+		</AppProvider>
 	)
 }
 

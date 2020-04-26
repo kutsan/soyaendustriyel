@@ -1,14 +1,16 @@
-// import React, { useState } from 'react'
-// import PropTypes from 'prop-types'
+import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 
-// const AppContext = React.createContext(null)
+const AppContext = React.createContext(null)
 
-// const AppProvider = ({ children }) => {
-// 	return <AppContext.Provider value={null}>{children}</AppContext.Provider>
-// }
+const AppProvider = ({ children }) => {
+	const [menuOpen, setMenuOpen] = useState(false)
 
-// AppProvider.propTypes = {
-// 	children: PropTypes.node
-// }
+	return <AppContext.Provider value={{ menuOpen, setMenuOpen }}>{children}</AppContext.Provider>
+}
 
-// export { AppProvider, AppContext }
+AppProvider.propTypes = {
+	children: PropTypes.node
+}
+
+export { AppProvider, AppContext }
