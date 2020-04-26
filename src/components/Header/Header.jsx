@@ -10,6 +10,7 @@ import { AppContext } from '@/context/AppContext.js'
 
 const Header = () => {
 	const { menuOpen } = useContext(AppContext)
+
 	return (
 		<header>
 			<Logo />

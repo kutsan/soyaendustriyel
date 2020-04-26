@@ -40,6 +40,7 @@ const NavbarMobile = ({ history }) => {
 	return (
 		<>
 			<MenuButton open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
+
 			<div className={`navbar-mobile ${menuOpen ? 'navbar-mobile--open' : ''}`}>
 				{data.category.getTops().map((top) => (
 					<Category
