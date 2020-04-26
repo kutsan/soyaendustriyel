@@ -1,27 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React, { useContext } from 'react'
 
 import './Header.css'
 
 import Logo from './components/Logo.jsx'
 import SearchBar from '@/components/SearchBar/SearchBar.jsx'
 import Communication from './components/Communication.jsx'
-import MenuButton from './components/MenuButton.jsx'
 
-const Header = ({ menuOpen, toggleMenu }) => {
+import { AppContext } from '@/context/AppContext.js'
+
+const Header = () => {
+	const { menuOpen } = useContext(AppContext)
 	return (
 		<header>
-			<MenuButton open={menuOpen} onClick={toggleMenu} />
 			<Logo />
 			<SearchBar hidden={menuOpen} />
 			<Communication />
 		</header>
 	)
-}
-
-Header.propTypes = {
-	menuOpen: PropTypes.bool,
-	toggleMenu: PropTypes.func
 }
 
 export default Header
