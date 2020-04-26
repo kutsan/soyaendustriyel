@@ -16,9 +16,11 @@ module.exports = {
 
 	devtool: prod ? false : 'eval-source-map',
 
+	mode: prod ? 'production' : 'development',
+
 	output: {
 		filename: '[name].[hash].js',
-		path: path.join(__dirname, '/build/'),
+		path: path.join(__dirname, 'build/'),
 		publicPath: '/'
 	},
 
@@ -39,13 +41,11 @@ module.exports = {
 		hot: true,
 		open: true,
 		host: '0.0.0.0',
-		contentBase: path.join(__dirname, 'build'),
+		contentBase: path.join(__dirname, 'build/'),
 		stats: 'errors-only',
 		historyApiFallback: true,
 		clientLogLevel: 'silent'
 	},
-
-	mode: prod ? 'production' : 'development',
 
 	optimization: {
 		minimizer: prod
