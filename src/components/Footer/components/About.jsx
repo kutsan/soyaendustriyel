@@ -13,9 +13,10 @@ const About = () => {
 				</div>
 
 				<div className='footer-about__company-desc'>
-					1 Ocak 2020 tarihinde Manisa’da, Yeşiltepe Ticaret’ten devrederek Canalp Soya
-					tarafından endüstriyel sektörde Yeşiltepe Ticaret’in koruduğu güveni devam
-					ettirmek üzerine kurulmuştur.
+					1 Ocak 2020 tarihinde Manisa’da, Yeşiltepe Ticaret şirketinden devir alınarak
+					Canalp Soya tarafından endüstriyel tedarik sektöründe Yeşiltepe Ticaret’in
+					kazandığı güven ve kalite anlayışını ileri taşıyarak hizmet vermeye devam
+					etmektedir.
 				</div>
 			</div>
 		</div>

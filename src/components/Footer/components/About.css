@@ -23,6 +23,8 @@
 
 .footer-about__company-desc {
 	max-width: 400px;
+
+	line-height: 22px;
 }
 
 @media screen and (max-width: 920px) {
