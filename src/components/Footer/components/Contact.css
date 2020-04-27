@@ -33,6 +33,8 @@
 
 .footer-contact__mailing-address {
 	margin-bottom: 16px;
+
+	line-height: 22px;
 }
 
 .footer-adress__map-button {
