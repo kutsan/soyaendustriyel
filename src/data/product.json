@@ -1,9 +1,9 @@
 {
 	"product": [
 		{
-			"id": "focus-optimum-pecete-100-adet",
+			"id": "focus-optimum-kare-pecete-100-lu-paket-5053498",
 			"category": "kare-pecete",
-			"name": "Focus Optimum Peçete 100 adet",
+			"name": "Focus Optimum Kare Peçete 100'lü Paket",
 			"brand": "Focus",
 			"code": "5053498",
 			"desc": {
@@ -54,16 +54,6 @@
 					"Özel vakumlu paket.",
 					"Hem filtre kahve makinesinde, hem de french press aracığılıyla kullanıma uygundur."
 				]
-			}
-		},
-		{
-			"id": "papia-tuvalet-kagidi-3-katli-32-li-paket",
-			"category": "ev-tipi-tuvalet-kagidi",
-			"name": "Papia Tuvalet Kağıdı 3 Katlı 32'li Paket",
-			"brand": "Papia",
-			"code": "1090504",
-			"desc": {
-				"text": "Yapay beyazlatıcılar kullanılmadan %100 saf selülozdan üretilen Papia Tuvalet Kağıdı, 3 katlı dolgun ve emici yapısı ile sizin ve sevdiklerinizin güvenli tercihi."
 			}
 		},
 		{
@@ -534,6 +524,204 @@
 					{ "key": "Paket içi adet", "value": "150 adet" },
 					{ "key": "Koli içi paket", "value": "12 paket" },
 					{ "key": "Net koli ağırlığı", "value": "3.1kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-premium-kare-pecete-1-4-katlama-50-li-paket-5053137",
+			"category": "kare-pecete",
+			"name": "Focus Ultra Premium Kare Peçete 1/4 Katlama 50'li Paket",
+			"brand": "Focus",
+			"code": "5053137",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Üç katlı" },
+					{ "key": "Yaprak genişliği", "value": "36cm" },
+					{ "key": "Yaprak yüksekliği", "value": "36cm" },
+					{ "key": "Yaprak adedi", "value": "50 adet" },
+					{ "key": "Koli içi paket", "value": "12 paket" },
+					{ "key": "Net koli ağırlığı", "value": "3.9kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-premium-kare-pecete-1-8-katlama-50-li-paket-5053138",
+			"category": "kare-pecete",
+			"name": "Focus Ultra Premium Kare Peçete 1/8 Katlama 50'li Paket",
+			"brand": "Focus",
+			"code": "5053138",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Üç katlı" },
+					{ "key": "Yaprak genişliği", "value": "36cm" },
+					{ "key": "Yaprak yüksekliği", "value": "36cm" },
+					{ "key": "Yaprak adedi", "value": "50 adet" },
+					{ "key": "Koli içi paket", "value": "12 paket" },
+					{ "key": "Net koli ağırlığı", "value": "3.9kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-kare-pecete-50-li-paket-5038148",
+			"category": "kare-pecete",
+			"name": "Focus Ultra Kare Peçete 50'li Paket",
+			"brand": "Focus",
+			"code": "5038148",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "30cm" },
+					{ "key": "Yaprak yüksekliği", "value": "30cm" },
+					{ "key": "Paket içi adet", "value": "50 adet" },
+					{ "key": "Koli içi paket", "value": "24 paket" },
+					{ "key": "Net koli ağırlığı", "value": "3.7kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-1-8-ozel-katlamali-kare-pecete-50-li-paket-5037971",
+			"category": "kare-pecete",
+			"name": "Focus Ultra 1/8 Özel Katlamalı Kare Peçete 50'li Paket",
+			"brand": "Focus",
+			"code": "5037971",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "33cm" },
+					{ "key": "Yaprak yüksekliği", "value": "33cm" },
+					{ "key": "Paket içi adet", "value": "50 adet" },
+					{ "key": "Koli içi paket", "value": "24 paket" },
+					{ "key": "Net koli ağırlığı", "value": "4.4kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-extra-kare-pecete-100-lu-paket-5038149",
+			"category": "kare-pecete",
+			"name": "Focus Extra Kare Peçete 100'lü Paket",
+			"brand": "Focus",
+			"code": "5038149",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "30cm" },
+					{ "key": "Yaprak yüksekliği", "value": "30cm" },
+					{ "key": "Paket içi adet", "value": "100 adet" },
+					{ "key": "Koli içi paket", "value": "24 paket" },
+					{ "key": "Net koli ağırlığı", "value": "4.3kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-dispenser-pecete-250-li-paket-5051791",
+			"category": "dispenser-pecete",
+			"name": "Focus Ultra Dispenser Peçete 250'li Paket",
+			"brand": "Focus",
+			"code": "5051791",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Tek katlı" },
+					{ "key": "Yaprak genişliği", "value": "26.5cm" },
+					{ "key": "Yaprak yüksekliği", "value": "24cm" },
+					{ "key": "Paket içi adet", "value": "250 adet" },
+					{ "key": "Koli içi paket", "value": "18 paket" },
+					{ "key": "Net koli ağırlığı", "value": "5.2kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-extra-dispenser-pecete-350-li-paket-5038154",
+			"category": "dispenser-pecete",
+			"name": "Focus Extra Dispenser Peçete 350'li Paket",
+			"brand": "Focus",
+			"code": "5038154",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Tek katlı" },
+					{ "key": "Yaprak genişliği", "value": "18cm" },
+					{ "key": "Yaprak yüksekliği", "value": "24cm" },
+					{ "key": "Paket içi adet", "value": "350 adet" },
+					{ "key": "Koli içi paket", "value": "12 paket" },
+					{ "key": "Net koli ağırlığı", "value": "3.3kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-dispenser-pecete-250-li-paket-5051792",
+			"category": "dispenser-pecete",
+			"name": "Focus Optimum Dispenser Peçete 250'li Paket",
+			"brand": "Focus",
+			"code": "5051792",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Tek katlı" },
+					{ "key": "Yaprak genişliği", "value": "18cm" },
+					{ "key": "Yaprak yüksekliği", "value": "24cm" },
+					{ "key": "Paket içi adet", "value": "250 adet" },
+					{ "key": "Koli içi paket", "value": "18 paket" },
+					{ "key": "Net koli ağırlığı", "value": "3.3kg" }
+				]
+			}
+		},
+		{
+			"id": "papia-tuvalet-kagidi-24-lu-paket",
+			"category": "ev-tipi-tuvalet-kagidi",
+			"name": "Papia Tuvalet Kağıdı 24'lü Paket",
+			"brand": "Papia",
+			"code": "1090504",
+			"desc": {
+				"text": "Yapay beyazlatıcılar kullanılmadan %100 saf selülozdan üretilen Papia Tuvalet Kağıdı, 3 katlı dolgun ve emici yapısı ile sizin ve sevdiklerinizin güvenli tercihi."
+			}
+		},
+		{
+			"id": "papia-rulo-havlu-8-li-paket",
+			"category": "rulo-havlu",
+			"name": "Papia Rulo Havlu 8'li Paket",
+			"brand": "Papia",
+			"code": "1090512",
+			"desc": ""
+		},
+		{
+			"id": "papia-maxi-kutu-mendil-80-yaprak",
+			"category": "kutu-mendil",
+			"name": "Papia Maxi Kutu Mendil 80 Yaprak",
+			"brand": "Papia",
+			"code": "1090513",
+			"desc": ""
+		},
+		{
+			"id": "focus-extra-muayene-masa-ortusu-5038392",
+			"category": "muayene-masa-ortusu",
+			"name": "Focus Extra Muayene Masa Örtüsü 2'li Paket",
+			"brand": "Focus",
+			"code": "5038392",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "51cm" },
+					{ "key": "Yaprak yüksekliği", "value": "12.5cm" },
+					{ "key": "Yaprak adedi", "value": "100 adet" },
+					{ "key": "Rulo uzunluğu", "value": "12.5m" },
+					{ "key": "Paket içi adet", "value": "2 adet" },
+					{ "key": "Koli içi paket", "value": "6 paket" },
+					{ "key": "Net koli ağırlığı", "value": "3.4kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-extra-klozet-kapak-ortusu-250-li-paket-8033648",
+			"category": "klozet-kapak-ortusu",
+			"name": "Focus Extra Klozet Kapak Örtüsü 250'li Paket",
+			"brand": "Focus",
+			"code": "8033648",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Tek katlı" },
+					{ "key": "Yaprak genişliği", "value": "37cm" },
+					{ "key": "Yaprak yüksekliği", "value": "44cm" },
+					{ "key": "Paket içi adet", "value": "250 adet" },
+					{ "key": "Koli içi paket", "value": "10 paket" },
+					{ "key": "Net koli ağırlığı", "value": "7.2kg" }
 				]
 			}
 		}
