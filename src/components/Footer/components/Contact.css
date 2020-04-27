@@ -85,26 +85,35 @@
 	margin-bottom: 16px;
 }
 
+.footer-contact__number {
+	display: inline-block;
+}
+
 .footer-contact__email-address,
-.footer-contact__phone-number {
+.footer-contact__number {
 	text-decoration: none;
 
 	color: inherit;
 	border-bottom: 1px solid transparent;
 }
 
+.footer-contact__number:first-of-type {
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
 .footer-contact__email-address:hover,
 .footer-contact__email-address:active,
 .footer-contact__email-address:visited,
-.footer-contact__phone-number:hover,
-.footer-contact__phone-number:active,
-.footer-contact__phone-number:visited {
+.footer-contact__number:hover,
+.footer-contact__number:active,
+.footer-contact__number:visited {
 	text-decoration: none;
 
 	color: inherit;
 }
 
 .footer-contact__email-address:hover,
-.footer-contact__phone-number:hover {
+.footer-contact__number:hover {
 	border-bottom: 1px solid var(--color-green-200);
 }
