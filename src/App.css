@@ -87,7 +87,8 @@ main {
 	padding: 24px 10px 100px 10px;
 }
 
-a {
+a,
+button {
 	-webkit-tap-highlight-color: transparent;
 }
 
