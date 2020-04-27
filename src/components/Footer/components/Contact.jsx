@@ -46,8 +46,21 @@ const PhoneEmail = () => {
 		<div className='footer-contact__communication-context'>
 			<div className='footer-contact__phone'>
 				<div className='footer__subtitle'>TELEFON</div>
-				<a href='tel:+902362335054' className='footer-contact__phone-number'>
+
+				<a href='tel:+902362335054' className='footer-contact__number'>
 					+90 236 233 50 54
+				</a>
+
+				<a href='tel:+902362335866' className='footer-contact__number'>
+					+90 236 233 58 66
+				</a>
+			</div>
+
+			<div className='footer-contact__phone'>
+				<div className='footer__subtitle'>FAX</div>
+
+				<a href='tel:+902362361107' className='footer-contact__number'>
+					+90 236 236 11 07
 				</a>
 			</div>
 
