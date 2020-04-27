@@ -150,23 +150,6 @@
 			}
 		},
 		{
-			"id": "focus-optimum-z-kat-200-lu",
-			"category": "z-katli-havlu",
-			"name": "Focus Optimum Z Katlı Havlu 200'lü",
-			"brand": "Focus",
-			"code": "5050407",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "20cm" },
-					{ "key": "Yaprak yüksekliği", "value": "24cm" },
-					{ "key": "Paket içi adet", "value": "200 adet" },
-					{ "key": "Koli içi paket", "value": "12 paket" },
-					{ "key": "Net koli ağırlığı", "value": "4.3kg" }
-				]
-			}
-		},
-		{
 			"id": "focus-ultra-tuvalet-kagidi-24-lu-paket-5038071",
 			"category": "ev-tipi-tuvalet-kagidi",
 			"name": "Focus Ultra Tuvalet Kağıdı 24'lü Paket",
@@ -414,6 +397,143 @@
 					{ "key": "Paket içi adet", "value": "200 adet" },
 					{ "key": "Koli içi paket", "value": "12 paket" },
 					{ "key": "Net koli ağırlığı", "value": "5.9kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-extra-z-katli-havlu-200-lu-paket-5038372",
+			"category": "z-katli-havlu",
+			"name": "Focus Extra Z Katlı Havlu 200'lü Paket",
+			"brand": "Focus",
+			"code": "5038372",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "22.5cm" },
+					{ "key": "Yaprak yüksekliği", "value": "24cm" },
+					{ "key": "Paket içi adet", "value": "200 adet" },
+					{ "key": "Koli içi paket", "value": "12 paket" },
+					{ "key": "Net koli ağırlığı", "value": "4.7kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-jumbo-havlu-150-metre-5038387",
+			"category": "jumbo-havlu",
+			"name": "Focus Ultra Jumbo Havlu 150 metre",
+			"brand": "Focus",
+			"code": "5038387",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "20.7cm" },
+					{ "key": "Rulo uzunluğu", "value": "150m" },
+					{ "key": "Koli içi adet", "value": "6 adet" },
+					{ "key": "Net koli ağırlığı", "value": "8.6kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-jumbo-havlu-510-metre-5038390",
+			"category": "jumbo-havlu",
+			"name": "Focus Ultra Jumbo Havlu 510 metre",
+			"brand": "Focus",
+			"code": "5038390",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Tek katlı" },
+					{ "key": "Yaprak genişliği", "value": "24cm" },
+					{ "key": "Rulo uzunluğu", "value": "510m" },
+					{ "key": "Koli içi adet", "value": "1 adet" },
+					{ "key": "Net koli ağırlığı", "value": "4.7kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-extra-jumbo-havlu-125-metre-5038389",
+			"category": "jumbo-havlu",
+			"name": "Focus Extra Jumbo Havlu 125 metre",
+			"brand": "Focus",
+			"code": "5038389",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "20.7cm" },
+					{ "key": "Rulo uzunluğu", "value": "125m" },
+					{ "key": "Koli içi adet", "value": "6 adet" },
+					{ "key": "Net koli ağırlığı", "value": "5.6kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-rulo-havlu-24-lu-paket-5038370",
+			"category": "rulo-havlu",
+			"name": "Focus Ultra Rulo Havlu 24'lü Paket",
+			"brand": "Focus",
+			"code": "5038370",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "22.7cm" },
+					{ "key": "Yaprak yüksekliği", "value": "12.5cm" },
+					{ "key": "Yaprak adedi", "value": "100 adet" },
+					{ "key": "Rulo uzunluğu", "value": "12.5m" },
+					{ "key": "Paket içi adet", "value": "8 adet" },
+					{ "key": "Koli içi paket", "value": "3 paket" },
+					{ "key": "Net koli ağırlığı", "value": "3kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-rulo-havlu-24-lu-paket-5038155",
+			"category": "rulo-havlu",
+			"name": "Focus Optimum Rulo Havlu 24'lü Paket",
+			"brand": "Focus",
+			"code": "5038155",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "22.75cm" },
+					{ "key": "Yaprak yüksekliği", "value": "12cm" },
+					{ "key": "Yaprak adedi", "value": "90 adet" },
+					{ "key": "Rulo uzunluğu", "value": "10.8m" },
+					{ "key": "Paket içi adet", "value": "2 adet" },
+					{ "key": "Koli içi paket", "value": "12 paket" },
+					{ "key": "Net koli ağırlığı", "value": "2.2kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-z-katli-havlu-200-lu-paket-5050407",
+			"category": "z-katli-havlu",
+			"name": "Focus Optimum Z Katlı Havlu 200'lü Paket",
+			"brand": "Focus",
+			"code": "5050407",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "20cm" },
+					{ "key": "Yaprak yüksekliği", "value": "24cm" },
+					{ "key": "Paket içi adet", "value": "200 adet" },
+					{ "key": "Koli içi paket", "value": "12 paket" },
+					{ "key": "Net koli ağırlığı", "value": "4.3kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-z-katli-havlu-150-li-paket-5050167",
+			"category": "z-katli-havlu",
+			"name": "Focus Optimum Z Katlı Havlu 150'li Paket",
+			"brand": "Focus",
+			"code": "5050167",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "20cm" },
+					{ "key": "Yaprak yüksekliği", "value": "24cm" },
+					{ "key": "Paket içi adet", "value": "150 adet" },
+					{ "key": "Koli içi paket", "value": "12 paket" },
+					{ "key": "Net koli ağırlığı", "value": "3.1kg" }
 				]
 			}
 		}
