@@ -160,9 +160,260 @@
 					{ "key": "Kat", "value": "Çift katlı" },
 					{ "key": "Yaprak genişliği", "value": "20cm" },
 					{ "key": "Yaprak yüksekliği", "value": "24cm" },
-					{ "key": "Paket içeriği", "value": "200 adet" },
+					{ "key": "Paket içi adet", "value": "200 adet" },
 					{ "key": "Koli içi paket", "value": "12 paket" },
 					{ "key": "Net koli ağırlığı", "value": "4.3kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-tuvalet-kagidi-24-lu-paket-5038071",
+			"category": "ev-tipi-tuvalet-kagidi",
+			"name": "Focus Ultra Tuvalet Kağıdı 24'lü Paket",
+			"brand": "Focus",
+			"code": "5038071",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "9.75cm" },
+					{ "key": "Yaprak yüksekliği", "value": "12.5cm" },
+					{ "key": "Yaprak adedi", "value": "180 adet" },
+					{ "key": "Rulo uzunluğu", "value": "22.5m" },
+					{ "key": "Paket içi adet", "value": "24 adet" },
+					{ "key": "Koli içi paket", "value": "3 paket" },
+					{ "key": "Net koli ağırlığı", "value": "5.4kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-extra-tuvalet-kagidi-24-lu-paket-5038073",
+			"category": "ev-tipi-tuvalet-kagidi",
+			"name": "Focus Extra Tuvalet Kağıdı 24'lü Paket",
+			"brand": "Focus",
+			"code": "5038073",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "9.75cm" },
+					{ "key": "Yaprak yüksekliği", "value": "12.3cm" },
+					{ "key": "Yaprak adedi", "value": "180 adet" },
+					{ "key": "Rulo uzunluğu", "value": "22.1m" },
+					{ "key": "Paket içi adet", "value": "24 adet" },
+					{ "key": "Koli içi paket", "value": "3 paket" },
+					{ "key": "Net koli ağırlığı", "value": "5kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-tuvalet-kagidi-24-lu-paket-5038144",
+			"category": "ev-tipi-tuvalet-kagidi",
+			"name": "Focus Optimum Tuvalet Kağıdı 24'lü Paket",
+			"brand": "Focus",
+			"code": "5038144",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "9.6cm" },
+					{ "key": "Yaprak yüksekliği", "value": "12cm" },
+					{ "key": "Yaprak adedi", "value": "150 adet" },
+					{ "key": "Rulo uzunluğu", "value": "18m" },
+					{ "key": "Paket içi adet", "value": "24 adet" },
+					{ "key": "Koli içi paket", "value": "3 paket" },
+					{ "key": "Net koli ağırlığı", "value": "4kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-tuvalet-kagidi-16-li-paket-5038145",
+			"category": "ev-tipi-tuvalet-kagidi",
+			"name": "Focus Optimum Tuvalet Kağıdı 16'lı Paket",
+			"brand": "Focus",
+			"code": "5038145",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "9.75cm" },
+					{ "key": "Yaprak yüksekliği", "value": "12cm" },
+					{ "key": "Yaprak adedi", "value": "150 adet" },
+					{ "key": "Rulo uzunluğu", "value": "18m" },
+					{ "key": "Paket içi adet", "value": "16 adet" },
+					{ "key": "Koli içi paket", "value": "3 paket" },
+					{ "key": "Net koli ağırlığı", "value": "2.7kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-extra-mini-jumbo-tuvalet-kagidi-5038369",
+			"category": "mini-jumbo-tuvalet-kagidi",
+			"name": "Focus Extra Mini Jumbo Tuvalet Kağıdı",
+			"brand": "Focus",
+			"code": "5038369",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "10cm" },
+					{ "key": "Yaprak yüksekliği", "value": "35cm" },
+					{ "key": "Yaprak adedi", "value": "428 adet" },
+					{ "key": "Rulo uzunluğu", "value": "150m" },
+					{ "key": "Koli içi adet", "value": "12 adet" },
+					{ "key": "Net koli ağırlığı", "value": "6.1kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-mini-jumbo-tuvalet-kagidi-5038368",
+			"category": "mini-jumbo-tuvalet-kagidi",
+			"name": "Focus Optimum Mini Jumbo Tuvalet Kağıdı",
+			"brand": "Focus",
+			"code": "5038368",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "10cm" },
+					{ "key": "Yaprak yüksekliği", "value": "35cm" },
+					{ "key": "Yaprak adedi", "value": "263 adet" },
+					{ "key": "Rulo uzunluğu", "value": "92m" },
+					{ "key": "Koli içi adet", "value": "12 adet" },
+					{ "key": "Net koli ağırlığı", "value": "3.8kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-extra-icten-cekmeli-tuvalet-kagidi-5038367",
+			"category": "icten-cekmeli-tuvalet-kagidi",
+			"name": "Focus Extra İçten Çekmeli Tuvalet Kağıdı",
+			"brand": "Focus",
+			"code": "5038367",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "11.6cm" },
+					{ "key": "Yaprak yüksekliği", "value": "17.5cm" },
+					{ "key": "Yaprak adedi", "value": "686 adet" },
+					{ "key": "Rulo uzunluğu", "value": "120m" },
+					{ "key": "Koli içi adet", "value": "12 adet" },
+					{ "key": "Net koli ağırlığı", "value": "5.7kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-extra-icten-cekmeli-gofrajsiz-tuvalet-kagidi-5038366",
+			"category": "icten-cekmeli-tuvalet-kagidi",
+			"name": "Focus Extra İçten Çekmeli Gofrajsız Tuvalet Kağıdı",
+			"brand": "Focus",
+			"code": "5038366",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "13.4cm" },
+					{ "key": "Yaprak yüksekliği", "value": "17.5cm" },
+					{ "key": "Yaprak adedi", "value": "1142 adet" },
+					{ "key": "Rulo uzunluğu", "value": "200m" },
+					{ "key": "Koli içi adet", "value": "6 adet" },
+					{ "key": "Net koli ağırlığı", "value": "5.5kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-icten-cekmeli-tuvalet-kagidi-80-metre-5050157",
+			"category": "icten-cekmeli-tuvalet-kagidi",
+			"name": "Focus Optimum İçten Çekmeli Tuvalet Kağıdı 80 metre",
+			"brand": "Focus",
+			"code": "5050157",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "11.6cm" },
+					{ "key": "Yaprak yüksekliği", "value": "17.5cm" },
+					{ "key": "Yaprak adedi", "value": "457 adet" },
+					{ "key": "Rulo uzunluğu", "value": "80m" },
+					{ "key": "Koli içi adet", "value": "12 adet" },
+					{ "key": "Net koli ağırlığı", "value": "4kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-icten-cekmeli-tuvalet-kagidi-140-metre-5050158",
+			"category": "icten-cekmeli-tuvalet-kagidi",
+			"name": "Focus Optimum İçten Çekmeli Tuvalet Kağıdı 140 metre",
+			"brand": "Focus",
+			"code": "5050158",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "13.4cm" },
+					{ "key": "Yaprak yüksekliği", "value": "17.5cm" },
+					{ "key": "Yaprak adedi", "value": "800 adet" },
+					{ "key": "Rulo uzunluğu", "value": "140m" },
+					{ "key": "Koli içi adet", "value": "6 adet" },
+					{ "key": "Net koli ağırlığı", "value": "4kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-jumbo-havlu-70-metre-5052184",
+			"category": "jumbo-havlu",
+			"name": "Focus Optimum Jumbo Havlu 70 metre",
+			"brand": "Focus",
+			"code": "5052184",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "20.7cm" },
+					{ "key": "Rulo uzunluğu", "value": "70m" },
+					{ "key": "Koli içi adet", "value": "6 adet" },
+					{ "key": "Net koli ağırlığı", "value": "5.6kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-jumbo-havlu-60-metre-5050155",
+			"category": "jumbo-havlu",
+			"name": "Focus Optimum Jumbo Havlu 60 metre",
+			"brand": "Focus",
+			"code": "5050155",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "20.7cm" },
+					{ "key": "Rulo uzunluğu", "value": "60m" },
+					{ "key": "Koli içi adet", "value": "6 adet" },
+					{ "key": "Net koli ağırlığı", "value": "3.5kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-optimum-icten-cekmeli-havlu-70-metre-5050156",
+			"category": "icten-cekmeli-havlu",
+			"name": "Focus Optimum İçten Çekmeli Havlu 70 metre",
+			"brand": "Focus",
+			"code": "5050156",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "20.7cm" },
+					{ "key": "Yaprak yüksekliği", "value": "35cm" },
+					{ "key": "Yaprak adedi", "value": "200 adet" },
+					{ "key": "Rulo uzunluğu", "value": "70m" },
+					{ "key": "Koli içi adet", "value": "6 adet" },
+					{ "key": "Net koli ağırlığı", "value": "4kg" }
+				]
+			}
+		},
+		{
+			"id": "focus-ultra-z-katli-havlu-200-lu-paket-5038146",
+			"category": "z-katli-havlu",
+			"name": "Focus Ultra Z Katlı Havlu 200'lü Paket",
+			"brand": "Focus",
+			"code": "5038146",
+			"desc": {
+				"table": [
+					{ "key": "Kat", "value": "Çift katlı" },
+					{ "key": "Yaprak genişliği", "value": "22.5cm" },
+					{ "key": "Yaprak yüksekliği", "value": "24cm" },
+					{ "key": "Paket içi adet", "value": "200 adet" },
+					{ "key": "Koli içi paket", "value": "12 paket" },
+					{ "key": "Net koli ağırlığı", "value": "5.9kg" }
 				]
 			}
 		}
