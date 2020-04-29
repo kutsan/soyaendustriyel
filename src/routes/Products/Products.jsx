@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import './Products.css'
 
-import ProductCard from '@/components/ProductCard/ProductCard.jsx'
+import ProductList from '@/components/ProductList/ProductList.jsx'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb.jsx'
 
 import data from '@/utils/data/index.js'
@@ -22,13 +22,7 @@ const Products = ({ match }) => {
 
 			<div className='products-title'>{currentCategory.name}</div>
 
-			<div className='products'>
-				{data.product
-					.filter((e) => allSubs.indexOf(e.category) > -1)
-					.map((cur) => {
-						return <ProductCard key={cur.id} product={cur} />
-					})}
-			</div>
+			<ProductList items={data.product.filter((e) => allSubs.indexOf(e.category) > -1)} />
 		</>
 	)
 }

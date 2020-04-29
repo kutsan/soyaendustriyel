@@ -1,8 +1,6 @@
 import React from 'react'
 
-import './Home.css'
-
-import ProductCard from '@/components/ProductCard/ProductCard.jsx'
+import ProductList from '@/components/ProductList/ProductList.jsx'
 // import Brands from '@/components/Brands/Brands.jsx'
 
 import data from '@/utils/data/index.js'
@@ -10,11 +8,7 @@ import data from '@/utils/data/index.js'
 const Home = () => {
 	return (
 		<>
-			<div className='home-products'>
-				{data.product.getRandom(80).map((cur) => {
-					return <ProductCard key={cur.id} product={cur} />
-				})}
-			</div>
+			<ProductList items={data.product.getRandom(80)} />
 
 			{/* <Brands /> */}
 		</>
