@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
@@ -6,12 +6,13 @@ import './NavbarDesktop.css'
 
 import data from '@/utils/data/index.js'
 
-const NavbarLink = ({ to, name, modifier }) => (
+const NavbarLink = ({ to, name, modifier, ...props }) => (
 	<Link
 		to={to}
 		className={`navbar-menu__item-link ${
 			modifier ? `navbar-menu__item-link--${modifier}` : ''
 		}`}
+		{...props}
 	>
 		{name}
 	</Link>
@@ -24,12 +25,28 @@ NavbarLink.propTypes = {
 }
 
 const NavbarDesktop = () => {
+	const [menu, setMenu] = useState(null)
+
+	const close = () => setMenu(null)
+
 	return (
 		<div className='navbar-desktop-container'>
 			<div className='navbar-menu'>
 				{data.category.getTops().map((top) => (
-					<div key={top.id} className='navbar-menu__item'>
-						<NavbarLink to={`/products/${top.id}`} name={top.name} modifier='top' />
+					<div
+						key={top.id}
+						onMouseEnter={() => setMenu(top.id)}
+						onMouseLeave={close}
+						className={`navbar-menu__item ${
+							top.id === menu ? 'navbar-menu__item--open' : ''
+						}`}
+					>
+						<NavbarLink
+							to={`/products/${top.id}`}
+							name={top.name}
+							modifier='top'
+							onClick={close}
+						/>
 
 						<div className='navbar-menu__submenu'>
 							{data.category.getSubs(top.id).map((sub) => (
@@ -41,7 +58,9 @@ const NavbarDesktop = () => {
 										to={`/products/${top.id}/${sub.id}`}
 										name={sub.name}
 										modifier='sub'
+										onClick={close}
 									/>
+
 									<div className='navbar-menu__lowermostmenu'>
 										{data.category.getSubs(sub.id).map((lowermost) => (
 											<div
@@ -52,6 +71,7 @@ const NavbarDesktop = () => {
 													to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
 													name={lowermost.name}
 													modifier='lowermost'
+													onClick={close}
 												/>
 											</div>
 										))}
