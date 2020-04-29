@@ -26,6 +26,10 @@
 	background-color: var(--color-gray-500);
 }
 
+.menu-button span:last-child {
+	margin-bottom: 5px;
+}
+
 .menu-button--close span:nth-child(2) {
 	opacity: 0;
 }
