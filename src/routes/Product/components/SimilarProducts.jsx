@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import './SimilarProducts.css'
 
-import ProductCard from '@/components/ProductCard/ProductCard.jsx'
+import ProductList from '@/components/ProductList/ProductList.jsx'
 
 import data from '@/utils/data/index.js'
 
@@ -18,11 +18,7 @@ const SimilarProducts = ({ category, exclude = null }) => {
 		<div className='similar-products'>
 			<div className='similar-products__title'>Benzer Ürünler</div>
 
-			<div className='similar-products__container'>
-				{similars.map((cur, index) => (
-					<ProductCard key={index} product={cur} />
-				))}
-			</div>
+			<ProductList items={similars} />
 		</div>
 	)
 }

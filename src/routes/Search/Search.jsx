@@ -3,7 +3,7 @@ import { withRouter, useLocation } from 'react-router-dom'
 
 import './Search.css'
 
-import ProductCard from '@/components/ProductCard/ProductCard.jsx'
+import ProductList from '@/components/ProductList/ProductList.jsx'
 
 import data from '@/utils/data/index.js'
 
@@ -14,12 +14,7 @@ const Search = () => {
 	return (
 		<>
 			<div className='search-title'>Hello from search: query: {query}</div>
-
-			<div className='products'>
-				{data.product.search(query).map((cur) => {
-					return <ProductCard key={cur.id} product={cur} />
-				})}
-			</div>
+			<ProductList items={data.product.search(query)} />
 		</>
 	)
 }
