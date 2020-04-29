@@ -1,6 +1,8 @@
 .navbar-desktop-container {
 	position: relative;
 
+	display: none;
+
 	background:
 		linear-gradient(
 			54deg,
@@ -13,41 +15,40 @@
 .navbar-menu {
 	display: flex;
 	justify-content: center;
-
-	color: var(--color-white-100);
-
-	font-size: 1.05rem;
 }
 
 .navbar-menu__item {
-	padding: 12.8px 17.6px;
+	padding: 6px 8px;
 
 	cursor: pointer;
 }
 
 .navbar-menu__item-link {
-	text-decoration: none;
-}
+	display: block;
 
-.navbar-menu__item-link,
-.navbar-menu__item-link:focus,
-.navbar-menu__item-link:active,
-.navbar-menu__item-link:visited {
+	text-decoration: none;
+
 	color: inherit;
 }
 
 .navbar-menu__item-link--top {
+	padding: 6px 16px;
+
+	transition-duration: 0.3s;
+	transition-property: background-color;
 	letter-spacing: 0.32px;
 	text-transform: uppercase;
 
-	border-bottom: 2px solid transparent;
+	color: var(--color-white-100);
+	border-radius: 16px;
 
 	font-size: 0.9rem;
+
 	font-weight: 600;
 }
 
-.navbar-menu__item:hover > .navbar-menu__item-link {
-	border-color: currentColor;
+.navbar-menu__item:hover .navbar-menu__item-link--top {
+	background-color: var(--color-green-200);
 }
 
 .navbar-menu__submenu {
@@ -61,37 +62,41 @@
 	justify-content: center;
 
 	width: 100%;
-	padding: 16px 32px;
+	padding: 10px 50px 10px 50px;
 
 	border: 0;
 	background-color: var(--color-white-200);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
-.navbar-menu__item:hover .navbar-menu__submenu {
+.navbar-menu__item--open > .navbar-menu__submenu {
 	display: flex;
 }
 
 .navbar-menu__item--sub {
-	padding: 16px 32px;
+	padding: 20px;
 
 	color: var(--color-green-300);
 }
 
 .navbar-menu__item-link--sub {
-	transition: color 200ms;
+	padding: 8px 15px;
+
+	transition: background-color 100ms;
+
+	border-radius: 16px;
 
 	font-weight: 700;
 }
 
 .navbar-menu__item-link--sub:hover {
-	color: var(--color-green-400);
+	background-color: #eeeeee;
 }
 
 .navbar-menu__lowermostmenu {
-	margin-top: 12.8px;
-
 	color: var(--color-gray-400);
+
+	font-size: 0.95rem;
 }
 
 .navbar-menu__item--lowermost {
@@ -99,25 +104,23 @@
 }
 
 .navbar-menu__item-link--lowermost {
-	display: block;
+	padding: 7px 15px;
 
-	margin-top: 8px;
+	transition: background-color 100ms;
 
-	transition: color 200ms;
+	hyphens: auto;
+
+	border-radius: 16px;
 }
 
 .navbar-menu__item-link--lowermost:hover {
-	color: var(--color-black-100);
+	background-color: #eeeeee;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
 	.navbar-desktop-container {
 		display: block;
 
 		background-color: var(--color-white-200);
-	}
-
-	.navbar-mobile-container .navbar-menu {
-		display: none;
 	}
 }
