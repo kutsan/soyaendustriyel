@@ -10,7 +10,7 @@
 	text-decoration: none;
 
 	color: initial;
-	border: 1px solid var(--color-white-600);
+	border: 1px solid var(--color-white-700);
 	border-radius: 3px;
 	background-color: var(--color-white-100);
 }
