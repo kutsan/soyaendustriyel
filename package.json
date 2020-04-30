@@ -21,8 +21,7 @@
 		"lint:stylelint": "stylelint 'src/**/*.css'",
 		"prestart": "npm run format && npm run lint && npm run test",
 		"start": "NODE_ENV=development webpack-dev-server",
-		"test": "echo TODO: jest",
-		"test:coverage": "jest --watch --coverage",
+		"test": "jest",
 		"test:watch": "jest --watch --verbose"
 	},
 	"dependencies": {
