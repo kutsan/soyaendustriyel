@@ -124,10 +124,12 @@ module.exports = {
 			{ from: 'src/public/config/' },
 			{ from: 'src/public/images/' }
 		]),
-		new WorkboxPlugin.GenerateSW({
-			clientsClaim: true,
-			skipWaiting: true,
-			swDest: 'sw.js'
-		})
+		...(prod
+			? new WorkboxPlugin.GenerateSW({
+					clientsClaim: true,
+					skipWaiting: true,
+					swDest: 'sw.js'
+			  })
+			: [])
 	]
 }
