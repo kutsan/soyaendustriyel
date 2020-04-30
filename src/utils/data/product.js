@@ -19,25 +19,23 @@ const getRef = (id) => {
  * @return {Object[]} Array of random products
  **/
 const getRandom = (count, category = null, exclude = null) => {
-	const shuffle = (arr) => {
-		const a = Array.from(arr)
+	const shuffle = (origArray) => {
+		const array = Array.from(origArray)
 
-		if (count > arr.length) {
-			count = arr.length
-		}
-
-		for (let i = count - 1; i > 0; i--) {
+		for (let i = array.length - 1; i > 1; i--) {
 			const j = Math.floor(Math.random() * (i + 1))
 
-			;[a[i], a[j]] = [a[j], a[i]]
+			;[array[i], array[j]] = [array[j], array[i]]
 		}
 
-		return a
+		return array
 	}
 
-	return category
+	const shuffledArray = category
 		? shuffle(dataProduct.filter((e) => e.category === category && e.id !== exclude))
 		: shuffle(dataProduct)
+
+	return shuffledArray.slice(0, count)
 }
 
 /**
