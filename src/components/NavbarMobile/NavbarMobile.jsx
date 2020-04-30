@@ -31,7 +31,7 @@ const NavbarMobile = ({ history }) => {
 
 	const onClickToggle = (category) => {
 		if (isExpanded(category)) {
-			setExpanded(expanded.filter((x) => x !== category.id))
+			setExpanded(expanded.filter((e) => e !== category.id))
 		} else {
 			setExpanded([category.id, ...expanded])
 		}
