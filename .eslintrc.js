@@ -1,31 +1,28 @@
 module.exports = {
 	root: true,
-
-	parser: 'babel-eslint',
-	parserOptions: {
-		sourceType: 'module'
-	},
-
-	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
-
 	env: {
 		node: true,
 		browser: true,
-		jest: true
+		jest: true,
+		es6: true
 	},
-
-	plugins: ['react', 'react-hooks'],
+	extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended'],
+	parserOptions: {
+		ecmaFeatures: {
+			jsx: true
+		},
+		ecmaVersion: 11,
+		sourceType: 'module'
+	},
 	settings: {
 		react: { version: 'detect' }
 	},
-
 	rules: {
-		indent: ['warn', 'tab', { SwitchCase: 1 }],
+		semi: 'off',
+		indent: ['warn', 'tab'],
 		'linebreak-style': ['error', 'unix'],
 		quotes: ['off', 'single'],
-		semi: ['off', 'always'],
-		'no-console': 0,
-		'react/display-name': 0,
-		'react/prop-types': 1
+		'no-console': 'off',
+		'react/prop-types': 'warn'
 	}
 }
