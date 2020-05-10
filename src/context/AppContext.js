@@ -6,7 +6,11 @@ const AppContext = React.createContext(null)
 const AppProvider = ({ children }) => {
 	const [menuOpen, setMenuOpen] = useState(false)
 
-	return <AppContext.Provider value={{ menuOpen, setMenuOpen }}>{children}</AppContext.Provider>
+	return (
+		<AppContext.Provider value={{ menuOpen, setMenuOpen }}>
+			{children}
+		</AppContext.Provider>
+	)
 }
 
 AppProvider.propTypes = {

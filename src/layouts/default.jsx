@@ -16,7 +16,9 @@ const LayoutDefault = ({ children }) => {
 		<>
 			<Header />
 
-			<nav>{width > breakpoint ? <NavbarDesktop /> : <NavbarMobile />}</nav>
+			<nav>
+				{width > breakpoint ? <NavbarDesktop /> : <NavbarMobile />}
+			</nav>
 
 			<main>{children}</main>
 

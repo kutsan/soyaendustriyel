@@ -1,3 +1,5 @@
+/* eslint indent: 'off', no-mixed-spaces-and-tabs: 'off' */
+
 import { product as dataProduct } from '@/data/product.json'
 
 /**
@@ -32,7 +34,11 @@ const getRandom = (count, category = null, exclude = null) => {
 	}
 
 	const shuffledArray = category
-		? shuffle(dataProduct.filter((e) => e.category === category && e.id !== exclude))
+		? shuffle(
+				dataProduct.filter(
+					(e) => e.category === category && e.id !== exclude
+				)
+		  )
 		: shuffle(dataProduct)
 
 	return shuffledArray.slice(0, count)

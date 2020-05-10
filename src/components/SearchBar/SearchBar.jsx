@@ -59,8 +59,15 @@ const SearchBar = ({ hidden = false }) => {
 	}
 
 	return (
-		<div ref={searchEl} className={hidden ? 'search search--hidden' : 'search'}>
-			<div className={`search-wrapper ${active ? 'search-wrapper--active' : ''}`}>
+		<div
+			ref={searchEl}
+			className={hidden ? 'search search--hidden' : 'search'}
+		>
+			<div
+				className={`search-wrapper ${
+					active ? 'search-wrapper--active' : ''
+				}`}
+			>
 				<div className='search-bar'>
 					<input
 						ref={inputEl}
@@ -80,7 +87,10 @@ const SearchBar = ({ hidden = false }) => {
 						</div>
 					) : (
 						<Link
-							to={{ pathname: '/search', search: `?query=${value}` }}
+							to={{
+								pathname: '/search',
+								search: `?query=${value}`
+							}}
 							onClick={clearSearch}
 							className='search__button'
 							aria-label='Search'

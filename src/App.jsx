@@ -68,7 +68,11 @@ App.propTypes = {
 	history: PropTypes.object
 }
 
-const RouteWrapper = ({ component: Component, layout: Layout = LayoutDefault, ...rest }) => (
+const RouteWrapper = ({
+	component: Component,
+	layout: Layout = LayoutDefault,
+	...rest
+}) => (
 	<Route
 		{...rest}
 		render={(props) => (
