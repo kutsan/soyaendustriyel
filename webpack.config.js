@@ -82,7 +82,8 @@ module.exports = {
 									plugins: () => {
 										return [
 											require('autoprefixer')({
-												overrideBrowserslist: 'last 2 versions'
+												overrideBrowserslist:
+													'last 2 versions'
 											}),
 											require('cssnano')({
 												preset: 'default'
