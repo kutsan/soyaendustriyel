@@ -4,7 +4,14 @@ import PropTypes from 'prop-types'
 
 import './CategoryHeader.css'
 
-const CategoryHeader = ({ modifier, item, to, onClickToggle, expanded, hasCategoriesUnder }) => {
+const CategoryHeader = ({
+	modifier,
+	item,
+	to,
+	onClickToggle,
+	expanded,
+	hasCategoriesUnder
+}) => {
 	return (
 		<div
 			className={`navbar-mobile__category-header navbar-mobile__category-header--${modifier}`}
@@ -25,7 +32,9 @@ const CategoryHeader = ({ modifier, item, to, onClickToggle, expanded, hasCatego
 					onClick={onClickToggle}
 					key={item.id}
 					className={`navbar-mobile__category-toggle navbar-mobile__category-toggle--${modifier} ${
-						expanded ? 'navbar-mobile__category-toggle--expanded' : ''
+						expanded
+							? 'navbar-mobile__category-toggle--expanded'
+							: ''
 					}`}
 				>
 					<span />

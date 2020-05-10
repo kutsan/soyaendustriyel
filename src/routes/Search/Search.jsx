@@ -13,7 +13,9 @@ const Search = () => {
 
 	return (
 		<>
-			<div className='search-title'>Hello from search: query: {query}</div>
+			<div className='search-title'>
+				Hello from search: query: {query}
+			</div>
 			<ProductList items={data.product.search(query)} />
 		</>
 	)

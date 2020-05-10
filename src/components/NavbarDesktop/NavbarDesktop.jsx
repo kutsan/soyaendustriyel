@@ -62,19 +62,21 @@ const NavbarDesktop = () => {
 									/>
 
 									<div className='navbar-menu__lowermostmenu'>
-										{data.category.getSubs(sub.id).map((lowermost) => (
-											<div
-												key={lowermost.id}
-												className='navbar-menu__item navbar-menu__item--lowermost'
-											>
-												<NavbarLink
-													to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
-													name={lowermost.name}
-													modifier='lowermost'
-													onClick={close}
-												/>
-											</div>
-										))}
+										{data.category
+											.getSubs(sub.id)
+											.map((lowermost) => (
+												<div
+													key={lowermost.id}
+													className='navbar-menu__item navbar-menu__item--lowermost'
+												>
+													<NavbarLink
+														to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
+														name={lowermost.name}
+														modifier='lowermost'
+														onClick={close}
+													/>
+												</div>
+											))}
 									</div>
 								</div>
 							))}

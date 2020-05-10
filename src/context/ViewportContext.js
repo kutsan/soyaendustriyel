@@ -16,7 +16,11 @@ const ViewportProvider = ({ children }) => {
 		return () => window.removeEventListener('resize', handleWindowResize)
 	}, [])
 
-	return <ViewportContext.Provider value={{ width }}>{children}</ViewportContext.Provider>
+	return (
+		<ViewportContext.Provider value={{ width }}>
+			{children}
+		</ViewportContext.Provider>
+	)
 }
 
 ViewportProvider.propTypes = {

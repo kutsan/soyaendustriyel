@@ -18,7 +18,11 @@ const SearchResultItem = ({ item, onClick }) => {
 	)
 
 	return (
-		<Link to={`/product/${item.id}`} onClick={onClick} className='search-result-item'>
+		<Link
+			to={`/product/${item.id}`}
+			onClick={onClick}
+			className='search-result-item'
+		>
 			<div className='search-result-item__image-container'>
 				<Image id={item.id} />
 			</div>

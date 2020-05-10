@@ -16,7 +16,9 @@ const Breadcrumb = ({ buildFrom }) => {
 							{cur.name}
 						</Link>
 					) : (
-						<span className='breadcrumb__step-current'>{cur.name}</span>
+						<span className='breadcrumb__step-current'>
+							{cur.name}
+						</span>
 					)}
 				</div>
 			))}

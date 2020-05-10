@@ -35,7 +35,9 @@ const Address = () => {
 				className='footer-adress__map-button'
 			>
 				<GoogleMapsIcon className='footer-adress__map-button-icon' />{' '}
-				<span className='footer-adress__map-button-innertext'>Haritalarda Göster</span>
+				<span className='footer-adress__map-button-innertext'>
+					Haritalarda Göster
+				</span>
 			</a>
 		</div>
 	)
@@ -66,7 +68,10 @@ const PhoneEmail = () => {
 
 			<div className='footer-contact__email'>
 				<div className='footer__subtitle'>EMAIL</div>
-				<a href='mailto:info@soyaendustriyel.com' className='footer-contact__email-address'>
+				<a
+					href='mailto:info@soyaendustriyel.com'
+					className='footer-contact__email-address'
+				>
 					info@soyaendustriyel.com
 				</a>
 			</div>

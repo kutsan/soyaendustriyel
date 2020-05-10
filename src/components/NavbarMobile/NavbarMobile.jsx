@@ -39,9 +39,16 @@ const NavbarMobile = ({ history }) => {
 
 	return (
 		<>
-			<MenuButton open={menuOpen} onClick={() => setMenuOpen(!menuOpen)} />
+			<MenuButton
+				open={menuOpen}
+				onClick={() => setMenuOpen(!menuOpen)}
+			/>
 
-			<div className={`navbar-mobile ${menuOpen ? 'navbar-mobile--open' : ''}`}>
+			<div
+				className={`navbar-mobile ${
+					menuOpen ? 'navbar-mobile--open' : ''
+				}`}
+			>
 				{data.category.getTops().map((top) => (
 					<Category
 						key={top.id}
@@ -59,18 +66,22 @@ const NavbarMobile = ({ history }) => {
 								expanded={isExpanded(sub)}
 								to={`/products/${top.id}/${sub.id}`}
 								onClickToggle={() => onClickToggle(sub)}
-								hasCategoriesUnder={data.category.hasSubs(sub.id)}
+								hasCategoriesUnder={data.category.hasSubs(
+									sub.id
+								)}
 								item={sub}
 							>
-								{data.category.getSubs(sub.id).map((lowermost) => (
-									<Category
-										key={lowermost.id}
-										modifier='lowermost'
-										to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
-										hasCategoriesUnder={false}
-										item={lowermost}
-									/>
-								))}
+								{data.category
+									.getSubs(sub.id)
+									.map((lowermost) => (
+										<Category
+											key={lowermost.id}
+											modifier='lowermost'
+											to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
+											hasCategoriesUnder={false}
+											item={lowermost}
+										/>
+									))}
 							</Category>
 						))}
 					</Category>
