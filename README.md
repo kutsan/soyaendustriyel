@@ -1,6 +1,4 @@
-# soyaendustriyel
-
-[![Node.js CI](https://github.com/kutsan/soyaendustriyel/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/kutsan/soyaendustriyel/actions?query=workflow%3A%22Node.js+CI%22)
+# soyaendustriyel [![Node CI](https://github.com/kutsan/soyaendustriyel/workflows/Node.js%20CI/badge.svg?branch=master)](https://github.com/kutsan/soyaendustriyel/actions?query=workflow%3A%22Node+CI%22)
 
 > [WIP]
 
