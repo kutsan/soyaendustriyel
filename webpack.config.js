@@ -1,5 +1,3 @@
-/* eslint indent: "off", no-mixed-spaces-and-tabs: "off" */
-
 const path = require('path')
 
 const prod = process.env.NODE_ENV === 'production'
@@ -19,7 +17,7 @@ module.exports = {
   mode: prod ? 'production' : 'development',
 
   output: {
-    filename: '[name].[hash].js',
+    filename: '[name].[contenthash].js',
     path: path.join(__dirname, '/build/'),
     publicPath: '/'
   },
@@ -79,14 +77,10 @@ module.exports = {
               {
                 loader: 'postcss-loader',
                 options: {
-                  plugins: () => {
-                    return [
-                      require('autoprefixer')({
-                        overrideBrowserslist: 'last 2 versions'
-                      }),
-                      require('cssnano')({
-                        preset: 'default'
-                      })
+                  postcssOptions: {
+                    plugins: [
+                      ['autoprefixer'],
+                      ['cssnano', { preset: 'default' }]
                     ]
                   }
                 }
@@ -119,11 +113,13 @@ module.exports = {
     }),
     new ScriptExtHtmlWebpackPlugin({ defaultAttribute: 'async' }),
     new MiniCssExtractPlugin({ filename: 'styles.[contenthash].css' }),
-    new CopyPlugin([
-      { from: 'src/public/assets/' },
-      { from: 'src/public/config/' },
-      { from: 'src/public/images/' }
-    ]),
+    new CopyPlugin({
+      patterns: [
+        { from: 'src/public/assets/' },
+        { from: 'src/public/config/' },
+        { from: 'src/public/images/' }
+      ]
+    }),
     ...(prod
       ? [
           new WorkboxPlugin.GenerateSW({
