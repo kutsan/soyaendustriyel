@@ -6,48 +6,48 @@ import './Category.css'
 import CategoryHeader from './CategoryHeader.jsx'
 
 const Category = ({
-	modifier,
-	item,
-	to,
-	onClickToggle,
-	expanded,
-	hasCategoriesUnder,
-	children
+  modifier,
+  item,
+  to,
+  onClickToggle,
+  expanded,
+  hasCategoriesUnder,
+  children
 }) => {
-	return (
-		<div
-			className={`navbar-mobile__category navbar-mobile__category--${modifier} ${
-				expanded ? 'navbar-mobile__category--expanded' : ''
-			}`}
-		>
-			<CategoryHeader
-				modifier={modifier}
-				item={item}
-				to={to}
-				onClickToggle={onClickToggle}
-				expanded={expanded}
-				hasCategoriesUnder={hasCategoriesUnder}
-			/>
+  return (
+    <div
+      className={`navbar-mobile__category navbar-mobile__category--${modifier} ${
+        expanded ? 'navbar-mobile__category--expanded' : ''
+      }`}
+    >
+      <CategoryHeader
+        modifier={modifier}
+        item={item}
+        to={to}
+        onClickToggle={onClickToggle}
+        expanded={expanded}
+        hasCategoriesUnder={hasCategoriesUnder}
+      />
 
-			{hasCategoriesUnder && expanded && (
-				<div
-					className={`navbar-mobile__category-children navbar-mobile__category-children--${modifier}`}
-				>
-					{children}
-				</div>
-			)}
-		</div>
-	)
+      {hasCategoriesUnder && expanded && (
+        <div
+          className={`navbar-mobile__category-children navbar-mobile__category-children--${modifier}`}
+        >
+          {children}
+        </div>
+      )}
+    </div>
+  )
 }
 
 Category.propTypes = {
-	modifier: PropTypes.string.isRequired,
-	item: PropTypes.object.isRequired,
-	to: PropTypes.string.isRequired,
-	hasCategoriesUnder: PropTypes.bool.isRequired,
-	expanded: PropTypes.bool,
-	onClickToggle: PropTypes.func,
-	children: PropTypes.node
+  modifier: PropTypes.string.isRequired,
+  item: PropTypes.object.isRequired,
+  to: PropTypes.string.isRequired,
+  hasCategoriesUnder: PropTypes.bool.isRequired,
+  expanded: PropTypes.bool,
+  onClickToggle: PropTypes.func,
+  children: PropTypes.node
 }
 
 export default Category

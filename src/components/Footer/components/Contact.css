@@ -1,56 +1,56 @@
 .footer-contact {
-	width: 50%;
+  width: 50%;
 }
 
 @media screen and (max-width: 920px) {
-	.footer-contact {
-		width: auto;
-		margin-top: 24px;
-	}
+  .footer-contact {
+    width: auto;
+    margin-top: 24px;
+  }
 }
 
 .footer-contact__context {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-contact__address-context {
-	width: 50%;
-	padding: 8px 24px;
+  width: 50%;
+  padding: 8px 24px;
 }
 
 .footer-contact__communication-context {
-	width: 50%;
-	padding: 8px 24px;
+  width: 50%;
+  padding: 8px 24px;
 }
 
 @media screen and (max-width: 460px) {
-	.footer-contact__communication-context,
-	.footer-contact__address-context {
-		width: auto;
-	}
+  .footer-contact__communication-context,
+  .footer-contact__address-context {
+    width: auto;
+  }
 }
 
 .footer-contact__mailing-address {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 
-	line-height: 22px;
+  line-height: 22px;
 }
 
 .footer-adress__map-button {
-	display: inline-flex;
-	align-items: center;
+  display: inline-flex;
+  align-items: center;
 
-	padding: 8px 16px;
+  padding: 8px 16px;
 
-	cursor: pointer;
-	transition: opacity 100ms;
-	text-decoration: none;
+  cursor: pointer;
+  transition: opacity 100ms;
+  text-decoration: none;
 
-	opacity: 0.8;
-	border: 0;
-	border-radius: 38px;
-	background-color: var(--color-green-200);
+  opacity: 0.8;
+  border: 0;
+  border-radius: 38px;
+  background-color: var(--color-green-200);
 }
 
 .footer-adress__map-button,
@@ -58,50 +58,50 @@
 .footer-adress__map-button:visited,
 .footer-adress__map-button:focus,
 .footer-adress__map-button:hover {
-	color: var(--color-black-100);
+  color: var(--color-black-100);
 }
 
 .footer-adress__map-button:hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 @media screen and (max-width: 920px) {
-	.footer-adress__map-button {
-		margin-bottom: 8px;
-	}
+  .footer-adress__map-button {
+    margin-bottom: 8px;
+  }
 }
 
 .footer-adress__map-button-icon {
-	width: 20px;
-	height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .footer-adress__map-button-innertext {
-	margin-left: 8px;
+  margin-left: 8px;
 
-	font-size: 0.8rem;
-	font-weight: 600;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .footer-contact__phone {
-	margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .footer-contact__number {
-	display: inline-block;
+  display: inline-block;
 }
 
 .footer-contact__email-address,
 .footer-contact__number {
-	text-decoration: none;
+  text-decoration: none;
 
-	color: inherit;
-	border-bottom: 1px solid transparent;
+  color: inherit;
+  border-bottom: 1px solid transparent;
 }
 
 .footer-contact__number:first-of-type {
-	margin-right: 20px;
-	margin-bottom: 5px;
+  margin-right: 20px;
+  margin-bottom: 5px;
 }
 
 .footer-contact__email-address:hover,
@@ -110,12 +110,12 @@
 .footer-contact__number:hover,
 .footer-contact__number:active,
 .footer-contact__number:visited {
-	text-decoration: none;
+  text-decoration: none;
 
-	color: inherit;
+  color: inherit;
 }
 
 .footer-contact__email-address:hover,
 .footer-contact__number:hover {
-	border-bottom: 1px solid var(--color-green-200);
+  border-bottom: 1px solid var(--color-green-200);
 }

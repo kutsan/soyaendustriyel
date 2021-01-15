@@ -1,83 +1,83 @@
 .breadcrumb {
-	display: flex;
-	flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-	margin-bottom: 70px;
-	padding: 0 15px;
+  margin-bottom: 70px;
+  padding: 0 15px;
 
-	font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .breadcrumb__step {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	padding: 3px 6px 3px 0;
+  padding: 3px 6px 3px 0;
 }
 
 .breadcrumb__step::after {
-	z-index: -1;
+  z-index: -1;
 
-	width: 7px;
-	height: 7px;
-	margin-left: 3px;
+  width: 7px;
+  height: 7px;
+  margin-left: 3px;
 
-	content: '';
-	transform: rotate(135deg);
+  content: '';
+  transform: rotate(135deg);
 
-	border-top: 2px solid var(--color-gray-100);
-	border-left: 2px solid var(--color-gray-100);
+  border-top: 2px solid var(--color-gray-100);
+  border-left: 2px solid var(--color-gray-100);
 }
 
 .breadcrumb__step:last-child::after {
-	display: none;
+  display: none;
 }
 
 .breadcrumb__step-current {
-	padding: 3px 5px;
+  padding: 3px 5px;
 
-	border: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 .breadcrumb__step-link {
-	padding: 3px 5px;
+  padding: 3px 5px;
 
-	transition-duration: 100ms;
-	transition-property: background-color, color;
-	text-decoration: none;
+  transition-duration: 100ms;
+  transition-property: background-color, color;
+  text-decoration: none;
 
-	color: var(--color-gray-200);
-	border: 1px solid var(--color-gray-100);
-	border-radius: 3px;
+  color: var(--color-gray-200);
+  border: 1px solid var(--color-gray-100);
+  border-radius: 3px;
 }
 
 .breadcrumb__step-link:active,
 .breadcrumb__step-link:hover,
 .breadcrumb__step-link:focus,
 .breadcrumb__step-link:visited {
-	color: var(--color-gray-200);
+  color: var(--color-gray-200);
 }
 
 .breadcrumb__step-link:active {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 
 .breadcrumb__step-link:focus,
 .breadcrumb__step-link:hover {
-	color: var(--color-white-100);
-	background-color: var(--color-gray-400);
+  color: var(--color-white-100);
+  background-color: var(--color-gray-400);
 }
 
 @media screen and (min-width: 768px) {
-	.breadcrumb {
-		font-size: 0.9rem;
-	}
+  .breadcrumb {
+    font-size: 0.9rem;
+  }
 
-	.breadcrumb__step {
-		padding: 5px 10px 5px 0;
-	}
+  .breadcrumb__step {
+    padding: 5px 10px 5px 0;
+  }
 
-	.breadcrumb__step::after {
-		margin-left: 8px;
-	}
+  .breadcrumb__step::after {
+    margin-left: 8px;
+  }
 }

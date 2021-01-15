@@ -1,49 +1,49 @@
 .menu-button {
-	position: absolute;
-	top: 16px;
-	left: 16px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
 
-	cursor: pointer;
+  cursor: pointer;
 
-	border: 0;
-	background-color: transparent;
+  border: 0;
+  background-color: transparent;
 }
 
 .menu-button:focus {
-	outline: none;
+  outline: none;
 }
 
 .menu-button span {
-	display: block;
+  display: block;
 
-	width: 25.6px;
-	height: 3px;
-	margin-top: 5px;
+  width: 25.6px;
+  height: 3px;
+  margin-top: 5px;
 
-	transition-duration: 200ms;
-	transition-property: transform, opacity;
+  transition-duration: 200ms;
+  transition-property: transform, opacity;
 
-	background-color: var(--color-gray-500);
+  background-color: var(--color-gray-500);
 }
 
 .menu-button span:last-child {
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .menu-button--close span:nth-child(2) {
-	opacity: 0;
+  opacity: 0;
 }
 
 .menu-button--close span:first-child {
-	transform: rotate3d(0, 0, 5, 45deg) translate(8px, 8px);
+  transform: rotate3d(0, 0, 5, 45deg) translate(8px, 8px);
 }
 
 .menu-button--close span:last-child {
-	transform: rotate3d(0, 0, 5, -45deg) translate(3.4px, -3.2px);
+  transform: rotate3d(0, 0, 5, -45deg) translate(3.4px, -3.2px);
 }
 
 @media screen and (min-width: 769px) {
-	.menu-button {
-		display: none;
-	}
+  .menu-button {
+    display: none;
+  }
 }

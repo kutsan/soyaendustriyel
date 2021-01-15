@@ -1,49 +1,49 @@
 .navbar-mobile__category-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-mobile__category-toggle {
-	padding: 16px 32px;
+  padding: 16px 32px;
 
-	color: inherit;
-	border: 0;
-	background-color: transparent;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
 }
 
 .navbar-mobile__category-toggle:focus {
-	outline: none;
+  outline: none;
 }
 
 .navbar-mobile__category-toggle span {
-	display: block;
+  display: block;
 
-	width: 8px;
-	height: 8px;
+  width: 8px;
+  height: 8px;
 
-	transition: transform 0.2s;
-	transform: rotate(45deg);
+  transition: transform 0.2s;
+  transform: rotate(45deg);
 
-	border-top: 2px solid currentColor;
-	border-right: 2px solid currentColor;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
 }
 
 .navbar-mobile__category-toggle--expanded span {
-	transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .navbar-mobile__category-link {
-	flex-grow: 1;
+  flex-grow: 1;
 
-	margin: 4px;
-	padding: 12px 20px;
+  margin: 4px;
+  padding: 12px 20px;
 
-	text-decoration: none;
+  text-decoration: none;
 
-	text-transform: uppercase;
+  text-transform: uppercase;
 
-	font-weight: inherit;
+  font-weight: inherit;
 }
 
 .navbar-mobile__category-link,
@@ -51,22 +51,22 @@
 .navbar-mobile__category-link:visited,
 .navbar-mobile__category-link:focus,
 .navbar-mobile__category-link:hover {
-	color: inherit;
+  color: inherit;
 }
 
 .navbar-mobile__category-link--active {
-	border: 1px solid rgba(0, 0, 0, 0.15);
-	border-radius: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 40px;
 }
 
 .navbar-mobile__category-link--expanded {
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .navbar-mobile__category-link--top {
-	margin-left: 9px;
+  margin-left: 9px;
 }
 
 .navbar-mobile__category-link--lowermost {
-	margin-right: 24px;
+  margin-right: 24px;
 }

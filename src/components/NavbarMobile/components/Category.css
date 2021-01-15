@@ -1,27 +1,27 @@
 .navbar-mobile__category {
-	color: var(--color-gray-500);
+  color: var(--color-gray-500);
 
-	font-weight: 500;
+  font-weight: 500;
 }
 
 .navbar-mobile__category-children {
-	overflow: hidden;
+  overflow: hidden;
 
-	padding: 0 0 0 24px;
+  padding: 0 0 0 24px;
 }
 
 .navbar-mobile__category--expanded {
-	background-color: var(--color-white-400);
+  background-color: var(--color-white-400);
 }
 
 .navbar-mobile__category--sub {
-	color: var(--color-gray-300);
+  color: var(--color-gray-300);
 
-	font-weight: 400;
+  font-weight: 400;
 }
 
 .navbar-mobile__category--lowermost {
-	color: var(--color-green-500);
+  color: var(--color-green-500);
 
-	font-weight: 400;
+  font-weight: 400;
 }

@@ -8,17 +8,17 @@ import Copyright from './components/Copyright.jsx'
 import Attribution from './components/Attribution.jsx'
 
 const Footer = () => {
-	return (
-		<footer>
-			<div className='footer-content'>
-				<About />
-				<Contact />
-			</div>
+  return (
+    <footer>
+      <div className='footer-content'>
+        <About />
+        <Contact />
+      </div>
 
-			<Copyright />
-			<Attribution />
-		</footer>
-	)
+      <Copyright />
+      <Attribution />
+    </footer>
+  )
 }
 
 export default Footer

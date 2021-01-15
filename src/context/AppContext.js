@@ -4,17 +4,17 @@ import PropTypes from 'prop-types'
 const AppContext = React.createContext(null)
 
 const AppProvider = ({ children }) => {
-	const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
-	return (
-		<AppContext.Provider value={{ menuOpen, setMenuOpen }}>
-			{children}
-		</AppContext.Provider>
-	)
+  return (
+    <AppContext.Provider value={{ menuOpen, setMenuOpen }}>
+      {children}
+    </AppContext.Provider>
+  )
 }
 
 AppProvider.propTypes = {
-	children: PropTypes.node
+  children: PropTypes.node
 }
 
 export { AppProvider, AppContext }

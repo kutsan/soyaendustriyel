@@ -1,793 +1,793 @@
 {
-	"product": [
-		{
-			"id": "focus-optimum-kare-pecete-100-lu-paket-5053498",
-			"category": "kare-pecete",
-			"name": "Focus Optimum Kare Peçete 100'lü Paket",
-			"brand": "Focus",
-			"code": "5053498",
-			"desc": {
-				"text": "Her türlü restaurant, cafe, büfe gibi işletmeler için standart tek katlı kare peçete.",
-				"table": [
-					{ "key": "Kat", "value": "Tek katlı" },
-					{ "key": "Yaprak genişliği", "value": "22.50cm" },
-					{ "key": "Yaprak yüksekliği", "value": "26.50cm" },
-					{ "key": "Paket içeriği", "value": "100 adet" },
-					{ "key": "Koli içi paket", "value": "32 paket" },
-					{ "key": "Net koli ağırlığı", "value": "3.1kg" }
-				]
-			}
-		},
-		{
-			"id": "nescafe-gold-kahve-200gr",
-			"category": "hazir-kahveler",
-			"name": "Nescafe Gold Kahve 200GR",
-			"brand": "Nescafe",
-			"code": "1090501",
-			"desc": {
-				"text": "Çözünebilir sade kahve.",
-				"list": [
-					"Nescafe Gold ile premium kahve deneyimi",
-					"Yumuşak içim, ideal yoğunlukta kahve tadı ve zengin aroma",
-					"Özenle seçilmiş, yüksek kalite Arabica ve Robusta çekirdeklerinin Türkiye’ye özel harmanı"
-				]
-			}
-		},
-		{
-			"id": "coffee-mate-500gr",
-			"category": "kahve-kremasi",
-			"name": "Nestle Coffee Mate Kahve Kreması 500GR",
-			"brand": "Nestle",
-			"code": "1090502",
-			"desc": {
-				"text": "Kahvesini yumuşak tercih edenler için kahve beyazlatıcı, kahve kreması."
-			}
-		},
-		{
-			"id": "jacobs-monarch-filtre-kahve-500gr",
-			"category": "filtre-kahve",
-			"name": "Jacobs Monarch Filtre Kahve 500GR",
-			"brand": "Jacobs",
-			"code": "1090503",
-			"desc": {
-				"list": [
-					"Özel vakumlu paket.",
-					"Hem filtre kahve makinesinde, hem de french press aracığılıyla kullanıma uygundur."
-				]
-			}
-		},
-		{
-			"id": "caykur-rize-turist-cayi-1000gr",
-			"category": "dokme-caylar",
-			"name": "Çaykur Rize Turist Çayı 1000GR",
-			"brand": "Çaykur",
-			"code": "1090505",
-			"desc": {
-				"text": "Yurdun dört bir yanında girmediği ev, katılmadığı dost sohbeti yoktur! Ona boşuna \"Gerçek Sarı\" denmez. Herkes ona hayrandır. Köklü geçmişi, nesilden nesile aktarılan nefis aroması ile Rize Turist ailemizin çayıdır."
-			}
-		},
-		{
-			"id": "caykur-altinbas-cayi-500gr",
-			"category": "dokme-caylar",
-			"name": "Çaykur Altınbaş Çayı 500GR",
-			"brand": "Çaykur",
-			"code": "1090506",
-			"desc": {
-				"text": "Tepesindeki tomurcuk ve hemen altındaki ufacık, taptaze iki yapraktır Altınbaş'ı altınbaş yapan. Çay gurmeleri Altınbaş'ı hemen tanırlar! Altınbaşlı ve kıvrımlı çay oranının en çok kullanıldığı çaydır. Damakta ayrı bir tat bırakan Altınbaş, burukluğu ile hakiki çay lezzetini sunar. Kokusu ve tadıyla, aroma seviyesi en yüksek olan Altınbaş'ın az miktarı ile çok dem sağlanır. Dost sohbetleriniz ve keyifli toplantılarınız için Altınbaş birebirdir."
-			}
-		},
-		{
-			"id": "pg-flash-no-8-hijyenik-cok-amacli-yuzey-temizleyici-750ml",
-			"category": "yuzey-temizleme",
-			"name": "P&G Flash Hijyenik Çok Amaçlı Yüzey Temizleyici No: 8 750ML",
-			"brand": "P&G",
-			"code": "1090507",
-			"desc": {
-				"text": "Cam ve aynalar dahil, yer, duvar, tezgah ve tüm yüzeylerde tam temizlik sağlayan Flash No: 8 etkili formülüyle en ağır ve yerleşmiş kirleri söküp atar. Aynı zamanda çamaşır suyu katkılı formülü sayesinde yüzey dezenfektanı olarak kullanabilirsiniz."
-			}
-		},
-		{
-			"id": "desodor-d57-kuvvetli-yuzey-temizleyici-sari-su-750ml",
-			"category": "yuzey-temizleme",
-			"name": "Desodor D57 Kuvvetli Yüzey Temizleyici (Sarı Su) 750ML",
-			"brand": "Desodor",
-			"code": "1090508",
-			"desc": {
-				"text": "Çok amaçlı yüzey temizleyici kullanım alanları: Deri veya suni deri yüzeyler, koltuklar, sandalyeler, kumaş koltuk, hali, kilim ve tekstil yüzeyler, alüminyum, plastik yüzeyler, pencereler ve kapılar, bilgisayar, yazıcı ve fotokopi makinası kasaları, ocak, dolap, mutfak bankosu, aspiratörler, armatür, emaye ve seramik yüzeyler, derz araları, paslanmaz krom çelik ve boyalı yüzeyler, plastik sandalye ve masalar, klima kasaları ve filtrelerı, şezlonglar, panjürler, şömine camı ve bacaları, bisiklet, motosikletler, araç motorları, torpidolar, jantlar, kaportaya yapışmış ziftler."
-			}
-		},
-		{
-			"id": "domestos-camasir-suyu-810gr",
-			"category": "camasir-sulari",
-			"name": "Domestos Çamaşır Suyu 810GR",
-			"brand": "Domestos",
-			"code": "1090509",
-			"desc": {
-				"list": [
-					"Uzun süreli koruma ve maksimum hijyen sağlar.",
-					"Yoğun kıvamlı çamaşır suyu temizler, hijyen sağlar.",
-					"Mikropları öldürür ve kireci önler.",
-					"Yoğun kıvamlı formülü ile sifonu çektikten sonra bile yüzeye tutunarak etkisini devam ettirir."
-				]
-			}
-		},
-		{
-			"id": "fairy-bulasik-deterjani-675ml",
-			"category": "elde-bulasik-deterjani",
-			"name": "Fairy Sıvı Bulaşık Deterjanı 675ML",
-			"brand": "Fairy",
-			"code": "1090510",
-			"desc": {
-				"list": [
-					"Bir şişe Fairy sıradan bulaşık deterjanlarına göre 2 kat fazla bulaşık yıkar.",
-					"Konsantre formülü zorlu yağları anında çözerek mükemmel temizlik sağlar.",
-					"Her damlada ultra uzun süren köpük."
-				]
-			}
-		},
-		{
-			"id": "fairy-bulasik-deterjani-5l",
-			"category": "elde-bulasik-deterjani",
-			"name": "Fairy Sıvı Bulaşık Deterjanı 5L",
-			"brand": "Fairy",
-			"code": "1090511",
-			"desc": {
-				"list": [
-					"Bir şişe Fairy sıradan bulaşık deterjanlarına göre 2 kat fazla bulaşık yıkar.",
-					"Konsantre formülü zorlu yağları anında çözerek mükemmel temizlik sağlar.",
-					"Her damlada ultra uzun süren köpük."
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-tuvalet-kagidi-24-lu-paket-5038071",
-			"category": "ev-tipi-tuvalet-kagidi",
-			"name": "Focus Ultra Tuvalet Kağıdı 24'lü Paket",
-			"brand": "Focus",
-			"code": "5038071",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "9.75cm" },
-					{ "key": "Yaprak yüksekliği", "value": "12.5cm" },
-					{ "key": "Yaprak adedi", "value": "180 adet" },
-					{ "key": "Rulo uzunluğu", "value": "22.5m" },
-					{ "key": "Paket içi adet", "value": "24 adet" },
-					{ "key": "Koli içi paket", "value": "3 paket" },
-					{ "key": "Net koli ağırlığı", "value": "5.4kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-extra-tuvalet-kagidi-24-lu-paket-5038073",
-			"category": "ev-tipi-tuvalet-kagidi",
-			"name": "Focus Extra Tuvalet Kağıdı 24'lü Paket",
-			"brand": "Focus",
-			"code": "5038073",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "9.75cm" },
-					{ "key": "Yaprak yüksekliği", "value": "12.3cm" },
-					{ "key": "Yaprak adedi", "value": "180 adet" },
-					{ "key": "Rulo uzunluğu", "value": "22.1m" },
-					{ "key": "Paket içi adet", "value": "24 adet" },
-					{ "key": "Koli içi paket", "value": "3 paket" },
-					{ "key": "Net koli ağırlığı", "value": "5kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-tuvalet-kagidi-24-lu-paket-5038144",
-			"category": "ev-tipi-tuvalet-kagidi",
-			"name": "Focus Optimum Tuvalet Kağıdı 24'lü Paket",
-			"brand": "Focus",
-			"code": "5038144",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "9.6cm" },
-					{ "key": "Yaprak yüksekliği", "value": "12cm" },
-					{ "key": "Yaprak adedi", "value": "150 adet" },
-					{ "key": "Rulo uzunluğu", "value": "18m" },
-					{ "key": "Paket içi adet", "value": "24 adet" },
-					{ "key": "Koli içi paket", "value": "3 paket" },
-					{ "key": "Net koli ağırlığı", "value": "4kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-tuvalet-kagidi-16-li-paket-5038145",
-			"category": "ev-tipi-tuvalet-kagidi",
-			"name": "Focus Optimum Tuvalet Kağıdı 16'lı Paket",
-			"brand": "Focus",
-			"code": "5038145",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "9.75cm" },
-					{ "key": "Yaprak yüksekliği", "value": "12cm" },
-					{ "key": "Yaprak adedi", "value": "150 adet" },
-					{ "key": "Rulo uzunluğu", "value": "18m" },
-					{ "key": "Paket içi adet", "value": "16 adet" },
-					{ "key": "Koli içi paket", "value": "3 paket" },
-					{ "key": "Net koli ağırlığı", "value": "2.7kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-extra-mini-jumbo-tuvalet-kagidi-5038369",
-			"category": "mini-jumbo-tuvalet-kagidi",
-			"name": "Focus Extra Mini Jumbo Tuvalet Kağıdı",
-			"brand": "Focus",
-			"code": "5038369",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "10cm" },
-					{ "key": "Yaprak yüksekliği", "value": "35cm" },
-					{ "key": "Yaprak adedi", "value": "428 adet" },
-					{ "key": "Rulo uzunluğu", "value": "150m" },
-					{ "key": "Koli içi adet", "value": "12 adet" },
-					{ "key": "Net koli ağırlığı", "value": "6.1kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-mini-jumbo-tuvalet-kagidi-5038368",
-			"category": "mini-jumbo-tuvalet-kagidi",
-			"name": "Focus Optimum Mini Jumbo Tuvalet Kağıdı",
-			"brand": "Focus",
-			"code": "5038368",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "10cm" },
-					{ "key": "Yaprak yüksekliği", "value": "35cm" },
-					{ "key": "Yaprak adedi", "value": "263 adet" },
-					{ "key": "Rulo uzunluğu", "value": "92m" },
-					{ "key": "Koli içi adet", "value": "12 adet" },
-					{ "key": "Net koli ağırlığı", "value": "3.8kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-extra-icten-cekmeli-tuvalet-kagidi-120-metre-5038367",
-			"category": "icten-cekmeli-tuvalet-kagidi",
-			"name": "Focus Extra İçten Çekmeli Tuvalet Kağıdı 120 Metre",
-			"brand": "Focus",
-			"code": "5038367",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "11.6cm" },
-					{ "key": "Yaprak yüksekliği", "value": "17.5cm" },
-					{ "key": "Yaprak adedi", "value": "686 adet" },
-					{ "key": "Rulo uzunluğu", "value": "120m" },
-					{ "key": "Koli içi adet", "value": "12 adet" },
-					{ "key": "Net koli ağırlığı", "value": "5.7kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-extra-icten-cekmeli-gofrajsiz-tuvalet-kagidi-200-metre-5038366",
-			"category": "icten-cekmeli-tuvalet-kagidi",
-			"name": "Focus Extra İçten Çekmeli Gofrajsız Tuvalet Kağıdı 200 Metre",
-			"brand": "Focus",
-			"code": "5038366",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "13.4cm" },
-					{ "key": "Yaprak yüksekliği", "value": "17.5cm" },
-					{ "key": "Yaprak adedi", "value": "1142 adet" },
-					{ "key": "Rulo uzunluğu", "value": "200m" },
-					{ "key": "Koli içi adet", "value": "6 adet" },
-					{ "key": "Net koli ağırlığı", "value": "5.5kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-icten-cekmeli-tuvalet-kagidi-80-metre-5050157",
-			"category": "icten-cekmeli-tuvalet-kagidi",
-			"name": "Focus Optimum İçten Çekmeli Tuvalet Kağıdı 80 Metre",
-			"brand": "Focus",
-			"code": "5050157",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "11.6cm" },
-					{ "key": "Yaprak yüksekliği", "value": "17.5cm" },
-					{ "key": "Yaprak adedi", "value": "457 adet" },
-					{ "key": "Rulo uzunluğu", "value": "80m" },
-					{ "key": "Koli içi adet", "value": "12 adet" },
-					{ "key": "Net koli ağırlığı", "value": "4kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-icten-cekmeli-tuvalet-kagidi-140-metre-5050158",
-			"category": "icten-cekmeli-tuvalet-kagidi",
-			"name": "Focus Optimum İçten Çekmeli Tuvalet Kağıdı 140 Metre",
-			"brand": "Focus",
-			"code": "5050158",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "13.4cm" },
-					{ "key": "Yaprak yüksekliği", "value": "17.5cm" },
-					{ "key": "Yaprak adedi", "value": "800 adet" },
-					{ "key": "Rulo uzunluğu", "value": "140m" },
-					{ "key": "Koli içi adet", "value": "6 adet" },
-					{ "key": "Net koli ağırlığı", "value": "4kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-jumbo-havlu-70-metre-5052184",
-			"category": "jumbo-havlu",
-			"name": "Focus Optimum Jumbo Havlu 70 Metre",
-			"brand": "Focus",
-			"code": "5052184",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "20.7cm" },
-					{ "key": "Rulo uzunluğu", "value": "70m" },
-					{ "key": "Koli içi adet", "value": "6 adet" },
-					{ "key": "Net koli ağırlığı", "value": "5.6kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-jumbo-havlu-60-metre-5050155",
-			"category": "jumbo-havlu",
-			"name": "Focus Optimum Jumbo Havlu 60 Metre",
-			"brand": "Focus",
-			"code": "5050155",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "20.7cm" },
-					{ "key": "Rulo uzunluğu", "value": "60m" },
-					{ "key": "Koli içi adet", "value": "6 adet" },
-					{ "key": "Net koli ağırlığı", "value": "3.5kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-icten-cekmeli-havlu-70-metre-5050156",
-			"category": "icten-cekmeli-havlu",
-			"name": "Focus Optimum İçten Çekmeli Havlu 70 Metre",
-			"brand": "Focus",
-			"code": "5050156",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "20.7cm" },
-					{ "key": "Yaprak yüksekliği", "value": "35cm" },
-					{ "key": "Yaprak adedi", "value": "200 adet" },
-					{ "key": "Rulo uzunluğu", "value": "70m" },
-					{ "key": "Koli içi adet", "value": "6 adet" },
-					{ "key": "Net koli ağırlığı", "value": "4kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-z-katli-havlu-200-lu-paket-5038146",
-			"category": "z-katli-havlu",
-			"name": "Focus Ultra Z Katlı Havlu 200'lü Paket",
-			"brand": "Focus",
-			"code": "5038146",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "22.5cm" },
-					{ "key": "Yaprak yüksekliği", "value": "24cm" },
-					{ "key": "Paket içi adet", "value": "200 adet" },
-					{ "key": "Koli içi paket", "value": "12 paket" },
-					{ "key": "Net koli ağırlığı", "value": "5.9kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-extra-z-katli-havlu-200-lu-paket-5038372",
-			"category": "z-katli-havlu",
-			"name": "Focus Extra Z Katlı Havlu 200'lü Paket",
-			"brand": "Focus",
-			"code": "5038372",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "22.5cm" },
-					{ "key": "Yaprak yüksekliği", "value": "24cm" },
-					{ "key": "Paket içi adet", "value": "200 adet" },
-					{ "key": "Koli içi paket", "value": "12 paket" },
-					{ "key": "Net koli ağırlığı", "value": "4.7kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-jumbo-havlu-150-metre-5038387",
-			"category": "jumbo-havlu",
-			"name": "Focus Ultra Jumbo Havlu 150 Metre",
-			"brand": "Focus",
-			"code": "5038387",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "20.7cm" },
-					{ "key": "Rulo uzunluğu", "value": "150m" },
-					{ "key": "Koli içi adet", "value": "6 adet" },
-					{ "key": "Net koli ağırlığı", "value": "8.6kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-jumbo-havlu-510-metre-5038390",
-			"category": "jumbo-havlu",
-			"name": "Focus Ultra Jumbo Havlu 510 Metre",
-			"brand": "Focus",
-			"code": "5038390",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Tek katlı" },
-					{ "key": "Yaprak genişliği", "value": "24cm" },
-					{ "key": "Rulo uzunluğu", "value": "510m" },
-					{ "key": "Koli içi adet", "value": "1 adet" },
-					{ "key": "Net koli ağırlığı", "value": "4.7kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-extra-jumbo-havlu-125-metre-5038389",
-			"category": "jumbo-havlu",
-			"name": "Focus Extra Jumbo Havlu 125 Metre",
-			"brand": "Focus",
-			"code": "5038389",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "20.7cm" },
-					{ "key": "Rulo uzunluğu", "value": "125m" },
-					{ "key": "Koli içi adet", "value": "6 adet" },
-					{ "key": "Net koli ağırlığı", "value": "5.6kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-rulo-havlu-24-lu-paket-5038370",
-			"category": "rulo-havlu",
-			"name": "Focus Ultra Rulo Havlu 24'lü Paket",
-			"brand": "Focus",
-			"code": "5038370",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "22.7cm" },
-					{ "key": "Yaprak yüksekliği", "value": "12.5cm" },
-					{ "key": "Yaprak adedi", "value": "100 adet" },
-					{ "key": "Rulo uzunluğu", "value": "12.5m" },
-					{ "key": "Paket içi adet", "value": "8 adet" },
-					{ "key": "Koli içi paket", "value": "3 paket" },
-					{ "key": "Net koli ağırlığı", "value": "3kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-rulo-havlu-24-lu-paket-5038155",
-			"category": "rulo-havlu",
-			"name": "Focus Optimum Rulo Havlu 24'lü Paket",
-			"brand": "Focus",
-			"code": "5038155",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "22.75cm" },
-					{ "key": "Yaprak yüksekliği", "value": "12cm" },
-					{ "key": "Yaprak adedi", "value": "90 adet" },
-					{ "key": "Rulo uzunluğu", "value": "10.8m" },
-					{ "key": "Paket içi adet", "value": "2 adet" },
-					{ "key": "Koli içi paket", "value": "12 paket" },
-					{ "key": "Net koli ağırlığı", "value": "2.2kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-z-katli-havlu-200-lu-paket-5050407",
-			"category": "z-katli-havlu",
-			"name": "Focus Optimum Z Katlı Havlu 200'lü Paket",
-			"brand": "Focus",
-			"code": "5050407",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "20cm" },
-					{ "key": "Yaprak yüksekliği", "value": "24cm" },
-					{ "key": "Paket içi adet", "value": "200 adet" },
-					{ "key": "Koli içi paket", "value": "12 paket" },
-					{ "key": "Net koli ağırlığı", "value": "4.3kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-z-katli-havlu-150-li-paket-5050167",
-			"category": "z-katli-havlu",
-			"name": "Focus Optimum Z Katlı Havlu 150'li Paket",
-			"brand": "Focus",
-			"code": "5050167",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "20cm" },
-					{ "key": "Yaprak yüksekliği", "value": "24cm" },
-					{ "key": "Paket içi adet", "value": "150 adet" },
-					{ "key": "Koli içi paket", "value": "12 paket" },
-					{ "key": "Net koli ağırlığı", "value": "3.1kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-premium-kare-pecete-1-4-katlama-50-li-paket-5053137",
-			"category": "kare-pecete",
-			"name": "Focus Ultra Premium Kare Peçete 1/4 Katlama 50'li Paket",
-			"brand": "Focus",
-			"code": "5053137",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Üç katlı" },
-					{ "key": "Yaprak genişliği", "value": "36cm" },
-					{ "key": "Yaprak yüksekliği", "value": "36cm" },
-					{ "key": "Yaprak adedi", "value": "50 adet" },
-					{ "key": "Koli içi paket", "value": "12 paket" },
-					{ "key": "Net koli ağırlığı", "value": "3.9kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-premium-kare-pecete-1-8-katlama-50-li-paket-5053138",
-			"category": "kare-pecete",
-			"name": "Focus Ultra Premium Kare Peçete 1/8 Katlama 50'li Paket",
-			"brand": "Focus",
-			"code": "5053138",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Üç katlı" },
-					{ "key": "Yaprak genişliği", "value": "36cm" },
-					{ "key": "Yaprak yüksekliği", "value": "36cm" },
-					{ "key": "Yaprak adedi", "value": "50 adet" },
-					{ "key": "Koli içi paket", "value": "12 paket" },
-					{ "key": "Net koli ağırlığı", "value": "3.9kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-kare-pecete-50-li-paket-5038148",
-			"category": "kare-pecete",
-			"name": "Focus Ultra Kare Peçete 50'li Paket",
-			"brand": "Focus",
-			"code": "5038148",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "30cm" },
-					{ "key": "Yaprak yüksekliği", "value": "30cm" },
-					{ "key": "Paket içi adet", "value": "50 adet" },
-					{ "key": "Koli içi paket", "value": "24 paket" },
-					{ "key": "Net koli ağırlığı", "value": "3.7kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-1-8-ozel-katlamali-kare-pecete-50-li-paket-5037971",
-			"category": "kare-pecete",
-			"name": "Focus Ultra 1/8 Özel Katlamalı Kare Peçete 50'li Paket",
-			"brand": "Focus",
-			"code": "5037971",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "33cm" },
-					{ "key": "Yaprak yüksekliği", "value": "33cm" },
-					{ "key": "Paket içi adet", "value": "50 adet" },
-					{ "key": "Koli içi paket", "value": "24 paket" },
-					{ "key": "Net koli ağırlığı", "value": "4.4kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-extra-kare-pecete-100-lu-paket-5038149",
-			"category": "kare-pecete",
-			"name": "Focus Extra Kare Peçete 100'lü Paket",
-			"brand": "Focus",
-			"code": "5038149",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "30cm" },
-					{ "key": "Yaprak yüksekliği", "value": "30cm" },
-					{ "key": "Paket içi adet", "value": "100 adet" },
-					{ "key": "Koli içi paket", "value": "24 paket" },
-					{ "key": "Net koli ağırlığı", "value": "4.3kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-ultra-dispenser-pecete-250-li-paket-5051791",
-			"category": "dispenser-pecete",
-			"name": "Focus Ultra Dispenser Peçete 250'li Paket",
-			"brand": "Focus",
-			"code": "5051791",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Tek katlı" },
-					{ "key": "Yaprak genişliği", "value": "26.5cm" },
-					{ "key": "Yaprak yüksekliği", "value": "24cm" },
-					{ "key": "Paket içi adet", "value": "250 adet" },
-					{ "key": "Koli içi paket", "value": "18 paket" },
-					{ "key": "Net koli ağırlığı", "value": "5.2kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-extra-dispenser-pecete-350-li-paket-5038154",
-			"category": "dispenser-pecete",
-			"name": "Focus Extra Dispenser Peçete 350'li Paket",
-			"brand": "Focus",
-			"code": "5038154",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Tek katlı" },
-					{ "key": "Yaprak genişliği", "value": "18cm" },
-					{ "key": "Yaprak yüksekliği", "value": "24cm" },
-					{ "key": "Paket içi adet", "value": "350 adet" },
-					{ "key": "Koli içi paket", "value": "12 paket" },
-					{ "key": "Net koli ağırlığı", "value": "3.3kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-optimum-dispenser-pecete-250-li-paket-5051792",
-			"category": "dispenser-pecete",
-			"name": "Focus Optimum Dispenser Peçete 250'li Paket",
-			"brand": "Focus",
-			"code": "5051792",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Tek katlı" },
-					{ "key": "Yaprak genişliği", "value": "18cm" },
-					{ "key": "Yaprak yüksekliği", "value": "24cm" },
-					{ "key": "Paket içi adet", "value": "250 adet" },
-					{ "key": "Koli içi paket", "value": "18 paket" },
-					{ "key": "Net koli ağırlığı", "value": "3.3kg" }
-				]
-			}
-		},
-		{
-			"id": "papia-tuvalet-kagidi-24-lu-paket",
-			"category": "ev-tipi-tuvalet-kagidi",
-			"name": "Papia Tuvalet Kağıdı 24'lü Paket",
-			"brand": "Papia",
-			"code": "1090504",
-			"desc": {
-				"text": "Yapay beyazlatıcılar kullanılmadan %100 saf selülozdan üretilen Papia Tuvalet Kağıdı, 3 katlı dolgun ve emici yapısı ile sizin ve sevdiklerinizin güvenli tercihi."
-			}
-		},
-		{
-			"id": "papia-rulo-havlu-8-li-paket",
-			"category": "rulo-havlu",
-			"name": "Papia Rulo Havlu 8'li Paket",
-			"brand": "Papia",
-			"code": "1090512",
-			"desc": ""
-		},
-		{
-			"id": "papia-maxi-kutu-mendil-80-yaprak",
-			"category": "kutu-mendil",
-			"name": "Papia Maxi Kutu Mendil 80 Yaprak",
-			"brand": "Papia",
-			"code": "1090513",
-			"desc": ""
-		},
-		{
-			"id": "focus-extra-muayene-masa-ortusu-5038392",
-			"category": "muayene-masa-ortusu",
-			"name": "Focus Extra Muayene Masa Örtüsü 2'li Paket",
-			"brand": "Focus",
-			"code": "5038392",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Çift katlı" },
-					{ "key": "Yaprak genişliği", "value": "51cm" },
-					{ "key": "Yaprak yüksekliği", "value": "12.5cm" },
-					{ "key": "Yaprak adedi", "value": "100 adet" },
-					{ "key": "Rulo uzunluğu", "value": "12.5m" },
-					{ "key": "Paket içi adet", "value": "2 adet" },
-					{ "key": "Koli içi paket", "value": "6 paket" },
-					{ "key": "Net koli ağırlığı", "value": "3.4kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-extra-klozet-kapak-ortusu-250-li-paket-8033648",
-			"category": "klozet-kapak-ortusu",
-			"name": "Focus Extra Klozet Kapak Örtüsü 250'li Paket",
-			"brand": "Focus",
-			"code": "8033648",
-			"desc": {
-				"table": [
-					{ "key": "Kat", "value": "Tek katlı" },
-					{ "key": "Yaprak genişliği", "value": "37cm" },
-					{ "key": "Yaprak yüksekliği", "value": "44cm" },
-					{ "key": "Paket içi adet", "value": "250 adet" },
-					{ "key": "Koli içi paket", "value": "10 paket" },
-					{ "key": "Net koli ağırlığı", "value": "7.2kg" }
-				]
-			}
-		},
-		{
-			"id": "focus-dispenser-pecete-aparati-beyaz-8027963",
-			"category": "pecete-dispenseri",
-			"name": "Focus Dispenser Peçete Aparatı Beyaz",
-			"brand": "Focus",
-			"code": "8027963",
-			"desc": ""
-		},
-		{
-			"id": "focus-dispenser-pecete-aparati-metalik-8027964",
-			"category": "pecete-dispenseri",
-			"name": "Focus Dispenser Peçete Aparatı Metalik",
-			"brand": "Focus",
-			"code": "8027964",
-			"desc": ""
-		},
-		{
-			"id": "focus-icten-cekmeli-tuvalet-kagidi-dispenseri-8027965",
-			"category": "icten-cekmeli-tk-dispenseri",
-			"name": "Focus İçten Çekmeli Tuvalet Kağıdı Dispenseri",
-			"brand": "Focus",
-			"code": "8027965",
-			"desc": ""
-		},
-		{
-			"id": "focus-jumbo-fotoselli-havlu-dispenseri-8035465",
-			"category": "jumbo-fotoselli-havlu-dispenseri",
-			"name": "Focus Jumbo Fotoselli Havlu Dispenseri",
-			"brand": "Focus",
-			"code": "8035465",
-			"desc": ""
-		},
-		{
-			"id": "focus-klozet-kapak-ortusu-aparati-8027968",
-			"category": "klozet-kapak-ortusu-aparati",
-			"name": "Focus Klozet Kapak Örtüsü Aparatı",
-			"brand": "Focus",
-			"code": "8027968",
-			"desc": ""
-		},
-		{
-			"id": "focus-mini-jumbo-tuvalet-kagidi-dispenseri-8027966",
-			"category": "mini-jumbo-tk-dispenseri",
-			"name": "Focus Mini Jumbo Tuvalet Kağıdı Dispenseri",
-			"brand": "Focus",
-			"code": "8027966",
-			"desc": ""
-		},
-		{
-			"id": "focus-muayene-masa-ortusu-dispenseri-8027969",
-			"category": "muayene-masa-ortusu-dispenseri",
-			"name": "Focus Muayene Masa Örtüsü Dispenseri",
-			"brand": "Focus",
-			"code": "8027969",
-			"desc": ""
-		},
-		{
-			"id": "focus-z-katli-havlu-dispenseri-8027956",
-			"category": "z-katli-havlu-dispenseri",
-			"name": "Focus Z Katlı Havlu Dispenseri",
-			"brand": "Focus",
-			"code": "8027956",
-			"desc": ""
-		}
-	]
+  "product": [
+    {
+      "id": "focus-optimum-kare-pecete-100-lu-paket-5053498",
+      "category": "kare-pecete",
+      "name": "Focus Optimum Kare Peçete 100'lü Paket",
+      "brand": "Focus",
+      "code": "5053498",
+      "desc": {
+        "text": "Her türlü restaurant, cafe, büfe gibi işletmeler için standart tek katlı kare peçete.",
+        "table": [
+          { "key": "Kat", "value": "Tek katlı" },
+          { "key": "Yaprak genişliği", "value": "22.50cm" },
+          { "key": "Yaprak yüksekliği", "value": "26.50cm" },
+          { "key": "Paket içeriği", "value": "100 adet" },
+          { "key": "Koli içi paket", "value": "32 paket" },
+          { "key": "Net koli ağırlığı", "value": "3.1kg" }
+        ]
+      }
+    },
+    {
+      "id": "nescafe-gold-kahve-200gr",
+      "category": "hazir-kahveler",
+      "name": "Nescafe Gold Kahve 200GR",
+      "brand": "Nescafe",
+      "code": "1090501",
+      "desc": {
+        "text": "Çözünebilir sade kahve.",
+        "list": [
+          "Nescafe Gold ile premium kahve deneyimi",
+          "Yumuşak içim, ideal yoğunlukta kahve tadı ve zengin aroma",
+          "Özenle seçilmiş, yüksek kalite Arabica ve Robusta çekirdeklerinin Türkiye’ye özel harmanı"
+        ]
+      }
+    },
+    {
+      "id": "coffee-mate-500gr",
+      "category": "kahve-kremasi",
+      "name": "Nestle Coffee Mate Kahve Kreması 500GR",
+      "brand": "Nestle",
+      "code": "1090502",
+      "desc": {
+        "text": "Kahvesini yumuşak tercih edenler için kahve beyazlatıcı, kahve kreması."
+      }
+    },
+    {
+      "id": "jacobs-monarch-filtre-kahve-500gr",
+      "category": "filtre-kahve",
+      "name": "Jacobs Monarch Filtre Kahve 500GR",
+      "brand": "Jacobs",
+      "code": "1090503",
+      "desc": {
+        "list": [
+          "Özel vakumlu paket.",
+          "Hem filtre kahve makinesinde, hem de french press aracığılıyla kullanıma uygundur."
+        ]
+      }
+    },
+    {
+      "id": "caykur-rize-turist-cayi-1000gr",
+      "category": "dokme-caylar",
+      "name": "Çaykur Rize Turist Çayı 1000GR",
+      "brand": "Çaykur",
+      "code": "1090505",
+      "desc": {
+        "text": "Yurdun dört bir yanında girmediği ev, katılmadığı dost sohbeti yoktur! Ona boşuna \"Gerçek Sarı\" denmez. Herkes ona hayrandır. Köklü geçmişi, nesilden nesile aktarılan nefis aroması ile Rize Turist ailemizin çayıdır."
+      }
+    },
+    {
+      "id": "caykur-altinbas-cayi-500gr",
+      "category": "dokme-caylar",
+      "name": "Çaykur Altınbaş Çayı 500GR",
+      "brand": "Çaykur",
+      "code": "1090506",
+      "desc": {
+        "text": "Tepesindeki tomurcuk ve hemen altındaki ufacık, taptaze iki yapraktır Altınbaş'ı altınbaş yapan. Çay gurmeleri Altınbaş'ı hemen tanırlar! Altınbaşlı ve kıvrımlı çay oranının en çok kullanıldığı çaydır. Damakta ayrı bir tat bırakan Altınbaş, burukluğu ile hakiki çay lezzetini sunar. Kokusu ve tadıyla, aroma seviyesi en yüksek olan Altınbaş'ın az miktarı ile çok dem sağlanır. Dost sohbetleriniz ve keyifli toplantılarınız için Altınbaş birebirdir."
+      }
+    },
+    {
+      "id": "pg-flash-no-8-hijyenik-cok-amacli-yuzey-temizleyici-750ml",
+      "category": "yuzey-temizleme",
+      "name": "P&G Flash Hijyenik Çok Amaçlı Yüzey Temizleyici No: 8 750ML",
+      "brand": "P&G",
+      "code": "1090507",
+      "desc": {
+        "text": "Cam ve aynalar dahil, yer, duvar, tezgah ve tüm yüzeylerde tam temizlik sağlayan Flash No: 8 etkili formülüyle en ağır ve yerleşmiş kirleri söküp atar. Aynı zamanda çamaşır suyu katkılı formülü sayesinde yüzey dezenfektanı olarak kullanabilirsiniz."
+      }
+    },
+    {
+      "id": "desodor-d57-kuvvetli-yuzey-temizleyici-sari-su-750ml",
+      "category": "yuzey-temizleme",
+      "name": "Desodor D57 Kuvvetli Yüzey Temizleyici (Sarı Su) 750ML",
+      "brand": "Desodor",
+      "code": "1090508",
+      "desc": {
+        "text": "Çok amaçlı yüzey temizleyici kullanım alanları: Deri veya suni deri yüzeyler, koltuklar, sandalyeler, kumaş koltuk, hali, kilim ve tekstil yüzeyler, alüminyum, plastik yüzeyler, pencereler ve kapılar, bilgisayar, yazıcı ve fotokopi makinası kasaları, ocak, dolap, mutfak bankosu, aspiratörler, armatür, emaye ve seramik yüzeyler, derz araları, paslanmaz krom çelik ve boyalı yüzeyler, plastik sandalye ve masalar, klima kasaları ve filtrelerı, şezlonglar, panjürler, şömine camı ve bacaları, bisiklet, motosikletler, araç motorları, torpidolar, jantlar, kaportaya yapışmış ziftler."
+      }
+    },
+    {
+      "id": "domestos-camasir-suyu-810gr",
+      "category": "camasir-sulari",
+      "name": "Domestos Çamaşır Suyu 810GR",
+      "brand": "Domestos",
+      "code": "1090509",
+      "desc": {
+        "list": [
+          "Uzun süreli koruma ve maksimum hijyen sağlar.",
+          "Yoğun kıvamlı çamaşır suyu temizler, hijyen sağlar.",
+          "Mikropları öldürür ve kireci önler.",
+          "Yoğun kıvamlı formülü ile sifonu çektikten sonra bile yüzeye tutunarak etkisini devam ettirir."
+        ]
+      }
+    },
+    {
+      "id": "fairy-bulasik-deterjani-675ml",
+      "category": "elde-bulasik-deterjani",
+      "name": "Fairy Sıvı Bulaşık Deterjanı 675ML",
+      "brand": "Fairy",
+      "code": "1090510",
+      "desc": {
+        "list": [
+          "Bir şişe Fairy sıradan bulaşık deterjanlarına göre 2 kat fazla bulaşık yıkar.",
+          "Konsantre formülü zorlu yağları anında çözerek mükemmel temizlik sağlar.",
+          "Her damlada ultra uzun süren köpük."
+        ]
+      }
+    },
+    {
+      "id": "fairy-bulasik-deterjani-5l",
+      "category": "elde-bulasik-deterjani",
+      "name": "Fairy Sıvı Bulaşık Deterjanı 5L",
+      "brand": "Fairy",
+      "code": "1090511",
+      "desc": {
+        "list": [
+          "Bir şişe Fairy sıradan bulaşık deterjanlarına göre 2 kat fazla bulaşık yıkar.",
+          "Konsantre formülü zorlu yağları anında çözerek mükemmel temizlik sağlar.",
+          "Her damlada ultra uzun süren köpük."
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-tuvalet-kagidi-24-lu-paket-5038071",
+      "category": "ev-tipi-tuvalet-kagidi",
+      "name": "Focus Ultra Tuvalet Kağıdı 24'lü Paket",
+      "brand": "Focus",
+      "code": "5038071",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "9.75cm" },
+          { "key": "Yaprak yüksekliği", "value": "12.5cm" },
+          { "key": "Yaprak adedi", "value": "180 adet" },
+          { "key": "Rulo uzunluğu", "value": "22.5m" },
+          { "key": "Paket içi adet", "value": "24 adet" },
+          { "key": "Koli içi paket", "value": "3 paket" },
+          { "key": "Net koli ağırlığı", "value": "5.4kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-extra-tuvalet-kagidi-24-lu-paket-5038073",
+      "category": "ev-tipi-tuvalet-kagidi",
+      "name": "Focus Extra Tuvalet Kağıdı 24'lü Paket",
+      "brand": "Focus",
+      "code": "5038073",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "9.75cm" },
+          { "key": "Yaprak yüksekliği", "value": "12.3cm" },
+          { "key": "Yaprak adedi", "value": "180 adet" },
+          { "key": "Rulo uzunluğu", "value": "22.1m" },
+          { "key": "Paket içi adet", "value": "24 adet" },
+          { "key": "Koli içi paket", "value": "3 paket" },
+          { "key": "Net koli ağırlığı", "value": "5kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-tuvalet-kagidi-24-lu-paket-5038144",
+      "category": "ev-tipi-tuvalet-kagidi",
+      "name": "Focus Optimum Tuvalet Kağıdı 24'lü Paket",
+      "brand": "Focus",
+      "code": "5038144",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "9.6cm" },
+          { "key": "Yaprak yüksekliği", "value": "12cm" },
+          { "key": "Yaprak adedi", "value": "150 adet" },
+          { "key": "Rulo uzunluğu", "value": "18m" },
+          { "key": "Paket içi adet", "value": "24 adet" },
+          { "key": "Koli içi paket", "value": "3 paket" },
+          { "key": "Net koli ağırlığı", "value": "4kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-tuvalet-kagidi-16-li-paket-5038145",
+      "category": "ev-tipi-tuvalet-kagidi",
+      "name": "Focus Optimum Tuvalet Kağıdı 16'lı Paket",
+      "brand": "Focus",
+      "code": "5038145",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "9.75cm" },
+          { "key": "Yaprak yüksekliği", "value": "12cm" },
+          { "key": "Yaprak adedi", "value": "150 adet" },
+          { "key": "Rulo uzunluğu", "value": "18m" },
+          { "key": "Paket içi adet", "value": "16 adet" },
+          { "key": "Koli içi paket", "value": "3 paket" },
+          { "key": "Net koli ağırlığı", "value": "2.7kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-extra-mini-jumbo-tuvalet-kagidi-5038369",
+      "category": "mini-jumbo-tuvalet-kagidi",
+      "name": "Focus Extra Mini Jumbo Tuvalet Kağıdı",
+      "brand": "Focus",
+      "code": "5038369",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "10cm" },
+          { "key": "Yaprak yüksekliği", "value": "35cm" },
+          { "key": "Yaprak adedi", "value": "428 adet" },
+          { "key": "Rulo uzunluğu", "value": "150m" },
+          { "key": "Koli içi adet", "value": "12 adet" },
+          { "key": "Net koli ağırlığı", "value": "6.1kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-mini-jumbo-tuvalet-kagidi-5038368",
+      "category": "mini-jumbo-tuvalet-kagidi",
+      "name": "Focus Optimum Mini Jumbo Tuvalet Kağıdı",
+      "brand": "Focus",
+      "code": "5038368",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "10cm" },
+          { "key": "Yaprak yüksekliği", "value": "35cm" },
+          { "key": "Yaprak adedi", "value": "263 adet" },
+          { "key": "Rulo uzunluğu", "value": "92m" },
+          { "key": "Koli içi adet", "value": "12 adet" },
+          { "key": "Net koli ağırlığı", "value": "3.8kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-extra-icten-cekmeli-tuvalet-kagidi-120-metre-5038367",
+      "category": "icten-cekmeli-tuvalet-kagidi",
+      "name": "Focus Extra İçten Çekmeli Tuvalet Kağıdı 120 Metre",
+      "brand": "Focus",
+      "code": "5038367",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "11.6cm" },
+          { "key": "Yaprak yüksekliği", "value": "17.5cm" },
+          { "key": "Yaprak adedi", "value": "686 adet" },
+          { "key": "Rulo uzunluğu", "value": "120m" },
+          { "key": "Koli içi adet", "value": "12 adet" },
+          { "key": "Net koli ağırlığı", "value": "5.7kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-extra-icten-cekmeli-gofrajsiz-tuvalet-kagidi-200-metre-5038366",
+      "category": "icten-cekmeli-tuvalet-kagidi",
+      "name": "Focus Extra İçten Çekmeli Gofrajsız Tuvalet Kağıdı 200 Metre",
+      "brand": "Focus",
+      "code": "5038366",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "13.4cm" },
+          { "key": "Yaprak yüksekliği", "value": "17.5cm" },
+          { "key": "Yaprak adedi", "value": "1142 adet" },
+          { "key": "Rulo uzunluğu", "value": "200m" },
+          { "key": "Koli içi adet", "value": "6 adet" },
+          { "key": "Net koli ağırlığı", "value": "5.5kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-icten-cekmeli-tuvalet-kagidi-80-metre-5050157",
+      "category": "icten-cekmeli-tuvalet-kagidi",
+      "name": "Focus Optimum İçten Çekmeli Tuvalet Kağıdı 80 Metre",
+      "brand": "Focus",
+      "code": "5050157",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "11.6cm" },
+          { "key": "Yaprak yüksekliği", "value": "17.5cm" },
+          { "key": "Yaprak adedi", "value": "457 adet" },
+          { "key": "Rulo uzunluğu", "value": "80m" },
+          { "key": "Koli içi adet", "value": "12 adet" },
+          { "key": "Net koli ağırlığı", "value": "4kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-icten-cekmeli-tuvalet-kagidi-140-metre-5050158",
+      "category": "icten-cekmeli-tuvalet-kagidi",
+      "name": "Focus Optimum İçten Çekmeli Tuvalet Kağıdı 140 Metre",
+      "brand": "Focus",
+      "code": "5050158",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "13.4cm" },
+          { "key": "Yaprak yüksekliği", "value": "17.5cm" },
+          { "key": "Yaprak adedi", "value": "800 adet" },
+          { "key": "Rulo uzunluğu", "value": "140m" },
+          { "key": "Koli içi adet", "value": "6 adet" },
+          { "key": "Net koli ağırlığı", "value": "4kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-jumbo-havlu-70-metre-5052184",
+      "category": "jumbo-havlu",
+      "name": "Focus Optimum Jumbo Havlu 70 Metre",
+      "brand": "Focus",
+      "code": "5052184",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "20.7cm" },
+          { "key": "Rulo uzunluğu", "value": "70m" },
+          { "key": "Koli içi adet", "value": "6 adet" },
+          { "key": "Net koli ağırlığı", "value": "5.6kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-jumbo-havlu-60-metre-5050155",
+      "category": "jumbo-havlu",
+      "name": "Focus Optimum Jumbo Havlu 60 Metre",
+      "brand": "Focus",
+      "code": "5050155",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "20.7cm" },
+          { "key": "Rulo uzunluğu", "value": "60m" },
+          { "key": "Koli içi adet", "value": "6 adet" },
+          { "key": "Net koli ağırlığı", "value": "3.5kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-icten-cekmeli-havlu-70-metre-5050156",
+      "category": "icten-cekmeli-havlu",
+      "name": "Focus Optimum İçten Çekmeli Havlu 70 Metre",
+      "brand": "Focus",
+      "code": "5050156",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "20.7cm" },
+          { "key": "Yaprak yüksekliği", "value": "35cm" },
+          { "key": "Yaprak adedi", "value": "200 adet" },
+          { "key": "Rulo uzunluğu", "value": "70m" },
+          { "key": "Koli içi adet", "value": "6 adet" },
+          { "key": "Net koli ağırlığı", "value": "4kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-z-katli-havlu-200-lu-paket-5038146",
+      "category": "z-katli-havlu",
+      "name": "Focus Ultra Z Katlı Havlu 200'lü Paket",
+      "brand": "Focus",
+      "code": "5038146",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "22.5cm" },
+          { "key": "Yaprak yüksekliği", "value": "24cm" },
+          { "key": "Paket içi adet", "value": "200 adet" },
+          { "key": "Koli içi paket", "value": "12 paket" },
+          { "key": "Net koli ağırlığı", "value": "5.9kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-extra-z-katli-havlu-200-lu-paket-5038372",
+      "category": "z-katli-havlu",
+      "name": "Focus Extra Z Katlı Havlu 200'lü Paket",
+      "brand": "Focus",
+      "code": "5038372",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "22.5cm" },
+          { "key": "Yaprak yüksekliği", "value": "24cm" },
+          { "key": "Paket içi adet", "value": "200 adet" },
+          { "key": "Koli içi paket", "value": "12 paket" },
+          { "key": "Net koli ağırlığı", "value": "4.7kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-jumbo-havlu-150-metre-5038387",
+      "category": "jumbo-havlu",
+      "name": "Focus Ultra Jumbo Havlu 150 Metre",
+      "brand": "Focus",
+      "code": "5038387",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "20.7cm" },
+          { "key": "Rulo uzunluğu", "value": "150m" },
+          { "key": "Koli içi adet", "value": "6 adet" },
+          { "key": "Net koli ağırlığı", "value": "8.6kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-jumbo-havlu-510-metre-5038390",
+      "category": "jumbo-havlu",
+      "name": "Focus Ultra Jumbo Havlu 510 Metre",
+      "brand": "Focus",
+      "code": "5038390",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Tek katlı" },
+          { "key": "Yaprak genişliği", "value": "24cm" },
+          { "key": "Rulo uzunluğu", "value": "510m" },
+          { "key": "Koli içi adet", "value": "1 adet" },
+          { "key": "Net koli ağırlığı", "value": "4.7kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-extra-jumbo-havlu-125-metre-5038389",
+      "category": "jumbo-havlu",
+      "name": "Focus Extra Jumbo Havlu 125 Metre",
+      "brand": "Focus",
+      "code": "5038389",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "20.7cm" },
+          { "key": "Rulo uzunluğu", "value": "125m" },
+          { "key": "Koli içi adet", "value": "6 adet" },
+          { "key": "Net koli ağırlığı", "value": "5.6kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-rulo-havlu-24-lu-paket-5038370",
+      "category": "rulo-havlu",
+      "name": "Focus Ultra Rulo Havlu 24'lü Paket",
+      "brand": "Focus",
+      "code": "5038370",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "22.7cm" },
+          { "key": "Yaprak yüksekliği", "value": "12.5cm" },
+          { "key": "Yaprak adedi", "value": "100 adet" },
+          { "key": "Rulo uzunluğu", "value": "12.5m" },
+          { "key": "Paket içi adet", "value": "8 adet" },
+          { "key": "Koli içi paket", "value": "3 paket" },
+          { "key": "Net koli ağırlığı", "value": "3kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-rulo-havlu-24-lu-paket-5038155",
+      "category": "rulo-havlu",
+      "name": "Focus Optimum Rulo Havlu 24'lü Paket",
+      "brand": "Focus",
+      "code": "5038155",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "22.75cm" },
+          { "key": "Yaprak yüksekliği", "value": "12cm" },
+          { "key": "Yaprak adedi", "value": "90 adet" },
+          { "key": "Rulo uzunluğu", "value": "10.8m" },
+          { "key": "Paket içi adet", "value": "2 adet" },
+          { "key": "Koli içi paket", "value": "12 paket" },
+          { "key": "Net koli ağırlığı", "value": "2.2kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-z-katli-havlu-200-lu-paket-5050407",
+      "category": "z-katli-havlu",
+      "name": "Focus Optimum Z Katlı Havlu 200'lü Paket",
+      "brand": "Focus",
+      "code": "5050407",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "20cm" },
+          { "key": "Yaprak yüksekliği", "value": "24cm" },
+          { "key": "Paket içi adet", "value": "200 adet" },
+          { "key": "Koli içi paket", "value": "12 paket" },
+          { "key": "Net koli ağırlığı", "value": "4.3kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-z-katli-havlu-150-li-paket-5050167",
+      "category": "z-katli-havlu",
+      "name": "Focus Optimum Z Katlı Havlu 150'li Paket",
+      "brand": "Focus",
+      "code": "5050167",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "20cm" },
+          { "key": "Yaprak yüksekliği", "value": "24cm" },
+          { "key": "Paket içi adet", "value": "150 adet" },
+          { "key": "Koli içi paket", "value": "12 paket" },
+          { "key": "Net koli ağırlığı", "value": "3.1kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-premium-kare-pecete-1-4-katlama-50-li-paket-5053137",
+      "category": "kare-pecete",
+      "name": "Focus Ultra Premium Kare Peçete 1/4 Katlama 50'li Paket",
+      "brand": "Focus",
+      "code": "5053137",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Üç katlı" },
+          { "key": "Yaprak genişliği", "value": "36cm" },
+          { "key": "Yaprak yüksekliği", "value": "36cm" },
+          { "key": "Yaprak adedi", "value": "50 adet" },
+          { "key": "Koli içi paket", "value": "12 paket" },
+          { "key": "Net koli ağırlığı", "value": "3.9kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-premium-kare-pecete-1-8-katlama-50-li-paket-5053138",
+      "category": "kare-pecete",
+      "name": "Focus Ultra Premium Kare Peçete 1/8 Katlama 50'li Paket",
+      "brand": "Focus",
+      "code": "5053138",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Üç katlı" },
+          { "key": "Yaprak genişliği", "value": "36cm" },
+          { "key": "Yaprak yüksekliği", "value": "36cm" },
+          { "key": "Yaprak adedi", "value": "50 adet" },
+          { "key": "Koli içi paket", "value": "12 paket" },
+          { "key": "Net koli ağırlığı", "value": "3.9kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-kare-pecete-50-li-paket-5038148",
+      "category": "kare-pecete",
+      "name": "Focus Ultra Kare Peçete 50'li Paket",
+      "brand": "Focus",
+      "code": "5038148",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "30cm" },
+          { "key": "Yaprak yüksekliği", "value": "30cm" },
+          { "key": "Paket içi adet", "value": "50 adet" },
+          { "key": "Koli içi paket", "value": "24 paket" },
+          { "key": "Net koli ağırlığı", "value": "3.7kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-1-8-ozel-katlamali-kare-pecete-50-li-paket-5037971",
+      "category": "kare-pecete",
+      "name": "Focus Ultra 1/8 Özel Katlamalı Kare Peçete 50'li Paket",
+      "brand": "Focus",
+      "code": "5037971",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "33cm" },
+          { "key": "Yaprak yüksekliği", "value": "33cm" },
+          { "key": "Paket içi adet", "value": "50 adet" },
+          { "key": "Koli içi paket", "value": "24 paket" },
+          { "key": "Net koli ağırlığı", "value": "4.4kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-extra-kare-pecete-100-lu-paket-5038149",
+      "category": "kare-pecete",
+      "name": "Focus Extra Kare Peçete 100'lü Paket",
+      "brand": "Focus",
+      "code": "5038149",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "30cm" },
+          { "key": "Yaprak yüksekliği", "value": "30cm" },
+          { "key": "Paket içi adet", "value": "100 adet" },
+          { "key": "Koli içi paket", "value": "24 paket" },
+          { "key": "Net koli ağırlığı", "value": "4.3kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-ultra-dispenser-pecete-250-li-paket-5051791",
+      "category": "dispenser-pecete",
+      "name": "Focus Ultra Dispenser Peçete 250'li Paket",
+      "brand": "Focus",
+      "code": "5051791",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Tek katlı" },
+          { "key": "Yaprak genişliği", "value": "26.5cm" },
+          { "key": "Yaprak yüksekliği", "value": "24cm" },
+          { "key": "Paket içi adet", "value": "250 adet" },
+          { "key": "Koli içi paket", "value": "18 paket" },
+          { "key": "Net koli ağırlığı", "value": "5.2kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-extra-dispenser-pecete-350-li-paket-5038154",
+      "category": "dispenser-pecete",
+      "name": "Focus Extra Dispenser Peçete 350'li Paket",
+      "brand": "Focus",
+      "code": "5038154",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Tek katlı" },
+          { "key": "Yaprak genişliği", "value": "18cm" },
+          { "key": "Yaprak yüksekliği", "value": "24cm" },
+          { "key": "Paket içi adet", "value": "350 adet" },
+          { "key": "Koli içi paket", "value": "12 paket" },
+          { "key": "Net koli ağırlığı", "value": "3.3kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-optimum-dispenser-pecete-250-li-paket-5051792",
+      "category": "dispenser-pecete",
+      "name": "Focus Optimum Dispenser Peçete 250'li Paket",
+      "brand": "Focus",
+      "code": "5051792",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Tek katlı" },
+          { "key": "Yaprak genişliği", "value": "18cm" },
+          { "key": "Yaprak yüksekliği", "value": "24cm" },
+          { "key": "Paket içi adet", "value": "250 adet" },
+          { "key": "Koli içi paket", "value": "18 paket" },
+          { "key": "Net koli ağırlığı", "value": "3.3kg" }
+        ]
+      }
+    },
+    {
+      "id": "papia-tuvalet-kagidi-24-lu-paket",
+      "category": "ev-tipi-tuvalet-kagidi",
+      "name": "Papia Tuvalet Kağıdı 24'lü Paket",
+      "brand": "Papia",
+      "code": "1090504",
+      "desc": {
+        "text": "Yapay beyazlatıcılar kullanılmadan %100 saf selülozdan üretilen Papia Tuvalet Kağıdı, 3 katlı dolgun ve emici yapısı ile sizin ve sevdiklerinizin güvenli tercihi."
+      }
+    },
+    {
+      "id": "papia-rulo-havlu-8-li-paket",
+      "category": "rulo-havlu",
+      "name": "Papia Rulo Havlu 8'li Paket",
+      "brand": "Papia",
+      "code": "1090512",
+      "desc": ""
+    },
+    {
+      "id": "papia-maxi-kutu-mendil-80-yaprak",
+      "category": "kutu-mendil",
+      "name": "Papia Maxi Kutu Mendil 80 Yaprak",
+      "brand": "Papia",
+      "code": "1090513",
+      "desc": ""
+    },
+    {
+      "id": "focus-extra-muayene-masa-ortusu-5038392",
+      "category": "muayene-masa-ortusu",
+      "name": "Focus Extra Muayene Masa Örtüsü 2'li Paket",
+      "brand": "Focus",
+      "code": "5038392",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Çift katlı" },
+          { "key": "Yaprak genişliği", "value": "51cm" },
+          { "key": "Yaprak yüksekliği", "value": "12.5cm" },
+          { "key": "Yaprak adedi", "value": "100 adet" },
+          { "key": "Rulo uzunluğu", "value": "12.5m" },
+          { "key": "Paket içi adet", "value": "2 adet" },
+          { "key": "Koli içi paket", "value": "6 paket" },
+          { "key": "Net koli ağırlığı", "value": "3.4kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-extra-klozet-kapak-ortusu-250-li-paket-8033648",
+      "category": "klozet-kapak-ortusu",
+      "name": "Focus Extra Klozet Kapak Örtüsü 250'li Paket",
+      "brand": "Focus",
+      "code": "8033648",
+      "desc": {
+        "table": [
+          { "key": "Kat", "value": "Tek katlı" },
+          { "key": "Yaprak genişliği", "value": "37cm" },
+          { "key": "Yaprak yüksekliği", "value": "44cm" },
+          { "key": "Paket içi adet", "value": "250 adet" },
+          { "key": "Koli içi paket", "value": "10 paket" },
+          { "key": "Net koli ağırlığı", "value": "7.2kg" }
+        ]
+      }
+    },
+    {
+      "id": "focus-dispenser-pecete-aparati-beyaz-8027963",
+      "category": "pecete-dispenseri",
+      "name": "Focus Dispenser Peçete Aparatı Beyaz",
+      "brand": "Focus",
+      "code": "8027963",
+      "desc": ""
+    },
+    {
+      "id": "focus-dispenser-pecete-aparati-metalik-8027964",
+      "category": "pecete-dispenseri",
+      "name": "Focus Dispenser Peçete Aparatı Metalik",
+      "brand": "Focus",
+      "code": "8027964",
+      "desc": ""
+    },
+    {
+      "id": "focus-icten-cekmeli-tuvalet-kagidi-dispenseri-8027965",
+      "category": "icten-cekmeli-tk-dispenseri",
+      "name": "Focus İçten Çekmeli Tuvalet Kağıdı Dispenseri",
+      "brand": "Focus",
+      "code": "8027965",
+      "desc": ""
+    },
+    {
+      "id": "focus-jumbo-fotoselli-havlu-dispenseri-8035465",
+      "category": "jumbo-fotoselli-havlu-dispenseri",
+      "name": "Focus Jumbo Fotoselli Havlu Dispenseri",
+      "brand": "Focus",
+      "code": "8035465",
+      "desc": ""
+    },
+    {
+      "id": "focus-klozet-kapak-ortusu-aparati-8027968",
+      "category": "klozet-kapak-ortusu-aparati",
+      "name": "Focus Klozet Kapak Örtüsü Aparatı",
+      "brand": "Focus",
+      "code": "8027968",
+      "desc": ""
+    },
+    {
+      "id": "focus-mini-jumbo-tuvalet-kagidi-dispenseri-8027966",
+      "category": "mini-jumbo-tk-dispenseri",
+      "name": "Focus Mini Jumbo Tuvalet Kağıdı Dispenseri",
+      "brand": "Focus",
+      "code": "8027966",
+      "desc": ""
+    },
+    {
+      "id": "focus-muayene-masa-ortusu-dispenseri-8027969",
+      "category": "muayene-masa-ortusu-dispenseri",
+      "name": "Focus Muayene Masa Örtüsü Dispenseri",
+      "brand": "Focus",
+      "code": "8027969",
+      "desc": ""
+    },
+    {
+      "id": "focus-z-katli-havlu-dispenseri-8027956",
+      "category": "z-katli-havlu-dispenseri",
+      "name": "Focus Z Katlı Havlu Dispenseri",
+      "brand": "Focus",
+      "code": "8027956",
+      "desc": ""
+    }
+  ]
 }

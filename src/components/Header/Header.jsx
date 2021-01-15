@@ -9,15 +9,15 @@ import Communication from './components/Communication.jsx'
 import { AppContext } from '@/context/AppContext.js'
 
 const Header = () => {
-	const { menuOpen } = useContext(AppContext)
+  const { menuOpen } = useContext(AppContext)
 
-	return (
-		<header>
-			<Logo />
-			<SearchBar hidden={menuOpen} />
-			<Communication />
-		</header>
-	)
+  return (
+    <header>
+      <Logo />
+      <SearchBar hidden={menuOpen} />
+      <Communication />
+    </header>
+  )
 }
 
 export default Header

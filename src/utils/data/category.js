@@ -7,7 +7,7 @@ import { category as dataCategory } from '@/data/category.json'
  * @return {Object} Direct category reference.
  **/
 const getRef = (id) => {
-	return dataCategory.find((e) => e.id === id)
+  return dataCategory.find((e) => e.id === id)
 }
 
 /**
@@ -17,9 +17,9 @@ const getRef = (id) => {
  * @return {Object} Given key value
  **/
 const getKey = (id, key) => {
-	const ref = getRef(id)
+  const ref = getRef(id)
 
-	return ref ? ref[key] : null
+  return ref ? ref[key] : null
 }
 
 /**
@@ -28,7 +28,7 @@ const getKey = (id, key) => {
  * @return {Object[]} Array of categories
  **/
 const getTops = () => {
-	return dataCategory.filter((e) => !e.parent)
+  return dataCategory.filter((e) => !e.parent)
 }
 
 /**
@@ -38,7 +38,7 @@ const getTops = () => {
  * @return {Object[]} Array of categories
  **/
 const getSubs = (id) => {
-	return dataCategory.filter((e) => e.parent === id)
+  return dataCategory.filter((e) => e.parent === id)
 }
 
 /**
@@ -48,7 +48,7 @@ const getSubs = (id) => {
  * @return {boolean} True if given category has sub categories, false otherwise.
  **/
 const hasSubs = (id) => {
-	return Boolean(dataCategory.find((e) => e.parent === id))
+  return Boolean(dataCategory.find((e) => e.parent === id))
 }
 
 /**
@@ -58,17 +58,17 @@ const hasSubs = (id) => {
  * @return {Object[]} Flat array of categories
  **/
 const getAllSubs = (id) => {
-	if (!hasSubs(id)) return []
+  if (!hasSubs(id)) return []
 
-	const subs = getSubs(id)
+  const subs = getSubs(id)
 
-	if (!getKey(id, 'parent')) {
-		subs.forEach((cur) => {
-			subs.push(...getSubs(cur.id))
-		})
-	}
+  if (!getKey(id, 'parent')) {
+    subs.forEach((cur) => {
+      subs.push(...getSubs(cur.id))
+    })
+  }
 
-	return subs
+  return subs
 }
 
 export default { getRef, getKey, getSubs, hasSubs, getTops, getAllSubs }

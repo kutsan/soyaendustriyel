@@ -6,16 +6,16 @@ import './Logo.css'
 import LogoIcon from '@/assets/icons/logo.svg'
 
 const Logo = () => {
-	return (
-		<NavLink
-			activeStyle={{ pointerEvents: 'none' }}
-			isActive={(match, location) => location.pathname === '/'}
-			to='/'
-			aria-label='Ana Sayfa'
-		>
-			<LogoIcon className='logo' />
-		</NavLink>
-	)
+  return (
+    <NavLink
+      activeStyle={{ pointerEvents: 'none' }}
+      isActive={(match, location) => location.pathname === '/'}
+      to='/'
+      aria-label='Ana Sayfa'
+    >
+      <LogoIcon className='logo' />
+    </NavLink>
+  )
 }
 
 export default Logo

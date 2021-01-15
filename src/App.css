@@ -1,131 +1,131 @@
 :root {
-	/* black */
-	--color-black-100: #000000;
-	--color-black-200: #1c1c1c;
+  /* black */
+  --color-black-100: #000000;
+  --color-black-200: #1c1c1c;
 
-	/* white */
-	--color-white-100: #ffffff;
-	--color-white-200: #fefefe;
-	--color-white-300: #fafafa;
-	--color-white-400: #f7f7f7;
-	--color-white-500: #f1f1f1;
-	--color-white-600: #eeeeee;
-	--color-white-700: #e6e6e6;
+  /* white */
+  --color-white-100: #ffffff;
+  --color-white-200: #fefefe;
+  --color-white-300: #fafafa;
+  --color-white-400: #f7f7f7;
+  --color-white-500: #f1f1f1;
+  --color-white-600: #eeeeee;
+  --color-white-700: #e6e6e6;
 
-	/* green */
-	--color-green-100: #52bf9d;
-	--color-green-200: #4adba7;
-	--color-green-300: #2c8e6f;
-	--color-green-400: #0f7a59;
-	--color-green-500: #027551;
-	--color-green-100-rgb: 82, 191, 157;
+  /* green */
+  --color-green-100: #52bf9d;
+  --color-green-200: #4adba7;
+  --color-green-300: #2c8e6f;
+  --color-green-400: #0f7a59;
+  --color-green-500: #027551;
+  --color-green-100-rgb: 82, 191, 157;
 
-	/* gray */
-	--color-gray-100: #868686;
-	--color-gray-200: #636363;
-	--color-gray-300: #555555;
-	--color-gray-400: #393939;
-	--color-gray-500: #333333;
+  /* gray */
+  --color-gray-100: #868686;
+  --color-gray-200: #636363;
+  --color-gray-300: #555555;
+  --color-gray-400: #393939;
+  --color-gray-500: #333333;
 
-	/* blue */
-	--color-blue-100: #19859b;
-	--color-blue-200: #3f8abf;
-	--color-blue-300: #326e99;
-	--color-blue-400: #3e5a77;
-	--color-blue-500: #26384a;
+  /* blue */
+  --color-blue-100: #19859b;
+  --color-blue-200: #3f8abf;
+  --color-blue-300: #326e99;
+  --color-blue-400: #3e5a77;
+  --color-blue-500: #26384a;
 
-	/* red */
-	--color-red-100: #e74c3c;
-	--color-red-200: #c0392b;
+  /* red */
+  --color-red-100: #e74c3c;
+  --color-red-200: #c0392b;
 
-	/* orange */
-	--color-orange-100: #c48024;
+  /* orange */
+  --color-orange-100: #c48024;
 }
 
 ::selection {
-	background: rgba(var(--color-green-100-rgb), 0.5);
+  background: rgba(var(--color-green-100-rgb), 0.5);
 }
 
 html {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 
-	font-size: 16px;
+  font-size: 16px;
 
-	-webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
 *::before,
 *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 
-	color: var(--color-black-100);
-	background-color: var(--color-white-300);
+  color: var(--color-black-100);
+  background-color: var(--color-white-300);
 
-	font-family:
-		-apple-system,
-		BlinkMacSystemFont,
-		'Segoe UI',
-		Roboto,
-		Oxygen-Sans,
-		Ubuntu,
-		Cantarell,
-		'Helvetica Neue',
-		sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen-Sans,
+    Ubuntu,
+    Cantarell,
+    'Helvetica Neue',
+    sans-serif;
 
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 main {
-	max-width: 1024px;
-	margin: auto;
-	padding: 24px 10px 100px 10px;
+  max-width: 1024px;
+  margin: auto;
+  padding: 24px 10px 100px 10px;
 }
 
 @media screen and (min-width: 768px) {
-	main {
-		padding: 40px 40px 150px 40px;
-	}
+  main {
+    padding: 40px 40px 150px 40px;
+  }
 }
 
 .no-javascript-warning {
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-	max-width: 600px;
-	min-height: 200px;
-	margin: 0 auto;
-	margin-top: 100px;
-	padding: 10px;
+  max-width: 600px;
+  min-height: 200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 10px;
 
-	border: 20px solid var(--color-red-200);
-	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border: 20px solid var(--color-red-200);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .no-javascript-warning__title {
-	margin: 30px 20px 10px 20px;
+  margin: 30px 20px 10px 20px;
 
-	color: var(--color-red-100);
+  color: var(--color-red-100);
 
-	font-size: 30px;
-	font-weight: 500;
+  font-size: 30px;
+  font-weight: 500;
 }
 
 .no-javascript-warning__text {
-	margin: 10px 20px 30px 20px;
+  margin: 10px 20px 30px 20px;
 
-	hyphens: auto;
+  hyphens: auto;
 
-	color: var(--color-black-200);
+  color: var(--color-black-200);
 
-	font-size: 20px;
+  font-size: 20px;
 }

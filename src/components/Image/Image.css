@@ -1,60 +1,60 @@
 .image-container {
-	background-color: var(--color-white-100);
+  background-color: var(--color-white-100);
 }
 
 .image-wrapper {
-	position: relative;
+  position: relative;
 
-	width: 100%;
-	padding-bottom: 100%;
+  width: 100%;
+  padding-bottom: 100%;
 }
 
 .image {
-	position: absolute;
-	top: 0;
-	left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
 
-	transition: opacity 200ms;
+  transition: opacity 200ms;
 
-	opacity: 0;
+  opacity: 0;
 }
 
 .image--loaded {
-	opacity: 1;
+  opacity: 1;
 }
 
 .image-spinner {
-	position: absolute;
-	top: calc(50% - 45% / 2);
-	left: calc(50% - 45% / 2);
+  position: absolute;
+  top: calc(50% - 45% / 2);
+  left: calc(50% - 45% / 2);
 
-	display: inline-block;
+  display: inline-block;
 
-	width: 45%;
-	height: 45%;
+  width: 45%;
+  height: 45%;
 
-	content: '';
+  content: '';
 
-	animation: loading 1.2s infinite linear;
+  animation: loading 1.2s infinite linear;
 
-	border-top: 0.25em solid var(--color-white-100);
-	border-right: 0.25em solid var(--color-white-100);
-	border-bottom: 0.25em solid var(--color-gray-200);
-	border-left: 0.25em solid var(--color-gray-200);
-	border-radius: 50%;
+  border-top: 0.25em solid var(--color-white-100);
+  border-right: 0.25em solid var(--color-white-100);
+  border-bottom: 0.25em solid var(--color-gray-200);
+  border-left: 0.25em solid var(--color-gray-200);
+  border-radius: 50%;
 }
 
 @keyframes loading {
-	to {
-		transform: rotate(360deg);
-	}
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes fadeIn {
-	to {
-		opacity: 1;
-	}
+  to {
+    opacity: 1;
+  }
 }
