@@ -1,6 +1,5 @@
-/* eslint indent: 'off', no-mixed-spaces-and-tabs: 'off' */
-
-import { product as dataProduct } from '@/data/product.json'
+import data from '@/data/product.json'
+const dataProduct = data.product
 
 /**
  * Gets product reference with ID.

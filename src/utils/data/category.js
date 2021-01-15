@@ -1,4 +1,5 @@
-import { category as dataCategory } from '@/data/category.json'
+import data from '@/data/category.json'
+const dataCategory = data.category
 
 /**
  * Gets category reference with ID.
