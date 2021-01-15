@@ -34,7 +34,7 @@
 		"@babel/core": "~7.9.6",
 		"@babel/preset-env": "~7.9.6",
 		"@babel/preset-react": "~7.9.4",
-		"@kutsan/config": "~0.4.0",
+		"@kutsan/config": "^0.7.0",
 		"@svgr/webpack": "~5.4.0",
 		"autoprefixer": "~9.7.6",
 		"babel-loader": "~8.1.0",
