@@ -9,7 +9,7 @@ import { product as dataProduct } from '@/data/product.json'
  * @return {Object} Direct product reference
  **/
 const getRef = (id) => {
-	return dataProduct.find((e) => e.id === id)
+  return dataProduct.find((e) => e.id === id)
 }
 
 /**
@@ -21,34 +21,32 @@ const getRef = (id) => {
  * @return {Object[]} Array of random products
  **/
 const getRandom = (count, category = null, exclude = null) => {
-	const shuffle = (origArray) => {
-		const array = Array.from(origArray)
+  const shuffle = (origArray) => {
+    const array = Array.from(origArray)
 
-		for (let i = array.length - 1; i > 1; i--) {
-			const j = Math.floor(Math.random() * (i + 1))
+    for (let i = array.length - 1; i > 1; i--) {
+      const j = Math.floor(Math.random() * (i + 1))
 
-			;[array[i], array[j]] = [array[j], array[i]]
-		}
+      ;[array[i], array[j]] = [array[j], array[i]]
+    }
 
-		return array
-	}
+    return array
+  }
 
-	const shuffledArray = category
-		? shuffle(
-				dataProduct.filter(
-					(e) => e.category === category && e.id !== exclude
-				)
-		  )
-		: shuffle(dataProduct)
+  const shuffledArray = category
+    ? shuffle(
+        dataProduct.filter((e) => e.category === category && e.id !== exclude)
+      )
+    : shuffle(dataProduct)
 
-	return shuffledArray.slice(0, count)
+  return shuffledArray.slice(0, count)
 }
 
 /**
  * Filter product with Array.prototype.filter()
  **/
 const filter = (cb) => {
-	return dataProduct.filter(cb)
+  return dataProduct.filter(cb)
 }
 
 /**
@@ -58,42 +56,42 @@ const filter = (cb) => {
  * @return {Object[]} Array of products in search result.
  **/
 const search = (query) => {
-	if (!query) return []
-	const regex = new RegExp(query, 'gi')
+  if (!query) return []
+  const regex = new RegExp(query, 'gi')
 
-	const items = []
+  const items = []
 
-	const addMatch = (attr, item, match) => {
-		const index = item[attr].indexOf(match)
-		items.push({
-			...item,
-			match: {
-				attr,
-				index: index,
-				value: match
-			}
-		})
-	}
+  const addMatch = (attr, item, match) => {
+    const index = item[attr].indexOf(match)
+    items.push({
+      ...item,
+      match: {
+        attr,
+        index: index,
+        value: match
+      }
+    })
+  }
 
-	for (let e of dataProduct) {
-		const matches = {
-			name: e.name && e.name.match(regex),
-			brand: e.brand && e.brand.match(regex),
-			code: e.code && e.code.match(regex)
-		}
+  for (let e of dataProduct) {
+    const matches = {
+      name: e.name && e.name.match(regex),
+      brand: e.brand && e.brand.match(regex),
+      code: e.code && e.code.match(regex)
+    }
 
-		if (matches.name) {
-			addMatch('name', e, matches.name[0])
-		} else if (matches.brand) {
-			addMatch('brand', e, matches.brand[0])
-		} else if (matches.code) {
-			addMatch('code', e, matches.code[0])
-		}
+    if (matches.name) {
+      addMatch('name', e, matches.name[0])
+    } else if (matches.brand) {
+      addMatch('brand', e, matches.brand[0])
+    } else if (matches.code) {
+      addMatch('code', e, matches.code[0])
+    }
 
-		if (items.length > 4) break
-	}
+    if (items.length > 4) break
+  }
 
-	return items
+  return items
 }
 
 export default { getRef, getRandom, filter, search }

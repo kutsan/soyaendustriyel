@@ -1,36 +1,36 @@
 .brands-container {
-	margin-top: 96px;
+  margin-top: 96px;
 }
 
 .brands-header {
-	padding-bottom: 8px;
+  padding-bottom: 8px;
 
-	text-align: center;
-	letter-spacing: 1.6px;
+  text-align: center;
+  letter-spacing: 1.6px;
 
-	color: var(--color-gray-400);
-	border-bottom: 2px solid var(--color-white-700);
+  color: var(--color-gray-400);
+  border-bottom: 2px solid var(--color-white-700);
 
-	font-size: 1.3rem;
-	font-weight: 200;
+  font-size: 1.3rem;
+  font-weight: 200;
 }
 
 .brands {
-	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .brands__item {
-	max-width: calc(16.6% - 32px);
-	max-height: 40px;
-	margin: 16px;
+  max-width: calc(16.6% - 32px);
+  max-height: 40px;
+  margin: 16px;
 }
 
 @media screen and (max-width: 768px) {
-	.brands__item {
-		max-width: calc(33% - 32px);
-		max-height: 32px;
-	}
+  .brands__item {
+    max-width: calc(33% - 32px);
+    max-height: 32px;
+  }
 }

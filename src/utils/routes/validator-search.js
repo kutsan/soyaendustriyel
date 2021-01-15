@@ -9,10 +9,10 @@
  *     <Route component={validatedRoute(validatorSearch)(Search)} />
  **/
 const validatorSearch = (props) => {
-	// /search?query=SEARCH_QUERY
-	const params = new URLSearchParams(props.location.search)
+  // /search?query=SEARCH_QUERY
+  const params = new URLSearchParams(props.location.search)
 
-	return params.get('query')
+  return params.get('query')
 }
 
 export default validatorSearch

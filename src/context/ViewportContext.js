@@ -4,27 +4,27 @@ import PropTypes from 'prop-types'
 const ViewportContext = React.createContext(null)
 
 const ViewportProvider = ({ children }) => {
-	const [width, setWidth] = useState(window.innerWidth)
+  const [width, setWidth] = useState(window.innerWidth)
 
-	const handleWindowResize = () => {
-		setWidth(window.innerWidth)
-	}
+  const handleWindowResize = () => {
+    setWidth(window.innerWidth)
+  }
 
-	useEffect(() => {
-		window.addEventListener('resize', handleWindowResize)
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize)
 
-		return () => window.removeEventListener('resize', handleWindowResize)
-	}, [])
+    return () => window.removeEventListener('resize', handleWindowResize)
+  }, [])
 
-	return (
-		<ViewportContext.Provider value={{ width }}>
-			{children}
-		</ViewportContext.Provider>
-	)
+  return (
+    <ViewportContext.Provider value={{ width }}>
+      {children}
+    </ViewportContext.Provider>
+  )
 }
 
 ViewportProvider.propTypes = {
-	children: PropTypes.node
+  children: PropTypes.node
 }
 
 export { ViewportContext, ViewportProvider }

@@ -1,73 +1,73 @@
 @media screen and (max-width: 768px) {
-	.communication {
-		display: none;
-	}
+  .communication {
+    display: none;
+  }
 }
 
 .phone {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	text-decoration: none;
+  text-decoration: none;
 
-	color: inherit;
+  color: inherit;
 }
 
 .phone__number {
-	border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .phone:hover .phone__number {
-	border-bottom: 1px solid var(--color-black-100);
+  border-bottom: 1px solid var(--color-black-100);
 }
 
 .phone:hover,
 .phone:active,
 .phone:visited {
-	text-decoration: none;
+  text-decoration: none;
 
-	color: inherit;
+  color: inherit;
 }
 
 .email {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 
-	text-decoration: none;
+  text-decoration: none;
 
-	color: inherit;
+  color: inherit;
 }
 
 .email:hover,
 .email:active,
 .email:visited {
-	text-decoration: none;
+  text-decoration: none;
 
-	color: inherit;
+  color: inherit;
 }
 
 .email__address {
-	letter-spacing: 0.32px;
+  letter-spacing: 0.32px;
 
-	border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 
-	font-weight: 600;
+  font-weight: 600;
 }
 
 .email:hover .email__address {
-	border-bottom: 1px solid var(--color-black-100);
+  border-bottom: 1px solid var(--color-black-100);
 }
 
 .phone__icon {
-	width: 18px;
-	height: 18px;
-	margin: 5px 9.6px;
+  width: 18px;
+  height: 18px;
+  margin: 5px 9.6px;
 }
 
 .email__icon {
-	width: 18px;
-	height: 18px;
-	margin: 5px 9.6px;
+  width: 18px;
+  height: 18px;
+  margin: 5px 9.6px;
 }

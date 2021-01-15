@@ -6,13 +6,13 @@ import ProductList from '@/components/ProductList/ProductList.jsx'
 import data from '@/utils/data/index.js'
 
 const Home = () => {
-	return (
-		<>
-			<ProductList items={data.product.getRandom(80)} />
+  return (
+    <>
+      <ProductList items={data.product.getRandom(80)} />
 
-			{/* <Brands /> */}
-		</>
-	)
+      {/* <Brands /> */}
+    </>
+  )
 }
 
 export default Home

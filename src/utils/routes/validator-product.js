@@ -11,8 +11,8 @@ import data from '@/utils/data/index.js'
  *     <Route component={validatedRoute(validatorProduct)(Products)} />
  **/
 const validatorProduct = (props) => {
-	// /products/:id
-	return data.product.getRef(props.match.params.id)
+  // /products/:id
+  return data.product.getRef(props.match.params.id)
 }
 
 export default validatorProduct

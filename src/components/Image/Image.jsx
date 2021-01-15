@@ -5,55 +5,55 @@ import { lazyload } from 'react-lazyload'
 import './Image.css'
 
 const ImageContainer = ({ children }) => (
-	<div className='image-container'>
-		<div className='image-wrapper'>{children}</div>
-	</div>
+  <div className='image-container'>
+    <div className='image-wrapper'>{children}</div>
+  </div>
 )
 
 ImageContainer.propTypes = {
-	children: PropTypes.node.isRequired
+  children: PropTypes.node.isRequired
 }
 
 const Image = ({ id }) => {
-	const imgEl = useRef(null)
-	const [loading, setLoading] = useState(false)
+  const imgEl = useRef(null)
+  const [loading, setLoading] = useState(false)
 
-	useEffect(() => {
-		if (!imgEl.current.complete) {
-			setLoading(true)
-		}
-	}, [imgEl])
+  useEffect(() => {
+    if (!imgEl.current.complete) {
+      setLoading(true)
+    }
+  }, [imgEl])
 
-	return (
-		<ImageContainer>
-			{loading && <div className='image-spinner' />}
+  return (
+    <ImageContainer>
+      {loading && <div className='image-spinner' />}
 
-			<picture>
-				<source srcSet={`/${id}.webp`} type='image/webp' />
-				<img
-					ref={imgEl}
-					alt='Ürün resmi'
-					className={`image ${loading ? '' : 'image--loaded'}`}
-					src={`/${id}.jpg`}
-					onLoad={() => setLoading(false)}
-				/>
-			</picture>
-		</ImageContainer>
-	)
+      <picture>
+        <source srcSet={`/${id}.webp`} type='image/webp' />
+        <img
+          ref={imgEl}
+          alt='Ürün resmi'
+          className={`image ${loading ? '' : 'image--loaded'}`}
+          src={`/${id}.jpg`}
+          onLoad={() => setLoading(false)}
+        />
+      </picture>
+    </ImageContainer>
+  )
 }
 
 Image.propTypes = {
-	id: PropTypes.string
+  id: PropTypes.string
 }
 
 const Placeholder = () => (
-	<ImageContainer>
-		<div className='image'></div>
-	</ImageContainer>
+  <ImageContainer>
+    <div className='image'></div>
+  </ImageContainer>
 )
 
 export default lazyload({
-	once: true,
-	offset: 0,
-	placeholder: <Placeholder />
+  once: true,
+  offset: 0,
+  placeholder: <Placeholder />
 })(Image)
