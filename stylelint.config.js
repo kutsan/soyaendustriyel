@@ -1,1 +1,3 @@
-module.exports = require('@kutsan/config/stylelint')
+module.exports = {
+  extends: '@kutsan/config/stylelint'
+}
