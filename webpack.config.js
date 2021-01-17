@@ -6,24 +6,24 @@ const HTMLWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
-const ScriptExtHtmlWebpackPlugin = require('script-ext-html-webpack-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
-  entry: path.join(__dirname, '/src/client.jsx'),
+  entry: path.join(__dirname, '/src/client.tsx'),
 
-  devtool: prod ? false : 'eval-source-map',
+  devtool: prod ? false : 'inline-source-map',
 
   mode: prod ? 'production' : 'development',
 
   output: {
     filename: '[name].[contenthash].js',
+    chunkFilename: '[name].[contenthash].js',
     path: path.join(__dirname, '/build/'),
     publicPath: '/'
   },
 
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
     modules: ['node_modules'],
     alias: {
       '@': path.join(__dirname, '/src/')
@@ -33,13 +33,10 @@ module.exports = {
   stats: 'minimal',
 
   devServer: {
-    hot: true,
     open: true,
     host: '0.0.0.0',
-    contentBase: path.join(__dirname, '/build/'),
-    stats: 'errors-only',
-    historyApiFallback: true,
-    clientLogLevel: 'silent'
+    static: path.join(__dirname, '/build/'),
+    historyApiFallback: true
   },
 
   optimization: {
@@ -64,9 +61,9 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.(t|j)sx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        loader: 'ts-loader'
       },
       {
         test: /\.css$/,
@@ -98,20 +95,8 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       template: 'src/index.html',
-      filename: 'index.html',
-      inject: 'body',
-      minify: prod
-        ? {
-            collapseWhitespace: true,
-            collapseBooleanAttributes: true,
-            minifyCSS: true,
-            minifyJS: true,
-            processConditionalComments: true,
-            quoteCharacter: '"'
-          }
-        : false
+      filename: 'index.html'
     }),
-    new ScriptExtHtmlWebpackPlugin({ defaultAttribute: 'async' }),
     new MiniCssExtractPlugin({ filename: 'styles.[contenthash].css' }),
     new CopyPlugin({
       patterns: [
