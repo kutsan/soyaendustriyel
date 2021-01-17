@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "module": "ES6",
+    "jsx": "react",
+    "target": "es5",
+    "allowJs": true,
+    "strict": true,
+    "alwaysStrict": true,
+    "noImplicitAny": true
+  },
+  "include": ["./src/"]
+}
