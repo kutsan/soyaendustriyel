@@ -13,7 +13,8 @@ module.exports = {
   },
   rules: {
     semi: 'off',
-    'comma-dangle': 'off'
+    'comma-dangle': 'off',
+    'no-use-before-define': 'off'
   },
   overrides: [
     {
