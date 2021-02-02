@@ -1,43 +1,71 @@
-// @ts-expect-error ts-migrate(1259) FIXME: Module '"/Users/Kutsan/Projects/soyaendustriyel/no... Remove this comment to see the full error message
-import React from 'react'
+import * as React from 'react'
+import { ReactElement, ReactNode } from 'react'
+import { NavLink } from 'react-router-dom'
 
 import './Category.css'
 
-import CategoryHeader from './CategoryHeader.jsx'
+import { CategoryType } from '@/types/index'
 
-type Props = {
-    modifier: string;
-    item: any;
-    to: string;
-    hasCategoriesUnder: boolean;
-    expanded?: boolean;
-    onClickToggle?: (...args: any[]) => any;
-    children?: React.ReactNode;
-};
+type CategoryProps = {
+  modifier: string
+  item: CategoryType
+  to: string
+  hasCategoriesUnder: boolean
+  expanded?: boolean
+  onClickToggle?: () => void
+  children?: ReactNode
+}
 
-const Category = ({ modifier, item, to, onClickToggle, expanded, hasCategoriesUnder, children }: Props) => (
+const Category = ({
+  modifier,
+  item,
+  to,
+  onClickToggle,
+  expanded,
+  hasCategoriesUnder,
+  children,
+}: CategoryProps): ReactElement => (
+  <div
+    className={`navbar-mobile__category navbar-mobile__category--${modifier} ${
+      expanded ? 'navbar-mobile__category--expanded' : ''
+    }`}
+  >
     <div
-      className={`navbar-mobile__category navbar-mobile__category--${modifier} ${
-        expanded ? 'navbar-mobile__category--expanded' : ''
-      }`}
+      className={`navbar-mobile__category-header navbar-mobile__category-header--${modifier}`}
     >
-      <CategoryHeader
-        modifier={modifier}
-        item={item}
+      <NavLink
         to={to}
-        onClickToggle={onClickToggle}
-        expanded={expanded}
-        hasCategoriesUnder={hasCategoriesUnder}
-      />
+        isActive={(_, location) => location.pathname === to}
+        activeClassName="navbar-mobile__category-link--active"
+        className={`navbar-mobile__category-link navbar-mobile__category-link--${modifier} ${
+          expanded ? 'navbar-mobile__category-link--expanded' : ''
+        }`}
+      >
+        {item.name}
+      </NavLink>
 
-      {hasCategoriesUnder && expanded && (
-        <div
-          className={`navbar-mobile__category-children navbar-mobile__category-children--${modifier}`}
+      {hasCategoriesUnder && (
+        <button
+          type="submit"
+          onClick={onClickToggle}
+          key={item.id}
+          className={`navbar-mobile__category-toggle navbar-mobile__category-toggle--${modifier} ${
+            expanded ? 'navbar-mobile__category-toggle--expanded' : ''
+          }`}
         >
-          {children}
-        </div>
+          <span />
+        </button>
       )}
     </div>
-  )
+
+    {hasCategoriesUnder && expanded && (
+      <div
+        className={`navbar-mobile__category-children navbar-mobile__category-children--${modifier}`}
+      >
+        {children}
+      </div>
+    )}
+  </div>
+)
 
 export default Category

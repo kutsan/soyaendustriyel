@@ -678,16 +678,14 @@
       "category": "rulo-havlu",
       "name": "Papia Rulo Havlu 8'li Paket",
       "brand": "Papia",
-      "code": "1090512",
-      "desc": ""
+      "code": "1090512"
     },
     {
       "id": "papia-maxi-kutu-mendil-80-yaprak",
       "category": "kutu-mendil",
       "name": "Papia Maxi Kutu Mendil 80 Yaprak",
       "brand": "Papia",
-      "code": "1090513",
-      "desc": ""
+      "code": "1090513"
     },
     {
       "id": "focus-extra-muayene-masa-ortusu-5038392",
@@ -730,64 +728,56 @@
       "category": "pecete-dispenseri",
       "name": "Focus Dispenser Peçete Aparatı Beyaz",
       "brand": "Focus",
-      "code": "8027963",
-      "desc": ""
+      "code": "8027963"
     },
     {
       "id": "focus-dispenser-pecete-aparati-metalik-8027964",
       "category": "pecete-dispenseri",
       "name": "Focus Dispenser Peçete Aparatı Metalik",
       "brand": "Focus",
-      "code": "8027964",
-      "desc": ""
+      "code": "8027964"
     },
     {
       "id": "focus-icten-cekmeli-tuvalet-kagidi-dispenseri-8027965",
       "category": "icten-cekmeli-tk-dispenseri",
       "name": "Focus İçten Çekmeli Tuvalet Kağıdı Dispenseri",
       "brand": "Focus",
-      "code": "8027965",
-      "desc": ""
+      "code": "8027965"
     },
     {
       "id": "focus-jumbo-fotoselli-havlu-dispenseri-8035465",
       "category": "jumbo-fotoselli-havlu-dispenseri",
       "name": "Focus Jumbo Fotoselli Havlu Dispenseri",
       "brand": "Focus",
-      "code": "8035465",
-      "desc": ""
+      "code": "8035465"
     },
     {
       "id": "focus-klozet-kapak-ortusu-aparati-8027968",
       "category": "klozet-kapak-ortusu-aparati",
       "name": "Focus Klozet Kapak Örtüsü Aparatı",
       "brand": "Focus",
-      "code": "8027968",
-      "desc": ""
+      "code": "8027968"
     },
     {
       "id": "focus-mini-jumbo-tuvalet-kagidi-dispenseri-8027966",
       "category": "mini-jumbo-tk-dispenseri",
       "name": "Focus Mini Jumbo Tuvalet Kağıdı Dispenseri",
       "brand": "Focus",
-      "code": "8027966",
-      "desc": ""
+      "code": "8027966"
     },
     {
       "id": "focus-muayene-masa-ortusu-dispenseri-8027969",
       "category": "muayene-masa-ortusu-dispenseri",
       "name": "Focus Muayene Masa Örtüsü Dispenseri",
       "brand": "Focus",
-      "code": "8027969",
-      "desc": ""
+      "code": "8027969"
     },
     {
       "id": "focus-z-katli-havlu-dispenseri-8027956",
       "category": "z-katli-havlu-dispenseri",
       "name": "Focus Z Katlı Havlu Dispenseri",
       "brand": "Focus",
-      "code": "8027956",
-      "desc": ""
+      "code": "8027956"
     }
   ]
 }

@@ -1,25 +1,28 @@
-// @ts-expect-error ts-migrate(1259) FIXME: Module '"/Users/Kutsan/Projects/soyaendustriyel/no... Remove this comment to see the full error message
-import React from 'react'
-// @ts-expect-error ts-migrate(1192) FIXME: Module '"/Users/Kutsan/Projects/soyaendustriyel/no... Remove this comment to see the full error message
-import PropTypes from 'prop-types'
+import * as React from 'react'
+import { ComponentType, ReactElement } from 'react'
+import { RouteComponentProps } from 'react-router-dom'
 
-// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module '@/routes/NotFound/NotFound.jsx... Remove this comment to see the full error message
-import NotFound from '@/routes/NotFound/NotFound.jsx'
+import NotFound from '@/routes/NotFound/NotFound'
 
-const ValidatedRoute = (validator: any) => function (ComposedComponent: any) {
-    const ValidatedComponent = (props: any) => {
+/* eslint-disable @typescript-eslint/no-explicit-any */
+type ValidatedRouteProps = (props: RouteComponentProps<any>) => boolean
+
+/* eslint-disable react/jsx-props-no-spreading */
+// eslint-disable-next-line arrow-body-style
+const ValidatedRoute = (validator: ValidatedRouteProps) => {
+  return (ComposedComponent: ComponentType<any>): ComponentType<any> => {
+    const ValidatedComponent = (props: RouteComponentProps): ReactElement => {
       if (!validator(props)) {
-        return <NotFound {...props} />
+        return <NotFound />
       }
 
       return <ComposedComponent {...props} />
     }
 
-    ValidatedComponent.propTypes = {
-      match: PropTypes.object.isRequired
-    }
-
     return ValidatedComponent
   }
+}
+/* eslint-enable react/jsx-props-no-spreading */
+/* eslint-enable @typescript-eslint/no-explicit-any */
 
 export default ValidatedRoute

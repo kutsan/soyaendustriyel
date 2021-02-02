@@ -1,30 +1,62 @@
-// @ts-expect-error ts-migrate(1259) FIXME: Module '"/Users/Kutsan/Projects/soyaendustriyel/no... Remove this comment to see the full error message
-import React, { useEffect } from 'react'
-import { Route, Switch, withRouter } from 'react-router-dom'
+import * as React from 'react'
+import { useEffect, ReactElement, ComponentType } from 'react'
+
+import {
+  Route,
+  Switch,
+  withRouter,
+  RouteComponentProps,
+  RouteProps,
+} from 'react-router-dom'
 
 import './App.css'
 
-import { ViewportProvider } from './context/ViewportContext.js'
-import { AppProvider } from './context/AppContext.js'
+import { ViewportProvider } from './context/ViewportContext'
+import { AppProvider } from './context/AppContext'
 
-import Home from './routes/Home/Home.jsx'
-import Products from './routes/Products/Products.jsx'
-import Product from './routes/Product/Product.jsx'
-import Search from './routes/Search/Search.jsx'
-import NotFound from './routes/NotFound/NotFound.jsx'
+import Home from './routes/Home/Home'
+import Products from './routes/Products/Products'
+import Product from './routes/Product/Product'
+import Search from './routes/Search/Search'
+import NotFound from './routes/NotFound/NotFound'
 
-import LayoutDefault from './layouts/default.jsx'
+import LayoutDefault from './layouts/default'
 
-import validatedRoute from './utils/routes/validated-route.jsx'
-import validatorProducts from './utils/routes/validator-products.js'
-import validatorProduct from './utils/routes/validator-product.js'
-import validatorSearch from './utils/routes/validator-search.js'
+import validatedRoute from './utils/routes/validated-route'
+import validatorProducts from './utils/routes/validator-products'
+import validatorProduct from './utils/routes/validator-product'
+import validatorSearch from './utils/routes/validator-search'
 
-type AppProps = {
-    history?: any;
-};
+type RouteWithLayoutProps = RouteProps & {
+  /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
+  component: ComponentType<RouteComponentProps<any>> | ComponentType<any>
+  layout?: ComponentType
+}
 
-const App = ({ history }: AppProps) => {
+const RouteWithLayout = (props: RouteWithLayoutProps): ReactElement => {
+  const {
+    layout: Layout = LayoutDefault,
+    component: Component,
+    ...rest
+  } = props
+
+  /* eslint-disable react/jsx-props-no-spreading */
+  return (
+    <Route
+      {...rest}
+      render={(routeProps) => (
+        <Layout>
+          <Component {...routeProps} />
+        </Layout>
+      )}
+    />
+  )
+  /* eslint-enable react/jsx-props-no-spreading */
+}
+
+type AppProps = RouteComponentProps
+
+const App = ({ history }: AppProps): ReactElement => {
   useEffect(() => {
     // Scroll to top for every route navigation.
     const unlisten = history.listen(() => {
@@ -40,52 +72,31 @@ const App = ({ history }: AppProps) => {
     <AppProvider>
       <ViewportProvider>
         <Switch>
-          {/* @ts-expect-error ts-migrate(2322) FIXME: Type '{ exact: true; path: string; component: () =... Remove this comment to see the full error message */}
-          <RouteWrapper exact path='/' component={Home} />
-          <RouteWrapper
-            // @ts-expect-error ts-migrate(2322) FIXME: Type '{ exact: true; path: string[]; component: { ... Remove this comment to see the full error message
+          <RouteWithLayout exact path="/" component={Home} />
+          <RouteWithLayout
             exact
             path={[
               '/products/:category/:subcategory/:lowermostcategory',
               '/products/:category/:subcategory',
-              '/products/:category'
+              '/products/:category',
             ]}
             component={validatedRoute(validatorProducts)(Products)}
           />
-          <RouteWrapper
-            // @ts-expect-error ts-migrate(2322) FIXME: Type '{ exact: true; path: string; component: { (p... Remove this comment to see the full error message
+          <RouteWithLayout
             exact
-            path='/product/:id'
+            path="/product/:id"
             component={validatedRoute(validatorProduct)(Product)}
           />
-          <RouteWrapper
-            // @ts-expect-error ts-migrate(2322) FIXME: Type '{ exact: true; path: string; component: { (p... Remove this comment to see the full error message
+          <RouteWithLayout
             exact
-            path='/search'
+            path="/search"
             component={validatedRoute(validatorSearch)(Search)}
           />
-
-          <RouteWrapper component={NotFound} />
+          <RouteWithLayout component={NotFound} />
         </Switch>
       </ViewportProvider>
     </AppProvider>
   )
 }
-
-type RouteWrapperProps = {
-    component: (...args: any[]) => any;
-    layout?: (...args: any[]) => any;
-};
-
-const RouteWrapper = ({ component: Component, layout: Layout = LayoutDefault, ...rest }: RouteWrapperProps) => (
-  <Route
-    {...rest}
-    render={(props) => (
-      <Layout {...props}>
-        <Component {...props} />
-      </Layout>
-    )}
-  />
-)
 
 export default withRouter(App)
