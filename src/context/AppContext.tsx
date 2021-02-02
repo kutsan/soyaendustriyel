@@ -1,13 +1,24 @@
-// @ts-expect-error ts-migrate(1259) FIXME: Module '"/Users/Kutsan/Projects/soyaendustriyel/no... Remove this comment to see the full error message
-import React, { useState } from 'react'
+import * as React from 'react'
+import { ReactElement } from 'react'
 
-const AppContext = React.createContext(null)
+const { useState } = React
+
+type ContextType = {
+  menuOpen: boolean
+  setMenuOpen: (value: boolean) => void
+}
+
+const AppContext = React.createContext<ContextType>({
+  menuOpen: false,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  setMenuOpen: (value: boolean) => {},
+})
 
 type Props = {
-    children?: React.ReactNode;
-};
+  children: ReactElement
+}
 
-const AppProvider = ({ children }: Props) => {
+const AppProvider = ({ children }: Props): ReactElement => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (

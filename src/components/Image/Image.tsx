@@ -1,61 +1,53 @@
-// @ts-expect-error ts-migrate(1259) FIXME: Module '"/Users/Kutsan/Projects/soyaendustriyel/no... Remove this comment to see the full error message
-import React, { useEffect, useState, useRef } from 'react'
-import { lazyload } from 'react-lazyload'
+import * as React from 'react'
+import { useEffect, useState, useRef, ReactNode, ReactElement } from 'react'
+import LazyLoad from 'react-lazyload'
 
 import './Image.css'
 
 type ImageContainerProps = {
-    children: React.ReactNode;
-};
+  children: ReactNode
+}
 
 const ImageContainer = ({ children }: ImageContainerProps) => (
-  <div className='image-container'>
-    <div className='image-wrapper'>{children}</div>
+  <div className="image-container">
+    <div className="image-wrapper">{children}</div>
   </div>
 )
 
-type ImageProps = {
-    id?: string;
-};
+const Placeholder = () => (
+  <ImageContainer>
+    <div className="image" />
+  </ImageContainer>
+)
 
-const Image = ({ id }: ImageProps) => {
-  const imgEl = useRef(null)
+const Image = ({ id }: { id: string }): ReactElement => {
+  const imgEl = useRef<HTMLImageElement>(null)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    // @ts-expect-error ts-migrate(2531) FIXME: Object is possibly 'null'.
-    if (!imgEl.current.complete) {
+    if (imgEl && !imgEl?.current?.complete) {
       setLoading(true)
     }
   }, [imgEl])
 
   return (
-    <ImageContainer>
-      {loading && <div className='image-spinner' />}
+    <LazyLoad once offset={0} placeholder={<Placeholder />}>
+      <ImageContainer>
+        {loading && <div className="image-spinner" />}
 
-      <picture>
-        <source srcSet={`/${id}.webp`} type='image/webp' />
-        <img
-          ref={imgEl}
-          alt='Ürün resmi'
-          className={`image ${loading ? '' : 'image--loaded'}`}
-          src={`/${id}.jpg`}
-          onLoad={() => setLoading(false)}
-        />
-      </picture>
-    </ImageContainer>
+        <picture>
+          <source srcSet={`/${id}.webp`} type="image/webp" />
+          <img
+            ref={imgEl}
+            alt="Ürün resmi"
+            className={`image ${loading ? '' : 'image--loaded'}`}
+            src={`/${id}.jpg`}
+            onLoad={() => setLoading(false)}
+          />
+        </picture>
+      </ImageContainer>
+    </LazyLoad>
   )
 }
 
-const Placeholder = () => (
-  <ImageContainer>
-    <div className='image'></div>
-  </ImageContainer>
-)
-
-// @ts-expect-error ts-migrate(2349) FIXME: This expression is not callable.
-export default lazyload({
-  once: true,
-  offset: 0,
-  placeholder: <Placeholder />
-})(Image)
+export default Image

@@ -1,13 +1,15 @@
-// @ts-expect-error ts-migrate(1259) FIXME: Module '"/Users/Kutsan/Projects/soyaendustriyel/no... Remove this comment to see the full error message
-import React, { useState, useEffect } from 'react'
+import * as React from 'react'
+import { useState, useEffect, ReactElement } from 'react'
 
-const ViewportContext = React.createContext(null)
+const ViewportContext = React.createContext<{
+  width: number
+}>({ width: 0 })
 
 type Props = {
-    children?: React.ReactNode;
-};
+  children: ReactElement
+}
 
-const ViewportProvider = ({ children }: Props) => {
+const ViewportProvider = ({ children }: Props): ReactElement => {
   const [width, setWidth] = useState(window.innerWidth)
 
   const handleWindowResize = () => {

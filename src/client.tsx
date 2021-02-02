@@ -1,12 +1,11 @@
-// @ts-expect-error ts-migrate(1259) FIXME: Module '"/Users/Kutsan/Projects/soyaendustriyel/no... Remove this comment to see the full error message
-import React from 'react'
-// @ts-expect-error ts-migrate(1192) FIXME: Module '"/Users/Kutsan/Projects/soyaendustriyel/no... Remove this comment to see the full error message
-import ReactDOM from 'react-dom'
+import * as React from 'react'
+import * as ReactDOM from 'react-dom'
+import { ComponentType } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
-import App from './App.jsx'
+import App from './App'
 
-function render(Component: any) {
+function render(Component: ComponentType) {
   ReactDOM.render(
     <React.StrictMode>
       <BrowserRouter>
@@ -26,5 +25,5 @@ if ('serviceWorker' in navigator) {
 }
 
 if (module.hot) {
-  module.hot.accept('./App.jsx', () => render(App))
+  module.hot.accept('./App', () => render(App))
 }

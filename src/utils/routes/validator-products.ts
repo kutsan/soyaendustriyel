@@ -1,32 +1,39 @@
-// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module '@/utils/data/index.js'. Did yo... Remove this comment to see the full error message
-import data from '@/utils/data/index.js'
+import data from '@/utils/data/index'
+import { RouteComponentProps } from 'react-router-dom'
+
+type ValidatorProductsProps = RouteComponentProps<{
+  category: string
+  subcategory: string
+  lowermostcategory: string
+}>
 
 /**
  * Validator function intended to be used alongside `validatedRoute()` function
  * and react-router's <Route /> component.  Checks whether or not given `path` is
  * valid URL to go.
  *
- * @param {string} props.match.params.category
- * @param {string} props.match.params.subcategory
- * @param {string} props.match.params.lowermostcategory
- * @return {boolean} Return path validation state, whether true or false.
- * @example
- *     <Route component={validatedRoute(validatorProducts)(Products)} />
- * */
-const validatorProducts = ({
-  match: {
-    params: { category, subcategory, lowermostcategory }
-  }
-}: any) => {
+ * @example <Route component={validatedRoute(validatorProducts)(Products)} />
+ */
+const validatorProducts = (props: ValidatorProductsProps): boolean => {
+  const {
+    match: {
+      params: { category, subcategory, lowermostcategory },
+    },
+  } = props
+
   if (category && !subcategory && !lowermostcategory) {
     const topRef = data.category.getRef(category)
 
     return topRef && !topRef.parent
-  } if (category && subcategory && !lowermostcategory) {
+  }
+
+  if (category && subcategory && !lowermostcategory) {
     const subRef = data.category.getRef(subcategory)
 
     return subRef && subRef.parent === category
-  } if (category && subcategory && lowermostcategory) {
+  }
+
+  if (category && subcategory && lowermostcategory) {
     const subRef = data.category.getRef(subcategory)
     const lowermostRef = data.category.getRef(lowermostcategory)
 
@@ -37,6 +44,8 @@ const validatorProducts = ({
       lowermostRef.parent === subcategory
     )
   }
+
+  return false
 }
 
 export default validatorProducts

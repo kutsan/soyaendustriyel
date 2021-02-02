@@ -1,9 +1,8 @@
 import { useContext } from 'react'
 
-// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module '@/context/ViewportContext.js'.... Remove this comment to see the full error message
-import { ViewportContext } from '@/context/ViewportContext.js'
+import { ViewportContext } from '@/context/ViewportContext'
 
-const useViewport = () => {
+const useViewport = (): { width: number } => {
   const { width } = useContext(ViewportContext)
 
   return { width }

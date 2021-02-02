@@ -1,65 +1,34 @@
-// @ts-expect-error ts-migrate(2792) FIXME: Cannot find module '@/data/category.json'. Did you... Remove this comment to see the full error message
 import data from '@/data/category.json'
+import { CategoryType } from '@/types/index'
 
 const dataCategory = data.category
 
-/**
- * Gets category reference with ID.
- *
- * @param {string} id - Category ID
- * @return {Object} Direct category reference.
- * */
-const getRef = (id: any) => dataCategory.find((e: any) => e.id === id)
+const getRef = (id: string): CategoryType =>
+  dataCategory.find((e: CategoryType) => e.id === id)
 
-/**
- * Gets given category key with ID.
- *
- * @param {string} id - Category ID
- * @return {Object} Given key value
- * */
-const getKey = (id: any, key: any) => {
+const getKey = (id: string, key: keyof CategoryType): string | undefined => {
   const ref = getRef(id)
 
-  return ref ? ref[key] : null
+  return ref[key]
 }
 
-/**
- * Gets topmost categories.
- *
- * @return {Object[]} Array of categories
- * */
-const getTops = () => dataCategory.filter((e: any) => !e.parent)
+const getTops = (): CategoryType[] =>
+  dataCategory.filter((e: CategoryType) => !e.parent)
 
-/**
- * Gets sub categories of given category id.
- *
- * @param {string} id - Category ID
- * @return {Object[]} Array of categories
- * */
-const getSubs = (id: any) => dataCategory.filter((e: any) => e.parent === id)
+const getSubs = (id: string): CategoryType[] =>
+  dataCategory.filter((e: CategoryType) => e.parent === id)
 
-/**
- * Checks whether or not given category has categories under.
- *
- * @param {string} id - Category ID
- * @return {boolean} True if given category has sub categories, false otherwise.
- * */
-const hasSubs = (id: any) => Boolean(dataCategory.find((e: any) => e.parent === id))
+const hasSubs = (id: string): boolean =>
+  Boolean(dataCategory.find((e: CategoryType) => e.parent === id))
 
-/**
- * Get all direct and undirect categories under given category ID.
- *
- * @param {string} id - Category ID
- * @return {Object[]} Flat array of categories
- * */
-const getAllSubs = (id: any) => {
+const getAllSubs = (id: string): CategoryType[] => {
   if (!hasSubs(id)) return []
 
   const subs = getSubs(id)
 
   if (!getKey(id, 'parent')) {
-    subs.forEach((cur: any) => {
-      subs.push(...getSubs(cur.id))
+    subs.forEach((e: CategoryType) => {
+      subs.push(...getSubs(e.id))
     })
   }
 

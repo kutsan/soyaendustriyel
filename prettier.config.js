@@ -1,1 +1,4 @@
-module.exports = require('@kutsan/config/prettier')
+module.exports = {
+  semi: false,
+  singleQuote: true,
+}
