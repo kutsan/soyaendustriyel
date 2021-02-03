@@ -21,31 +21,28 @@ const validatorProducts = (props: ValidatorProductsProps): boolean => {
     },
   } = props
 
+  let valid = false
+
   if (category && !subcategory && !lowermostcategory) {
     const topRef = data.category.getRef(category)
 
-    return topRef && !topRef.parent
-  }
-
-  if (category && subcategory && !lowermostcategory) {
+    valid = topRef && !topRef.parent
+  } else if (category && subcategory && !lowermostcategory) {
     const subRef = data.category.getRef(subcategory)
 
-    return subRef && subRef.parent === category
-  }
-
-  if (category && subcategory && lowermostcategory) {
+    valid = subRef && subRef.parent === category
+  } else if (category && subcategory && lowermostcategory) {
     const subRef = data.category.getRef(subcategory)
     const lowermostRef = data.category.getRef(lowermostcategory)
 
-    return (
+    valid =
       subRef &&
       lowermostRef &&
       subRef.parent === category &&
       lowermostRef.parent === subcategory
-    )
   }
 
-  return false
+  return valid
 }
 
 export default validatorProducts
