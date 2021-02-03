@@ -71,7 +71,7 @@ const Product = ({
         </div>
       </div>
 
-      <SimilarProducts category={productRef.category} exclude={productRef.id} />
+      <SimilarProducts product={productRef} />
     </>
   )
 }
