@@ -63,6 +63,8 @@ const SearchBar = ({ hidden = false }: Props): ReactElement => {
 
   const handleKeyUp = (event: KeyboardEvent) => {
     if (event.key === 'Enter') {
+      if (results.length === 0) return
+
       if (results.length === 1) {
         history.push(`/product/${results[0].id}`)
       } else {
@@ -91,7 +93,7 @@ const SearchBar = ({ hidden = false }: Props): ReactElement => {
             placeholder="Ürün, kategori, marka veya ürün kodu ile ara..."
             aria-label="Search text"
           />
-          {!value ? (
+          {!value || results.length === 0 ? (
             <div className="search__button search__button--disabled">
               <SearchIcon className="search__button-icon" />
             </div>
