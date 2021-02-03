@@ -58,6 +58,8 @@ const search = (query: string): SearchResultType[] => {
   }
 
   dataProduct.forEach((e: ProductType) => {
+    if (items.length > 4) return
+
     const matches = {
       name: e.name && e.name.match(regex),
       brand: e.brand && e.brand.match(regex),
