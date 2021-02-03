@@ -1,16 +1,6 @@
 module.exports = {
   root: true,
-  extends: [
-    'plugin:@typescript-eslint/recommended',
-    'airbnb-typescript',
-    'prettier/@typescript-eslint',
-    'prettier',
-  ],
-  parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
-  parserOptions: {
-    project: './tsconfig.json',
-  },
+  extends: ['airbnb-base', 'prettier'],
   env: {
     node: true,
     browser: true,
@@ -19,6 +9,24 @@ module.exports = {
   },
   rules: {
     semi: 'off',
-    'react/require-default-props': 'off',
   },
+  overrides: [
+    {
+      files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        project: './tsconfig.json',
+      },
+      plugins: ['@typescript-eslint'],
+      extends: [
+        'plugin:@typescript-eslint/recommended',
+        'airbnb-typescript',
+        'prettier/@typescript-eslint',
+        'prettier',
+      ],
+      rules: {
+        'react/require-default-props': 'off',
+      },
+    },
+  ],
 }
