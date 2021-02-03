@@ -4,19 +4,18 @@ import { ReactElement } from 'react'
 import './SimilarProducts.css'
 
 import ProductList from '@/components/ProductList/ProductList'
+import { ProductType } from '@/types/index'
 
 import data from '@/utils/data/index'
 
 type SimilarProductsProps = {
-  category: string
-  exclude?: string
+  product: ProductType
 }
 
 const SimilarProducts = ({
-  category,
-  exclude = '',
+  product,
 }: SimilarProductsProps): ReactElement | null => {
-  const similars = data.product.getRandom(4, category, exclude)
+  const similars = data.product.getRandom(4, product.category, product.id)
 
   if (similars.length === 0) {
     return null
