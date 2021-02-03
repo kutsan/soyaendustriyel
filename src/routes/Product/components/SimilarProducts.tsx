@@ -31,4 +31,4 @@ const SimilarProducts = ({
   )
 }
 
-export default React.memo(SimilarProducts)
+export default SimilarProducts
