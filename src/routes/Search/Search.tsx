@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { withRouter, useLocation } from 'react-router-dom'
 
 import './Search.css'

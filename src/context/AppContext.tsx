@@ -1,14 +1,11 @@
-import * as React from 'react'
-import { ReactElement } from 'react'
-
-const { useState } = React
+import { createContext, useState, ReactElement } from 'react'
 
 type ContextType = {
   menuOpen: boolean
   setMenuOpen: (value: boolean) => void
 }
 
-const AppContext = React.createContext<ContextType>({
+const AppContext = createContext<ContextType>({
   menuOpen: false,
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   setMenuOpen: (value: boolean) => {},

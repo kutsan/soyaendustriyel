@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { ComponentType, ReactElement } from 'react'
 import { RouteComponentProps } from 'react-router-dom'
 

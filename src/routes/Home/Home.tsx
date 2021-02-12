@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { ReactElement } from 'react'
 
 import ProductList from '@/components/ProductList/ProductList'

@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { useContext, ReactElement } from 'react'
 
 import './Header.css'

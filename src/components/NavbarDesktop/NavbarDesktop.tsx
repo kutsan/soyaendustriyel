@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { useState, ReactElement } from 'react'
 import { Link } from 'react-router-dom'
 
