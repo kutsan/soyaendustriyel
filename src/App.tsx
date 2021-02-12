@@ -38,9 +38,6 @@ const RouteWithLayout = (props: RouteWithLayoutProps): ReactElement => {
     ...rest
   } = props
 
-  // TODO: this can take a children instead
-  // and then used with params can taken with useParams
-  // via react-router-dom
   /* eslint-disable react/jsx-props-no-spreading */
   return (
     <Route
