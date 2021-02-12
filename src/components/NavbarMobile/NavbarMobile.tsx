@@ -1,4 +1,4 @@
-import * as React from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
 import './NavbarMobile.css'
 
@@ -7,8 +7,6 @@ import { AppContext } from '@/context/AppContext'
 import data from '@/utils/data/index'
 import Category from './components/Category'
 import MenuButton from './components/MenuButton'
-
-const { useState, useContext, useEffect } = React
 
 type NavbarMobileProps = RouteComponentProps
 

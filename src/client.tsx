@@ -1,22 +1,21 @@
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
-import { ComponentType } from 'react'
+import { StrictMode } from 'react'
+import { render } from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 
 import App from './App'
 
-const render = (Component: ComponentType): void => {
-  ReactDOM.render(
-    <React.StrictMode>
+const renderApp = (): void => {
+  render(
+    <StrictMode>
       <BrowserRouter>
-        <Component />
+        <App />
       </BrowserRouter>
-    </React.StrictMode>,
+    </StrictMode>,
     document.getElementById('root')
   )
 }
 
-render(App)
+renderApp()
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
@@ -25,5 +24,5 @@ if ('serviceWorker' in navigator) {
 }
 
 if (module.hot) {
-  module.hot.accept('./App', () => render(App))
+  module.hot.accept('./App', () => renderApp())
 }

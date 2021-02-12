@@ -1,7 +1,6 @@
-import * as React from 'react'
-import { useState, useEffect, ReactElement } from 'react'
+import { createContext, useState, useEffect, ReactElement } from 'react'
 
-const ViewportContext = React.createContext<{
+const ViewportContext = createContext<{
   width: number
 }>({ width: 0 })
 

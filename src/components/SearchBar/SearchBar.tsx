@@ -1,5 +1,10 @@
-import * as React from 'react'
-import { ReactElement, ChangeEvent, KeyboardEvent } from 'react'
+import {
+  useState,
+  useRef,
+  ReactElement,
+  ChangeEvent,
+  KeyboardEvent,
+} from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
 import './SearchBar.css'
@@ -8,8 +13,6 @@ import SearchIcon from '@/assets/icons/search.svg'
 import { SearchResultType } from '@/types/index'
 import data from '@/utils/data/index'
 import SearchResultItem from './components/SearchResultItem'
-
-const { useState, useRef } = React
 
 type Props = {
   hidden?: boolean

@@ -1,4 +1,3 @@
-import * as React from 'react'
 import { useEffect, useState, useRef, ReactNode, ReactElement } from 'react'
 import LazyLoad from 'react-lazyload'
 
