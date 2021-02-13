@@ -1,14 +1,15 @@
-import { useContext, ReactElement } from 'react'
+import { ReactElement } from 'react'
 
 import './Header.css'
 
+import { useAppContext } from '@/context/AppContext'
+
 import SearchBar from '@/components/SearchBar/SearchBar'
-import { AppContext } from '@/context/AppContext'
 import Logo from './components/Logo'
 import Communication from './components/Communication'
 
 const Header = (): ReactElement => {
-  const { menuOpen } = useContext(AppContext)
+  const [menuOpen] = useAppContext()
 
   return (
     <header>

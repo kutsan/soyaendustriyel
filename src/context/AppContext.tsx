@@ -1,28 +1,31 @@
-import { createContext, useState, ReactElement } from 'react'
+import {
+  createContext,
+  useState,
+  ReactElement,
+  ReactNode,
+  useContext,
+} from 'react'
 
-type ContextType = {
-  menuOpen: boolean
-  setMenuOpen: (value: boolean) => void
+type AppContextType = ReturnType<typeof useMenuOpen>
+
+const useMenuOpen = () => useState(false)
+
+const AppContext = createContext<AppContextType | null>(null)
+
+export const AppProvider = ({
+  children,
+}: {
+  children: ReactNode
+}): ReactElement => (
+  <AppContext.Provider value={useMenuOpen()}>{children}</AppContext.Provider>
+)
+
+export const useAppContext = (): AppContextType => {
+  const context = useContext(AppContext)
+
+  if (context === null) {
+    throw new Error('Context should be used within a provider')
+  }
+
+  return context
 }
-
-const AppContext = createContext<ContextType>({
-  menuOpen: false,
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  setMenuOpen: (value: boolean) => {},
-})
-
-type Props = {
-  children: ReactElement
-}
-
-const AppProvider = ({ children }: Props): ReactElement => {
-  const [menuOpen, setMenuOpen] = useState(false)
-
-  return (
-    <AppContext.Provider value={{ menuOpen, setMenuOpen }}>
-      {children}
-    </AppContext.Provider>
-  )
-}
-
-export { AppProvider, AppContext }

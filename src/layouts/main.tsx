@@ -1,18 +1,18 @@
-import { ReactElement, ReactNode } from 'react'
+import { ReactElement, ReactNode, useContext } from 'react'
 
 import Header from '@/components/Header/Header'
 import Footer from '@/components/Footer/Footer'
 import NavbarDesktop from '@/components/NavbarDesktop/NavbarDesktop'
 import NavbarMobile from '@/components/NavbarMobile/NavbarMobile'
 
-import useViewport from '@/hooks/use-viewport'
+import { ViewportContext } from '@/context/ViewportContext'
 
 type MainLayoutProps = {
   children: ReactNode
 }
 
 const MainLayout = ({ children }: MainLayoutProps): ReactElement => {
-  const { width } = useViewport()
+  const width = useContext(ViewportContext)
   const breakpoint = 768
 
   return (
