@@ -7,11 +7,11 @@ import NavbarMobile from '@/components/NavbarMobile/NavbarMobile'
 
 import useViewport from '@/hooks/use-viewport'
 
-type Props = {
+type MainLayoutProps = {
   children: ReactNode
 }
 
-const LayoutDefault = ({ children }: Props): ReactElement => {
+const MainLayout = ({ children }: MainLayoutProps): ReactElement => {
   const { width } = useViewport()
   const breakpoint = 768
 
@@ -25,4 +25,4 @@ const LayoutDefault = ({ children }: Props): ReactElement => {
   )
 }
 
-export default LayoutDefault
+export default MainLayout
