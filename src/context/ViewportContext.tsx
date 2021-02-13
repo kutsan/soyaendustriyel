@@ -1,14 +1,18 @@
-import { createContext, useState, useEffect, ReactElement } from 'react'
+import {
+  createContext,
+  useState,
+  useEffect,
+  ReactElement,
+  ReactNode,
+} from 'react'
 
-const ViewportContext = createContext<{
-  width: number
-}>({ width: 0 })
+export const ViewportContext = createContext<number>(0)
 
-type Props = {
-  children: ReactElement
-}
-
-const ViewportProvider = ({ children }: Props): ReactElement => {
+export const ViewportProvider = ({
+  children,
+}: {
+  children: ReactNode
+}): ReactElement => {
   const [width, setWidth] = useState(window.innerWidth)
 
   const handleWindowResize = () => {
@@ -22,10 +26,8 @@ const ViewportProvider = ({ children }: Props): ReactElement => {
   }, [])
 
   return (
-    <ViewportContext.Provider value={{ width }}>
+    <ViewportContext.Provider value={width}>
       {children}
     </ViewportContext.Provider>
   )
 }
-
-export { ViewportContext, ViewportProvider }

@@ -1,9 +1,9 @@
-import { useState, useContext, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
 import './NavbarMobile.css'
 
 import { CategoryType } from '@/types/index'
-import { AppContext } from '@/context/AppContext'
+import { useAppContext } from '@/context/AppContext'
 import data from '@/utils/data/index'
 import Category from './components/Category'
 import MenuButton from './components/MenuButton'
@@ -12,7 +12,7 @@ type NavbarMobileProps = RouteComponentProps
 
 const NavbarMobile = ({ history }: NavbarMobileProps) => {
   const [expanded, setExpanded] = useState<string[]>([])
-  const { menuOpen, setMenuOpen } = useContext(AppContext)
+  const [menuOpen, setMenuOpen] = useAppContext()
 
   useEffect(() => {
     const unlisten = history.listen(() => {
