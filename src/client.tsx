@@ -4,7 +4,7 @@ import { BrowserRouter } from 'react-router-dom'
 
 import App from './App'
 
-const renderApp = (): void => {
+const init = (): void => {
   render(
     <StrictMode>
       <BrowserRouter>
@@ -15,7 +15,7 @@ const renderApp = (): void => {
   )
 }
 
-renderApp()
+init()
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
@@ -24,5 +24,5 @@ if ('serviceWorker' in navigator) {
 }
 
 if (module.hot) {
-  module.hot.accept('./App', () => renderApp())
+  module.hot.accept('./App', () => init())
 }
