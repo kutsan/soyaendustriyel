@@ -4,7 +4,7 @@ import './Search.css'
 
 import ProductList from '@/components/ProductList/ProductList'
 
-import data from '@/utils/data/index'
+import { product } from '@/utils/data'
 
 const Search = () => {
   const params = new URLSearchParams(useLocation().search)
@@ -13,7 +13,7 @@ const Search = () => {
   return (
     <>
       <div className="search-title">{query}</div>
-      <ProductList items={data.product.search(query)} />
+      <ProductList items={product.search(query)} />
     </>
   )
 }

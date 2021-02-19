@@ -1,4 +1,4 @@
-import { ProductType } from '@/types/index'
+import { ProductType } from '@/utils/data'
 import { product } from './product.json'
 
 const checkDuplicate = (

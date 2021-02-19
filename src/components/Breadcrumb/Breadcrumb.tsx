@@ -1,14 +1,13 @@
 import { ReactElement } from 'react'
 
 import { Link } from 'react-router-dom'
-import { ProductType, CategoryType } from '@/types/index'
 
-import data from '@/utils/data/index'
+import { category, ProductType, CategoryType } from '@/utils/data'
 import './Breadcrumb.css'
 
 const buildBreadcrumb = (buildFrom: ProductType | CategoryType) => {
   const getUrl = (catId: string): string => {
-    const parent = data.category.getKey(catId, 'parent')
+    const parent = category.getKey(catId, 'parent')
 
     return parent ? `${getUrl(parent)}/${catId}` : `/products/${catId}`
   }
@@ -22,10 +21,10 @@ const buildBreadcrumb = (buildFrom: ProductType | CategoryType) => {
   const buildSteps = (catId: string): void => {
     steps.unshift({
       to: getUrl(catId),
-      name: data.category.getKey(catId, 'name'),
+      name: category.getKey(catId, 'name'),
     })
 
-    const parent = data.category.getKey(catId, 'parent')
+    const parent = category.getKey(catId, 'parent')
     if (parent) buildSteps(parent)
   }
 

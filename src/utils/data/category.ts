@@ -1,15 +1,20 @@
 import data from '@/data/category.json'
-import { CategoryType } from '@/types/index'
 
 const dataCategory = data.category
 
-const getRef = (id: string): CategoryType =>
+export interface CategoryType {
+  id: string
+  name: string
+  parent?: string
+}
+
+const getRef = (id: string): CategoryType | undefined =>
   dataCategory.find((e: CategoryType) => e.id === id)
 
 const getKey = (id: string, key: keyof CategoryType): string | undefined => {
   const ref = getRef(id)
 
-  return ref[key]
+  return ref ? ref[key] : undefined
 }
 
 const getTops = (): CategoryType[] =>
@@ -35,4 +40,11 @@ const getAllSubs = (id: string): CategoryType[] => {
   return subs
 }
 
-export default { getRef, getKey, getSubs, hasSubs, getTops, getAllSubs }
+export const category = {
+  getRef,
+  getKey,
+  getSubs,
+  hasSubs,
+  getTops,
+  getAllSubs,
+}

@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 import { Link } from 'react-router-dom'
 
 import './ProductCard.css'
-import { ProductType } from '@/types/index'
+import { ProductType } from '@/utils/data'
 
 import Image from '@/components/Image/Image'
 

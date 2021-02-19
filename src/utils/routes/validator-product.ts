@@ -1,4 +1,4 @@
-import data from '@/utils/data/index'
+import { product } from '@/utils/data'
 import { RouteComponentProps } from 'react-router-dom'
 
 /**
@@ -10,6 +10,6 @@ import { RouteComponentProps } from 'react-router-dom'
  */
 const validatorProduct = (
   props: RouteComponentProps<{ id: string }>
-): boolean => Boolean(data.product.getRef(props.match.params.id))
+): boolean => Boolean(product.getRef(props.match.params.id))
 
 export default validatorProduct

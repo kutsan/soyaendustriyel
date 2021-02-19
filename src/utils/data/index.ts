@@ -1,4 +1,4 @@
-import product from './product'
-import category from './category'
+import { product, ProductType, SearchResultType } from './product'
+import { category, CategoryType } from './category'
 
-export default { product, category }
+export { product, ProductType, SearchResultType, category, CategoryType }

@@ -10,8 +10,7 @@ import { Link, useHistory } from 'react-router-dom'
 import './SearchBar.css'
 import SearchIcon from '@/assets/icons/search.svg'
 
-import { SearchResultType } from '@/types/index'
-import data from '@/utils/data/index'
+import { product, SearchResultType } from '@/utils/data'
 import SearchResultItem from './components/SearchResultItem'
 
 type Props = {
@@ -34,7 +33,7 @@ const SearchBar = ({ hidden = false }: Props): ReactElement => {
     setActive(Boolean(query))
 
     if (query.trim()) {
-      setResults(data.product.search(query))
+      setResults(product.search(query))
     } else {
       setResults([])
     }

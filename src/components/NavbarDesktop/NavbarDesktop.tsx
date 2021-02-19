@@ -2,9 +2,8 @@ import { useState, ReactElement } from 'react'
 import { Link } from 'react-router-dom'
 
 import './NavbarDesktop.css'
-import { CategoryType } from '@/types/index'
 
-import data from '@/utils/data/index'
+import { category, CategoryType } from '@/utils/data'
 
 type NavbarLinkProps = {
   to: string
@@ -33,7 +32,7 @@ const NavbarDesktop = (): ReactElement => {
   return (
     <div className="navbar-desktop-container">
       <div className="navbar-menu">
-        {data.category.getTops().map((top: CategoryType) => (
+        {category.getTops().map((top: CategoryType) => (
           <div
             key={top.id}
             onMouseEnter={() => setMenu(top.id)}
@@ -50,7 +49,7 @@ const NavbarDesktop = (): ReactElement => {
             />
 
             <div className="navbar-menu__submenu">
-              {data.category.getSubs(top.id).map((sub: CategoryType) => (
+              {category.getSubs(top.id).map((sub: CategoryType) => (
                 <div
                   key={sub.id}
                   className="navbar-menu__item navbar-menu__item--sub"
@@ -63,21 +62,19 @@ const NavbarDesktop = (): ReactElement => {
                   />
 
                   <div className="navbar-menu__lowermostmenu">
-                    {data.category
-                      .getSubs(sub.id)
-                      .map((lowermost: CategoryType) => (
-                        <div
-                          key={lowermost.id}
-                          className="navbar-menu__item navbar-menu__item--lowermost"
-                        >
-                          <NavbarLink
-                            to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
-                            name={lowermost.name}
-                            modifier="lowermost"
-                            onClick={close}
-                          />
-                        </div>
-                      ))}
+                    {category.getSubs(sub.id).map((lowermost: CategoryType) => (
+                      <div
+                        key={lowermost.id}
+                        className="navbar-menu__item navbar-menu__item--lowermost"
+                      >
+                        <NavbarLink
+                          to={`/products/${top.id}/${sub.id}/${lowermost.id}`}
+                          name={lowermost.name}
+                          modifier="lowermost"
+                          onClick={close}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </div>
               ))}

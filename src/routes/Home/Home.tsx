@@ -3,11 +3,11 @@ import { ReactElement } from 'react'
 import ProductList from '@/components/ProductList/ProductList'
 // import Brands from '@/components/Brands/Brands'
 
-import data from '@/utils/data/index'
+import { product } from '@/utils/data'
 
 const Home = (): ReactElement => (
   <>
-    <ProductList items={data.product.getRandom(15)} />
+    <ProductList items={product.getRandom(15)} />
     {/* <Brands /> */}
   </>
 )
