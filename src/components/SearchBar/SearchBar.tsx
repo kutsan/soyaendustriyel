@@ -13,11 +13,11 @@ import SearchIcon from '@/assets/icons/search.svg'
 import { product, SearchResultType } from '@/utils/data'
 import SearchResultItem from './components/SearchResultItem'
 
-type Props = {
+type SearchBarProps = {
   hidden?: boolean
 }
 
-const SearchBar = ({ hidden = false }: Props): ReactElement => {
+const SearchBar = ({ hidden = false }: SearchBarProps): ReactElement => {
   const [value, setValue] = useState('')
   const [active, setActive] = useState(false)
   const [results, setResults] = useState<SearchResultType[]>([])
