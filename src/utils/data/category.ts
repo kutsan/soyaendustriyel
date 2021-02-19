@@ -1,6 +1,6 @@
-import data from '@/data/category.json'
+import data from '@/data/categories.json'
 
-const dataCategory = data.category
+const dataCategories = data.categories
 
 export interface CategoryType {
   id: string
@@ -9,7 +9,7 @@ export interface CategoryType {
 }
 
 const getRef = (id: string): CategoryType | undefined =>
-  dataCategory.find((e: CategoryType) => e.id === id)
+  dataCategories.find((e: CategoryType) => e.id === id)
 
 const getKey = (id: string, key: keyof CategoryType): string | undefined => {
   const ref = getRef(id)
@@ -18,13 +18,13 @@ const getKey = (id: string, key: keyof CategoryType): string | undefined => {
 }
 
 const getTops = (): CategoryType[] =>
-  dataCategory.filter((e: CategoryType) => !e.parent)
+  dataCategories.filter((e: CategoryType) => !e.parent)
 
 const getSubs = (id: string): CategoryType[] =>
-  dataCategory.filter((e: CategoryType) => e.parent === id)
+  dataCategories.filter((e: CategoryType) => e.parent === id)
 
 const hasSubs = (id: string): boolean =>
-  Boolean(dataCategory.find((e: CategoryType) => e.parent === id))
+  Boolean(dataCategories.find((e: CategoryType) => e.parent === id))
 
 const getAllSubs = (id: string): CategoryType[] => {
   if (!hasSubs(id)) return []

@@ -1,11 +1,11 @@
 import { ProductType } from '@/utils/data'
-import { product } from './product.json'
+import { products } from './products.json'
 
 const checkDuplicate = (
   callbackFn: (candidate: ProductType, tester: ProductType) => void
 ) => {
-  product.forEach((candidate: ProductType) => {
-    product.forEach((tester: ProductType) => {
+  products.forEach((candidate: ProductType) => {
+    products.forEach((tester: ProductType) => {
       if (candidate !== tester) {
         callbackFn(candidate, tester)
       }

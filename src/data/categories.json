@@ -1,0 +1,347 @@
+{
+  "categories": [
+    { "id": "kagit", "name": "Kağıt" },
+    { "id": "tuvalet-kagidi", "parent": "kagit", "name": "Tuvalet Kağıdı" },
+    {
+      "id": "ev-tipi-tuvalet-kagidi",
+      "parent": "tuvalet-kagidi",
+      "name": "Ev Tipi Tuvalet Kağıdı"
+    },
+    {
+      "id": "mini-jumbo-tuvalet-kagidi",
+      "parent": "tuvalet-kagidi",
+      "name": "Mini Jumbo Tuvalet Kağıdı"
+    },
+    {
+      "id": "icten-cekmeli-tuvalet-kagidi",
+      "parent": "tuvalet-kagidi",
+      "name": "İçten Çekmeli Tuvalet Kağıdı"
+    },
+
+    { "id": "kagit-havlu", "parent": "kagit", "name": "Kağıt Havlu" },
+    { "id": "rulo-havlu", "parent": "kagit-havlu", "name": "Rulo Havlu" },
+    { "id": "z-katli-havlu", "parent": "kagit-havlu", "name": "Z Katlı Havlu" },
+    { "id": "jumbo-havlu", "parent": "kagit-havlu", "name": "Jumbo Havlu" },
+    {
+      "id": "icten-cekmeli-havlu",
+      "parent": "kagit-havlu",
+      "name": "İçten Çekmeli Havlu"
+    },
+
+    { "id": "pecete", "parent": "kagit", "name": "Peçete" },
+    { "id": "kare-pecete", "parent": "pecete", "name": "Kare Peçete" },
+    {
+      "id": "dispenser-pecete",
+      "parent": "pecete",
+      "name": "Dispenser Peçete"
+    },
+    { "id": "kutu-mendil", "parent": "pecete", "name": "Kutu Mendil" },
+
+    {
+      "id": "diger-kagit-urunleri",
+      "parent": "kagit",
+      "name": "Diğer Kağıt Ürünleri"
+    },
+    {
+      "id": "muayene-masa-ortusu",
+      "parent": "diger-kagit-urunleri",
+      "name": "Muayene Masa Örtüsü"
+    },
+    {
+      "id": "klozet-kapak-ortusu",
+      "parent": "diger-kagit-urunleri",
+      "name": "Klozet Kapak Örtüsü"
+    },
+
+    {
+      "id": "kagit-aparat-urunleri",
+      "parent": "kagit",
+      "name": "Kağıt Aparat Ürünleri"
+    },
+    {
+      "id": "jumbo-fotoselli-havlu-dispenseri",
+      "parent": "kagit-aparat-urunleri",
+      "name": "Jumbo Fotoselli Havlu Dispenseri"
+    },
+    {
+      "id": "z-katli-havlu-dispenseri",
+      "parent": "kagit-aparat-urunleri",
+      "name": "Z Katlı Havlu Dispenseri"
+    },
+    {
+      "id": "icten-cekmeli-tk-dispenseri",
+      "parent": "kagit-aparat-urunleri",
+      "name": "İçten Çekmeli T.K. Dispenseri"
+    },
+    {
+      "id": "mini-jumbo-tk-dispenseri",
+      "parent": "kagit-aparat-urunleri",
+      "name": "Mini Jumbo T.K. Dispenseri"
+    },
+    {
+      "id": "pecete-dispenseri",
+      "parent": "kagit-aparat-urunleri",
+      "name": "Peçete Dispenseri"
+    },
+    {
+      "id": "klozet-kapak-ortusu-aparati",
+      "parent": "kagit-aparat-urunleri",
+      "name": "Klozet Kapak Örtüsü Aparatı"
+    },
+    {
+      "id": "muayene-masa-ortusu-dispenseri",
+      "parent": "kagit-aparat-urunleri",
+      "name": "Muayene Masa Örtüsü Dispenseri"
+    },
+
+    { "id": "gida", "name": "Gıda" },
+    { "id": "cay", "parent": "gida", "name": "Çay" },
+    {
+      "id": "bardak-poset-caylar",
+      "parent": "cay",
+      "name": "Bardak Poşet Çaylar"
+    },
+    {
+      "id": "demlik-poset-caylar",
+      "parent": "cay",
+      "name": "Demlik Poşet Çaylar"
+    },
+    { "id": "dokme-caylar", "parent": "cay", "name": "Dökme Çaylar" },
+    {
+      "id": "dokme-bitki-caylari",
+      "parent": "cay",
+      "name": "Dökme Bitki Çayları"
+    },
+    {
+      "id": "sallama bitki caylari",
+      "parent": "cay",
+      "name": "Sallama Bitki Çayları"
+    },
+
+    { "id": "seker", "parent": "gida", "name": "Şeker" },
+    { "id": "kup-sekerler", "parent": "seker", "name": "Küp Şekerler" },
+    {
+      "id": "tek-sargili-sekerler",
+      "parent": "seker",
+      "name": "Tek Sargılı Şekerler"
+    },
+    { "id": "toz-sekerler", "parent": "seker", "name": "Toz Şekerler" },
+    { "id": "stick-sekerler", "parent": "seker", "name": "Stick Şekerler" },
+
+    { "id": "kahve", "parent": "gida", "name": "Kahve" },
+    { "id": "hazir-kahveler", "parent": "kahve", "name": "Hazır Kahveler" },
+    { "id": "kahve-kremasi", "parent": "kahve", "name": "Kahve Kreması" },
+    { "id": "turk-kahvesi", "parent": "kahve", "name": "Türk Kahvesi" },
+    { "id": "filtre-kahve", "parent": "kahve", "name": "Filtre Kahve" },
+
+    { "id": "icecek", "parent": "gida", "name": "İçecek" },
+    { "id": "su", "parent": "icecek", "name": "Su" },
+    { "id": "soda", "parent": "icecek", "name": "Soda" },
+
+    { "id": "deterjan", "name": "Deterjan" },
+    { "id": "genel-temizlik", "parent": "deterjan", "name": "Genel Temizlik" },
+    {
+      "id": "yuzey-temizleme",
+      "parent": "genel-temizlik",
+      "name": "Yüzey Temizleme"
+    },
+    {
+      "id": "zemin-temizligi",
+      "parent": "genel-temizlik",
+      "name": "Zemin Temizliği"
+    },
+    {
+      "id": "cam-temizligi",
+      "parent": "genel-temizlik",
+      "name": "Cam Temizleme"
+    },
+    {
+      "id": "tuvalet-temizligi",
+      "parent": "genel-temizlik",
+      "name": "Tuvalet Temizliği"
+    },
+    {
+      "id": "banyo-temizligi",
+      "parent": "genel-temizlik",
+      "name": "Banyo Temizliği"
+    },
+    {
+      "id": "mutfak-temizligi",
+      "parent": "genel-temizlik",
+      "name": "Mutfak Temizliği"
+    },
+    {
+      "id": "camasir-sulari",
+      "parent": "genel-temizlik",
+      "name": "Çamaşır Suları"
+    },
+    {
+      "id": "kirec-ve-pas-sokuculer",
+      "parent": "genel-temizlik",
+      "name": "Kireç ve Pas Sökücüler"
+    },
+    {
+      "id": "lavabo-acicilar",
+      "parent": "genel-temizlik",
+      "name": "Lavabo Açıcılar"
+    },
+    {
+      "id": "tuvalet-koku-giderici",
+      "parent": "genel-temizlik",
+      "name": "Tuvalet Koku Giderici"
+    },
+    { "id": "oda-parfumu", "parent": "genel-temizlik", "name": "Oda Parfümü" },
+    {
+      "id": "bocek-ilaclari",
+      "parent": "genel-temizlik",
+      "name": "Böcek İlaçları"
+    },
+
+    { "id": "camasir-yikama", "parent": "deterjan", "name": "Çamaşır Yıkama" },
+    {
+      "id": "toz-deterjan",
+      "parent": "camasir-yikama",
+      "name": "Toz Deterjan"
+    },
+    {
+      "id": "sivi-deterjan",
+      "parent": "camasir-yikama",
+      "name": "Sıvı Deterjan"
+    },
+    { "id": "yumusatici", "parent": "camasir-yikama", "name": "Yumuşatıcı" },
+
+    { "id": "bulasik-yikama", "parent": "deterjan", "name": "Bulaşık Yıkama" },
+    {
+      "id": "elde-bulasik-deterjani",
+      "parent": "bulasik-yikama",
+      "name": "Elde Bulaşık Yıkama"
+    },
+    {
+      "id": "bulasik-makinesi-deterjani",
+      "parent": "bulasik-yikama",
+      "name": "Bulaşık Makinesi Deterjanı"
+    },
+    { "id": "parlatici", "parent": "bulasik-yikama", "name": "Parlatıcı" },
+    { "id": "makine tuzu", "parent": "bulasik-yikama", "name": "Makine Tuzu" },
+
+    { "id": "temizlik", "name": "Temizlik" },
+    { "id": "cop-torbalari", "parent": "temizlik", "name": "Çöp Torbaları" },
+    {
+      "id": "44-50-mini-boy",
+      "parent": "cop-torbalari",
+      "name": "44x50 Mini Boy"
+    },
+    {
+      "id": "55-60-orta-boy",
+      "parent": "cop-torbalari",
+      "name": "55x60 Orta Boy"
+    },
+    {
+      "id": "65-80-buyuk-boy",
+      "parent": "cop-torbalari",
+      "name": "65x80 Büyük Boy"
+    },
+    {
+      "id": "70-90-battal-boy",
+      "parent": "cop-torbalari",
+      "name": "70x90 Battal Boy"
+    },
+    {
+      "id": "80-110-jumbo-boy",
+      "parent": "cop-torbalari",
+      "name": "80x110 Jumbo Boy"
+    },
+    {
+      "id": "100-150-hantal-boy",
+      "parent": "cop-torbalari",
+      "name": "100x150 Hantal Boy"
+    },
+
+    {
+      "id": "temizlik-malzemeleri",
+      "parent": "temizlik",
+      "name": "Temizlik Malzemeleri"
+    },
+    {
+      "id": "temizlik-bezleri",
+      "parent": "temizlik-malzemeleri",
+      "name": "Temizlik Bezleri"
+    },
+    {
+      "id": "sungerler",
+      "parent": "temizlik-malzemeleri",
+      "name": "Süngerler"
+    },
+    {
+      "id": "ovma-teli",
+      "parent": "temizlik-malzemeleri",
+      "name": "Ovma Teli"
+    },
+    { "id": "eldiven", "parent": "temizlik-malzemeleri", "name": "Eldiven" },
+    {
+      "id": "galos-ve-bone",
+      "parent": "temizlik-malzemeleri",
+      "name": "Galoş ve Bone"
+    },
+    { "id": "pompa", "parent": "temizlik-malzemeleri", "name": "Pompa" },
+    { "id": "fircalar", "parent": "temizlik-malzemeleri", "name": "Fırçalar" },
+    {
+      "id": "bahce-supurgesi",
+      "parent": "temizlik-malzemeleri",
+      "name": "Bahçe Süpürgesi"
+    },
+    { "id": "saplar", "parent": "temizlik-malzemeleri", "name": "Saplar" },
+    {
+      "id": "paspas-yedek",
+      "parent": "temizlik-malzemeleri",
+      "name": "Yedek Paspas Ucu"
+    },
+    { "id": "cekcek", "parent": "temizlik-malzemeleri", "name": "Çekçek" },
+
+    { "id": "moplar", "parent": "temizlik", "name": "Moplar" },
+    { "id": "nemli-moplar", "parent": "moplar", "name": "Nemli Moplar" },
+    { "id": "orlon-moplar", "parent": "moplar", "name": "Orlon Moplar" },
+    { "id": "islak-moplar", "parent": "moplar", "name": "Islak Moplar" },
+    { "id": "mop-aparatlari", "parent": "moplar", "name": "Mop Aparatları" },
+    { "id": "mop-saplari", "parent": "moplar", "name": "Mop Sapları" },
+
+    {
+      "id": "kisisel-temizlik",
+      "parent": "temizlik",
+      "name": "Kişisel Temizlik"
+    },
+    {
+      "id": "islak-mendil",
+      "parent": "kisisel-temizlik",
+      "name": "Islak Mendil"
+    },
+    {
+      "id": "klozet-kapak-temizleyici",
+      "parent": "kisisel-temizlik",
+      "name": "Klozet Kapak Temizleyici"
+    },
+
+    { "id": "ambalaj", "name": "Ambalaj" },
+    { "id": "tek-kullanimlik", "parent": "ambalaj", "name": "Tek Kullanımlık" },
+    {
+      "id": "karton-bardak",
+      "parent": "tek-kullanimlik",
+      "name": "Karton Bardak"
+    },
+    {
+      "id": "plastik-bardak",
+      "parent": "tek-kullanimlik",
+      "name": "Plastik Bardak"
+    },
+    { "id": "karistirici", "parent": "tek-kullanimlik", "name": "Karıştırıcı" },
+    {
+      "id": "strec-aluminyum-folyo",
+      "parent": "ambalaj",
+      "name": "Streç ve Alüminyum Folyo"
+    },
+
+    { "id": "plastik", "name": "Plastik" },
+    { "id": "cop-kovalari", "parent": "plastik", "name": "Çöp Kovaları" },
+    { "id": "saklama-kaplari", "parent": "plastik", "name": "Saklama Kapları" }
+  ]
+}

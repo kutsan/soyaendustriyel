@@ -1,6 +1,6 @@
-import data from '@/data/product.json'
+import data from '@/data/products.json'
 
-const dataProduct = data.product
+const dataProducts = data.products
 
 export interface ProductType {
   id: string
@@ -27,7 +27,7 @@ export interface SearchResultType extends ProductType {
 }
 
 const getRef = (id: string): ProductType | undefined =>
-  dataProduct.find((e: ProductType) => e.id === id)
+  dataProducts.find((e: ProductType) => e.id === id)
 
 const getRandom = (
   count: number,
@@ -48,11 +48,11 @@ const getRandom = (
 
   const shuffledArray = category
     ? shuffle(
-        dataProduct.filter(
+        dataProducts.filter(
           (e: ProductType) => e.category === category && e.id !== exclude
         )
       )
-    : shuffle(dataProduct)
+    : shuffle(dataProducts)
 
   return shuffledArray.slice(0, count)
 }
@@ -80,7 +80,7 @@ const search = (query: string): SearchResultType[] => {
     })
   }
 
-  dataProduct.forEach((e: ProductType) => {
+  dataProducts.forEach((e: ProductType) => {
     if (items.length > 4) return
 
     const matches = {
@@ -102,6 +102,6 @@ const search = (query: string): SearchResultType[] => {
 }
 
 const filter = (callback: (val: ProductType) => boolean): ProductType[] =>
-  dataProduct.filter(callback)
+  dataProducts.filter(callback)
 
 export const product = { getRef, getRandom, search, filter }
