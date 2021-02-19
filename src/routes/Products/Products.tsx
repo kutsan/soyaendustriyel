@@ -3,12 +3,10 @@ import { RouteComponentProps } from 'react-router-dom'
 
 import './Products.css'
 
-import { CategoryType, ProductType } from '@/types/index'
+import { category, product, CategoryType, ProductType } from '@/utils/data'
 
 import ProductList from '@/components/ProductList/ProductList'
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb'
-
-import data from '@/utils/data/index'
 
 type ProductsProps = RouteComponentProps<{
   category: string
@@ -16,14 +14,18 @@ type ProductsProps = RouteComponentProps<{
   lowermostcategory: string
 }>
 
-const Products = ({ match }: ProductsProps): ReactElement => {
-  const currentCategory = data.category.getRef(
+const Products = ({ match }: ProductsProps): ReactElement | null => {
+  const currentCategory = category.getRef(
     match.params.lowermostcategory ||
       match.params.subcategory ||
       match.params.category
   )
 
-  const allSubs = data.category
+  if (currentCategory === undefined) {
+    return null
+  }
+
+  const allSubs = category
     .getAllSubs(currentCategory.id)
     .map((cur: CategoryType) => cur.id)
 
@@ -36,7 +38,7 @@ const Products = ({ match }: ProductsProps): ReactElement => {
       <div className="products-title">{currentCategory.name}</div>
 
       <ProductList
-        items={data.product.filter(
+        items={product.filter(
           (e: ProductType) => allSubs.indexOf(e.category) > -1
         )}
       />

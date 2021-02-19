@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 import './SearchResultItem.css'
 
-import { SearchResultType } from '@/types/index'
+import { SearchResultType } from '@/utils/data'
 import Image from '@/components/Image/Image'
 
 type Props = {

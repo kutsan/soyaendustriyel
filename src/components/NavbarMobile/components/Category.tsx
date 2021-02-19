@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 import './Category.css'
 
-import { CategoryType } from '@/types/index'
+import { CategoryType } from '@/utils/data'
 
 type CategoryProps = {
   modifier: string

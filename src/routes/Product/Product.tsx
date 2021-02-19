@@ -3,15 +3,20 @@ import { RouteComponentProps } from 'react-router-dom'
 
 import './Product.css'
 
+import { product } from '@/utils/data'
+
 import Breadcrumb from '@/components/Breadcrumb/Breadcrumb'
 import Image from '@/components/Image/Image'
-import data from '@/utils/data/index'
 import SimilarProducts from './components/SimilarProducts'
 
 const Product = ({
   match,
-}: RouteComponentProps<{ id: string }>): ReactElement => {
-  const productRef = data.product.getRef(match.params.id)
+}: RouteComponentProps<{ id: string }>): ReactElement | null => {
+  const productRef = product.getRef(match.params.id)
+
+  if (productRef === undefined) {
+    return null
+  }
 
   return (
     <>

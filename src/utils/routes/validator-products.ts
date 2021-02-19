@@ -1,5 +1,5 @@
-import data from '@/utils/data/index'
 import { RouteComponentProps } from 'react-router-dom'
+import { category as dataCategory } from '@/utils/data'
 
 type ValidatorProductsProps = RouteComponentProps<{
   category: string
@@ -24,20 +24,20 @@ const validatorProducts = (props: ValidatorProductsProps): boolean => {
   let valid = false
 
   if (category && !subcategory && !lowermostcategory) {
-    const topRef = data.category.getRef(category)
+    const topRef = dataCategory.getRef(category)
 
-    valid = topRef && !topRef.parent
+    valid = topRef !== undefined && !topRef.parent
   } else if (category && subcategory && !lowermostcategory) {
-    const subRef = data.category.getRef(subcategory)
+    const subRef = dataCategory.getRef(subcategory)
 
-    valid = subRef && subRef.parent === category
+    valid = subRef !== undefined && subRef.parent === category
   } else if (category && subcategory && lowermostcategory) {
-    const subRef = data.category.getRef(subcategory)
-    const lowermostRef = data.category.getRef(lowermostcategory)
+    const subRef = dataCategory.getRef(subcategory)
+    const lowermostRef = dataCategory.getRef(lowermostcategory)
 
     valid =
-      subRef &&
-      lowermostRef &&
+      subRef !== undefined &&
+      lowermostRef !== undefined &&
       subRef.parent === category &&
       lowermostRef.parent === subcategory
   }

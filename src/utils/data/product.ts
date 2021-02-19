@@ -1,9 +1,32 @@
 import data from '@/data/product.json'
-import { ProductType, SearchResultType } from '@/types/index'
 
 const dataProduct = data.product
 
-const getRef = (id: string): ProductType =>
+export interface ProductType {
+  id: string
+  category: string
+  name: string
+  brand: string
+  code: string
+  desc?: {
+    text?: string
+    table?: Array<{
+      key: string
+      value: string
+    }>
+    list?: string[]
+  }
+}
+
+export interface SearchResultType extends ProductType {
+  match: {
+    attr: 'name' | 'brand' | 'code'
+    index: number
+    value: string
+  }
+}
+
+const getRef = (id: string): ProductType | undefined =>
   dataProduct.find((e: ProductType) => e.id === id)
 
 const getRandom = (
@@ -81,4 +104,4 @@ const search = (query: string): SearchResultType[] => {
 const filter = (callback: (val: ProductType) => boolean): ProductType[] =>
   dataProduct.filter(callback)
 
-export default { getRef, getRandom, search, filter }
+export const product = { getRef, getRandom, search, filter }

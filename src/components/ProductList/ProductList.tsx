@@ -3,7 +3,7 @@ import { ReactElement } from 'react'
 import './ProductList.css'
 
 import ProductCard from '@/components/ProductCard/ProductCard'
-import { ProductType } from '@/types/index'
+import { ProductType } from '@/utils/data'
 
 const ProductList = ({ items }: { items: ProductType[] }): ReactElement => (
   <div className="product-list">
