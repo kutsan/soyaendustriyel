@@ -1,4 +1,4 @@
-# `soyaendustriyel` [![Node CI](https://github.com/kutsan/soyaendustriyel/workflows/Node%20CI/badge.svg)](https://github.com/kutsan/soyaendustriyel/actions?query=workflow%3A%22Node+CI%22)
+# `soyaendustriyel` [![Node.js CI](https://github.com/kutsan/soyaendustriyel/actions/workflows/nodejs.yml/badge.svg)](https://github.com/kutsan/soyaendustriyel/actions/workflows/nodejs.yml)
 
 ![screenshot](https://raw.githubusercontent.com/kutsan/soyaendustriyel/master/.github/screenshot.png)
 
