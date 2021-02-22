@@ -3,19 +3,19 @@ import {
   useState,
   useEffect,
   ReactElement,
-  ReactNode,
+  ReactNode
 } from 'react'
 
 export const ViewportContext = createContext<number>(0)
 
 export const ViewportProvider = ({
-  children,
+  children
 }: {
   children: ReactNode
 }): ReactElement => {
   const [width, setWidth] = useState(window.innerWidth)
 
-  const handleWindowResize = () => {
+  const handleWindowResize = (): void => {
     setWidth(window.innerWidth)
   }
 

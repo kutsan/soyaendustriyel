@@ -3,17 +3,17 @@ import LazyLoad from 'react-lazyload'
 
 import './Image.css'
 
-type ImageContainerProps = {
+interface ImageContainerProps {
   children: ReactNode
 }
 
-const ImageContainer = ({ children }: ImageContainerProps) => (
+const ImageContainer = ({ children }: ImageContainerProps): ReactElement => (
   <div className="image-container">
     <div className="image-wrapper">{children}</div>
   </div>
 )
 
-const Placeholder = () => (
+const Placeholder = (): ReactElement => (
   <ImageContainer>
     <div className="image" />
   </ImageContainer>
@@ -24,7 +24,7 @@ const Image = ({ id }: { id: string }): ReactElement => {
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    if (imgEl && !imgEl?.current?.complete) {
+    if (imgEl.current?.complete === undefined || !imgEl.current.complete) {
       setLoading(true)
     }
   }, [imgEl])

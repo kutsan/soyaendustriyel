@@ -3,7 +3,7 @@ import { products } from './products.json'
 
 const checkDuplicate = (
   callbackFn: (candidate: ProductType, tester: ProductType) => void
-) => {
+): void => {
   products.forEach((candidate: ProductType) => {
     products.forEach((tester: ProductType) => {
       if (candidate !== tester) {

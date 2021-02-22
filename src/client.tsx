@@ -19,10 +19,10 @@ init()
 
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js')
+    navigator.serviceWorker.register('/sw.js').catch(console.error)
   })
 }
 
-if (module.hot) {
+if (module.hot !== undefined) {
   module.hot.accept('./App', () => init())
 }

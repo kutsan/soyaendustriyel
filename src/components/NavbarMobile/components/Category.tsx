@@ -5,7 +5,7 @@ import './Category.css'
 
 import { CategoryType } from '@/utils/data'
 
-type CategoryProps = {
+interface CategoryProps {
   modifier: string
   item: CategoryType
   to: string
@@ -20,9 +20,9 @@ const Category = ({
   item,
   to,
   onClickToggle,
-  expanded,
+  expanded = false,
   hasCategoriesUnder,
-  children,
+  children
 }: CategoryProps): ReactElement => (
   <div
     className={`navbar-mobile__category navbar-mobile__category--${modifier} ${

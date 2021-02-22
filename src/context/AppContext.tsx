@@ -3,17 +3,18 @@ import {
   useState,
   ReactElement,
   ReactNode,
-  useContext,
+  useContext
 } from 'react'
 
 type AppContextType = ReturnType<typeof useMenuOpen>
 
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
 const useMenuOpen = () => useState(false)
 
 const AppContext = createContext<AppContextType | null>(null)
 
 export const AppProvider = ({
-  children,
+  children
 }: {
   children: ReactNode
 }): ReactElement => (

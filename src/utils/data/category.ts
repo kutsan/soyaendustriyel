@@ -14,11 +14,11 @@ const getRef = (id: string): CategoryType | undefined =>
 const getKey = (id: string, key: keyof CategoryType): string | undefined => {
   const ref = getRef(id)
 
-  return ref ? ref[key] : undefined
+  return ref?.[key]
 }
 
 const getTops = (): CategoryType[] =>
-  dataCategories.filter((e: CategoryType) => !e.parent)
+  dataCategories.filter((e: CategoryType) => e.parent === undefined)
 
 const getSubs = (id: string): CategoryType[] =>
   dataCategories.filter((e: CategoryType) => e.parent === id)
@@ -31,7 +31,7 @@ const getAllSubs = (id: string): CategoryType[] => {
 
   const subs = getSubs(id)
 
-  if (!getKey(id, 'parent')) {
+  if (getKey(id, 'parent') === undefined) {
     subs.forEach((e: CategoryType) => {
       subs.push(...getSubs(e.id))
     })
@@ -46,5 +46,5 @@ export const category = {
   getSubs,
   hasSubs,
   getTops,
-  getAllSubs,
+  getAllSubs
 }

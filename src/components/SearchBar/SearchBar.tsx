@@ -3,7 +3,7 @@ import {
   useRef,
   ReactElement,
   ChangeEvent,
-  KeyboardEvent,
+  KeyboardEvent
 } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
@@ -13,7 +13,7 @@ import SearchIcon from '@/assets/icons/search.svg'
 import { product, SearchResultType } from '@/utils/data'
 import SearchResultItem from './components/SearchResultItem'
 
-type SearchBarProps = {
+interface SearchBarProps {
   hidden?: boolean
 }
 
@@ -26,44 +26,44 @@ const SearchBar = ({ hidden = false }: SearchBarProps): ReactElement => {
   const inputEl = useRef<HTMLInputElement>(null)
   const history = useHistory()
 
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {
     setValue(event.target.value)
     const query = event.target.value.trim()
 
     setActive(Boolean(query))
 
-    if (query.trim()) {
+    if (query !== '') {
       setResults(product.search(query))
     } else {
       setResults([])
     }
   }
 
-  const handleFocus = () => {
+  const handleFocus = (): void => {
     setActive(true)
 
     if (window.innerWidth < 769) {
-      if (searchEl && searchEl.current) {
+      if (searchEl.current !== null) {
         searchEl.current.scrollIntoView()
       }
     }
   }
 
-  const clearSearch = () => {
+  const clearSearch = (): void => {
     setValue('')
     setActive(false)
     setResults([])
 
-    if (inputEl && inputEl.current) {
+    if (inputEl.current !== null) {
       inputEl.current.blur()
     }
   }
 
-  const handleBlur = () => {
+  const handleBlur = (): void => {
     setActive(false)
   }
 
-  const handleKeyUp = (event: KeyboardEvent) => {
+  const handleKeyUp = (event: KeyboardEvent): void => {
     if (event.key === 'Enter') {
       if (results.length === 0) return
 
@@ -95,7 +95,7 @@ const SearchBar = ({ hidden = false }: SearchBarProps): ReactElement => {
             placeholder="Ürün, kategori, marka veya ürün kodu ile ara..."
             aria-label="Search text"
           />
-          {!value || results.length === 0 ? (
+          {value === '' || results.length === 0 ? (
             <div className="search__button search__button--disabled">
               <SearchIcon className="search__button-icon" />
             </div>
@@ -103,7 +103,7 @@ const SearchBar = ({ hidden = false }: SearchBarProps): ReactElement => {
             <Link
               to={{
                 pathname: '/search',
-                search: `?query=${value}`,
+                search: `?query=${value}`
               }}
               onClick={clearSearch}
               className="search__button"
@@ -117,7 +117,7 @@ const SearchBar = ({ hidden = false }: SearchBarProps): ReactElement => {
         <div
           role="dialog"
           className={`search-context ${
-            active && results.length ? 'search-context--active' : ''
+            active && results.length > 0 ? 'search-context--active' : ''
           }`}
         >
           {results.map((cur) => (

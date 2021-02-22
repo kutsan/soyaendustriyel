@@ -5,19 +5,22 @@ import './NavbarDesktop.css'
 
 import { category, CategoryType } from '@/utils/data'
 
-type NavbarLinkProps = {
+interface NavbarLinkProps {
   to: string
   name: string
   modifier: string
   onClick: () => void
 }
 
-const NavbarLink = ({ to, name, modifier, onClick }: NavbarLinkProps) => (
+const NavbarLink = ({
+  to,
+  name,
+  modifier,
+  onClick
+}: NavbarLinkProps): ReactElement => (
   <Link
     to={to}
-    className={`navbar-menu__item-link ${
-      modifier ? `navbar-menu__item-link--${modifier}` : ''
-    }`}
+    className={`navbar-menu__item-link navbar-menu__item-link--${modifier}`}
     onClick={onClick}
   >
     {name}
@@ -27,7 +30,7 @@ const NavbarLink = ({ to, name, modifier, onClick }: NavbarLinkProps) => (
 const NavbarDesktop = (): ReactElement => {
   const [menu, setMenu] = useState('')
 
-  const close = () => setMenu('')
+  const close = (): void => setMenu('')
 
   return (
     <div className="navbar-desktop-container">

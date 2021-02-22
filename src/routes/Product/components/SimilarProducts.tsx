@@ -6,12 +6,12 @@ import { product, ProductType } from '@/utils/data'
 
 import ProductList from '@/components/ProductList/ProductList'
 
-type SimilarProductsProps = {
+interface SimilarProductsProps {
   product: ProductType
 }
 
 const SimilarProducts = ({
-  product: productProp,
+  product: productProp
 }: SimilarProductsProps): ReactElement | null => {
   const similars = product.getRandom(4, productProp.category, productProp.id)
 

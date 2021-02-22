@@ -19,15 +19,15 @@ module.exports = {
     filename: '[name].[contenthash].js',
     chunkFilename: '[name].[contenthash].js',
     path: path.join(__dirname, '/build/'),
-    publicPath: '/',
+    publicPath: '/'
   },
 
   resolve: {
     extensions: ['.js', '.ts', '.tsx'],
     modules: ['node_modules'],
     alias: {
-      '@': path.join(__dirname, '/src/'),
-    },
+      '@': path.join(__dirname, '/src/')
+    }
   },
 
   stats: 'minimal',
@@ -36,7 +36,7 @@ module.exports = {
     open: true,
     host: '0.0.0.0',
     static: path.join(__dirname, '/build/'),
-    historyApiFallback: true,
+    historyApiFallback: true
   },
 
   optimization: {
@@ -45,17 +45,17 @@ module.exports = {
           new TerserPlugin({
             terserOptions: {
               output: {
-                comments: false,
-              },
+                comments: false
+              }
             },
-            extractComments: false,
-          }),
+            extractComments: false
+          })
         ]
       : [],
 
     splitChunks: {
-      chunks: 'all',
-    },
+      chunks: 'all'
+    }
   },
 
   module: {
@@ -63,7 +63,7 @@ module.exports = {
       {
         test: /\.tsx?$/,
         exclude: /node_modules/,
-        loader: 'ts-loader',
+        loader: 'ts-loader'
       },
       {
         test: /\.css$/,
@@ -77,42 +77,42 @@ module.exports = {
                   postcssOptions: {
                     plugins: [
                       ['autoprefixer'],
-                      ['cssnano', { preset: 'default' }],
-                    ],
-                  },
-                },
-              },
+                      ['cssnano', { preset: 'default' }]
+                    ]
+                  }
+                }
+              }
             ]
-          : ['style-loader', 'css-loader'],
+          : ['style-loader', 'css-loader']
       },
       {
         test: /\.svg$/,
-        loader: '@svgr/webpack',
-      },
-    ],
+        loader: '@svgr/webpack'
+      }
+    ]
   },
 
   plugins: [
     new HTMLWebpackPlugin({
       template: 'src/index.html',
-      filename: 'index.html',
+      filename: 'index.html'
     }),
     new MiniCssExtractPlugin({ filename: 'styles.[contenthash].css' }),
     new CopyPlugin({
       patterns: [
         { from: 'src/public/assets/' },
         { from: 'src/public/config/' },
-        { from: 'src/public/images/' },
-      ],
+        { from: 'src/public/images/' }
+      ]
     }),
     ...(prod
       ? [
           new WorkboxPlugin.GenerateSW({
             clientsClaim: true,
             skipWaiting: true,
-            swDest: 'sw.js',
-          }),
+            swDest: 'sw.js'
+          })
         ]
-      : []),
-  ],
+      : [])
+  ]
 }
