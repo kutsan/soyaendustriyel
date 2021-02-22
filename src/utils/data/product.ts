@@ -34,7 +34,7 @@ const getRandom = (
   category?: string,
   exclude?: string
 ): ProductType[] => {
-  const shuffle = (origArray: ProductType[]) => {
+  const shuffle = (origArray: ProductType[]): ProductType[] => {
     const array = Array.from(origArray)
 
     array.forEach((_, i) => {
@@ -46,19 +46,20 @@ const getRandom = (
     return array
   }
 
-  const shuffledArray = category
-    ? shuffle(
-        dataProducts.filter(
-          (e: ProductType) => e.category === category && e.id !== exclude
+  const shuffledArray =
+    category !== undefined
+      ? shuffle(
+          dataProducts.filter(
+            (e: ProductType) => e.category === category && e.id !== exclude
+          )
         )
-      )
-    : shuffle(dataProducts)
+      : shuffle(dataProducts)
 
   return shuffledArray.slice(0, count)
 }
 
 const search = (query: string): SearchResultType[] => {
-  if (!query) return []
+  if (query === '') return []
 
   const regex = new RegExp(query, 'gi')
   const items: SearchResultType[] = []
@@ -67,7 +68,7 @@ const search = (query: string): SearchResultType[] => {
     attr: 'name' | 'brand' | 'code',
     item: ProductType,
     match: string
-  ) => {
+  ): void => {
     const index = item[attr].indexOf(match)
 
     items.push({
@@ -75,8 +76,8 @@ const search = (query: string): SearchResultType[] => {
       match: {
         attr,
         index,
-        value: match,
-      },
+        value: match
+      }
     })
   }
 
@@ -84,16 +85,16 @@ const search = (query: string): SearchResultType[] => {
     if (items.length > 4) return
 
     const matches = {
-      name: e.name && e.name.match(regex),
-      brand: e.brand && e.brand.match(regex),
-      code: e.code && e.code.match(regex),
+      name: e.name.match(regex),
+      brand: e.brand.match(regex),
+      code: e.code.match(regex)
     }
 
-    if (matches.name) {
+    if (matches.name !== null) {
       addMatch('name', e, matches.name[0])
-    } else if (matches.brand) {
+    } else if (matches.brand !== null) {
       addMatch('brand', e, matches.brand[0])
-    } else if (matches.code) {
+    } else if (matches.code !== null) {
       addMatch('code', e, matches.code[0])
     }
   })

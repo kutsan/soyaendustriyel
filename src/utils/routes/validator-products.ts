@@ -2,9 +2,9 @@ import { RouteComponentProps } from 'react-router-dom'
 import { category as dataCategory } from '@/utils/data'
 
 type ValidatorProductsProps = RouteComponentProps<{
-  category: string
-  subcategory: string
-  lowermostcategory: string
+  category?: string
+  subcategory?: string
+  lowermostcategory?: string
 }>
 
 /**
@@ -17,21 +17,33 @@ type ValidatorProductsProps = RouteComponentProps<{
 const validatorProducts = (props: ValidatorProductsProps): boolean => {
   const {
     match: {
-      params: { category, subcategory, lowermostcategory },
-    },
+      params: { category, subcategory, lowermostcategory }
+    }
   } = props
 
   let valid = false
 
-  if (category && !subcategory && !lowermostcategory) {
+  if (
+    category !== undefined &&
+    subcategory === undefined &&
+    lowermostcategory === undefined
+  ) {
     const topRef = dataCategory.getRef(category)
 
-    valid = topRef !== undefined && !topRef.parent
-  } else if (category && subcategory && !lowermostcategory) {
+    valid = topRef !== undefined && topRef.parent === undefined
+  } else if (
+    category !== undefined &&
+    subcategory !== undefined &&
+    lowermostcategory === undefined
+  ) {
     const subRef = dataCategory.getRef(subcategory)
 
     valid = subRef !== undefined && subRef.parent === category
-  } else if (category && subcategory && lowermostcategory) {
+  } else if (
+    category !== undefined &&
+    subcategory !== undefined &&
+    lowermostcategory !== undefined
+  ) {
     const subRef = dataCategory.getRef(subcategory)
     const lowermostRef = dataCategory.getRef(lowermostcategory)
 

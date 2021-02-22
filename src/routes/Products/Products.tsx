@@ -16,6 +16,7 @@ type ProductsProps = RouteComponentProps<{
 
 const Products = ({ match }: ProductsProps): ReactElement | null => {
   const currentCategory = category.getRef(
+    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
     match.params.lowermostcategory ||
       match.params.subcategory ||
       match.params.category
@@ -38,9 +39,7 @@ const Products = ({ match }: ProductsProps): ReactElement | null => {
       <div className="products-title">{currentCategory.name}</div>
 
       <ProductList
-        items={product.filter(
-          (e: ProductType) => allSubs.indexOf(e.category) > -1
-        )}
+        items={product.filter((e: ProductType) => allSubs.includes(e.category))}
       />
     </>
   )

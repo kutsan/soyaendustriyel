@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, ReactElement } from 'react'
 import { RouteComponentProps, withRouter } from 'react-router-dom'
 import './NavbarMobile.css'
 
@@ -10,7 +10,7 @@ import MenuButton from './components/MenuButton'
 
 type NavbarMobileProps = RouteComponentProps
 
-const NavbarMobile = ({ history }: NavbarMobileProps) => {
+const NavbarMobile = ({ history }: NavbarMobileProps): ReactElement => {
   const [expanded, setExpanded] = useState<string[]>([])
   const [menuOpen, setMenuOpen] = useAppContext()
 
@@ -24,9 +24,9 @@ const NavbarMobile = ({ history }: NavbarMobileProps) => {
     }
   }, [history, menuOpen, setMenuOpen])
 
-  const isExpanded = (cat: CategoryType) => expanded.indexOf(cat.id) > -1
+  const isExpanded = (cat: CategoryType): boolean => expanded.includes(cat.id)
 
-  const onClickToggle = (cat: CategoryType) => {
+  const onClickToggle = (cat: CategoryType): void => {
     if (isExpanded(cat)) {
       setExpanded(expanded.filter((e) => e !== cat.id))
     } else {

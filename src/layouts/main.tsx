@@ -7,7 +7,7 @@ import NavbarMobile from '@/components/NavbarMobile/NavbarMobile'
 
 import { ViewportContext } from '@/context/ViewportContext'
 
-type MainLayoutProps = {
+interface MainLayoutProps {
   children: ReactNode
 }
 

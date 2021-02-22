@@ -6,14 +6,14 @@ import './SearchResultItem.css'
 import { SearchResultType } from '@/utils/data'
 import Image from '@/components/Image/Image'
 
-type SearchResultItemProps = {
+interface SearchResultItemProps {
   item: SearchResultType
   onClick: () => void
 }
 
 const SearchResultItem = ({
   item,
-  onClick,
+  onClick
 }: SearchResultItemProps): ReactElement => {
   const { attr, index, value } = item.match
 

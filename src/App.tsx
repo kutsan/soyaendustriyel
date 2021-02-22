@@ -3,7 +3,7 @@ import {
   Route,
   Switch,
   withRouter,
-  RouteComponentProps,
+  RouteComponentProps
 } from 'react-router-dom'
 
 import './App.css'
@@ -49,7 +49,7 @@ const App = ({ history }: AppProps): ReactElement => {
               path={[
                 '/products/:category/:subcategory/:lowermostcategory',
                 '/products/:category/:subcategory',
-                '/products/:category',
+                '/products/:category'
               ]}
               component={validatedRoute(validatorProducts)(Products)}
             />

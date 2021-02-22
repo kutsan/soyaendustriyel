@@ -2,7 +2,7 @@ import { ReactElement } from 'react'
 
 import './MenuButton.css'
 
-type MenuButtonProps = {
+interface MenuButtonProps {
   open: boolean
   onClick: () => void
 }

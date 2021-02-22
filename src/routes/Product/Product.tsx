@@ -10,7 +10,7 @@ import Image from '@/components/Image/Image'
 import SimilarProducts from './components/SimilarProducts'
 
 const Product = ({
-  match,
+  match
 }: RouteComponentProps<{ id: string }>): ReactElement | null => {
   const productRef = product.getRef(match.params.id)
 
@@ -37,11 +37,13 @@ const Product = ({
             <span>{productRef.code}</span>
           </div>
 
-          {productRef.desc && (
+          {productRef.desc !== undefined && (
             <div className="product__desc">
-              {productRef.desc.text && <div>{productRef.desc.text}</div>}
+              {productRef.desc.text !== undefined && (
+                <div>{productRef.desc.text}</div>
+              )}
 
-              {productRef.desc.list && (
+              {productRef.desc.list !== undefined && (
                 <div className="product__desc-list">
                   {productRef.desc.list.map((cur: string) => (
                     <div key={cur} className="product__desc-list-item">
@@ -51,7 +53,7 @@ const Product = ({
                 </div>
               )}
 
-              {productRef.desc.table && (
+              {productRef.desc.table !== undefined && (
                 <table className="product__desc-table">
                   <tbody>
                     {productRef.desc.table.map(
