@@ -1,0 +1,22 @@
+{
+  "name": "Soya Endüstriyel",
+  "short_name": "Soya Endüstriyel",
+  "description": "Profesyonel temizlik ürünleri, genel temizlik, yüzey temizleme, çamaşır suyu, plastik saklama kapları, çöp kovaları, çöp konteynerleri, çay, şeker ve benzeri endüstriyel toplu tüketim ürünleri satış bayisi",
+  "icons": [
+    {
+      "src": "logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#f1f1f1",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ececec"
+}
