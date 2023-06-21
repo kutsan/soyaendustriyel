@@ -6,10 +6,7 @@
   "homepage": "https://soyaendustriyel.com",
   "repository": "github:kutsan/soyaendustriyel.git",
   "license": "GPL-3.0",
-  "author": "Kutsan Kaplan <me@kutsankaplan.com> (https://kutsankaplan.com)",
-  "contributors": [
-    "Reyhan Unal <rreyhanunal@gmail.com>"
-  ],
+  "author": "Kutsan Kaplan <me@kutsan.dev> (https://kutsan.dev)",
   "scripts": {
     "prebuild": "npm run prestart",
     "build": "rm -rf build/ && NODE_ENV=production webpack --progress",
