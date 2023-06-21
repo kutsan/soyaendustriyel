@@ -5,7 +5,6 @@ import './Footer.css'
 import About from './components/About'
 import Contact from './components/Contact'
 import Copyright from './components/Copyright'
-import Attribution from './components/Attribution'
 
 const Footer = (): ReactElement => (
   <footer>
@@ -15,7 +14,6 @@ const Footer = (): ReactElement => (
     </div>
 
     <Copyright />
-    <Attribution />
   </footer>
 )
 
