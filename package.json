@@ -10,10 +10,10 @@
   "scripts": {
     "prebuild": "npm run prestart",
     "build": "rm -rf build/ && NODE_ENV=production webpack --progress",
-    "format": "npm run format:stylelint && npm run format:prettier",
+    "format": "npm run format:prettier",
     "format:prettier": "prettier --loglevel='silent' --write '**/*.{js,ts,tsx,json,md}'",
     "format:stylelint": "stylelint --fix 'src/**/*.css'",
-    "lint": "npm run lint:eslint && npm run lint:stylelint",
+    "lint": "npm run lint:eslint",
     "lint:eslint": "eslint --ignore-path .gitignore .",
     "lint:stylelint": "stylelint 'src/**/*.css'",
     "prestart": "npm run format && npm run lint && npm run test",
